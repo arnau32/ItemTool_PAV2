@@ -11,6 +11,8 @@ using ItemTool.Application.Services;
 using ItemTool.Application.Validation;
 using ItemTool.Domain.Enums;
 using ItemTool.Domain.Validation;
+using System.Windows.Media;
+using ItemTool.App.Visuals;
 
 namespace ItemTool.App.ViewModels;
 
@@ -50,6 +52,30 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
 
     public string ActiveFilterText => _activeItemKindFilter?.ToString() ?? "All";
 
+    public bool IsAllFilterActive => _activeItemKindFilter == null;
+
+    public bool IsEquipmentFilterActive => _activeItemKindFilter == ItemKind.Equipment;
+
+    public bool IsWeaponFilterActive => _activeItemKindFilter == ItemKind.Weapon;
+
+    public bool IsConsumableFilterActive => _activeItemKindFilter == ItemKind.Consumable;
+
+    public bool IsCraftingFilterActive => _activeItemKindFilter == ItemKind.Crafting;
+
+    public bool IsCollectableFilterActive => _activeItemKindFilter == ItemKind.Collectable;
+
+    public Brush AllFilterBrush => ItemVisualTheme.GetItemKindBrush(null);
+
+    public Brush EquipmentFilterBrush => ItemVisualTheme.GetItemKindBrush(ItemKind.Equipment);
+
+    public Brush WeaponFilterBrush => ItemVisualTheme.GetItemKindBrush(ItemKind.Weapon);
+
+    public Brush ConsumableFilterBrush => ItemVisualTheme.GetItemKindBrush(ItemKind.Consumable);
+
+    public Brush CraftingFilterBrush => ItemVisualTheme.GetItemKindBrush(ItemKind.Crafting);
+
+    public Brush CollectableFilterBrush => ItemVisualTheme.GetItemKindBrush(ItemKind.Collectable);
+    
     public ItemEditorViewModel Editor { get; } = new();
 
     public Array ItemKinds => Enum.GetValues(typeof(ItemKind));
@@ -230,13 +256,25 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
 
         RefreshValidation();
     }
+    
+    private void NotifyFilterStateChanged()
+    {
+        OnPropertyChanged(nameof(ActiveFilterText));
+
+        OnPropertyChanged(nameof(IsAllFilterActive));
+        OnPropertyChanged(nameof(IsEquipmentFilterActive));
+        OnPropertyChanged(nameof(IsWeaponFilterActive));
+        OnPropertyChanged(nameof(IsConsumableFilterActive));
+        OnPropertyChanged(nameof(IsCraftingFilterActive));
+        OnPropertyChanged(nameof(IsCollectableFilterActive));
+    }
 
     private void SetItemKindFilter(ItemKind? kind)
     {
         _activeItemKindFilter = kind;
 
-        OnPropertyChanged(nameof(ActiveFilterText));
-
+        NotifyFilterStateChanged();
+        
         FilteredItems.Refresh();
         EnsureSelectedItemIsVisible();
     }

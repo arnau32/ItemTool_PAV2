@@ -2,6 +2,7 @@
     x:Class="ItemTool.App.Views.ItemBrowserView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:shared="clr-namespace:ItemTool.App.Views.Shared"
     xmlns:validation="clr-namespace:ItemTool.Domain.Validation;assembly=ItemTool.Domain">
 
     <Border
@@ -25,12 +26,41 @@
                 Text="Items" />
 
             <WrapPanel Grid.Row="1" Margin="0,0,0,8">
-                <Button Command="{Binding ShowAllItemsCommand}" Content="All" />
-                <Button Command="{Binding ShowEquipmentItemsCommand}" Content="Equipment" />
-                <Button Command="{Binding ShowWeaponItemsCommand}" Content="Weapon" />
-                <Button Command="{Binding ShowConsumableItemsCommand}" Content="Consumable" />
-                <Button Command="{Binding ShowCraftingItemsCommand}" Content="Crafting" />
-                <Button Command="{Binding ShowCollectableItemsCommand}" Content="Collectable" />
+                <shared:ToolFilterButton
+                    Text="All"
+                    Command="{Binding ShowAllItemsCommand}"
+                    AccentBrush="{Binding AllFilterBrush}"
+                    IsActive="{Binding IsAllFilterActive}" />
+
+                <shared:ToolFilterButton
+                    Text="Equipment"
+                    Command="{Binding ShowEquipmentItemsCommand}"
+                    AccentBrush="{Binding EquipmentFilterBrush}"
+                    IsActive="{Binding IsEquipmentFilterActive}" />
+
+                <shared:ToolFilterButton
+                    Text="Weapon"
+                    Command="{Binding ShowWeaponItemsCommand}"
+                    AccentBrush="{Binding WeaponFilterBrush}"
+                    IsActive="{Binding IsWeaponFilterActive}" />
+
+                <shared:ToolFilterButton
+                    Text="Consumable"
+                    Command="{Binding ShowConsumableItemsCommand}"
+                    AccentBrush="{Binding ConsumableFilterBrush}"
+                    IsActive="{Binding IsConsumableFilterActive}" />
+
+                <shared:ToolFilterButton
+                    Text="Crafting"
+                    Command="{Binding ShowCraftingItemsCommand}"
+                    AccentBrush="{Binding CraftingFilterBrush}"
+                    IsActive="{Binding IsCraftingFilterActive}" />
+
+                <shared:ToolFilterButton
+                    Text="Collectable"
+                    Command="{Binding ShowCollectableItemsCommand}"
+                    AccentBrush="{Binding CollectableFilterBrush}"
+                    IsActive="{Binding IsCollectableFilterActive}" />
             </WrapPanel>
 
             <TextBlock

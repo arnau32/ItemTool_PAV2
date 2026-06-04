@@ -1,0 +1,31 @@
+<UserControl
+    x:Class="ItemTool.App.Views.Shared.ToolFilterButton"
+    x:Name="Root"
+    Margin="0,0,6,6"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Button
+        x:Name="ButtonRoot"
+        MinHeight="26"
+        Margin="0"
+        Padding="8,3"
+        BorderThickness="1"
+        Command="{Binding Command, ElementName=Root}">
+
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+            <Border
+                x:Name="ColorDot"
+                Width="8"
+                Height="8"
+                Margin="0,0,6,0"
+                CornerRadius="4" />
+
+            <TextBlock
+                x:Name="LabelText"
+                Margin="0"
+                VerticalAlignment="Center"
+                Text="{Binding Text, ElementName=Root}" />
+        </StackPanel>
+    </Button>
+</UserControl>
