@@ -4,6 +4,7 @@ using ItemTool.App.ViewModels;
 using ItemTool.Application.Services;
 using ItemTool.Application.Validation;
 using ItemTool.Infrastructure.Persistence;
+using ItemTool.App.Services;
 
 namespace ItemTool.App;
 
@@ -21,6 +22,7 @@ public partial class MainWindow : Window
         DataContext = new MainToolViewModel(
             new JsonContentDatabaseRepository(filePath),
             new ItemValidator(),
-            new ItemFactory());
+            new ItemFactory(),
+            new WindowsFilePickerService());
     }
 }

@@ -30,13 +30,43 @@
                 BorderThickness="1">
 
                 <Grid>
+                    <Image
+                        Stretch="UniformToFill"
+                        Source="{Binding PreviewImageSource, ElementName=Root}">
+                        <Image.Style>
+                            <Style TargetType="Image">
+                                <Setter Property="Visibility" Value="Visible" />
+
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding PreviewImageSource, ElementName=Root}"
+                                                 Value="{x:Null}">
+                                        <Setter Property="Visibility" Value="Collapsed" />
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Image.Style>
+                    </Image>
+
                     <TextBlock
                         HorizontalAlignment="Center"
                         VerticalAlignment="Center"
                         FontSize="24"
                         FontWeight="Bold"
                         Opacity="0.85"
-                        Text="{Binding PreviewText, ElementName=Root}" />
+                        Text="{Binding PreviewText, ElementName=Root}">
+                        <TextBlock.Style>
+                            <Style TargetType="TextBlock" BasedOn="{StaticResource {x:Type TextBlock}}">
+                                <Setter Property="Visibility" Value="Collapsed" />
+
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding PreviewImageSource, ElementName=Root}"
+                                                 Value="{x:Null}">
+                                        <Setter Property="Visibility" Value="Visible" />
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </TextBlock.Style>
+                    </TextBlock>
 
                     <TextBlock
                         Margin="0,0,0,3"

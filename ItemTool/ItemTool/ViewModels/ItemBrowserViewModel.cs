@@ -13,6 +13,7 @@ using ItemTool.Domain.Enums;
 using ItemTool.Domain.Validation;
 using System.Windows.Media;
 using ItemTool.App.Visuals;
+using ItemTool.App.Services;
 
 namespace ItemTool.App.ViewModels;
 
@@ -84,7 +85,7 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
 
     public Brush CollectableFilterBrush => ItemVisualTheme.GetItemKindBrush(ItemKind.Collectable);
 
-    public ItemEditorViewModel Editor { get; } = new();
+    public ItemEditorViewModel Editor { get; }
 
     public Array ItemKinds => Enum.GetValues(typeof(ItemKind));
     public Array ItemRarities => Enum.GetValues(typeof(ItemRarity));
@@ -99,11 +100,14 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
     public ItemBrowserViewModel(
         IContentDatabaseRepository repository,
         ItemValidator validator,
-        ItemFactory itemFactory)
+        ItemFactory itemFactory,
+        IFilePickerService filePickerService)
     {
         _repository = repository;
         _validator = validator;
         _itemFactory = itemFactory;
+
+        Editor = new ItemEditorViewModel(filePickerService);
 
         FilteredItems = CollectionViewSource.GetDefaultView(Items);
         FilteredItems.Filter = FilterItem;

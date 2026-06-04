@@ -70,11 +70,27 @@
                 TextWrapping="Wrap" />
 
             <TextBlock Grid.Row="6" Grid.Column="0" Text="Icon Path" />
-            <TextBox
+
+            <Grid
                 Grid.Row="6"
                 Grid.Column="1"
-                Margin="0,0,0,8"
-                Text="{Binding SelectedItem.IconPath, UpdateSourceTrigger=PropertyChanged}" />
+                Margin="0,0,0,8">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <TextBox
+                    Grid.Column="0"
+                    Margin="0,0,6,0"
+                    Text="{Binding SelectedItem.IconPath, UpdateSourceTrigger=PropertyChanged}" />
+
+                <Button
+                    Grid.Column="1"
+                    Command="{Binding BrowseIconPathCommand}"
+                    Content="Browse..." />
+            </Grid>
 
             <TextBlock Grid.Row="7" Grid.Column="0" Text="Rarity" />
             <ComboBox

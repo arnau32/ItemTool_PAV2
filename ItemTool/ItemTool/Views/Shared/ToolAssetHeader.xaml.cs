@@ -42,6 +42,13 @@ public partial class ToolAssetHeader : UserControl
             typeof(ToolAssetHeader),
             new PropertyMetadata("?"));
 
+    public static readonly DependencyProperty PreviewImageSourceProperty =
+        DependencyProperty.Register(
+            nameof(PreviewImageSource),
+            typeof(ImageSource),
+            typeof(ToolAssetHeader),
+            new PropertyMetadata(null));
+
     public static readonly DependencyProperty AccentBrushProperty =
         DependencyProperty.Register(
             nameof(AccentBrush),
@@ -117,6 +124,12 @@ public partial class ToolAssetHeader : UserControl
     {
         get => (string)GetValue(PreviewTextProperty);
         set => SetValue(PreviewTextProperty, value);
+    }
+    
+    public ImageSource? PreviewImageSource
+    {
+        get => (ImageSource?)GetValue(PreviewImageSourceProperty);
+        set => SetValue(PreviewImageSourceProperty, value);
     }
 
     public Brush AccentBrush

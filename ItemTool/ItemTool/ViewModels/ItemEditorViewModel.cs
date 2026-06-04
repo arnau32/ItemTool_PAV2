@@ -4,13 +4,21 @@ using ItemTool.Application.DTOs;
 using ItemTool.Domain.Enums;
 using System.Windows.Media;
 using ItemTool.App.Visuals;
+using ItemTool.App.Services;
 
 namespace ItemTool.App.ViewModels;
 
 public sealed partial class ItemEditorViewModel : ViewModelBase
 {
+    private readonly IFilePickerService _filePickerService;
+
     private ItemDto? _selectedItem;
     private DimensionsDto? _subscribedSlotDimension;
+
+    public ItemEditorViewModel(IFilePickerService filePickerService)
+    {
+        _filePickerService = filePickerService;
+    }
 
     public ItemDto? SelectedItem
     {
@@ -98,7 +106,10 @@ public sealed partial class ItemEditorViewModel : ViewModelBase
             };
         }
     }
-    
+
+    public ImageSource? HeaderPreviewImageSource =>
+        ItemIconSourceLoader.Load(SelectedItem?.IconPath);
+
     public Brush HeaderKindBrush => ItemVisualTheme.GetItemKindBrush(SelectedItem?.ItemKind);
 
     public Brush HeaderRarityBrush => ItemVisualTheme.GetRarityBrush(SelectedItem?.ItemRarity);
@@ -167,6 +178,7 @@ public sealed partial class ItemEditorViewModel : ViewModelBase
         if (e.PropertyName == nameof(ItemDto.DisplayName) ||
             e.PropertyName == nameof(ItemDto.ItemNameId) ||
             e.PropertyName == nameof(ItemDto.Id) ||
+            e.PropertyName == nameof(ItemDto.IconPath) ||
             e.PropertyName == nameof(ItemDto.ItemKind) ||
             e.PropertyName == nameof(ItemDto.ItemType) ||
             e.PropertyName == nameof(ItemDto.ItemRarity))
@@ -202,6 +214,7 @@ public sealed partial class ItemEditorViewModel : ViewModelBase
         OnPropertyChanged(nameof(HeaderTechnicalInfo));
         OnPropertyChanged(nameof(HeaderBadgeText));
         OnPropertyChanged(nameof(HeaderPreviewText));
+        OnPropertyChanged(nameof(HeaderPreviewImageSource));
         OnPropertyChanged(nameof(HeaderKindBrush));
         OnPropertyChanged(nameof(HeaderRarityBrush));
     }
@@ -265,6 +278,21 @@ public sealed partial class ItemEditorViewModel : ViewModelBase
             return;
 
         SelectedItem.Consumable.Buffs.Clear();
+        ItemChanged?.Invoke();
+    }
+    
+    [RelayCommand]
+    public void BrowseIconPath()
+    {
+        if (SelectedItem == null)
+            return;
+
+        string? selectedPath = _filePickerService.PickImageFile(SelectedItem.IconPath);
+
+        if (string.IsNullOrWhiteSpace(selectedPath))
+            return;
+
+        SelectedItem.IconPath = selectedPath;
         ItemChanged?.Invoke();
     }
 }

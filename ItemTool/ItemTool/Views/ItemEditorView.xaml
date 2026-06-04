@@ -20,6 +20,7 @@
                     TechnicalInfo="{Binding HeaderTechnicalInfo}"
                     BadgeText="{Binding HeaderBadgeText}"
                     PreviewText="{Binding HeaderPreviewText}"
+                    PreviewImageSource="{Binding HeaderPreviewImageSource}"
                     AccentBrush="{Binding HeaderKindBrush}"
                     BadgeBackground="{Binding HeaderKindBrush}"
                     PreviewBackground="{Binding HeaderRarityBrush}"

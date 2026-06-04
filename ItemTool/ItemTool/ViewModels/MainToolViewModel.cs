@@ -4,6 +4,7 @@ using CommunityToolkit.Mvvm.Input;
 using ItemTool.Application.Abstractions;
 using ItemTool.Application.Services;
 using ItemTool.Application.Validation;
+using ItemTool.App.Services;
 
 namespace ItemTool.App.ViewModels;
 
@@ -14,12 +15,14 @@ public sealed partial class MainToolViewModel : ViewModelBase
     public MainToolViewModel(
         IContentDatabaseRepository repository,
         ItemValidator itemValidator,
-        ItemFactory itemFactory)
+        ItemFactory itemFactory,
+        IFilePickerService filePickerService)
     {
         Items = new ItemBrowserViewModel(
             repository,
             itemValidator,
-            itemFactory);
+            itemFactory,
+            filePickerService);
 
         LootTables = new LootBrowserViewModel(repository);
 
