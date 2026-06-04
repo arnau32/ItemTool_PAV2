@@ -193,6 +193,65 @@ public sealed partial class LootBrowserViewModel : ViewModelBase
         return true;
     }
 
+    public IReadOnlyList<ItemLootUsageViewModel> FindUsagesOfItem(string? itemId)
+    {
+        if (string.IsNullOrWhiteSpace(itemId))
+            return Array.Empty<ItemLootUsageViewModel>();
+
+        List<ItemLootUsageViewModel> usages = new();
+
+        foreach (LootTableListItemViewModel lootTableVm in LootTables)
+        {
+            AddItemUsagesFromEntries(
+                usages,
+                lootTableVm.LootTable.Id,
+                lootTableVm.LootTable.Name,
+                "Guaranteed",
+                lootTableVm.LootTable.GuaranteedEntries,
+                itemId);
+
+            AddItemUsagesFromEntries(
+                usages,
+                lootTableVm.LootTable.Id,
+                lootTableVm.LootTable.Name,
+                "Weighted",
+                lootTableVm.LootTable.WeightedEntries,
+                itemId);
+        }
+
+        return usages;
+    }
+
+    private static void AddItemUsagesFromEntries(
+        List<ItemLootUsageViewModel> usages,
+        string lootTableId,
+        string lootTableName,
+        string entryGroup,
+        IEnumerable<LootEntryDto> entries,
+        string itemId)
+    {
+        int index = 1;
+
+        foreach (LootEntryDto entry in entries)
+        {
+            bool isMatchingItemEntry =
+                entry.EntryType == LootEntryType.Item &&
+                !string.IsNullOrWhiteSpace(entry.ItemId) &&
+                string.Equals(entry.ItemId.Trim(), itemId.Trim(), StringComparison.OrdinalIgnoreCase);
+
+            if (isMatchingItemEntry)
+            {
+                usages.Add(new ItemLootUsageViewModel(
+                    lootTableId,
+                    lootTableName,
+                    entryGroup,
+                    index));
+            }
+
+            index++;
+        }
+    }
+
     [RelayCommand]
     public void NewLootTable()
     {

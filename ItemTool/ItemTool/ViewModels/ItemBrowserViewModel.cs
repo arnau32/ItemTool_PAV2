@@ -31,6 +31,10 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
 
     private ItemListItemViewModel? _selectedListItem;
 
+    public event Action? SelectedItemChanged;
+
+    public string? SelectedItemId => SelectedListItem?.Item.Id;
+
     public ItemListItemViewModel? SelectedListItem
     {
         get => _selectedListItem;
@@ -39,7 +43,9 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
             if (SetProperty(ref _selectedListItem, value))
             {
                 Editor.SelectedItem = value?.Item;
+                OnPropertyChanged(nameof(SelectedItemId));
                 RefreshValidation();
+                SelectedItemChanged?.Invoke();
             }
         }
     }
@@ -269,7 +275,7 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
             ? "Sin errores ni warnings."
             : string.Join(Environment.NewLine, selectedIssues.Select(x => $"- [{x.Severity}] {x.Message}"));
     }
-    
+
     public bool SelectItemById(string? itemId)
     {
         if (string.IsNullOrWhiteSpace(itemId))
@@ -380,7 +386,7 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
         item.Id = candidate;
         item.ItemNameId = candidate;
     }
-    
+
     private static void UpsertItem(
         List<ItemDto> items,
         string? sourceId,

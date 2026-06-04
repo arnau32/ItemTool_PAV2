@@ -1,3 +1,4 @@
+using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.Input;
 using ItemTool.Application.Abstractions;
@@ -21,11 +22,32 @@ public sealed partial class MainToolViewModel : ViewModelBase
             itemFactory);
 
         LootTables = new LootBrowserViewModel(repository);
+
+        Items.SelectedItemChanged += RefreshSelectedItemUsages;
     }
 
     public ItemBrowserViewModel Items { get; }
 
     public LootBrowserViewModel LootTables { get; }
+
+    public ObservableCollection<ItemLootUsageViewModel> SelectedItemLootUsages { get; } = new();
+
+    public string SelectedItemUsageSummary
+    {
+        get
+        {
+            if (Items.SelectedListItem == null)
+                return "No item selected.";
+
+            if (LootTables.LootTables.Count == 0)
+                return "Load loot tables or press Refresh to search references.";
+
+            if (SelectedItemLootUsages.Count == 0)
+                return "No direct loot table references found.";
+
+            return $"{SelectedItemLootUsages.Count} direct loot table reference(s) found.";
+        }
+    }
 
     public ToolWorkspace ActiveWorkspace
     {
@@ -84,5 +106,37 @@ public sealed partial class MainToolViewModel : ViewModelBase
 
         if (selected)
             ActiveWorkspace = ToolWorkspace.LootTables;
+    }
+
+    [RelayCommand]
+    public async Task RefreshSelectedItemUsagesAsync()
+    {
+        if (Items.SelectedListItem == null)
+        {
+            SelectedItemLootUsages.Clear();
+            OnPropertyChanged(nameof(SelectedItemUsageSummary));
+            return;
+        }
+
+        if (LootTables.LootTables.Count == 0)
+            await LootTables.LoadAsync();
+
+        RefreshSelectedItemUsages();
+    }
+
+    private void RefreshSelectedItemUsages()
+    {
+        SelectedItemLootUsages.Clear();
+
+        string? itemId = Items.SelectedItemId;
+
+        if (!string.IsNullOrWhiteSpace(itemId) &&
+            LootTables.LootTables.Count > 0)
+        {
+            foreach (ItemLootUsageViewModel usage in LootTables.FindUsagesOfItem(itemId))
+                SelectedItemLootUsages.Add(usage);
+        }
+
+        OnPropertyChanged(nameof(SelectedItemUsageSummary));
     }
 }
