@@ -62,7 +62,6 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
     public ItemEditorViewModel Editor { get; } = new();
 
     public Array ItemKinds => Enum.GetValues(typeof(ItemKind));
-    public Array ItemTypes => Enum.GetValues(typeof(ItemType));
     public Array ItemRarities => Enum.GetValues(typeof(ItemRarity));
 
     public Array EquipSlots => Enum.GetValues(typeof(EquipSlot));

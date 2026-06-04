@@ -8,6 +8,7 @@ namespace ItemTool.App.ViewModels;
 public sealed partial class ItemEditorViewModel : ViewModelBase
 {
     private ItemDto? _selectedItem;
+    private DimensionsDto? _subscribedSlotDimension;
 
     public ItemDto? SelectedItem
     {
@@ -19,19 +20,7 @@ public sealed partial class ItemEditorViewModel : ViewModelBase
             if (SetProperty(ref _selectedItem, value))
             {
                 SubscribeToSelectedItem();
-
-                OnPropertyChanged(nameof(HasSelectedItem));
-                OnPropertyChanged(nameof(HeaderTitle));
-                OnPropertyChanged(nameof(HeaderSubtitle));
-                OnPropertyChanged(nameof(HeaderTechnicalInfo));
-                OnPropertyChanged(nameof(HeaderBadgeText));
-                OnPropertyChanged(nameof(HeaderPreviewText));
-                OnPropertyChanged(nameof(ItemKindText));
-                OnPropertyChanged(nameof(ItemTypeText));
-                OnPropertyChanged(nameof(ShowsEquipableSection));
-                OnPropertyChanged(nameof(ShowsWeaponSection));
-                OnPropertyChanged(nameof(ShowsConsumableSection));
-                OnPropertyChanged(nameof(ShowsCollectableSection));
+                NotifySelectedItemChanged();
 
                 ItemChanged?.Invoke();
             }
@@ -39,7 +28,7 @@ public sealed partial class ItemEditorViewModel : ViewModelBase
     }
 
     public bool HasSelectedItem => SelectedItem != null;
-    
+
     public string HeaderTitle
     {
         get
@@ -132,31 +121,41 @@ public sealed partial class ItemEditorViewModel : ViewModelBase
             return;
 
         _selectedItem.PropertyChanged += OnSelectedItemPropertyChanged;
-
-        if (_selectedItem.SlotDimension != null)
-            _selectedItem.SlotDimension.PropertyChanged += OnSelectedItemDimensionsChanged;
+        SubscribeToSlotDimension(_selectedItem.SlotDimension);
     }
 
     private void UnsubscribeFromSelectedItem()
     {
-        if (_selectedItem == null)
-            return;
+        if (_selectedItem != null)
+            _selectedItem.PropertyChanged -= OnSelectedItemPropertyChanged;
 
-        _selectedItem.PropertyChanged -= OnSelectedItemPropertyChanged;
+        UnsubscribeFromSlotDimension();
+    }
 
-        if (_selectedItem.SlotDimension != null)
-            _selectedItem.SlotDimension.PropertyChanged -= OnSelectedItemDimensionsChanged;
+    private void SubscribeToSlotDimension(DimensionsDto? slotDimension)
+    {
+        UnsubscribeFromSlotDimension();
+
+        _subscribedSlotDimension = slotDimension;
+
+        if (_subscribedSlotDimension != null)
+            _subscribedSlotDimension.PropertyChanged += OnSelectedItemDimensionsChanged;
+    }
+
+    private void UnsubscribeFromSlotDimension()
+    {
+        if (_subscribedSlotDimension != null)
+            _subscribedSlotDimension.PropertyChanged -= OnSelectedItemDimensionsChanged;
+
+        _subscribedSlotDimension = null;
     }
 
     private void OnSelectedItemPropertyChanged(object? sender, PropertyChangedEventArgs e)
     {
-        if (e.PropertyName == nameof(ItemDto.SlotDimension))
+        if (e.PropertyName == nameof(ItemDto.SlotDimension) &&
+            sender is ItemDto item)
         {
-            if (sender is ItemDto item)
-            {
-                if (item.SlotDimension != null)
-                    item.SlotDimension.PropertyChanged += OnSelectedItemDimensionsChanged;
-            }
+            SubscribeToSlotDimension(item.SlotDimension);
         }
 
         if (e.PropertyName == nameof(ItemDto.DisplayName) ||
@@ -166,11 +165,13 @@ public sealed partial class ItemEditorViewModel : ViewModelBase
             e.PropertyName == nameof(ItemDto.ItemType) ||
             e.PropertyName == nameof(ItemDto.ItemRarity))
         {
-            OnPropertyChanged(nameof(HeaderTitle));
-            OnPropertyChanged(nameof(HeaderSubtitle));
-            OnPropertyChanged(nameof(HeaderTechnicalInfo));
-            OnPropertyChanged(nameof(HeaderBadgeText));
-            OnPropertyChanged(nameof(HeaderPreviewText));
+            NotifyHeaderChanged();
+        }
+
+        if (e.PropertyName == nameof(ItemDto.ItemKind) ||
+            e.PropertyName == nameof(ItemDto.ItemType))
+        {
+            NotifyTypeInfoChanged();
         }
 
         ItemChanged?.Invoke();
@@ -180,7 +181,33 @@ public sealed partial class ItemEditorViewModel : ViewModelBase
     {
         ItemChanged?.Invoke();
     }
-    
+
+    private void NotifySelectedItemChanged()
+    {
+        OnPropertyChanged(nameof(HasSelectedItem));
+        NotifyHeaderChanged();
+        NotifyTypeInfoChanged();
+    }
+
+    private void NotifyHeaderChanged()
+    {
+        OnPropertyChanged(nameof(HeaderTitle));
+        OnPropertyChanged(nameof(HeaderSubtitle));
+        OnPropertyChanged(nameof(HeaderTechnicalInfo));
+        OnPropertyChanged(nameof(HeaderBadgeText));
+        OnPropertyChanged(nameof(HeaderPreviewText));
+    }
+
+    private void NotifyTypeInfoChanged()
+    {
+        OnPropertyChanged(nameof(ItemKindText));
+        OnPropertyChanged(nameof(ItemTypeText));
+        OnPropertyChanged(nameof(ShowsEquipableSection));
+        OnPropertyChanged(nameof(ShowsWeaponSection));
+        OnPropertyChanged(nameof(ShowsConsumableSection));
+        OnPropertyChanged(nameof(ShowsCollectableSection));
+    }
+
     [RelayCommand]
     public void AddStatModifier()
     {
