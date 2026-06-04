@@ -14,8 +14,10 @@ namespace ItemTool.App.ViewModels;
 
 public sealed partial class ItemBrowserViewModel : ViewModelBase
 {
-    private readonly IItemRepository _repository;
+    private readonly IContentDatabaseRepository _repository;
     private readonly ItemValidator _validator;
+
+    private ContentDatabaseDto _database = new();
 
     public ObservableCollection<ItemListItemViewModel> Items { get; } = new();
 
@@ -53,7 +55,7 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
     public Array ItemTypes => Enum.GetValues(typeof(ItemType));
     public Array ItemRarities => Enum.GetValues(typeof(ItemRarity));
 
-    public ItemBrowserViewModel(IItemRepository repository, ItemValidator validator)
+    public ItemBrowserViewModel(IContentDatabaseRepository repository, ItemValidator validator)
     {
         _repository = repository;
         _validator = validator;
@@ -70,11 +72,13 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
     [RelayCommand]
     public async Task LoadAsync()
     {
-        IReadOnlyList<ItemDto> items = await _repository.GetAllAsync();
+        _database = await _repository.LoadAsync();
 
         Items.Clear();
-        foreach (ItemDto item in items)
+
+        foreach (ItemDto item in _database.Items)
         {
+            item.EnsureDetailsForCurrentKind();
             Items.Add(new ItemListItemViewModel(item));
         }
 
@@ -82,6 +86,7 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
             SelectedListItem = Items[0];
         else
         {
+            SelectedListItem = null;
             RefreshValidation();
             RefreshDimensionPreview();
         }
@@ -90,8 +95,9 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
     [RelayCommand]
     public async Task SaveAsync()
     {
-        List<ItemDto> items = Items.Select(x => x.Item).ToList();
-        await _repository.SaveAllAsync(items);
+        _database.Items = Items.Select(x => x.Item).ToList();
+
+        await _repository.SaveAsync(_database);
     }
 
     [RelayCommand]
@@ -100,11 +106,20 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
         ItemDto newItem = new()
         {
             Id = Guid.NewGuid().ToString("N"),
-            ItemName = "New Item",
-            ItemType = ItemType.Equipable,
+            ItemKind = ItemKind.Equipment,
+            ItemNameId = "new_equipment_item",
+            DisplayName = "New Equipment Item",
+            Description = string.Empty,
             ItemRarity = ItemRarity.Common,
-            MaxStack = 1
+            MaxStack = 1,
+            SlotDimension = new DimensionsDto
+            {
+                Width = 1,
+                Height = 1
+            }
         };
+
+        newItem.EnsureDetailsForCurrentKind();
 
         ItemListItemViewModel vm = new(newItem);
         Items.Add(vm);

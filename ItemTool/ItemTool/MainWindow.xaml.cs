@@ -1,8 +1,8 @@
-﻿using ItemTool.App.ViewModels;
+﻿using System.IO;
+using System.Windows;
+using ItemTool.App.ViewModels;
 using ItemTool.Application.Validation;
 using ItemTool.Infrastructure.Persistence;
-using System.IO;
-using System.Windows;
 
 namespace ItemTool.App;
 
@@ -15,10 +15,10 @@ public partial class MainWindow : Window
         string filePath = Path.Combine(
             Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
             "ItemTool",
-            "items.json");
+            "itemtool_project.json");
 
         DataContext = new ItemBrowserViewModel(
-            new JsonItemRepository(filePath),
+            new JsonContentDatabaseRepository(filePath),
             new ItemValidator());
     }
 }
