@@ -7,9 +7,12 @@ public sealed class LootTableListItemViewModel : ViewModelBase
 {
     public LootTableDto LootTable { get; }
 
+    public string? SourceId { get; private set; }
+
     public LootTableListItemViewModel(LootTableDto lootTable)
     {
         LootTable = lootTable;
+        SourceId = lootTable.Id;
 
         LootTable.PropertyChanged += (_, e) =>
         {
@@ -26,6 +29,11 @@ public sealed class LootTableListItemViewModel : ViewModelBase
                 OnPropertyChanged(nameof(Subtitle));
             }
         };
+    }
+
+    public void MarkAsSaved()
+    {
+        SourceId = LootTable.Id;
     }
 
     public string Name
@@ -46,6 +54,7 @@ public sealed class LootTableListItemViewModel : ViewModelBase
         $"{LootTable.Id} · Picks {LootTable.MinRandomPicks}-{LootTable.MaxRandomPicks}";
 
     private ValidationSeverity _severity;
+
     public ValidationSeverity Severity
     {
         get => _severity;

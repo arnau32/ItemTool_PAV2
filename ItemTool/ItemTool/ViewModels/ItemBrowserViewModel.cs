@@ -30,6 +30,7 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
     public ICollectionView FilteredItems { get; }
 
     private ItemListItemViewModel? _selectedListItem;
+
     public ItemListItemViewModel? SelectedListItem
     {
         get => _selectedListItem;
@@ -44,6 +45,7 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
     }
 
     private string _validationSummary = string.Empty;
+
     public string ValidationSummary
     {
         get => _validationSummary;
@@ -75,7 +77,7 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
     public Brush CraftingFilterBrush => ItemVisualTheme.GetItemKindBrush(ItemKind.Crafting);
 
     public Brush CollectableFilterBrush => ItemVisualTheme.GetItemKindBrush(ItemKind.Collectable);
-    
+
     public ItemEditorViewModel Editor { get; } = new();
 
     public Array ItemKinds => Enum.GetValues(typeof(ItemKind));
@@ -139,6 +141,36 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
         _database.Items = Items.Select(x => x.Item).ToList();
 
         await _repository.SaveAsync(_database);
+
+        foreach (ItemListItemViewModel itemVm in Items)
+            itemVm.MarkAsSaved();
+    }
+
+    [RelayCommand]
+    public async Task SaveSelectedItemAsync()
+    {
+        if (SelectedListItem == null)
+            return;
+
+        RefreshValidation();
+
+        List<ItemDto> allItems = Items.Select(x => x.Item).ToList();
+        IReadOnlyList<ValidationIssue> selectedIssues = _validator.Validate(SelectedListItem.Item, allItems);
+
+        if (selectedIssues.Any(x => x.Severity == ValidationSeverity.Error))
+            return;
+
+        ContentDatabaseDto database = await _repository.LoadAsync();
+
+        UpsertItem(
+            database.Items,
+            SelectedListItem.SourceId,
+            SelectedListItem.Item);
+
+        await _repository.SaveAsync(database);
+
+        SelectedListItem.MarkAsSaved();
+        RefreshValidation();
     }
 
     [RelayCommand]
@@ -256,7 +288,7 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
 
         RefreshValidation();
     }
-    
+
     private void NotifyFilterStateChanged()
     {
         OnPropertyChanged(nameof(ActiveFilterText));
@@ -274,7 +306,7 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
         _activeItemKindFilter = kind;
 
         NotifyFilterStateChanged();
-        
+
         FilteredItems.Refresh();
         EnsureSelectedItemIsVisible();
     }
@@ -328,4 +360,40 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
         item.ItemNameId = candidate;
     }
     
+    private static void UpsertItem(
+        List<ItemDto> items,
+        string? sourceId,
+        ItemDto item)
+    {
+        int index = FindItemIndexById(items, sourceId);
+
+        if (index < 0)
+            index = FindItemIndexById(items, item.Id);
+
+        if (index >= 0)
+            items[index] = item;
+        else
+            items.Add(item);
+    }
+
+    private static int FindItemIndexById(
+        IReadOnlyList<ItemDto> items,
+        string? id)
+    {
+        if (string.IsNullOrWhiteSpace(id))
+            return -1;
+
+        string cleanId = id.Trim();
+
+        for (int i = 0; i < items.Count; i++)
+        {
+            if (!string.IsNullOrWhiteSpace(items[i].Id) &&
+                string.Equals(items[i].Id.Trim(), cleanId, StringComparison.OrdinalIgnoreCase))
+            {
+                return i;
+            }
+        }
+
+        return -1;
+    }
 }

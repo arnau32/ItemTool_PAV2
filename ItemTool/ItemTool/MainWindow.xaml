@@ -20,17 +20,26 @@
         </Grid.RowDefinitions>
 
         <!-- Workspace tabs -->
-        <DockPanel Margin="0,0,0,8">
-            <StackPanel DockPanel.Dock="Left" Orientation="Horizontal">
-                <Button
-                    Command="{Binding ShowItemsWorkspaceCommand}"
-                    Content="Items" />
+        <Grid Margin="0,0,0,8">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
 
-                <Button
-                    Command="{Binding ShowLootTablesWorkspaceCommand}"
-                    Content="Loot Tables" />
-            </StackPanel>
-        </DockPanel>
+            <Button
+                Grid.Column="0"
+                Height="30"
+                Margin="0,0,4,0"
+                Command="{Binding ShowItemsWorkspaceCommand}"
+                Content="Items" />
+
+            <Button
+                Grid.Column="1"
+                Height="30"
+                Margin="4,0,0,0"
+                Command="{Binding ShowLootTablesWorkspaceCommand}"
+                Content="Loot Tables" />
+        </Grid>
 
         <!-- Items toolbar -->
         <DockPanel
@@ -38,19 +47,24 @@
             Margin="0,0,0,8"
             Visibility="{Binding IsItemsWorkspaceActive, Converter={StaticResource BoolToVisibilityConverter}}">
 
-            <DockPanel DataContext="{Binding Items}">
+            <DockPanel DataContext="{Binding Items}" LastChildFill="False">
+                <!-- Create buttons LEFT -->
                 <StackPanel DockPanel.Dock="Left" Orientation="Horizontal">
-                    <Button Command="{Binding LoadCommand}" Content="Load" />
-                    <Button Command="{Binding SaveCommand}" Content="Save" />
-                    <Button Command="{Binding RefreshValidationCommand}" Content="Validate" />
-                </StackPanel>
-
-                <StackPanel DockPanel.Dock="Right" HorizontalAlignment="Right" Orientation="Horizontal">
                     <Button Command="{Binding NewEquipmentItemCommand}" Content="+ Equipment" />
                     <Button Command="{Binding NewWeaponItemCommand}" Content="+ Weapon" />
                     <Button Command="{Binding NewConsumableItemCommand}" Content="+ Consumable" />
                     <Button Command="{Binding NewCraftingItemCommand}" Content="+ Crafting" />
                     <Button Command="{Binding NewCollectableItemCommand}" Content="+ Collectable" />
+                </StackPanel>
+
+                <!-- Project actions RIGHT -->
+                <StackPanel
+                    DockPanel.Dock="Right"
+                    HorizontalAlignment="Right"
+                    Orientation="Horizontal">
+                    <Button Command="{Binding LoadCommand}" Content="Load" />
+                    <Button Command="{Binding SaveCommand}" Content="Save All" />
+                    <Button Command="{Binding RefreshValidationCommand}" Content="Validate" />
                 </StackPanel>
             </DockPanel>
         </DockPanel>
@@ -61,15 +75,20 @@
             Margin="0,0,0,8"
             Visibility="{Binding IsLootTablesWorkspaceActive, Converter={StaticResource BoolToVisibilityConverter}}">
 
-            <DockPanel DataContext="{Binding LootTables}">
+            <DockPanel DataContext="{Binding LootTables}" LastChildFill="False">
+                <!-- Create buttons LEFT -->
                 <StackPanel DockPanel.Dock="Left" Orientation="Horizontal">
-                    <Button Command="{Binding LoadCommand}" Content="Load" />
-                    <Button Command="{Binding SaveCommand}" Content="Save" />
-                    <Button Command="{Binding RefreshValidationCommand}" Content="Validate" />
+                    <Button Command="{Binding NewLootTableCommand}" Content="+ Loot Table" />
                 </StackPanel>
 
-                <StackPanel DockPanel.Dock="Right" HorizontalAlignment="Right" Orientation="Horizontal">
-                    <Button Command="{Binding NewLootTableCommand}" Content="+ Loot Table" />
+                <!-- Project actions RIGHT -->
+                <StackPanel
+                    DockPanel.Dock="Right"
+                    HorizontalAlignment="Right"
+                    Orientation="Horizontal">
+                    <Button Command="{Binding LoadCommand}" Content="Load" />
+                    <Button Command="{Binding SaveCommand}" Content="Save All" />
+                    <Button Command="{Binding RefreshValidationCommand}" Content="Validate" />
                 </StackPanel>
             </DockPanel>
         </DockPanel>

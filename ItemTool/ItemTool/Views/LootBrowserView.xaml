@@ -128,7 +128,10 @@
                         Subtitle="{Binding HeaderSubtitle}"
                         TechnicalInfo="{Binding HeaderTechnicalInfo}"
                         BadgeText="{Binding HeaderBadgeText}"
-                        PreviewText="{Binding HeaderPreviewText}" />
+                        PreviewText="{Binding HeaderPreviewText}"
+                        SaveButtonText="Save Loot Table"
+                        SaveButtonVisibility="Visible"
+                        SaveCommand="{Binding SaveSelectedLootTableCommand}" />
 
                     <shared:ToolValidationBox
                         Title="Validation Summary"

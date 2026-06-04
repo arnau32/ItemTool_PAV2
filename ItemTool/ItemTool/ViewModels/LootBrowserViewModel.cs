@@ -93,7 +93,8 @@ public sealed partial class LootBrowserViewModel : ViewModelBase
             int guaranteedCount = SelectedLootTable.GuaranteedEntries?.Count ?? 0;
             int weightedCount = SelectedLootTable.WeightedEntries?.Count ?? 0;
 
-            return $"Guaranteed: {guaranteedCount} · Weighted: {weightedCount} · Picks: {SelectedLootTable.MinRandomPicks}-{SelectedLootTable.MaxRandomPicks}";
+            return
+                $"Guaranteed: {guaranteedCount} · Weighted: {weightedCount} · Picks: {SelectedLootTable.MinRandomPicks}-{SelectedLootTable.MaxRandomPicks}";
         }
     }
 
@@ -138,6 +139,42 @@ public sealed partial class LootBrowserViewModel : ViewModelBase
         database.LootTables = LootTables.Select(x => x.LootTable).ToList();
 
         await _repository.SaveAsync(database);
+
+        foreach (LootTableListItemViewModel lootTableVm in LootTables)
+            lootTableVm.MarkAsSaved();
+    }
+
+    [RelayCommand]
+    public async Task SaveSelectedLootTableAsync()
+    {
+        if (SelectedListItem == null || SelectedLootTable == null)
+            return;
+
+        RefreshValidation();
+
+        List<LootTableDto> allLootTables = LootTables
+            .Select(x => x.LootTable)
+            .ToList();
+
+        IReadOnlyList<ValidationIssue> selectedIssues = ValidateLootTable(
+            SelectedLootTable,
+            allLootTables);
+
+        if (selectedIssues.Any(x => x.Severity == ValidationSeverity.Error))
+            return;
+
+        ContentDatabaseDto database = await _repository.LoadAsync();
+
+        UpsertLootTable(
+            database.LootTables,
+            SelectedListItem.SourceId,
+            SelectedLootTable);
+
+        await _repository.SaveAsync(database);
+
+        SelectedListItem.MarkAsSaved();
+        RefreshAvailableLootTableIds();
+        RefreshValidation();
     }
 
     [RelayCommand]
@@ -398,6 +435,7 @@ public sealed partial class LootBrowserViewModel : ViewModelBase
                     {
                         issues.Add(Error($"{prefix}: Item Id is required."));
                     }
+
                     break;
 
                 case LootEntryType.LootTable:
@@ -408,7 +446,8 @@ public sealed partial class LootBrowserViewModel : ViewModelBase
                     else
                     {
                         bool referencesSelf = !string.IsNullOrWhiteSpace(owner.Id) &&
-                            string.Equals(owner.Id.Trim(), entry.NestedLootTableId.Trim(), StringComparison.OrdinalIgnoreCase);
+                                              string.Equals(owner.Id.Trim(), entry.NestedLootTableId.Trim(),
+                                                  StringComparison.OrdinalIgnoreCase);
 
                         if (referencesSelf)
                         {
@@ -417,13 +456,16 @@ public sealed partial class LootBrowserViewModel : ViewModelBase
 
                         bool exists = allLootTables.Any(x =>
                             !string.IsNullOrWhiteSpace(x.Id) &&
-                            string.Equals(x.Id.Trim(), entry.NestedLootTableId.Trim(), StringComparison.OrdinalIgnoreCase));
+                            string.Equals(x.Id.Trim(), entry.NestedLootTableId.Trim(),
+                                StringComparison.OrdinalIgnoreCase));
 
                         if (!exists)
                         {
-                            issues.Add(Error($"{prefix}: Nested Loot Table \"{entry.NestedLootTableId}\" does not exist."));
+                            issues.Add(Error(
+                                $"{prefix}: Nested Loot Table \"{entry.NestedLootTableId}\" does not exist."));
                         }
                     }
+
                     break;
             }
 
@@ -516,5 +558,42 @@ public sealed partial class LootBrowserViewModel : ViewModelBase
             Severity = ValidationSeverity.Warning,
             Message = message
         };
+    }
+    
+    private static void UpsertLootTable(
+        List<LootTableDto> lootTables,
+        string? sourceId,
+        LootTableDto lootTable)
+    {
+        int index = FindLootTableIndexById(lootTables, sourceId);
+
+        if (index < 0)
+            index = FindLootTableIndexById(lootTables, lootTable.Id);
+
+        if (index >= 0)
+            lootTables[index] = lootTable;
+        else
+            lootTables.Add(lootTable);
+    }
+
+    private static int FindLootTableIndexById(
+        IReadOnlyList<LootTableDto> lootTables,
+        string? id)
+    {
+        if (string.IsNullOrWhiteSpace(id))
+            return -1;
+
+        string cleanId = id.Trim();
+
+        for (int i = 0; i < lootTables.Count; i++)
+        {
+            if (!string.IsNullOrWhiteSpace(lootTables[i].Id) &&
+                string.Equals(lootTables[i].Id.Trim(), cleanId, StringComparison.OrdinalIgnoreCase))
+            {
+                return i;
+            }
+        }
+
+        return -1;
     }
 }

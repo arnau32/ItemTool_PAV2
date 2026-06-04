@@ -22,7 +22,10 @@
                     PreviewText="{Binding HeaderPreviewText}"
                     AccentBrush="{Binding HeaderKindBrush}"
                     BadgeBackground="{Binding HeaderKindBrush}"
-                    PreviewBackground="{Binding HeaderRarityBrush}" />
+                    PreviewBackground="{Binding HeaderRarityBrush}"
+                    SaveButtonText="Save Item"
+                    SaveButtonVisibility="Visible"
+                    SaveCommand="{Binding DataContext.Items.SaveSelectedItemCommand, RelativeSource={RelativeSource AncestorType=Window}}" />
 
                 <!-- Validation -->
                 <shared:ToolValidationBox
@@ -54,7 +57,7 @@
 
                 <!-- Collectable -->
                 <itemEditor:CollectableSection />
-                
+
             </StackPanel>
         </ScrollViewer>
     </Border>

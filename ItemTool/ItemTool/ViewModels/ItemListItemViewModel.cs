@@ -9,9 +9,12 @@ public sealed class ItemListItemViewModel : ViewModelBase
 {
     public ItemDto Item { get; }
 
+    public string? SourceId { get; private set; }
+
     public ItemListItemViewModel(ItemDto item)
     {
         Item = item;
+        SourceId = item.Id;
 
         Item.PropertyChanged += (_, e) =>
         {
@@ -36,6 +39,11 @@ public sealed class ItemListItemViewModel : ViewModelBase
                 OnPropertyChanged(nameof(RarityBrush));
             }
         };
+    }
+
+    public void MarkAsSaved()
+    {
+        SourceId = Item.Id;
     }
 
     public string Name
@@ -73,6 +81,7 @@ public sealed class ItemListItemViewModel : ViewModelBase
     }
 
     private ValidationSeverity _severity;
+
     public ValidationSeverity Severity
     {
         get => _severity;
