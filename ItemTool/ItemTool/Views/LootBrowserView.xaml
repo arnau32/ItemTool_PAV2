@@ -42,62 +42,62 @@
                     SelectedItem="{Binding SelectedListItem}">
 
                     <ListBox.ItemTemplate>
-<DataTemplate>
-    <Grid Margin="2">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="26" />
-        </Grid.ColumnDefinitions>
+                        <DataTemplate>
+                            <Grid Margin="2">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="26" />
+                                </Grid.ColumnDefinitions>
 
-        <StackPanel Grid.Column="0">
-            <TextBlock FontWeight="Bold" Text="{Binding Name}" />
-            <TextBlock
-                FontSize="11"
-                Opacity="0.7"
-                Text="{Binding Subtitle}" />
-        </StackPanel>
+                                <StackPanel Grid.Column="0">
+                                    <TextBlock FontWeight="Bold" Text="{Binding Name}" />
+                                    <TextBlock
+                                        FontSize="11"
+                                        Opacity="0.7"
+                                        Text="{Binding Subtitle}" />
+                                </StackPanel>
 
-        <!-- Severity badge: always right slot -->
-        <Border
-            Grid.Column="1"
-            Width="18"
-            Height="18"
-            HorizontalAlignment="Right"
-            VerticalAlignment="Center"
-            CornerRadius="9">
+                                <!-- Severity badge: always right slot -->
+                                <Border
+                                    Grid.Column="1"
+                                    Width="18"
+                                    Height="18"
+                                    HorizontalAlignment="Right"
+                                    VerticalAlignment="Center"
+                                    CornerRadius="9">
 
-            <Border.Style>
-                <Style TargetType="Border">
-                    <Setter Property="Visibility" Value="Hidden" />
-                    <Setter Property="Background" Value="#666666" />
+                                    <Border.Style>
+                                        <Style TargetType="Border">
+                                            <Setter Property="Visibility" Value="Hidden" />
+                                            <Setter Property="Background" Value="#666666" />
 
-                    <Style.Triggers>
-                        <DataTrigger Binding="{Binding Severity}"
-                                     Value="{x:Static validation:ValidationSeverity.Warning}">
-                            <Setter Property="Visibility" Value="Visible" />
-                            <Setter Property="Background" Value="#D6A700" />
-                        </DataTrigger>
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding Severity}"
+                                                             Value="{x:Static validation:ValidationSeverity.Warning}">
+                                                    <Setter Property="Visibility" Value="Visible" />
+                                                    <Setter Property="Background" Value="#D6A700" />
+                                                </DataTrigger>
 
-                        <DataTrigger Binding="{Binding Severity}"
-                                     Value="{x:Static validation:ValidationSeverity.Error}">
-                            <Setter Property="Visibility" Value="Visible" />
-                            <Setter Property="Background" Value="#C0392B" />
-                        </DataTrigger>
-                    </Style.Triggers>
-                </Style>
-            </Border.Style>
+                                                <DataTrigger Binding="{Binding Severity}"
+                                                             Value="{x:Static validation:ValidationSeverity.Error}">
+                                                    <Setter Property="Visibility" Value="Visible" />
+                                                    <Setter Property="Background" Value="#C0392B" />
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Border.Style>
 
-            <TextBlock
-                Margin="0"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Center"
-                FontSize="12"
-                FontWeight="Bold"
-                Foreground="White"
-                Text="!" />
-        </Border>
-    </Grid>
-</DataTemplate>
+                                    <TextBlock
+                                        Margin="0"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        FontSize="12"
+                                        FontWeight="Bold"
+                                        Foreground="White"
+                                        Text="!" />
+                                </Border>
+                            </Grid>
+                        </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>
             </Grid>
@@ -176,10 +176,238 @@
                         </Grid>
                     </shared:ToolSection>
 
-                    <shared:ToolSection SectionTitle="Entries">
-                        <TextBlock
-                            Opacity="0.75"
-                            Text="Guaranteed and weighted entries will be implemented in the next step." />
+                    <shared:ToolSection SectionTitle="Guaranteed Entries">
+                        <StackPanel>
+                            <StackPanel Margin="0,0,0,8" Orientation="Horizontal">
+                                <Button Command="{Binding AddGuaranteedItemEntryCommand}" Content="+ Item" />
+                                <Button Command="{Binding AddGuaranteedLootTableEntryCommand}" Content="+ Loot Table" />
+                                <Button Command="{Binding ClearGuaranteedEntriesCommand}" Content="Clear" />
+                            </StackPanel>
+
+                            <Grid Margin="8,0,8,4">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="110" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="80" />
+                                    <ColumnDefinition Width="80" />
+                                    <ColumnDefinition Width="160" />
+                                    <ColumnDefinition Width="120" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Grid.Column="0" FontSize="11" FontWeight="Bold" Opacity="0.75" Text="Type" />
+                                <TextBlock Grid.Column="1" FontSize="11" FontWeight="Bold" Opacity="0.75"
+                                           Text="Item Id" />
+                                <TextBlock Grid.Column="2" FontSize="11" FontWeight="Bold" Opacity="0.75"
+                                           Text="Loot Table Id" />
+                                <TextBlock Grid.Column="3" FontSize="11" FontWeight="Bold" Opacity="0.75"
+                                           Text="Min Qty" />
+                                <TextBlock Grid.Column="4" FontSize="11" FontWeight="Bold" Opacity="0.75"
+                                           Text="Max Qty" />
+                                <TextBlock Grid.Column="5" FontSize="11" FontWeight="Bold" Opacity="0.75"
+                                           Text="Override Mode" />
+                                <TextBlock Grid.Column="6" FontSize="11" FontWeight="Bold" Opacity="0.75" Text="Rarity" />
+                                <TextBlock Grid.Column="7" FontSize="11" FontWeight="Bold" Opacity="0.75" Text="" />
+                            </Grid>
+
+                            <ItemsControl ItemsSource="{Binding SelectedLootTable.GuaranteedEntries}">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <Border
+                                            Margin="0,0,0,6"
+                                            Padding="8"
+                                            Background="#252525"
+                                            BorderBrush="#444444"
+                                            BorderThickness="1">
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="110" />
+                                                    <ColumnDefinition Width="*" />
+                                                    <ColumnDefinition Width="*" />
+                                                    <ColumnDefinition Width="80" />
+                                                    <ColumnDefinition Width="80" />
+                                                    <ColumnDefinition Width="160" />
+                                                    <ColumnDefinition Width="120" />
+                                                    <ColumnDefinition Width="Auto" />
+                                                </Grid.ColumnDefinitions>
+
+                                                <ComboBox
+                                                    Grid.Column="0"
+                                                    Margin="0,0,6,0"
+                                                    ItemsSource="{Binding DataContext.EntryTypes, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                                    SelectedItem="{Binding EntryType, UpdateSourceTrigger=PropertyChanged}" />
+
+                                                <ComboBox
+                                                    Grid.Column="1"
+                                                    Margin="0,0,6,0"
+                                                    IsEditable="True"
+                                                    ItemsSource="{Binding DataContext.AvailableItemIds, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                                    SelectedItem="{Binding ItemId, UpdateSourceTrigger=PropertyChanged}"
+                                                    Text="{Binding ItemId, UpdateSourceTrigger=PropertyChanged}" />
+
+                                                <ComboBox
+                                                    Grid.Column="2"
+                                                    Margin="0,0,6,0"
+                                                    IsEditable="True"
+                                                    ItemsSource="{Binding DataContext.AvailableLootTableIds, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                                    SelectedItem="{Binding NestedLootTableId, UpdateSourceTrigger=PropertyChanged}"
+                                                    Text="{Binding NestedLootTableId, UpdateSourceTrigger=PropertyChanged}" />
+
+                                                <TextBox
+                                                    Grid.Column="3"
+                                                    Margin="0,0,6,0"
+                                                    Text="{Binding MinQuantity, UpdateSourceTrigger=PropertyChanged}" />
+
+                                                <TextBox
+                                                    Grid.Column="4"
+                                                    Margin="0,0,6,0"
+                                                    Text="{Binding MaxQuantity, UpdateSourceTrigger=PropertyChanged}" />
+
+                                                <ComboBox
+                                                    Grid.Column="5"
+                                                    Margin="0,0,6,0"
+                                                    ItemsSource="{Binding DataContext.EquipableOverrideModes, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                                    SelectedItem="{Binding EquipableOverrideMode, UpdateSourceTrigger=PropertyChanged}" />
+
+                                                <ComboBox
+                                                    Grid.Column="6"
+                                                    Margin="0,0,6,0"
+                                                    ItemsSource="{Binding DataContext.ItemRarities, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                                    SelectedItem="{Binding OverrideFixedRarity, UpdateSourceTrigger=PropertyChanged}" />
+
+                                                <Button
+                                                    Grid.Column="7"
+                                                    Command="{Binding DataContext.RemoveGuaranteedEntryCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                                    CommandParameter="{Binding}"
+                                                    Content="X" />
+                                            </Grid>
+                                        </Border>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </StackPanel>
+                    </shared:ToolSection>
+
+                    <shared:ToolSection SectionTitle="Weighted Entries">
+                        <StackPanel>
+                            <StackPanel Margin="0,0,0,8" Orientation="Horizontal">
+                                <Button Command="{Binding AddWeightedItemEntryCommand}" Content="+ Item" />
+                                <Button Command="{Binding AddWeightedLootTableEntryCommand}" Content="+ Loot Table" />
+                                <Button Command="{Binding ClearWeightedEntriesCommand}" Content="Clear" />
+                            </StackPanel>
+
+                            <Grid Margin="8,0,8,4">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="110" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="80" />
+                                    <ColumnDefinition Width="80" />
+                                    <ColumnDefinition Width="80" />
+                                    <ColumnDefinition Width="160" />
+                                    <ColumnDefinition Width="120" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Grid.Column="0" FontSize="11" FontWeight="Bold" Opacity="0.75" Text="Type" />
+                                <TextBlock Grid.Column="1" FontSize="11" FontWeight="Bold" Opacity="0.75"
+                                           Text="Item Id" />
+                                <TextBlock Grid.Column="2" FontSize="11" FontWeight="Bold" Opacity="0.75"
+                                           Text="Loot Table Id" />
+                                <TextBlock Grid.Column="3" FontSize="11" FontWeight="Bold" Opacity="0.75"
+                                           Text="Min Qty" />
+                                <TextBlock Grid.Column="4" FontSize="11" FontWeight="Bold" Opacity="0.75"
+                                           Text="Max Qty" />
+                                <TextBlock Grid.Column="5" FontSize="11" FontWeight="Bold" Opacity="0.75" Text="Weight" />
+                                <TextBlock Grid.Column="6" FontSize="11" FontWeight="Bold" Opacity="0.75"
+                                           Text="Override Mode" />
+                                <TextBlock Grid.Column="7" FontSize="11" FontWeight="Bold" Opacity="0.75" Text="Rarity" />
+                                <TextBlock Grid.Column="8" FontSize="11" FontWeight="Bold" Opacity="0.75" Text="" />
+                            </Grid>
+
+                            <ItemsControl ItemsSource="{Binding SelectedLootTable.WeightedEntries}">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <Border
+                                            Margin="0,0,0,6"
+                                            Padding="8"
+                                            Background="#252525"
+                                            BorderBrush="#444444"
+                                            BorderThickness="1">
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="110" />
+                                                    <ColumnDefinition Width="*" />
+                                                    <ColumnDefinition Width="*" />
+                                                    <ColumnDefinition Width="80" />
+                                                    <ColumnDefinition Width="80" />
+                                                    <ColumnDefinition Width="80" />
+                                                    <ColumnDefinition Width="160" />
+                                                    <ColumnDefinition Width="120" />
+                                                    <ColumnDefinition Width="Auto" />
+                                                </Grid.ColumnDefinitions>
+
+                                                <ComboBox
+                                                    Grid.Column="0"
+                                                    Margin="0,0,6,0"
+                                                    ItemsSource="{Binding DataContext.EntryTypes, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                                    SelectedItem="{Binding EntryType, UpdateSourceTrigger=PropertyChanged}" />
+
+                                                <ComboBox
+                                                    Grid.Column="1"
+                                                    Margin="0,0,6,0"
+                                                    IsEditable="True"
+                                                    ItemsSource="{Binding DataContext.AvailableItemIds, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                                    SelectedItem="{Binding ItemId, UpdateSourceTrigger=PropertyChanged}"
+                                                    Text="{Binding ItemId, UpdateSourceTrigger=PropertyChanged}" />
+
+                                                <ComboBox
+                                                    Grid.Column="2"
+                                                    Margin="0,0,6,0"
+                                                    IsEditable="True"
+                                                    ItemsSource="{Binding DataContext.AvailableLootTableIds, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                                    SelectedItem="{Binding NestedLootTableId, UpdateSourceTrigger=PropertyChanged}"
+                                                    Text="{Binding NestedLootTableId, UpdateSourceTrigger=PropertyChanged}" />
+
+                                                <TextBox
+                                                    Grid.Column="3"
+                                                    Margin="0,0,6,0"
+                                                    Text="{Binding MinQuantity, UpdateSourceTrigger=PropertyChanged}" />
+
+                                                <TextBox
+                                                    Grid.Column="4"
+                                                    Margin="0,0,6,0"
+                                                    Text="{Binding MaxQuantity, UpdateSourceTrigger=PropertyChanged}" />
+
+                                                <TextBox
+                                                    Grid.Column="5"
+                                                    Margin="0,0,6,0"
+                                                    Text="{Binding Weight, UpdateSourceTrigger=PropertyChanged}" />
+
+                                                <ComboBox
+                                                    Grid.Column="6"
+                                                    Margin="0,0,6,0"
+                                                    ItemsSource="{Binding DataContext.EquipableOverrideModes, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                                    SelectedItem="{Binding EquipableOverrideMode, UpdateSourceTrigger=PropertyChanged}" />
+
+                                                <ComboBox
+                                                    Grid.Column="7"
+                                                    Margin="0,0,6,0"
+                                                    ItemsSource="{Binding DataContext.ItemRarities, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                                    SelectedItem="{Binding OverrideFixedRarity, UpdateSourceTrigger=PropertyChanged}" />
+
+                                                <Button
+                                                    Grid.Column="8"
+                                                    Command="{Binding DataContext.RemoveWeightedEntryCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                                    CommandParameter="{Binding}"
+                                                    Content="X" />
+                                            </Grid>
+                                        </Border>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </StackPanel>
                     </shared:ToolSection>
 
                     <shared:ToolSection SectionTitle="Simulation">

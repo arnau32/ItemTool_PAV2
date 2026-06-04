@@ -1,9 +1,12 @@
+using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.Input;
 using ItemTool.Application.Abstractions;
 using ItemTool.Application.DTOs;
+using ItemTool.Domain.Enums;
 using ItemTool.Domain.Validation;
 
 namespace ItemTool.App.ViewModels;
@@ -21,6 +24,16 @@ public sealed partial class LootBrowserViewModel : ViewModelBase
 
     public ObservableCollection<LootTableListItemViewModel> LootTables { get; } = new();
 
+    public ObservableCollection<string> AvailableItemIds { get; } = new();
+
+    public ObservableCollection<string> AvailableLootTableIds { get; } = new();
+
+    public Array EntryTypes => Enum.GetValues(typeof(LootEntryType));
+
+    public Array EquipableOverrideModes => Enum.GetValues(typeof(LootEntryEquipableOverrideMode));
+
+    public Array ItemRarities => Enum.GetValues(typeof(ItemRarity));
+
     public LootTableListItemViewModel? SelectedListItem
     {
         get => _selectedListItem;
@@ -31,6 +44,7 @@ public sealed partial class LootBrowserViewModel : ViewModelBase
                 OnPropertyChanged(nameof(SelectedLootTable));
                 OnPropertyChanged(nameof(HasSelectedLootTable));
                 NotifyHeaderChanged();
+                RefreshValidation();
             }
         }
     }
@@ -92,6 +106,16 @@ public sealed partial class LootBrowserViewModel : ViewModelBase
     {
         ContentDatabaseDto database = await _repository.LoadAsync();
 
+        AvailableItemIds.Clear();
+        foreach (string itemId in database.Items
+                     .Select(x => x.Id)
+                     .Where(x => !string.IsNullOrWhiteSpace(x))
+                     .Distinct(StringComparer.OrdinalIgnoreCase)
+                     .OrderBy(x => x))
+        {
+            AvailableItemIds.Add(itemId);
+        }
+
         LootTables.Clear();
 
         foreach (LootTableDto lootTable in database.LootTables)
@@ -100,6 +124,8 @@ public sealed partial class LootBrowserViewModel : ViewModelBase
             SubscribeToLootTable(lootTable);
             LootTables.Add(new LootTableListItemViewModel(lootTable));
         }
+
+        RefreshAvailableLootTableIds();
 
         SelectedListItem = LootTables.FirstOrDefault();
         RefreshValidation();
@@ -130,9 +156,91 @@ public sealed partial class LootBrowserViewModel : ViewModelBase
 
         LootTableListItemViewModel vm = new(lootTable);
         LootTables.Add(vm);
-        SelectedListItem = vm;
 
+        RefreshAvailableLootTableIds();
+
+        SelectedListItem = vm;
         RefreshValidation();
+    }
+
+    [RelayCommand]
+    public void AddGuaranteedItemEntry()
+    {
+        if (SelectedLootTable == null)
+            return;
+
+        SelectedLootTable.GuaranteedEntries.Add(CreateItemEntry());
+        NotifyLootEntriesChanged();
+    }
+
+    [RelayCommand]
+    public void AddGuaranteedLootTableEntry()
+    {
+        if (SelectedLootTable == null)
+            return;
+
+        SelectedLootTable.GuaranteedEntries.Add(CreateNestedLootTableEntry());
+        NotifyLootEntriesChanged();
+    }
+
+    [RelayCommand]
+    public void AddWeightedItemEntry()
+    {
+        if (SelectedLootTable == null)
+            return;
+
+        SelectedLootTable.WeightedEntries.Add(CreateItemEntry());
+        NotifyLootEntriesChanged();
+    }
+
+    [RelayCommand]
+    public void AddWeightedLootTableEntry()
+    {
+        if (SelectedLootTable == null)
+            return;
+
+        SelectedLootTable.WeightedEntries.Add(CreateNestedLootTableEntry());
+        NotifyLootEntriesChanged();
+    }
+
+    [RelayCommand]
+    public void RemoveGuaranteedEntry(LootEntryDto? entry)
+    {
+        if (SelectedLootTable == null || entry == null)
+            return;
+
+        SelectedLootTable.GuaranteedEntries.Remove(entry);
+        NotifyLootEntriesChanged();
+    }
+
+    [RelayCommand]
+    public void RemoveWeightedEntry(LootEntryDto? entry)
+    {
+        if (SelectedLootTable == null || entry == null)
+            return;
+
+        SelectedLootTable.WeightedEntries.Remove(entry);
+        NotifyLootEntriesChanged();
+    }
+
+    [RelayCommand]
+    public void ClearGuaranteedEntries()
+    {
+        if (SelectedLootTable == null)
+            return;
+
+        SelectedLootTable.GuaranteedEntries.Clear();
+        NotifyLootEntriesChanged();
+    }
+
+    [RelayCommand]
+    public void ClearWeightedEntries()
+    {
+        if (SelectedLootTable == null)
+            return;
+
+        SelectedLootTable.WeightedEntries.Clear();
+        NotifyLootEntriesChanged();
     }
 
     [RelayCommand]
@@ -166,7 +274,42 @@ public sealed partial class LootBrowserViewModel : ViewModelBase
 
         OnPropertyChanged(nameof(ValidationSummary));
     }
-    
+
+    private LootEntryDto CreateItemEntry()
+    {
+        return new LootEntryDto
+        {
+            EntryType = LootEntryType.Item,
+            ItemId = AvailableItemIds.FirstOrDefault(),
+            MinQuantity = 1,
+            MaxQuantity = 1,
+            Weight = 1,
+            EquipableOverrideMode = LootEntryEquipableOverrideMode.None,
+            OverrideFixedRarity = ItemRarity.Common
+        };
+    }
+
+    private LootEntryDto CreateNestedLootTableEntry()
+    {
+        return new LootEntryDto
+        {
+            EntryType = LootEntryType.LootTable,
+            NestedLootTableId = AvailableLootTableIds
+                .FirstOrDefault(x => !string.Equals(x, SelectedLootTable?.Id, StringComparison.OrdinalIgnoreCase)),
+            MinQuantity = 1,
+            MaxQuantity = 1,
+            Weight = 1,
+            EquipableOverrideMode = LootEntryEquipableOverrideMode.None,
+            OverrideFixedRarity = ItemRarity.Common
+        };
+    }
+
+    private void NotifyLootEntriesChanged()
+    {
+        NotifyHeaderChanged();
+        RefreshValidation();
+    }
+
     private static IReadOnlyList<ValidationIssue> ValidateLootTable(
         LootTableDto lootTable,
         IReadOnlyList<LootTableDto> allLootTables)
@@ -189,44 +332,103 @@ public sealed partial class LootBrowserViewModel : ViewModelBase
         }
 
         if (string.IsNullOrWhiteSpace(lootTable.Name))
-        {
             issues.Add(Warning("Loot table Name is empty."));
-        }
 
         if (lootTable.MinRandomPicks < 0)
-        {
             issues.Add(Error("Min Random Picks cannot be negative."));
-        }
 
         if (lootTable.MaxRandomPicks < 0)
-        {
             issues.Add(Error("Max Random Picks cannot be negative."));
-        }
 
         if (lootTable.MaxRandomPicks < lootTable.MinRandomPicks)
-        {
             issues.Add(Error("Max Random Picks cannot be lower than Min Random Picks."));
-        }
+
+        ValidateEntries(
+            lootTable,
+            allLootTables,
+            lootTable.GuaranteedEntries,
+            "Guaranteed",
+            requiresWeight: false,
+            issues);
+
+        ValidateEntries(
+            lootTable,
+            allLootTables,
+            lootTable.WeightedEntries,
+            "Weighted",
+            requiresWeight: true,
+            issues);
+
+        if (lootTable.MaxRandomPicks > 0 && lootTable.WeightedEntries.Count == 0)
+            issues.Add(Warning("Random picks are configured, but there are no weighted entries."));
 
         return issues;
     }
 
-    private static ValidationIssue Error(string message)
+    private static void ValidateEntries(
+        LootTableDto owner,
+        IReadOnlyList<LootTableDto> allLootTables,
+        IEnumerable<LootEntryDto> entries,
+        string groupName,
+        bool requiresWeight,
+        List<ValidationIssue> issues)
     {
-        return new ValidationIssue
-        {
-            Severity = ValidationSeverity.Error,
-            Message = message
-        };
-    }
+        int index = 1;
 
-    private static ValidationIssue Warning(string message)
-    {
-        return new ValidationIssue
+        foreach (LootEntryDto entry in entries)
         {
-            Severity = ValidationSeverity.Warning,
-            Message = message
-        };
+            string prefix = $"{groupName} entry #{index}";
+
+            if (entry.MinQuantity < 1)
+                issues.Add(Error($"{prefix}: Min Quantity must be at least 1."));
+
+            if (entry.MaxQuantity < 1)
+                issues.Add(Error($"{prefix}: Max Quantity must be at least 1."));
+
+            if (entry.MaxQuantity < entry.MinQuantity)
+                issues.Add(Error($"{prefix}: Max Quantity cannot be lower than Min Quantity."));
+
+            if (requiresWeight && entry.Weight <= 0)
+                issues.Add(Error($"{prefix}: Weight must be greater than 0."));
+
+            switch (entry.EntryType)
+            {
+                case LootEntryType.Item:
+                    if (string.IsNullOrWhiteSpace(entry.ItemId))
+                    {
+                        issues.Add(Error($"{prefix}: Item Id is required."));
+                    }
+                    break;
+
+                case LootEntryType.LootTable:
+                    if (string.IsNullOrWhiteSpace(entry.NestedLootTableId))
+                    {
+                        issues.Add(Error($"{prefix}: Nested Loot Table Id is required."));
+                    }
+                    else
+                    {
+                        bool referencesSelf = !string.IsNullOrWhiteSpace(owner.Id) &&
+                            string.Equals(owner.Id.Trim(), entry.NestedLootTableId.Trim(), StringComparison.OrdinalIgnoreCase);
+
+                        if (referencesSelf)
+                        {
+                            issues.Add(Error($"{prefix}: A loot table cannot reference itself."));
+                        }
+
+                        bool exists = allLootTables.Any(x =>
+                            !string.IsNullOrWhiteSpace(x.Id) &&
+                            string.Equals(x.Id.Trim(), entry.NestedLootTableId.Trim(), StringComparison.OrdinalIgnoreCase));
+
+                        if (!exists)
+                        {
+                            issues.Add(Error($"{prefix}: Nested Loot Table \"{entry.NestedLootTableId}\" does not exist."));
+                        }
+                    }
+                    break;
+            }
+
+            index++;
+        }
     }
 
     private string GenerateUniqueId(string baseId)
@@ -258,6 +460,9 @@ public sealed partial class LootBrowserViewModel : ViewModelBase
     {
         lootTable.PropertyChanged += (_, e) =>
         {
+            if (e.PropertyName == nameof(LootTableDto.Id))
+                RefreshAvailableLootTableIds();
+
             if (SelectedLootTable != lootTable)
                 return;
 
@@ -272,6 +477,20 @@ public sealed partial class LootBrowserViewModel : ViewModelBase
         };
     }
 
+    private void RefreshAvailableLootTableIds()
+    {
+        AvailableLootTableIds.Clear();
+
+        foreach (string id in LootTables
+                     .Select(x => x.LootTable.Id)
+                     .Where(x => !string.IsNullOrWhiteSpace(x))
+                     .Distinct(StringComparer.OrdinalIgnoreCase)
+                     .OrderBy(x => x))
+        {
+            AvailableLootTableIds.Add(id);
+        }
+    }
+
     private void NotifyHeaderChanged()
     {
         OnPropertyChanged(nameof(HeaderTitle));
@@ -279,5 +498,23 @@ public sealed partial class LootBrowserViewModel : ViewModelBase
         OnPropertyChanged(nameof(HeaderTechnicalInfo));
         OnPropertyChanged(nameof(HeaderBadgeText));
         OnPropertyChanged(nameof(HeaderPreviewText));
+    }
+
+    private static ValidationIssue Error(string message)
+    {
+        return new ValidationIssue
+        {
+            Severity = ValidationSeverity.Error,
+            Message = message
+        };
+    }
+
+    private static ValidationIssue Warning(string message)
+    {
+        return new ValidationIssue
+        {
+            Severity = ValidationSeverity.Warning,
+            Message = message
+        };
     }
 }
