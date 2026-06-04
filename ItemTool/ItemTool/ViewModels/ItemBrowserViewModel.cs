@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Windows.Data;
 using CommunityToolkit.Mvvm.Input;
 using ItemTool.Application.Abstractions;
 using ItemTool.Application.DTOs;
@@ -20,8 +22,11 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
     private readonly ItemFactory _itemFactory;
 
     private ContentDatabaseDto _database = new();
+    private ItemKind? _activeItemKindFilter;
 
     public ObservableCollection<ItemListItemViewModel> Items { get; } = new();
+
+    public ICollectionView FilteredItems { get; }
 
     private ItemListItemViewModel? _selectedListItem;
     public ItemListItemViewModel? SelectedListItem
@@ -52,6 +57,8 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
         set => SetProperty(ref _dimensionPreviewText, value);
     }
 
+    public string ActiveFilterText => _activeItemKindFilter?.ToString() ?? "All";
+
     public ItemEditorViewModel Editor { get; } = new();
 
     public Array ItemKinds => Enum.GetValues(typeof(ItemKind));
@@ -73,6 +80,9 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
         _repository = repository;
         _validator = validator;
         _itemFactory = itemFactory;
+
+        FilteredItems = CollectionViewSource.GetDefaultView(Items);
+        FilteredItems.Filter = FilterItem;
 
         Editor.ItemChanged += OnEditorItemChanged;
     }
@@ -96,11 +106,14 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
             Items.Add(new ItemListItemViewModel(item));
         }
 
-        if (Items.Count > 0)
-            SelectedListItem = Items[0];
-        else
+        FilteredItems.Refresh();
+
+        SelectedListItem = FilteredItems
+            .Cast<ItemListItemViewModel>()
+            .FirstOrDefault();
+
+        if (SelectedListItem == null)
         {
-            SelectedListItem = null;
             RefreshValidation();
             RefreshDimensionPreview();
         }
@@ -117,7 +130,7 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
     [RelayCommand]
     public void NewItem()
     {
-        CreateItem(ItemKind.Equipment);
+        CreateItem(_activeItemKindFilter ?? ItemKind.Equipment);
     }
 
     [RelayCommand]
@@ -148,6 +161,42 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
     public void NewCollectableItem()
     {
         CreateItem(ItemKind.Collectable);
+    }
+
+    [RelayCommand]
+    public void ShowAllItems()
+    {
+        SetItemKindFilter(null);
+    }
+
+    [RelayCommand]
+    public void ShowEquipmentItems()
+    {
+        SetItemKindFilter(ItemKind.Equipment);
+    }
+
+    [RelayCommand]
+    public void ShowWeaponItems()
+    {
+        SetItemKindFilter(ItemKind.Weapon);
+    }
+
+    [RelayCommand]
+    public void ShowConsumableItems()
+    {
+        SetItemKindFilter(ItemKind.Consumable);
+    }
+
+    [RelayCommand]
+    public void ShowCraftingItems()
+    {
+        SetItemKindFilter(ItemKind.Crafting);
+    }
+
+    [RelayCommand]
+    public void ShowCollectableItems()
+    {
+        SetItemKindFilter(ItemKind.Collectable);
     }
 
     [RelayCommand]
@@ -183,10 +232,51 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
 
         ItemListItemViewModel vm = new(newItem);
         Items.Add(vm);
+
+        if (_activeItemKindFilter != kind)
+            SetItemKindFilter(kind);
+        else
+            FilteredItems.Refresh();
+
         SelectedListItem = vm;
 
         RefreshValidation();
         RefreshDimensionPreview();
+    }
+
+    private void SetItemKindFilter(ItemKind? kind)
+    {
+        _activeItemKindFilter = kind;
+
+        OnPropertyChanged(nameof(ActiveFilterText));
+
+        FilteredItems.Refresh();
+        EnsureSelectedItemIsVisible();
+    }
+
+    private bool FilterItem(object item)
+    {
+        if (item is not ItemListItemViewModel itemVm)
+            return false;
+
+        return _activeItemKindFilter == null ||
+               itemVm.Item.ItemKind == _activeItemKindFilter.Value;
+    }
+
+    private void EnsureSelectedItemIsVisible()
+    {
+        if (SelectedListItem != null && FilterItem(SelectedListItem))
+            return;
+
+        SelectedListItem = FilteredItems
+            .Cast<ItemListItemViewModel>()
+            .FirstOrDefault();
+
+        if (SelectedListItem == null)
+        {
+            RefreshValidation();
+            RefreshDimensionPreview();
+        }
     }
 
     private void MakeItemIdUnique(ItemDto item)
