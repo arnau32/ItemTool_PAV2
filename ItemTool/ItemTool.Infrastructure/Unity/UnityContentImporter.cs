@@ -26,28 +26,74 @@ public sealed class UnityContentImporter : IUnityContentImporter
             assetsPath,
             cancellationToken);
 
+        List<string> assetPaths = EnumerateAssetFiles(assetsPath).ToList();
+
+        Dictionary<string, string> itemIdByUnityPath = new(StringComparer.OrdinalIgnoreCase);
+        Dictionary<string, string> lootTableIdByUnityPath = new(StringComparer.OrdinalIgnoreCase);
+
+        BuildReferenceIdMaps(
+            unityProjectRootPath,
+            assetPaths,
+            guidToAssetPath,
+            itemIdByUnityPath,
+            lootTableIdByUnityPath,
+            cancellationToken);
+
         List<ItemDto> importedItems = new();
+        List<LootTableDto> importedLootTables = new();
+
         int scannedAssetCount = 0;
         int ignoredAssetCount = 0;
 
-        foreach (string assetPath in EnumerateAssetFiles(assetsPath))
+        foreach (string assetPath in assetPaths)
         {
             cancellationToken.ThrowIfCancellationRequested();
 
             scannedAssetCount++;
 
-            ItemDto? item = TryImportItemAsset(
-                unityProjectRootPath,
-                assetPath,
-                guidToAssetPath);
-
-            if (item == null)
+            string[]? lines = TryReadAllLines(assetPath);
+            if (lines == null)
             {
                 ignoredAssetCount++;
                 continue;
             }
 
-            importedItems.Add(item);
+            string className = ResolveUnityClassName(lines, guidToAssetPath);
+
+            if (IsSupportedItemClass(className))
+            {
+                ItemDto? item = TryImportItemAsset(
+                    unityProjectRootPath,
+                    assetPath,
+                    lines,
+                    className,
+                    guidToAssetPath);
+
+                if (item != null)
+                {
+                    importedItems.Add(item);
+                    continue;
+                }
+            }
+
+            if (IsLootTableClass(className))
+            {
+                LootTableDto? lootTable = TryImportLootTableAsset(
+                    unityProjectRootPath,
+                    assetPath,
+                    lines,
+                    guidToAssetPath,
+                    itemIdByUnityPath,
+                    lootTableIdByUnityPath);
+
+                if (lootTable != null)
+                {
+                    importedLootTables.Add(lootTable);
+                    continue;
+                }
+            }
+
+            ignoredAssetCount++;
         }
 
         ContentDatabaseDto importedDatabase = new()
@@ -58,42 +104,75 @@ public sealed class UnityContentImporter : IUnityContentImporter
                 UnityProjectRootPath = unityProjectRootPath
             },
             Items = importedItems,
-            LootTables = new List<LootTableDto>()
+            LootTables = importedLootTables
         };
 
         UnityContentOperationResultDto result = UnityContentOperationResultDto.Success(
-            $"Imported {importedItems.Count} item(s) from Unity. Scanned {scannedAssetCount} .asset file(s), ignored {ignoredAssetCount}.",
+            $"Imported {importedItems.Count} item(s) and {importedLootTables.Count} loot table(s) from Unity. Scanned {scannedAssetCount} .asset file(s), ignored {ignoredAssetCount}.",
             importedDatabase: importedDatabase);
 
-        result.Warnings.Add("Loot table import is not implemented yet. Existing local loot tables will be preserved.");
         result.Warnings.Add("LocalizedString values are not resolved yet. DisplayName falls back to itemNameID or asset name.");
-        result.Warnings.Add("Buffs, stat modifiers and complex object references are only partially imported in this first pass.");
+        result.Warnings.Add("Buffs, stat modifiers and complex object references are only partially imported in this pass.");
         result.Warnings.Add("Some Unity assets have empty m_EditorClassIdentifier, so the importer resolves their type using m_Script guid.");
+        result.Warnings.Add("Loot table references are resolved by GUID. Missing or broken references become empty IDs and will be reported by validation.");
 
         return Task.FromResult(result);
+    }
+
+    private static void BuildReferenceIdMaps(
+        string unityProjectRootPath,
+        IEnumerable<string> assetPaths,
+        IReadOnlyDictionary<string, string> guidToAssetPath,
+        Dictionary<string, string> itemIdByUnityPath,
+        Dictionary<string, string> lootTableIdByUnityPath,
+        CancellationToken cancellationToken)
+    {
+        foreach (string assetPath in assetPaths)
+        {
+            cancellationToken.ThrowIfCancellationRequested();
+
+            string[]? lines = TryReadAllLines(assetPath);
+            if (lines == null)
+                continue;
+
+            string className = ResolveUnityClassName(lines, guidToAssetPath);
+            string unityPath = ToUnityAssetPath(unityProjectRootPath, assetPath);
+            string assetName = ReadScalar(lines, "m_Name") ?? Path.GetFileNameWithoutExtension(assetPath);
+
+            if (IsSupportedItemClass(className))
+            {
+                string uniqueId = ReadScalar(lines, "<uniqueID>k__BackingField") ?? string.Empty;
+                string itemNameId = ReadScalar(lines, "itemNameID") ?? uniqueId;
+
+                if (string.IsNullOrWhiteSpace(itemNameId))
+                    itemNameId = assetName;
+
+                if (string.IsNullOrWhiteSpace(uniqueId))
+                    uniqueId = itemNameId;
+
+                itemIdByUnityPath[unityPath] = uniqueId;
+                continue;
+            }
+
+            if (IsLootTableClass(className))
+            {
+                string lootTableId = ReadScalar(lines, "lootTableID") ?? string.Empty;
+
+                if (string.IsNullOrWhiteSpace(lootTableId))
+                    lootTableId = assetName;
+
+                lootTableIdByUnityPath[unityPath] = lootTableId;
+            }
+        }
     }
 
     private static ItemDto? TryImportItemAsset(
         string unityProjectRootPath,
         string assetPath,
+        IReadOnlyList<string> lines,
+        string className,
         IReadOnlyDictionary<string, string> guidToAssetPath)
     {
-        string[] lines;
-
-        try
-        {
-            lines = File.ReadAllLines(assetPath);
-        }
-        catch
-        {
-            return null;
-        }
-
-        string className = ResolveUnityClassName(lines, guidToAssetPath);
-
-        if (!IsSupportedItemClass(className))
-            return null;
-
         string assetName = ReadScalar(lines, "m_Name") ?? Path.GetFileNameWithoutExtension(assetPath);
         string uniqueId = ReadScalar(lines, "<uniqueID>k__BackingField") ?? string.Empty;
         string itemNameId = ReadScalar(lines, "itemNameID") ?? uniqueId;
@@ -135,34 +214,173 @@ public sealed class UnityContentImporter : IUnityContentImporter
 
         item.EnsureDetailsForCurrentKind();
 
-        ApplyTypeSpecificFields(item, lines);
+        ApplyItemTypeSpecificFields(item, lines);
 
         return item;
     }
 
-    private static string ResolveUnityClassName(
+    private static LootTableDto? TryImportLootTableAsset(
+        string unityProjectRootPath,
+        string assetPath,
         IReadOnlyList<string> lines,
-        IReadOnlyDictionary<string, string> guidToAssetPath)
+        IReadOnlyDictionary<string, string> guidToAssetPath,
+        IReadOnlyDictionary<string, string> itemIdByUnityPath,
+        IReadOnlyDictionary<string, string> lootTableIdByUnityPath)
     {
-        string editorClassIdentifier = ReadEditorClassIdentifier(lines);
+        string assetName = ReadScalar(lines, "m_Name") ?? Path.GetFileNameWithoutExtension(assetPath);
+        string lootTableId = ReadScalar(lines, "lootTableID") ?? string.Empty;
 
-        if (!string.IsNullOrWhiteSpace(editorClassIdentifier))
-            return editorClassIdentifier;
+        if (string.IsNullOrWhiteSpace(lootTableId))
+            lootTableId = assetName;
 
-        string? scriptGuid = ReadObjectGuid(lines, "m_Script");
+        LootTableDto lootTable = new()
+        {
+            Id = lootTableId,
+            Name = assetName,
+            MinRandomPicks = ReadInt(lines, "minRandomPicks", defaultValue: 0),
+            MaxRandomPicks = ReadInt(lines, "maxRandomPicks", defaultValue: 0)
+        };
 
-        if (string.IsNullOrWhiteSpace(scriptGuid))
-            return string.Empty;
+        foreach (LootEntryDto entry in ReadLootEntries(
+                     unityProjectRootPath,
+                     lines,
+                     "guaranteedEntries",
+                     requiresWeight: false,
+                     guidToAssetPath,
+                     itemIdByUnityPath,
+                     lootTableIdByUnityPath))
+        {
+            lootTable.GuaranteedEntries.Add(entry);
+        }
 
-        if (!guidToAssetPath.TryGetValue(scriptGuid, out string scriptUnityPath))
-            return string.Empty;
+        foreach (LootEntryDto entry in ReadLootEntries(
+                     unityProjectRootPath,
+                     lines,
+                     "weightedEntries",
+                     requiresWeight: true,
+                     guidToAssetPath,
+                     itemIdByUnityPath,
+                     lootTableIdByUnityPath))
+        {
+            lootTable.WeightedEntries.Add(entry);
+        }
 
-        string scriptFileName = Path.GetFileNameWithoutExtension(scriptUnityPath);
-
-        return scriptFileName?.Trim() ?? string.Empty;
+        return lootTable;
     }
 
-    private static void ApplyTypeSpecificFields(ItemDto item, IReadOnlyList<string> lines)
+    private static IEnumerable<LootEntryDto> ReadLootEntries(
+        string unityProjectRootPath,
+        IReadOnlyList<string> lines,
+        string listFieldName,
+        bool requiresWeight,
+        IReadOnlyDictionary<string, string> guidToAssetPath,
+        IReadOnlyDictionary<string, string> itemIdByUnityPath,
+        IReadOnlyDictionary<string, string> lootTableIdByUnityPath)
+    {
+        List<List<string>> entryBlocks = ReadYamlListBlocks(lines, listFieldName);
+
+        foreach (List<string> entryBlock in entryBlocks)
+        {
+            LootEntryType entryType = ReadEnumIntFromBlock(
+                entryBlock,
+                "entryType",
+                LootEntryType.Item);
+
+            LootEntryDto entry = new()
+            {
+                EntryType = entryType,
+                MinQuantity = ReadIntFromBlock(entryBlock, "minQuantity", defaultValue: 1),
+                MaxQuantity = ReadIntFromBlock(entryBlock, "maxQuantity", defaultValue: 1),
+                Weight = ReadIntFromBlock(entryBlock, "weight", defaultValue: requiresWeight ? 1 : 0),
+                EquipableOverrideMode = ReadEnumIntFromBlock(
+                    entryBlock,
+                    "equipableOverrideMode",
+                    LootEntryEquipableOverrideMode.None),
+                OverrideFixedRarity = ReadEnumIntFromBlock(
+                    entryBlock,
+                    "overrideFixedRarity",
+                    ItemRarity.Common)
+            };
+
+            if (entry.EntryType == LootEntryType.Item)
+            {
+                string? itemGuid = ReadObjectGuidFromBlock(entryBlock, "item");
+
+                if (!string.IsNullOrWhiteSpace(itemGuid) &&
+                    TryResolveReferencedId(
+                        unityProjectRootPath,
+                        itemGuid,
+                        guidToAssetPath,
+                        itemIdByUnityPath,
+                        out string itemId))
+                {
+                    entry.ItemId = itemId;
+                }
+            }
+            else if (entry.EntryType == LootEntryType.LootTable)
+            {
+                string? nestedTableGuid = ReadObjectGuidFromBlock(entryBlock, "nestedTable");
+
+                if (!string.IsNullOrWhiteSpace(nestedTableGuid) &&
+                    TryResolveReferencedId(
+                        unityProjectRootPath,
+                        nestedTableGuid,
+                        guidToAssetPath,
+                        lootTableIdByUnityPath,
+                        out string lootTableId))
+                {
+                    entry.NestedLootTableId = lootTableId;
+                }
+            }
+
+            yield return entry;
+        }
+    }
+
+    private static bool TryResolveReferencedId(
+        string unityProjectRootPath,
+        string guid,
+        IReadOnlyDictionary<string, string> guidToAssetPath,
+        IReadOnlyDictionary<string, string> idByUnityPath,
+        out string id)
+    {
+        id = string.Empty;
+
+        if (!guidToAssetPath.TryGetValue(guid, out string unityAssetPath))
+            return false;
+
+        if (idByUnityPath.TryGetValue(unityAssetPath, out string resolvedId))
+        {
+            id = resolvedId;
+            return true;
+        }
+
+        string normalizedUnityPath = unityAssetPath.Replace('\\', '/');
+
+        if (idByUnityPath.TryGetValue(normalizedUnityPath, out resolvedId))
+        {
+            id = resolvedId;
+            return true;
+        }
+
+        string absoluteCandidate = Path.Combine(
+            unityProjectRootPath,
+            unityAssetPath.Replace('/', Path.DirectorySeparatorChar));
+
+        string candidateUnityPath = ToUnityAssetPath(
+            unityProjectRootPath,
+            absoluteCandidate);
+
+        if (idByUnityPath.TryGetValue(candidateUnityPath, out resolvedId))
+        {
+            id = resolvedId;
+            return true;
+        }
+
+        return false;
+    }
+
+    private static void ApplyItemTypeSpecificFields(ItemDto item, IReadOnlyList<string> lines)
     {
         if (item.Equipable != null)
         {
@@ -311,6 +529,28 @@ public sealed class UnityContentImporter : IUnityContentImporter
         }
     }
 
+    private static string ResolveUnityClassName(
+        IReadOnlyList<string> lines,
+        IReadOnlyDictionary<string, string> guidToAssetPath)
+    {
+        string editorClassIdentifier = ReadEditorClassIdentifier(lines);
+
+        if (!string.IsNullOrWhiteSpace(editorClassIdentifier))
+            return editorClassIdentifier;
+
+        string? scriptGuid = ReadObjectGuid(lines, "m_Script");
+
+        if (string.IsNullOrWhiteSpace(scriptGuid))
+            return string.Empty;
+
+        if (!guidToAssetPath.TryGetValue(scriptGuid, out string scriptUnityPath))
+            return string.Empty;
+
+        string scriptFileName = Path.GetFileNameWithoutExtension(scriptUnityPath);
+
+        return scriptFileName?.Trim() ?? string.Empty;
+    }
+
     private static string ReadEditorClassIdentifier(IReadOnlyList<string> lines)
     {
         string rawIdentifier = ReadScalar(lines, "m_EditorClassIdentifier") ?? string.Empty;
@@ -335,6 +575,11 @@ public sealed class UnityContentImporter : IUnityContentImporter
             "ConsumableItemData" or
             "CraftingItemData" or
             "CollectableItemData";
+    }
+
+    private static bool IsLootTableClass(string className)
+    {
+        return string.Equals(className, "LootTable", StringComparison.Ordinal);
     }
 
     private static ItemKind GetItemKindFromClassName(
@@ -362,6 +607,18 @@ public sealed class UnityContentImporter : IUnityContentImporter
             3 => ItemKind.Collectable,
             _ => ItemKind.Equipment
         };
+    }
+
+    private static string[]? TryReadAllLines(string path)
+    {
+        try
+        {
+            return File.ReadAllLines(path);
+        }
+        catch
+        {
+            return null;
+        }
     }
 
     private static string? ReadScalar(
@@ -394,6 +651,104 @@ public sealed class UnityContentImporter : IUnityContentImporter
         string prefix = $"{fieldName}:";
 
         foreach (string line in lines)
+        {
+            string trimmed = line.TrimStart();
+
+            if (!trimmed.StartsWith(prefix, StringComparison.Ordinal))
+                continue;
+
+            Match match = GuidRegex.Match(trimmed);
+
+            if (match.Success)
+                return match.Groups["guid"].Value;
+        }
+
+        return null;
+    }
+
+    private static List<List<string>> ReadYamlListBlocks(
+        IReadOnlyList<string> lines,
+        string listFieldName)
+    {
+        List<List<string>> blocks = new();
+
+        string listPrefix = $"{listFieldName}:";
+        bool insideList = false;
+        List<string>? currentBlock = null;
+
+        foreach (string line in lines)
+        {
+            string trimmed = line.TrimStart();
+
+            if (!insideList)
+            {
+                if (trimmed.StartsWith(listPrefix, StringComparison.Ordinal))
+                    insideList = true;
+
+                continue;
+            }
+
+            if (!line.StartsWith(" ", StringComparison.Ordinal) &&
+                !string.IsNullOrWhiteSpace(line))
+            {
+                break;
+            }
+
+            if (string.IsNullOrWhiteSpace(line))
+                continue;
+
+            if (trimmed.StartsWith("- ", StringComparison.Ordinal))
+            {
+                if (currentBlock != null && currentBlock.Count > 0)
+                    blocks.Add(currentBlock);
+
+                currentBlock = new List<string>
+                {
+                    trimmed[2..]
+                };
+
+                continue;
+            }
+
+            currentBlock?.Add(trimmed);
+        }
+
+        if (currentBlock != null && currentBlock.Count > 0)
+            blocks.Add(currentBlock);
+
+        return blocks;
+    }
+
+    private static string? ReadScalarFromBlock(
+        IReadOnlyList<string> block,
+        string fieldName)
+    {
+        string prefix = $"{fieldName}:";
+
+        foreach (string line in block)
+        {
+            string trimmed = line.TrimStart();
+
+            if (!trimmed.StartsWith(prefix, StringComparison.Ordinal))
+                continue;
+
+            string value = trimmed[prefix.Length..].Trim();
+
+            return string.IsNullOrWhiteSpace(value)
+                ? string.Empty
+                : value;
+        }
+
+        return null;
+    }
+
+    private static string? ReadObjectGuidFromBlock(
+        IReadOnlyList<string> block,
+        string fieldName)
+    {
+        string prefix = $"{fieldName}:";
+
+        foreach (string line in block)
         {
             string trimmed = line.TrimStart();
 
@@ -462,6 +817,22 @@ public sealed class UnityContentImporter : IUnityContentImporter
             : defaultValue;
     }
 
+    private static int ReadIntFromBlock(
+        IReadOnlyList<string> block,
+        string fieldName,
+        int defaultValue)
+    {
+        string? raw = ReadScalarFromBlock(block, fieldName);
+
+        return int.TryParse(
+            raw,
+            NumberStyles.Integer,
+            CultureInfo.InvariantCulture,
+            out int value)
+            ? value
+            : defaultValue;
+    }
+
     private static int ReadNestedInt(
         IReadOnlyList<string> lines,
         string parentFieldName,
@@ -514,6 +885,23 @@ public sealed class UnityContentImporter : IUnityContentImporter
     {
         int rawValue = ReadInt(
             lines,
+            fieldName,
+            Convert.ToInt32(defaultValue, CultureInfo.InvariantCulture));
+
+        if (Enum.IsDefined(typeof(TEnum), rawValue))
+            return (TEnum)Enum.ToObject(typeof(TEnum), rawValue);
+
+        return defaultValue;
+    }
+
+    private static TEnum ReadEnumIntFromBlock<TEnum>(
+        IReadOnlyList<string> block,
+        string fieldName,
+        TEnum defaultValue)
+        where TEnum : struct, Enum
+    {
+        int rawValue = ReadIntFromBlock(
+            block,
             fieldName,
             Convert.ToInt32(defaultValue, CultureInfo.InvariantCulture));
 
