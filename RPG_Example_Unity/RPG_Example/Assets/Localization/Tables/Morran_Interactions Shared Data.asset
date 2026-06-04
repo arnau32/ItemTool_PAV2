@@ -1,0 +1,248 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Morran_Interactions Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Morran_Interactions
+  m_TableCollectionNameGuidString: c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4
+  m_Entries:
+  - m_Id: 100000000000
+    m_Key: V_Morran_1_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200000000000
+    m_Key: V_Morran_1_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 300000000000
+    m_Key: V_Morran_1_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 400000000000
+    m_Key: V_Morran_1_04
+    m_Metadata:
+      m_Items: []
+  - m_Id: 500000000000
+    m_Key: V_Morran_1_05
+    m_Metadata:
+      m_Items: []
+  - m_Id: 600000000000
+    m_Key: V_Morran_2_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 700000000000
+    m_Key: V_Morran_2_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 800000000000
+    m_Key: V_Morran_2_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 900000000000
+    m_Key: V_Morran_3_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1000000000000
+    m_Key: V_Morran_3_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1100000000000
+    m_Key: V_Morran_4_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1200000000000
+    m_Key: V_Morran_4_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300000000000
+    m_Key: V_Morran_5_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1400000000000
+    m_Key: V_Morran_5_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1500000000000
+    m_Key: V_Morran_5_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12189765160464384
+    m_Key: Rescate_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12189917040406528
+    m_Key: Rescate_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16375362599055360
+    m_Key: Rescate 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18213125506002944
+    m_Key: New Entry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18217147935813632
+    m_Key: New Entry 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18217408079130624
+    m_Key: New Entry 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18238217258594304
+    m_Key: New Entry 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18238277144866816
+    m_Key: New Entry 4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260090755280896
+    m_Key: Mision_Nueva_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260093569658880
+    m_Key: Mision_Nueva_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260095222214656
+    m_Key: Mision_Nueva_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260096597946368
+    m_Key: Mision_Nueva_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260098057564160
+    m_Key: Mision_Nueva_5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260099508793344
+    m_Key: Mision_Nueva_6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260101048102912
+    m_Key: Mision_Nueva_7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260102570635264
+    m_Key: Mision_Nueva_8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260104114139136
+    m_Key: Mision_Nueva_9
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260105561174016
+    m_Key: Mision_Nueva_10
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260106815270912
+    m_Key: Recompensa_
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610880
+    m_Key: Recompensa_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260110132965376
+    m_Key: Recompensa_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260111487725568
+    m_Key: Recompensa_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260112611799040
+    m_Key: Recompensa_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260114293714944
+    m_Key: Recompensa_5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260115728166912
+    m_Key: Recompensa_6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260117158424576
+    m_Key: Recompensa_7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610881
+    m_Key: Recompensa_8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610882
+    m_Key: Recompensa_9
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610883
+    m_Key: FraseRandom_
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610884
+    m_Key: FraseRandom_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610885
+    m_Key: FraseRandom_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610886
+    m_Key: FraseRandom_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610887
+    m_Key: FraseRandom_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610888
+    m_Key: FraseRandom_5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610889
+    m_Key: FraseRandom_6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883651805184
+    m_Key: FraseRandom_7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883651805185
+    m_Key: FraseRandom_8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883651805186
+    m_Key: FraseRandom_9
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883651805187
+    m_Key: FraseRandom_10
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883651805188
+    m_Key: FraseRandom_11
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 1004000000000000001
+  references:
+    version: 2
+    RefIds:
+    - rid: 1004000000000000001
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1774000000000

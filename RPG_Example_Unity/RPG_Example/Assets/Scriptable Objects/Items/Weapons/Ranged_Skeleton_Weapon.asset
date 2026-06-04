@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b7492b73b61442fb88e115c95bc8bb5, type: 3}
+  m_Name: Ranged_Skeleton_Weapon
+  m_EditorClassIdentifier: 
+  <uniqueID>k__BackingField: Weapon_RangedSkeleton
+  itemType: 0
+  itemNameID: Weapon_RangedSkeleton
+  localizedDisplayName:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  icon: {fileID: 0}
+  description: 
+  descriptionBlocks: []
+  itemRarity: 0
+  value: 0
+  weight: 0
+  maxStack: 1
+  SlotDimension:
+    Height: 1
+    Width: 1
+  equipSlot: 3
+  modifiers:
+  - statTypeAffected: 4
+    type: 100
+    value: 8
+    order: 0
+  prefab: {fileID: 8375075049235946255, guid: 32c7967cd2abfc64c8535cd0d326a093, type: 3}
+  tier: 0
+  rollMode: 1
+  animatorOverride: {fileID: 0}
+  handType: 0
+  familyType: 0
+  prefabVariant: {fileID: 0}
+  combos: []
+  dodgeSet: {fileID: 0}
+  parry: {fileID: 0}
+  weaponSkill: {fileID: 0}
+  skillScoreNeeded: 6
+  weaponTier: 1
+  enemyDamageMultiplier: 1.5
+  references:
+    version: 2
+    RefIds: []

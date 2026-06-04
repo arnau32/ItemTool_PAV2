@@ -1,0 +1,163 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8904922503097814202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaa43389884f4dc7ae6de53effdf354c, type: 3}
+  m_Name: DistanceRangeConsideration_001
+  m_EditorClassIdentifier: 
+  minDistance: 0
+  maxDistance: 3
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1.0023804
+      inSlope: -0.021932688
+      outSlope: -0.021932688
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.20384625
+    - serializedVersion: 3
+      time: 0.36188173
+      value: 0.9977498
+      inSlope: -0.026258884
+      outSlope: -0.026258884
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.16978985
+      outWeight: 0.2713891
+    - serializedVersion: 3
+      time: 0.9990742
+      value: 0.12686387
+      inSlope: -2.527459
+      outSlope: -2.527459
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.06227977
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &-696917376711434447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40746de89e2d4a409ea4f4a3ca051a80, type: 3}
+  m_Name: SelfHPConsideration_002
+  m_EditorClassIdentifier: 
+  preferHighHP: 0
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.34958693
+      outSlope: -0.34958693
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.42907792
+      value: 0.84999996
+      inSlope: -0.5206995
+      outSlope: -0.5206995
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.1449704
+    - serializedVersion: 3
+      time: 1
+      value: 0.20000076
+      inSlope: -0.72737074
+      outSlope: -0.72737074
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.1420121
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 132c4ce011bb49f99790673355cfbf79, type: 3}
+  m_Name: Skeleton_BackOff
+  m_EditorClassIdentifier: 
+  considerations:
+  - {fileID: 4518350850244183661}
+  - {fileID: -8904922503097814202}
+  - {fileID: -696917376711434447}
+  category: 1
+  isMaintenanceMovement: 0
+  canBeInterrupted: 1
+  useHardLook: 1
+  baseScore: 75
+  targetRange: 3
+  duration: 1.5
+  backOffSpeed: 2.5
+  rangeJitter: 0.45
+  durationJitter01: 0.15
+  maxEffectiveDistance: 3.7
+  requireLOS: 0
+  repathInterval: 0.15
+  minTargetMove: 0.2
+  minDestDelta: 0.1
+--- !u!114 &4518350850244183661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55bd5aced0fb41e894991fd83087bc64, type: 3}
+  m_Name: AdvantageConsideration_000
+  m_EditorClassIdentifier: 
+  preferPositiveAdvantage: 0
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.0035476685
+      value: 0.6000061
+      inSlope: 0.65934604
+      outSlope: 0.65934604
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.09751771
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

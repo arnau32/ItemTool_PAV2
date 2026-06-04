@@ -1,0 +1,227 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Village_es
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: 9d19e2569c0e0e84fa7d123238b2dfc6, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 4621676374010888272
+  m_TableData:
+  - m_Id: 192871460864
+    m_Localized: "As\xED que fuiste t\xFA quien detuvo a esos esqueletos."
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888272
+  - m_Id: 115128876462080
+    m_Localized: "Nos habr\xEDan atravesado la puerta en minutos."
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888272
+  - m_Id: 115357159845888
+    m_Localized: "La bloqueamos\u2026 pero no resistir\xE1 mucho m\xE1s."
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888272
+  - m_Id: 115485799149568
+    m_Localized: "Espera\u2026"
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888272
+  - m_Id: 115691542343680
+    m_Localized: "Ese emblema en tu capa\u2026"
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888272
+  - m_Id: 115910652784640
+    m_Localized: Parece que llevas el emblema de los Shadow Hunters!
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888272
+  - m_Id: 116307995979776
+    m_Localized: "\xBFShadow Hunters?"
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888272
+  - m_Id: 116250408185856
+    m_Localized: "\u2026Supongo."
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888272
+  - m_Id: 116629107699712
+    m_Localized: Entonces llegas en mal momento.
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888272
+  - m_Id: 117073221578752
+    m_Localized: "El \xFAltimo de los nuestros sali\xF3 hace d\xEDas."
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888272
+  - m_Id: 117807308664832
+    m_Localized: Cazadores de la Niebla.
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888272
+  - m_Id: 118351683186688
+    m_Localized: "Los \xFAnicos que se atreven a aventurarse mas all\xE1 de la bruma"
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888272
+  - m_Id: 118915288592384
+    m_Localized: "Ten\xEDamos uno. Sali\xF3 hace d\xEDas\u2026 y no volvi\xF3."
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888272
+  - m_Id: 119202816520192
+    m_Localized: "Quiz\xE1 puedas descubrir qu\xE9 le ocurri\xF3."
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888272
+  - m_Id: 130782576832512
+    m_Localized: "\xA1Pues decide m\xE1s r\xE1pido, el hierro se enfr\xEDa!"
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888272
+  - m_Id: 130945701703680
+    m_Localized: "C\xE1llense los dos\u2026 \xA1que nos est\xE1 mirando!"
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888272
+  - m_Id: 131108251955200
+    m_Localized: "Bien\u2026 no importa. T\xFA. S\xED, t\xFA."
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888272
+  - m_Id: 131304285335552
+    m_Localized: Necesito una mena de hierro fresca.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 131478625775616
+    m_Localized: "Las minas de aqu\xED ya no sirven\u2026 todo est\xE1 corrompido
+      por la Niebla."
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888272
+  - m_Id: 131954918354944
+    m_Localized: Puedo ayudarte.
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888272
+  - m_Id: 131988858662912
+    m_Localized: No estoy interesada
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888272
+  - m_Id: 136758877024256
+    m_Localized: "\xA1Excelente!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 136913336463360
+    m_Localized: "Pero escucha\u2026 para salir tendr\xE1s que ir por la Puerta del
+      Norte."
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888272
+  - m_Id: 137488522342400
+    m_Localized: "Morran puede abrirla\u2026 s\xED, el tipo serio que siempre est\xE1
+      vigilando."
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888272
+  - m_Id: 137865548328960
+    m_Localized: Una vez fuera, busca la mena de hierro.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 138050206756864
+    m_Localized: "Trae suficiente, y podremos mejorar tu equipo\u2026\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 138187041730560
+    m_Localized: "\xA1O al menos intentarlo sin quemarte los dedos!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 138442189631488
+    m_Localized: "\u2026Hmm. Bueno, ya sabes d\xF3nde encontrarme si cambias de idea."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 138573634924544
+    m_Localized: "No te quejes cuando tus armas se rompan\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 140912139759616
+    m_Localized: "No deber\xEDas estar aqu\xED."
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888272
+  - m_Id: 141060467126272
+    m_Localized: "La Puerta del Norte conduce directo a la Niebla. Muchos salen\u2026
+      pocos regresan."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 141246413205504
+    m_Localized: "Si planeas salir\u2026 hablar\xE9 claro."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 141338427846656
+    m_Localized: "Cuando abra la puerta, no la volver\xE9 a abrir."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 141450956828672
+    m_Localized: Encuentra un Portal de retorno o no nos volveremos a ver
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888272
+  - m_Id: 141548054966272
+    m_Localized: Cuando estes listo acercate a la puerta y te dejare marchar
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888272
+  - m_Id: 166027112017920
+    m_Localized: "Prefiero morir aqu\xED\u2026 siendo a\xFAn yo."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 4621676374010888272
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 
+        m_SharedEntries:
+        - id: 192871460864
+        - id: 115128876462080
+        - id: 115357159845888
+        - id: 115485799149568
+        - id: 115691542343680
+        - id: 115910652784640
+        - id: 116307995979776
+        - id: 116250408185856
+        - id: 116629107699712
+        - id: 117073221578752
+        - id: 117807308664832
+        - id: 118351683186688
+        - id: 118915288592384
+        - id: 119202816520192
+        - id: 130782576832512
+        - id: 130945701703680
+        - id: 131108251955200
+        - id: 131478625775616
+        - id: 131954918354944
+        - id: 131988858662912
+        - id: 136913336463360
+        - id: 137488522342400
+        - id: 140912139759616
+        - id: 141450956828672
+        - id: 141548054966272

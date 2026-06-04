@@ -1,0 +1,187 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Dialogue_es
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: 6b0b19b0a577497d9d4c69531bbaa14d, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 100000000000
+    m_Localized: Gran Espada Tier 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 101000000000
+    m_Localized: Gran Espada Tier 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 102000000000
+    m_Localized: Gran Espada Tier 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 103000000000
+    m_Localized: Gran Espada Tier 4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 104000000000
+    m_Localized: "Pu\xF1os Tier 1"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 105000000000
+    m_Localized: "Pu\xF1os Tier 2"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 106000000000
+    m_Localized: "Pu\xF1os Tier 3"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 107000000000
+    m_Localized: "Pu\xF1os Tier 4"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 108000000000
+    m_Localized: Espada y Escudo Tier 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 109000000000
+    m_Localized: Espada y Escudo Tier 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 110000000000
+    m_Localized: Espada y Escudo Tier 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 111000000000
+    m_Localized: Espada y Escudo Tier 4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 112000000000
+    m_Localized: Arma de Esqueleto a Distancia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113000000000
+    m_Localized: Casco Tier 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114000000000
+    m_Localized: Casco Tier 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115000000000
+    m_Localized: Casco Tier 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 116000000000
+    m_Localized: Pantalones Tier 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 117000000000
+    m_Localized: Pantalones Tier 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 118000000000
+    m_Localized: Pantalones Tier 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 119000000000
+    m_Localized: Pechera Tier 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120000000000
+    m_Localized: Pechera Tier 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121000000000
+    m_Localized: Pechera Tier 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 122000000000
+    m_Localized: "Poci\xF3n Peque\xF1a"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 123000000000
+    m_Localized: "Poci\xF3n Mediana"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 124000000000
+    m_Localized: "Poci\xF3n Grande"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 125000000000
+    m_Localized: Runa de Taris
+    m_Metadata:
+      m_Items: []
+  - m_Id: 126000000000
+    m_Localized: Carne Cruda
+    m_Metadata:
+      m_Items: []
+  - m_Id: 127000000000
+    m_Localized: "Hueso Agrietado Peque\xF1o"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128000000000
+    m_Localized: Hueso Agrietado Grande
+    m_Metadata:
+      m_Items: []
+  - m_Id: 129000000000
+    m_Localized: Cuerno de Hueso
+    m_Metadata:
+      m_Items: []
+  - m_Id: 130000000000
+    m_Localized: Piedra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 131000000000
+    m_Localized: Hierro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 132000000000
+    m_Localized: Madera
+    m_Metadata:
+      m_Items: []
+  - m_Id: 133000000000
+    m_Localized: Polvo de Aurora
+    m_Metadata:
+      m_Items: []
+  - m_Id: 134000000000
+    m_Localized: Gema Rara
+    m_Metadata:
+      m_Items: []
+  - m_Id: 135000000000
+    m_Localized: Estatua de Liora
+    m_Metadata:
+      m_Items: []
+  - m_Id: 136000000000
+    m_Localized: Cuerda Desgastada
+    m_Metadata:
+      m_Items: []
+  - m_Id: 137000000000
+    m_Localized: Manzana
+    m_Metadata:
+      m_Items: []
+  - m_Id: 138000000000
+    m_Localized: Pierna de Carne
+    m_Metadata:
+      m_Items: []
+  - m_Id: 139000000000
+    m_Localized: "Poci\xF3n Legendaria"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 140000000000
+    m_Localized: Comida Deluxe
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

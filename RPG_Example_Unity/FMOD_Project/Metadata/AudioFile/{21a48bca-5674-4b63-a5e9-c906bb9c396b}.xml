@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{21a48bca-5674-4b63-a5e9-c906bb9c396b}">
+		<property name="assetPath">
+			<value>SFX/Enemies/gutteral beast/SFX_mnstr2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.5</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{bf91320e-88fb-44ab-9c54-c0d6bd490e28}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73f5431213e912849b883f6cc84d64c1, type: 3}
+  m_Name: Iron
+  m_EditorClassIdentifier: 
+  <uniqueID>k__BackingField: Iron
+  itemType: 2
+  itemNameID: Iron
+  localizedDisplayName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6b0b19b0a577497d9d4c69531bbaa14d
+    m_TableEntryReference:
+      m_KeyId: 131000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  icon: {fileID: 21300000, guid: f4ee836df822c55448a5c1c0ff474c03, type: 3}
+  description: A basic crafting material used for crafting, upgrades, and certain
+    quests. Common, sturdy, and always useful.
+  descriptionBlocks:
+  - rid: 3349712839063371877
+  itemRarity: 0
+  value: 0
+  weight: 0
+  maxStack: 10
+  SlotDimension:
+    Height: 1
+    Width: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 3349712839063371877
+      type: {class: TextDescriptionBlock, ns: , asm: Assembly-CSharp}
+      data:
+        text:
+          m_TableReference:
+            m_TableCollectionName: GUID:b74fd6cb1ab36b347b90c6fec1e27d5a
+          m_TableEntryReference:
+            m_KeyId: 37308919815
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []

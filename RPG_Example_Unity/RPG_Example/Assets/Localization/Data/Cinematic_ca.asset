@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Cinematic_ca
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: ca
+  m_SharedData: {fileID: 11400000, guid: 20321d82a12d51d44aa84212e150e253, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 12815929344
+    m_Localized: "Hi va haver un temps en qu\xE8 Eryndor respirava lliure."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15655473152
+    m_Localized: Els regnes florien sota el pacte dels Vuit Mags Fundadors.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18398547968
+    m_Localized: "Les seves arts sostenien el m\xF3n: la runa, la forja, la sanaci\xF3,
+      la natura... i, per damunt de totes, la Llum."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21057736704
+    m_Localized: "Se\u2019n va dir l\u2019Era Daurada."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25377869824
+    m_Localized: I aquells que la van viure van creure que duraria per sempre.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28519403520
+    m_Localized: "Ning\xFA recorda ben b\xE9 com va acabar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30490726400
+    m_Localized: "Nom\xE9s que un home va voler massa..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32181030912
+    m_Localized: "i la foscor feia molt de temps que l\u2019esperava."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34420789248
+    m_Localized: La llum es va apagar a poc a poc.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36253700096
+    m_Localized: "I el m\xF3n va oblidar que alguna vegada havia estat lliure."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

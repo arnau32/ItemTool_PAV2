@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-3313172454831142446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5e44b9e6b2941439a167347c6c22c7a, type: 3}
+  m_Name: AttackIntentConsideration_003
+  m_EditorClassIdentifier: 
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.104766846
+      inSlope: 0.26372588
+      outSlope: 0.26372588
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.09929076
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &-1510561467355469559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d734a192d3a4bffba7fb698c3f803bd, type: 3}
+  m_Name: AngleFrontalConsideration_004
+  m_EditorClassIdentifier: 
+  frontalHalfAngle: 60
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad4d3a1a92464afbbcf62775d8f925b1, type: 3}
+  m_Name: Skeleton_Low_Attack2
+  m_EditorClassIdentifier: 
+  considerations:
+  - {fileID: -3313172454831142446}
+  - {fileID: -1510561467355469559}
+  - {fileID: 3041950212861579933}
+  category: 0
+  isMaintenanceMovement: 0
+  canBeInterrupted: 0
+  useHardLook: 1
+  baseScore: 100
+  attackData: {fileID: 11400000, guid: 54a4eeea575aa18428f572f5e912f84d, type: 2}
+  canBeInterruptedByKnockback: 1
+  canBeInterruptedByKnockdown: 1
+  minCooldown: 5
+  maxCooldown: 6
+  commitSeconds: 0.3
+  cadenceDelay: 4
+  selectionWeight: 1
+  randomness: 0.15
+  repeatPenalty: 0.15
+  positioningOptimalRangeOverride: 0
+  hardMaxDistance: 4
+  requireLOS: 1
+--- !u!114 &3041950212861579933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaa43389884f4dc7ae6de53effdf354c, type: 3}
+  m_Name: DistanceRangeConsideration_002
+  m_EditorClassIdentifier: Assembly-CSharp::DistanceRangeConsideration
+  minDistance: 0.5
+  maxDistance: 6
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

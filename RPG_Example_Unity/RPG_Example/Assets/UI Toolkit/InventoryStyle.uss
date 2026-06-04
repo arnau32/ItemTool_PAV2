@@ -1,0 +1,172 @@
+.header {
+    color: rgb(247, 121, 255);
+    font-size: 80px;
+    -unity-font-style: bold;
+    flex-grow: 1;
+    align-content: flex-end;
+    align-self: center;
+}
+
+.slotIcon {
+    width: 75px;
+    height: 75px;
+    max-width: none;
+    max-height: none;
+    min-width: auto;
+    min-height: auto;
+    background-color: rgba(22, 22, 22, 0);
+    background-image: url("project://database/Assets/Art/UI/HUD%20Sprites/HUD/SPR_HUD_DarkFantasy_Box_Medium_Parchment_02.png?fileID=2800000&guid=c8832799ee25376478bb0cc136ad6cec&type=3#SPR_HUD_DarkFantasy_Box_Medium_Parchment_02");
+    -unity-background-image-tint-color: rgb(17, 17, 17);
+}
+
+.inventory-cursor {
+    border: 2px solid yellow;
+    pointer-events: none;
+    background-image: url("project://database/Assets/Art/UI/HUD%20Sprites/HUD/SPR_FX_DarkFantasy_Sigil_Box_Large_02.png?fileID=2800000&guid=30f2ce8dd09d2784c821cf2bc2800ac4&type=3#SPR_FX_DarkFantasy_Sigil_Box_Large_02");
+    -unity-background-image-tint-color: rgb(202, 202, 202);
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    -unity-background-scale-mode: stretch-to-fill;
+    background-position-y: center 0;
+    background-position-x: center 0;
+    width: auto;
+    max-width: none;
+    min-width: auto;
+    min-height: auto;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+.text {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+.visual-icon-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+    border-width: 1px;
+    border-color: rgb(75, 75, 75);
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    background-image: url("project://database/Assets/Art/UI/HUD%20Sprites/HUD/SPR_HUD_DarkFantasy_Box_Medium_Parchment_01.png?fileID=2800000&guid=45bfd774240def841b94064767cae266&type=3#SPR_HUD_DarkFantasy_Box_Medium_Parchment_01");
+    -unity-background-image-tint-color: rgba(255, 255, 255, 0.81);
+}
+
+.visual-icon {
+    height: 100%;
+    width: 100%;
+    -unity-background-scale-mode: scale-to-fit;
+    background-color: rgba(135, 135, 135, 0);
+}
+
+.slot-icon-highlighted {
+    border-width: 1px;
+    border-color: rgb(202, 158, 0);
+    transform-origin: center;
+    position: absolute;
+    visibility: hidden;
+    border-left-color: rgb(255, 0, 35);
+    border-right-color: rgb(255, 0, 35);
+    border-top-color: rgb(255, 0, 35);
+    border-bottom-color: rgb(255, 0, 35);
+    background-color: rgba(79, 79, 79, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    background-image: url("project://database/Assets/Art/UI/HUD%20Sprites/HUD/SPR_HUD_DarkFantasy_Box_White_01.png?fileID=2800000&guid=c0a3583ac504d3542a1b7bc39eebd663&type=3#SPR_HUD_DarkFantasy_Box_White_01");
+    -unity-background-image-tint-color: rgb(115, 115, 115);
+}
+
+.stack-Count {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: white;
+    font-size: 15px;
+    unity-text-align: middle-right;
+    -unity-font-style: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.desc-block-wrapper {
+    flex-shrink: 0;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.32);
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.desc-text {
+    -unity-font-definition: url("project://database/Assets/Art/Fonts%20&%20TMP/Markazi/MarkaziText-SemiBold.ttf?fileID=12800000&guid=98886f0f284dda24e99e94dc6c320dce&type=3#MarkaziText-SemiBold");
+    color: rgb(255, 255, 255);
+    white-space: pre-wrap;
+    font-size: 18px;
+}
+
+.icon-attack {
+    background-image: url("project://database/Assets/Art/UI/HUD%20Sprites/Icons_Status/ICON_DarkFantasy_Status_AttackUp_01_Clean.png?fileID=2800000&guid=1a506cf5ea58d5a43815ed19fd1aaa45&type=3#ICON_DarkFantasy_Status_AttackUp_01_Clean");
+    -unity-background-scale-mode: scale-to-fit;
+    height: 30px;
+    width: 30px;
+}
+
+.icon-defense {
+    background-image: url("project://database/Assets/Art/UI/HUD%20Sprites/Icons_Status/ICON_DarkFantasy_Status_Defense_01_Clean.png?fileID=2800000&guid=824a4bd51feb360498c855d177d25eb6&type=3#ICON_DarkFantasy_Status_Defense_01_Clean");
+    -unity-background-scale-mode: scale-to-fit;
+    height: 30px;
+    width: 30px;
+}
+
+.icon-health {
+    background-image: url("project://database/Assets/Art/UI/HUD%20Sprites/Icons_Stats/ICON_DarkFantasy_Stat_Health_01_Clean.png?fileID=2800000&guid=05b50dcf3918c494aa471ebd6fc5523b&type=3#ICON_DarkFantasy_Stat_Health_01_Clean");
+    -unity-background-scale-mode: scale-to-fit;
+    height: 30px;
+    width: 30px;
+}
+
+.icon-stamina {
+    background-image: url("project://database/Assets/Art/UI/HUD%20Sprites/Icons_Stats/ICON_DarkFantasy_Stat_Spirit_01_Clean.png?fileID=2800000&guid=cd5d0145131e7c7498eb3f2a0adbd0f7&type=3#ICON_DarkFantasy_Stat_Spirit_01_Clean");
+    -unity-background-scale-mode: scale-to-fit;
+    height: 30px;
+    width: 30px;
+}
+
+.icon-speed {
+    background-image: url("project://database/Assets/Art/UI/HUD%20Sprites/Icons_Stats/ICON_DarkFantasy_Stat_Speed_01_Clean.png?fileID=2800000&guid=6dccbb35f77b9db4093abfbd09745a70&type=3#ICON_DarkFantasy_Stat_Speed_01_Clean");
+    -unity-background-scale-mode: scale-to-fit;
+    height: 30px;
+    width: 30px;
+}
+
+.icon-weight {
+    background-image: url("project://database/Assets/Art/UI/HUD%20Sprites/Icons_Status/ICON_DarkFantasy_Status_Encumbered_01_Clean.png?fileID=2800000&guid=1fcf6427df4a95d4891975d4e4b712a5&type=3#ICON_DarkFantasy_Status_Encumbered_01_Clean");
+    -unity-background-scale-mode: scale-to-fit;
+    height: 30px;
+    width: 30px;
+}
+
+.hp-bar .unity-progress-bar__progress {
+    background-color: rgb(192, 0, 0);
+}
+
+.stamina-bar {
+    background-color: rgb(17, 17, 17);
+}
+
+.stamina-bar .unity-progress-bar__progress {
+    background-color: rgb(192, 179, 0);
+}

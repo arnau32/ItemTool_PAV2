@@ -1,0 +1,67 @@
+.unity-tab-view {
+    height: 100%;
+    width: 100%;
+    flex-grow: 1;
+    background-image: url("project://database/Assets/Art/UI/HUD%20Sprites/HUD/SPR_HUD_DarkFantasy_Gradient_Vertical_05.png?fileID=2800000&guid=6c1afd6c8d2b82647b702d248c0e1b47&type=3#SPR_HUD_DarkFantasy_Gradient_Vertical_05");
+    -unity-background-image-tint-color: rgb(46, 46, 46);
+}
+
+.unity-tab-view__header-container {
+    height: 86px;
+    font-size: 59px;
+    -unity-text-align: upper-left;
+    align-items: auto;
+    justify-content: center;
+    align-self: auto;
+    align-content: auto;
+    width: 1924px;
+}
+
+.unity-tab-view__content-container {
+    flex-grow: 1;
+    padding: 5px;
+    flex-basis: 80%;
+    align-items: center;
+}
+
+.unity-tab {
+    padding: 5px;
+    height: 100%;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.unity-tab__content-container {
+    flex-grow: 1;
+    background-color: rgba(255, 255, 255, 0);
+    align-items: center;
+}
+
+.templete-settings {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding-top: 8%;
+    padding-right: 8%;
+    padding-bottom: 8%;
+    padding-left: 8%;
+    justify-content: center;
+}
+
+.unity-tab__header {
+    background-color: rgba(250, 250, 250, 0);
+    background-image: none;
+    -unity-font-definition: url("project://database/Assets/Art/Fonts%20&%20TMP/Markazi/MarkaziText-SemiBold.ttf?fileID=12800000&guid=98886f0f284dda24e99e94dc6c320dce&type=3#MarkaziText-SemiBold");
+    color: rgb(75, 75, 75);
+    font-size: 64px;
+}
+
+.unity-tab__header:selected {
+    background-color: rgba(250, 250, 250, 0);
+    background-image: none;
+    -unity-font-definition: url("project://database/Assets/Art/Fonts%20&%20TMP/Markazi/MarkaziText-SemiBold.ttf?fileID=12800000&guid=98886f0f284dda24e99e94dc6c320dce&type=3#MarkaziText-SemiBold");
+    color: rgb(255, 255, 255);
+    -unity-text-outline-color: rgba(0, 0, 0, 0);
+    font-size: 64px;
+}

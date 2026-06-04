@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46837e4c511bbba4bb1cde2ddd056bb2, type: 3}
+  m_Name: AuroraDust
+  m_EditorClassIdentifier: Assembly-CSharp::CollectableItemData
+  <uniqueID>k__BackingField: Aurora Dust
+  itemType: 3
+  itemNameID: Aurora Dust
+  localizedDisplayName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6b0b19b0a577497d9d4c69531bbaa14d
+    m_TableEntryReference:
+      m_KeyId: 133000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  icon: {fileID: 21300000, guid: 8d8dd5b8d96403e4687b8fccbc571db3, type: 3}
+  description: 
+  descriptionBlocks:
+  - rid: 3349712839063371886
+  itemRarity: 3
+  value: 1
+  weight: 0
+  maxStack: 250
+  SlotDimension:
+    Height: 1
+    Width: 1
+  collectionID: 0
+  isAuroraDust: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 3349712839063371886
+      type: {class: TextDescriptionBlock, ns: , asm: Assembly-CSharp}
+      data:
+        text:
+          m_TableReference:
+            m_TableCollectionName: GUID:b74fd6cb1ab36b347b90c6fec1e27d5a
+          m_TableEntryReference:
+            m_KeyId: 37212450816
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{7c46cf4f-288f-4e4b-8e3a-02ec3dc27029}">
+		<property name="assetPath">
+			<value>SFX/World/Props/Doors Gates/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{bf91320e-88fb-44ab-9c54-c0d6bd490e28}</destination>
+		</relationship>
+	</object>
+</objects>

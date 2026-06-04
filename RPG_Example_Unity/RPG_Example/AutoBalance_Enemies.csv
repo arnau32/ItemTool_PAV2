@@ -1,0 +1,11 @@
+Name,Zone,Category,Health,Attack,Defense,WeaponMult
+Enemy Dummy,1,Normal,0,0,0,1,00
+Skeleton Tutorial,1,Normal,45,5,0,1,00
+Liliko,1,Normal,40,3,0,1,00
+Ranged T1,1,Normal,90,15,3,1,50
+Skeleton T1,1,Normal,120,18,5,1,00
+Skeleton T1 Elite,1,Elite,220,26,8,1,00
+Skeleton T2,2,Normal,210,25,8,1,00
+Skeleton T2 Elite,2,Elite,380,35,12,1,00
+Skeleton T3,3,Normal,360,32,15,1,20
+Skeleton T3 Elite,3,Elite,620,38,22,1,47

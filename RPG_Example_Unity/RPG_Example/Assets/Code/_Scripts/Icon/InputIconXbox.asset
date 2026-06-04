@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8fd4684ff1ddfc4b8bda64c84765893, type: 3}
+  m_Name: InputIconXbox
+  m_EditorClassIdentifier: 
+  icons:
+  - type: 0
+    sprite: {fileID: 21300000, guid: 5a5781e644b3f0b418ba96624ea6d031, type: 3}
+  - type: 1
+    sprite: {fileID: 21300000, guid: ddf840849505d80478bc9c7724205414, type: 3}
+  - type: 2
+    sprite: {fileID: 21300000, guid: 3ebe2c57ba953db4f82cecbd012fe93c, type: 3}
+  - type: 3
+    sprite: {fileID: 21300000, guid: 08f3f79627726964da0c8458e84f7e8e, type: 3}
+  - type: 4
+    sprite: {fileID: 21300000, guid: c1f07a24972f24642a1afa80ecc751b3, type: 3}
+  - type: 5
+    sprite: {fileID: 21300000, guid: 90747b6873deba94dab91c3716fc1b81, type: 3}
+  - type: 6
+    sprite: {fileID: 21300000, guid: 0e542ef015aa0b042bf4a04ff1e63388, type: 3}
+  - type: 7
+    sprite: {fileID: 21300000, guid: d8ca715ba5fbd574aa98d53e1a4011e9, type: 3}
+  - type: 8
+    sprite: {fileID: 21300000, guid: 28a2584424aa3c047aa9cee78ca7d5b0, type: 3}
+  - type: 9
+    sprite: {fileID: 21300000, guid: f61ed3d05ae212541961d5f40af82177, type: 3}
+  - type: 10
+    sprite: {fileID: 21300000, guid: ecf39456e341c8640a5c4aec5de3f5aa, type: 3}
+  - type: 11
+    sprite: {fileID: 21300000, guid: 28c34b18ad3c2cf4dacc46ef515a44aa, type: 3}
+  - type: 12
+    sprite: {fileID: 21300000, guid: b8ce06b86768d104eb2dedb6613b32bc, type: 3}
+  - type: 13
+    sprite: {fileID: 21300000, guid: 194bb7718f6b46c45afe874fb747e7b3, type: 3}
+  - type: 14
+    sprite: {fileID: 21300000, guid: 24290b28ef9e79b4499f4bb518dfba52, type: 3}

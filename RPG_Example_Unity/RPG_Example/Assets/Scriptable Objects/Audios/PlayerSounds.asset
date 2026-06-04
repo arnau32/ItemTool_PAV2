@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89b2fc0cc4a6436dbf3c01518677e9c1, type: 3}
+  m_Name: PlayerSounds
+  m_EditorClassIdentifier: 
+  <Footstep>k__BackingField:
+    Guid:
+      Data1: 1648219713
+      Data2: 1289945127
+      Data3: 1495119760
+      Data4: -191573011
+    Path: event:/SFX_Player/Footsteps/Footsteps
+  <Hurt>k__BackingField:
+    Guid:
+      Data1: -1250038539
+      Data2: 1330009391
+      Data3: -107149140
+      Data4: 418382649
+    Path: event:/SFX_Player/Player_GetDamage
+  <Death>k__BackingField:
+    Guid:
+      Data1: 769109143
+      Data2: 1255427338
+      Data3: -389263712
+      Data4: -574424491
+    Path: event:/SFX_Player/Player_Death
+  <HitReaction>k__BackingField:
+    Guid:
+      Data1: -1250038539
+      Data2: 1330009391
+      Data3: -107149140
+      Data4: 418382649
+    Path: event:/SFX_Player/Player_GetDamage
+  <Dodge>k__BackingField:
+    Guid:
+      Data1: 113184814
+      Data2: 1317138015
+      Data3: -239097953
+      Data4: 239121972
+    Path: event:/SFX_Player/Player_DodgeMove
+  <Land>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <ParryAttempt>k__BackingField:
+    Guid:
+      Data1: 426507734
+      Data2: 1256863517
+      Data3: -1809702007
+      Data4: -210483266
+    Path: event:/SFX_Weapons/SFX_Parry_Attempt
+  <ParrySuccess>k__BackingField:
+    Guid:
+      Data1: -1996054028
+      Data2: 1159236239
+      Data3: -782701132
+      Data4: -2101654088
+    Path: event:/SFX_Weapons/SFX_Parry
+  <StaminaExhausted>k__BackingField:
+    Guid:
+      Data1: 937571129
+      Data2: 1180166241
+      Data3: 1751722636
+      Data4: -474266097
+    Path: event:/SFX_Player/StaminaExhausted
+  <Heal>k__BackingField:
+    Guid:
+      Data1: -1966397582
+      Data2: 1160719889
+      Data3: 774307253
+      Data4: 2087231229
+    Path: event:/SFX_Player/Player_Heal
+  <DodgeVoice>k__BackingField:
+    Guid:
+      Data1: 403044073
+      Data2: 1300927992
+      Data3: 297805697
+      Data4: -591609741
+    Path: event:/SFX_Player/Player_Dodge

@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Objects_en
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: f1e2d3c4b5a697886950413223140506, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 10000000000
+    m_Localized: Bright dust imbued with ancient light. It seems to keep the mist
+      at bay\u2026 for now.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000
+    m_Localized: A polished gem of unknown origin. Its value goes beyond the material.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30000000000
+    m_Localized: A worn statue of Liora. It still holds an echo of forgotten wind.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 40000000000
+    m_Localized: A rope worn by time. It can still hold more than it seems.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50000000000
+    m_Localized: Restores a small amount of health.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60000000000
+    m_Localized: Restores a moderate amount of health.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70000000000
+    m_Localized: Restores a large amount of health.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 80000000000
+    m_Localized: Unprocessed meat.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 90000000000
+    m_Localized: An ancient mixture of great power. Its effects surpass the known.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100000000000
+    m_Localized: "A large, cracked bone\u2014broken yet sturdy. It can still bear
+      weight."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 110000000000
+    m_Localized: A curved, solid bone structure. Perfect for shaping something greater.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120000000000
+    m_Localized: Basic forging metal. Durable, malleable, and always useful.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 130000000000
+    m_Localized: A fragile, cracked bone. It barely retains its original form.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 140000000000
+    m_Localized: A sturdy rock fragment. The foundation of any lasting structure.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 150000000000
+    m_Localized: Dry, lightweight wood. Good timber is scarce.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3534277799636992
+    m_Localized: Very appetizing leg of meat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3535889683247104
+    m_Localized: Energy Potion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3538622884671488
+    m_Localized: Strength Potion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6475911524839424
+    m_Localized: Ancient sword handle
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -1,0 +1,121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Varrik_en
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 6f49499dfe3cf4d4eb8fdbc7d00ffb4c, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 6297980928
+    m_Localized: My name is Varrik. I am the one who opens this door.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41102315520
+    m_Localized: "You can leave whenever you want\u2026 but if you come back\u2026
+      I'll keep half of your Aurora Dust."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49063874064384
+    m_Localized: "I think I've seen some still out there\u2026 humans who resist."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49213296144384
+    m_Localized: One near the north entrance, another to the east, and another to
+      the northwest.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49368586055680
+    m_Localized: "If you find them\u2026 bring them. An empty business doesn't sustain
+      itself."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59215461281792
+    m_Localized: "More hands\u2026 more trade."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59688985620480
+    m_Localized: Starting to look like a decent place. Good business.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59939196825600
+    m_Localized: Starting to look like a decent place. Good business.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60021572956160
+    m_Localized: Consider yourself paid for your feat.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 347738454159360
+    m_Localized: "Don't look at me like that. The door doesn't distinguish between
+      heroes and corpses\u2026 but I do. And from the living you can always get something
+      more."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1380164795863040
+    m_Localized: Talk to Varrik to complete the quest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3231385565851648
+    m_Localized: Talk to Varrik.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3491580892213248
+    m_Localized: "There is an ancient key\u2026 it does not work for this door, but
+      it does for something far more interesting."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3491584239267840
+    m_Localized: It is not free, of course. Nothing is with me. But you already know
+      how this works.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3491586218979328
+    m_Localized: "Take it. Open that sealed door of the past for me. And if you find
+      something inside\u2026 we will talk about the split."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3492350563774464
+    m_Localized: "\u2026I do not like what I feel on the other side. And that, trust
+      me, already says a lot coming from me."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3492352333770752
+    m_Localized: "Opening that door\u2026 has stirred something that had been still
+      for far too long. And what is still, here, is never a good sign."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3492353508175872
+    m_Localized: "Take this armor. It is not to make you fight better\u2026 it is
+      so you remain a living client when you return."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3498946329112576
+    m_Localized: "If something shines in the mist, it is usually because it wants
+      you to take it\u2026 or because it wants to take you first."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3499326580518912
+    m_Localized: I do not give discounts. I make exceptions. And only when it suits
+      me to remember I have a heart.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3499443073118208
+    m_Localized: "Doors do not open for free\u2026 but there is always someone willing
+      to pay more for what lies behind them."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

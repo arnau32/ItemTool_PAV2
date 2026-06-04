@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfded121a0f040be9fe8b0042d7b117c, type: 3}
+  m_Name: A_SRanged_CloseGap
+  m_EditorClassIdentifier: Assembly-CSharp::CloseGapAction
+  considerations:
+  - {fileID: 5053850918688695484}
+  - {fileID: 318556902634191529}
+  category: 1
+  isMaintenanceMovement: 1
+  canBeInterrupted: 1
+  useHardLook: 1
+  baseScore: 75
+  preferred: 5.5
+  duration: 1
+  tolerance: 0.4
+  maxEffectiveDistance: 10
+  requireLOS: 1
+  sampleRadius: 2
+  repathInterval: 0.15
+  minTargetMove: 0.25
+  stuckTime: 0.35
+--- !u!114 &318556902634191529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5e44b9e6b2941439a167347c6c22c7a, type: 3}
+  m_Name: AttackIntentConsideration_001
+  m_EditorClassIdentifier: Assembly-CSharp::AttackIntentConsideration
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.6000061
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &5053850918688695484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaa43389884f4dc7ae6de53effdf354c, type: 3}
+  m_Name: DistanceRangeConsideration_000
+  m_EditorClassIdentifier: Assembly-CSharp::DistanceRangeConsideration
+  minDistance: 5
+  maxDistance: 9.2
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 4.199271
+      outSlope: 4.199271
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.23624933
+      value: 0.992075
+      inSlope: 0.059269547
+      outSlope: 0.059269547
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.18591842
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0.010376389
+      outSlope: 0.010376389
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

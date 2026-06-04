@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{49e5422f-0eb1-4c1f-89d4-e2c8275941f5}">
+		<property name="assetPath">
+			<value>UI/Special_Clicks_Upgrades_IDK/SFX_Special_Click_36.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>5</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{bf91320e-88fb-44ab-9c54-c0d6bd490e28}</destination>
+		</relationship>
+	</object>
+</objects>

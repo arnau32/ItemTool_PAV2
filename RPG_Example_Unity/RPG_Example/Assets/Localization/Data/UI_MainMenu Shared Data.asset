@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: UI_MainMenu Shared Data
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
+  m_TableCollectionName: UI_MainMenu
+  m_TableCollectionNameGuidString: 3f9d6ab73883653449106f6b2a53a3b7
+  m_Entries:
+  - m_Id: 230137763033088
+    m_Key: BT_ContinueGame
+    m_Metadata:
+      m_Items: []
+  - m_Id: 230376150495232
+    m_Key: BT_Credits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 230289328402432
+    m_Key: BT_Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10470912000
+    m_Key: BT_StartNewGame
+    m_Metadata:
+      m_Items: []
+  - m_Id: 230705776652288
+    m_Key: BT_Exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7515388827111424
+    m_Key: UI_Nomral
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7516044992417792
+    m_Key: UI_Easy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7516072116981760
+    m_Key: UI_Back_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7519241265975296
+    m_Key: UI_Dificulty
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7548198130384896
+    m_Key: 'UI_Easy_Description
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7548227331129344
+    m_Key: UI_Nomral_Description
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 5009286567172768390
+  references:
+    version: 2
+    RefIds:
+    - rid: 5009286567172768390
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1777420050683

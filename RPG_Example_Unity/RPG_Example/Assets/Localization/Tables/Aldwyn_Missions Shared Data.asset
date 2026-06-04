@@ -1,0 +1,440 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Aldwyn_Missions Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Aldwyn_Missions
+  m_TableCollectionNameGuidString: e94557620545797449b61a903d40f81c
+  m_Entries:
+  - m_Id: 100000000000
+    m_Key: V_Aldwyn_1_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200000000000
+    m_Key: V_Aldwyn_1_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 300000000000
+    m_Key: V_Aldwyn_1_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 400000000000
+    m_Key: V_Aldwyn_1_04
+    m_Metadata:
+      m_Items: []
+  - m_Id: 500000000000
+    m_Key: V_Aldwyn_1_05
+    m_Metadata:
+      m_Items: []
+  - m_Id: 600000000000
+    m_Key: V_Aldwyn_1_06
+    m_Metadata:
+      m_Items: []
+  - m_Id: 700000000000
+    m_Key: V_Aldwyn_2_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 800000000000
+    m_Key: V_Aldwyn_2_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 900000000000
+    m_Key: V_Aldwyn_2_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1000000000000
+    m_Key: V_Aldwyn_2_04
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1100000000000
+    m_Key: V_Aldwyn_2_05
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1200000000000
+    m_Key: V_Aldwyn_2_06
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300000000000
+    m_Key: V_Aldwyn_2_07
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1400000000000
+    m_Key: V_Aldwyn_2_08
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1500000000000
+    m_Key: V_Aldwyn_3_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1600000000000
+    m_Key: V_Aldwyn_3_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1700000000000
+    m_Key: V_Aldwyn_3_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1800000000000
+    m_Key: V_Aldwyn_4_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1900000000000
+    m_Key: V_Aldwyn_4_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2000000000000
+    m_Key: V_Aldwyn_4_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2100000000000
+    m_Key: V_Aldwyn_5_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2200000000000
+    m_Key: V_Aldwyn_5_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2300000000000
+    m_Key: V_Aldwyn_5_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2400000000000
+    m_Key: V_Aldwyn_6_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2500000000000
+    m_Key: V_Aldwyn_7_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2600000000000
+    m_Key: V_Aldwyn_7_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2700000000000
+    m_Key: V_Aldwyn_7_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2800000000000
+    m_Key: V_Aldwyn_7_04
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2900000000000
+    m_Key: V_Aldwyn_7_05
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3000000000000
+    m_Key: V_Aldwyn_7_06
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3100000000000
+    m_Key: V_Aldwyn_8_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3200000000000
+    m_Key: V_Aldwyn_8_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3300000000000
+    m_Key: V_Aldwyn_8_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3400000000000
+    m_Key: V_Aldwyn_8_04
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3500000000000
+    m_Key: V_Aldwyn_8_05
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3600000000000
+    m_Key: V_Aldwyn_14_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3700000000000
+    m_Key: V_Aldwyn_14_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3800000000000
+    m_Key: V_Aldwyn_14_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3900000000000
+    m_Key: V_Aldwyn_9_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4000000000000
+    m_Key: V_Aldwyn_9_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4100000000000
+    m_Key: V_Aldwyn_9_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4200000000000
+    m_Key: V_Aldwyn_9_04
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300000000000
+    m_Key: V_Aldwyn_10_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4400000000000
+    m_Key: V_Aldwyn_10_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4500000000000
+    m_Key: V_Aldwyn_10_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4600000000000
+    m_Key: V_Aldwyn_10_04
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4700000000000
+    m_Key: V_Aldwyn_10_05
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4800000000000
+    m_Key: V_Aldwyn_10_06
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4900000000000
+    m_Key: V_Aldwyn_15_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5000000000000
+    m_Key: V_Aldwyn_15_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5100000000000
+    m_Key: V_Aldwyn_15_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5200000000000
+    m_Key: V_Aldwyn_11_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5300000000000
+    m_Key: V_Aldwyn_11_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5400000000000
+    m_Key: V_Aldwyn_11_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5500000000000
+    m_Key: V_Aldwyn_11_04
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5600000000000
+    m_Key: V_Aldwyn_12_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5700000000000
+    m_Key: V_Aldwyn_12_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5800000000000
+    m_Key: V_Aldwyn_12_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5900000000000
+    m_Key: V_Aldwyn_12_04
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6000000000000
+    m_Key: V_Aldwyn_12_05
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6100000000000
+    m_Key: V_Aldwyn_12_06
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6200000000000
+    m_Key: V_Aldwyn_16_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6300000000000
+    m_Key: V_Aldwyn_16_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6400000000000
+    m_Key: V_Aldwyn_16_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6500000000000
+    m_Key: V_Aldwyn_13_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6600000000000
+    m_Key: V_Aldwyn_13_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6700000000000
+    m_Key: V_Aldwyn_13_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6800000000000
+    m_Key: V_Aldwyn_13_04
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6900000000000
+    m_Key: V_Aldwyn_G_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7000000000000
+    m_Key: V_Aldwyn_G_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7100000000000
+    m_Key: V_Aldwyn_G_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7200000000000
+    m_Key: V_Aldwyn_T_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7300000000000
+    m_Key: V_Aldwyn_T_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7400000000000
+    m_Key: V_Aldwyn_T_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7500000000000
+    m_Key: V_Aldwyn_T_04
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7600000000000
+    m_Key: V_Aldwyn_T_05
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7700000000000
+    m_Key: V_Aldwyn_MN_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7800000000000
+    m_Key: V_Aldwyn_MN_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7900000000000
+    m_Key: V_Aldwyn_MA_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8000000000000
+    m_Key: V_Aldwyn_MA_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8100000000000
+    m_Key: V_Aldwyn_MA_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8200000000000
+    m_Key: V_Aldwyn_F_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8300000000000
+    m_Key: V_Aldwyn_F_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8400000000000
+    m_Key: V_Aldwyn_F_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11432770195222528
+    m_Key: Aldwyn_Choice_Talk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11433149075091456
+    m_Key: Aldwyn_choice_bye
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11433315760926720
+    m_Key: New Entry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11433332672360448
+    m_Key: New Entry 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11433369229914112
+    m_Key: Aldwyn_choice_mission
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14237765290487808
+    m_Key: New Entry 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14242909021335552
+    m_Key: V_Aldwyn_9_05
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14313592015351808
+    m_Key: New Entry 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14330350554116096
+    m_Key: V_Aldwyn_9_06
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14547915515686912
+    m_Key: Dialog_Curar_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14548077587787776
+    m_Key: Dialog_Curar_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14548360053190656
+    m_Key: Dialog_Curar_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14563846547632128
+    m_Key: V_Aldwyn_9_07
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14564048343986176
+    m_Key: V_Aldwyn_9_08
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14677897961336832
+    m_Key: Revivir_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14678109299732480
+    m_Key: Revivir_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14678421603414016
+    m_Key: Revivir_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14714330654765056
+    m_Key: New Entry 4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16045007289159680
+    m_Key: A_TALK_TO
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 1001000000000000001
+  references:
+    version: 2
+    RefIds:
+    - rid: 1001000000000000001
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1774000000000

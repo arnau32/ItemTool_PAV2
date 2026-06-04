@@ -1,0 +1,218 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8747468234030208331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: BCI_CanStart_05
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  id: 52445ec5
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:c0d1e2f3a4b5c6f1a2b3c4d5e6f7a8b9
+    m_TableEntryReference:
+      m_KeyId: 14886260028534784
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 1fbc599d
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 767.2, y: 379.4}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-4227804086769229326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: BCI_CanStart_1
+  m_EditorClassIdentifier: 
+  id: deb7e4bf
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:c0d1e2f3a4b5c6f1a2b3c4d5e6f7a8b9
+    m_TableEntryReference:
+      m_KeyId: 12187371890601984
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: fe3ce053
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 990, y: 230}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-3841081421667587535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: BCI_CanStart_06
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  id: 1fbc599d
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:c0d1e2f3a4b5c6f1a2b3c4d5e6f7a8b9
+    m_TableEntryReference:
+      m_KeyId: 14887010897031168
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 947.2, y: 379.4}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-2999272106048420936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: BCI_CanStart_04
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  id: 65e41b51
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:c0d1e2f3a4b5c6f1a2b3c4d5e6f7a8b9
+    m_TableEntryReference:
+      m_KeyId: 14885084675502080
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 52445ec5
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 1487.2, y: 379.4}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-2838584261744625343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: BCI_CanStart_03
+  m_EditorClassIdentifier: 
+  id: d8fed150
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:c0d1e2f3a4b5c6f1a2b3c4d5e6f7a8b9
+    m_TableEntryReference:
+      m_KeyId: 12187958174609408
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 65e41b51
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 1360, y: 230}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a9b39f4adf73084cb69b16020143e7a, type: 3}
+  m_Name: Naisha_Map
+  m_EditorClassIdentifier: 
+  characterIllustration: {fileID: 21300000, guid: 1edd0b2969def2744aa487706b0ca600, type: 3}
+  characterName: Naisha
+  startNodeId: deb7e4bf
+  nodes:
+  - {fileID: -4227804086769229326}
+  - {fileID: 8279869194760009873}
+  - {fileID: -2838584261744625343}
+  - {fileID: -2999272106048420936}
+  - {fileID: -8747468234030208331}
+  - {fileID: -3841081421667587535}
+  pinnedNodeIds:
+  - 9a07ba8d
+--- !u!114 &8279869194760009873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: BCI_CanStart_02
+  m_EditorClassIdentifier: 
+  id: fe3ce053
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:c0d1e2f3a4b5c6f1a2b3c4d5e6f7a8b9
+    m_TableEntryReference:
+      m_KeyId: 12187548307222528
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: d8fed150
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 1180, y: 230}
+  references:
+    version: 2
+    RefIds: []

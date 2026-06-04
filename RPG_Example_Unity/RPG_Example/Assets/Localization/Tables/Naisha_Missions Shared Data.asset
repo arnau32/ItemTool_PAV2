@@ -1,0 +1,284 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Naisha_Missions Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Naisha_Missions
+  m_TableCollectionNameGuidString: c0d1e2f3a4b5c6f1a2b3c4d5e6f7a8b9
+  m_Entries:
+  - m_Id: 100000000000
+    m_Key: V_Naisha_1_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200000000000
+    m_Key: V_Naisha_1_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 300000000000
+    m_Key: V_Naisha_1_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 400000000000
+    m_Key: V_Naisha_1_04
+    m_Metadata:
+      m_Items: []
+  - m_Id: 500000000000
+    m_Key: V_Naisha_2_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 600000000000
+    m_Key: V_Naisha_2_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4200000000000
+    m_Key: V_Naisha_2_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 700000000000
+    m_Key: V_Naisha_3_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 800000000000
+    m_Key: V_Naisha_3_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 900000000000
+    m_Key: V_Naisha_3_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1000000000000
+    m_Key: V_Naisha_4_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1100000000000
+    m_Key: V_Naisha_4_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1200000000000
+    m_Key: V_Naisha_4_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300000000000
+    m_Key: V_Naisha_5_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1400000000000
+    m_Key: V_Naisha_6_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1500000000000
+    m_Key: V_Naisha_6_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1600000000000
+    m_Key: V_Naisha_7_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1700000000000
+    m_Key: V_Naisha_7_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1800000000000
+    m_Key: V_Naisha_7_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1900000000000
+    m_Key: V_Naisha_8_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2000000000000
+    m_Key: V_Naisha_8_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2100000000000
+    m_Key: V_Naisha_8_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2200000000000
+    m_Key: V_Naisha_8_04
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2300000000000
+    m_Key: V_Naisha_9_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2400000000000
+    m_Key: V_Naisha_9_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2500000000000
+    m_Key: V_Naisha_9_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2600000000000
+    m_Key: V_Naisha_G_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2700000000000
+    m_Key: V_Naisha_G_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2800000000000
+    m_Key: V_Naisha_G_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2900000000000
+    m_Key: V_Naisha_T_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3000000000000
+    m_Key: V_Naisha_T_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3100000000000
+    m_Key: V_Naisha_T_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3200000000000
+    m_Key: V_Naisha_T_04
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3300000000000
+    m_Key: V_Naisha_T_05
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3400000000000
+    m_Key: V_Naisha_MN_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3500000000000
+    m_Key: V_Naisha_MN_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3600000000000
+    m_Key: V_Naisha_MA_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3700000000000
+    m_Key: V_Naisha_MA_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3800000000000
+    m_Key: V_Naisha_MA_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3900000000000
+    m_Key: V_Naisha_F_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4000000000000
+    m_Key: V_Naisha_F_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4100000000000
+    m_Key: V_Naisha_F_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12187371890601984
+    m_Key: Rescate_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12187548307222528
+    m_Key: Rescate_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12187958174609408
+    m_Key: Rescate_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14885084675502080
+    m_Key: Rescate_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14886260028534784
+    m_Key: Rescate_5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14887010897031168
+    m_Key: Rescate_6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14890810152120320
+    m_Key: V_Naisha_1_03_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14891669439180800
+    m_Key: Naisha_M_Ran_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14892204225523712
+    m_Key: New Entry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14895437622865920
+    m_Key: M1_Fin_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14895589037240320
+    m_Key: M1_Fin_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14895739776331776
+    m_Key: M1_Fin_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14896555950141440
+    m_Key: V_Naisha_2_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15056270944432128
+    m_Key: N_M_3_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15056801096069120
+    m_Key: N_M_3_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15069359941152768
+    m_Key: New Entry 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15069434708815872
+    m_Key: New Entry 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15069579919814656
+    m_Key: New Entry 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15070045193957376
+    m_Key: New Entry 4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15070123057016832
+    m_Key: New Entry 5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16045658681348096
+    m_Key: N_TALKTO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18927919540269056
+    m_Key: New Entry 6
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 1003000000000000001
+  references:
+    version: 2
+    RefIds:
+    - rid: 1003000000000000001
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1774000000000

@@ -1,0 +1,22 @@
+Name,Tier,Rarity,Family,FlatAtk,EnemyMult
+Dagger Tier 1,1,Common,Dagger,9,0,1,00
+Dagger Tier 2,2,Common,Dagger,14,0,1,80
+Dagger Tier 3,3,Common,Dagger,21,0,1,80
+Dagger Tier 4,4,Common,Dagger,31,0,1,80
+Great Sword Tier 1,1,Common,GreatSword,28,0,1,00
+Great Sword Tier 2,2,Common,GreatSword,44,0,1,20
+Great Sword Tier 3,3,Common,GreatSword,66,0,1,40
+Great Sword Tier 4,4,Common,GreatSword,97,0,1,80
+Hans_Tier1,1,Common,Hands,10,0,1,00
+Hans_Tier2,2,Common,Hands,19,0,1,00
+Hans_Tier3,3,Common,Hands,28,0,1,00
+Hans_Tier4,4,Common,Hands,41,0,1,00
+Weapon_RangedSkeleton,1,Common,Hands,8,0,1,50
+Spear Tier 1,1,Common,Spear,18,0,1,00
+Spear Tier 2,2,Common,Spear,28,0,1,00
+Spear Tier 3,3,Common,Spear,42,0,1,00
+Spear Tier 4,4,Common,Spear,62,0,1,00
+Sword & Shield Tier 1,1,Common,Warrior,16,0,1,00
+Sword & Shield Tier 2,2,Common,Warrior,25,0,1,20
+Sword & Shield Tier 3,3,Common,Warrior,38,0,1,40
+Sword & Shield Tier 4,4,Common,Warrior,55,0,1,80

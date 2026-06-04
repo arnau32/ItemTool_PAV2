@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Misions_General_es
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: 30e83be03e252314fa0a389c50676e6b, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 100000000000
+    m_Localized: "Lo que A\xFAn Permanece"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200000000000
+    m_Localized: "Busca a los supervivientes perdidos m\xE1s all\xE1 de la niebla
+      y gu\xEDalos de regreso a Fallowrest."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 300000000000
+    m_Localized: Ecos de una Forja Perdida
+    m_Metadata:
+      m_Items: []
+  - m_Id: 400000000000
+    m_Localized: "Recupera el antiguo mango de arma oculto los campos de penitencia
+      y entr\xE9gaselo a Haldrik para que la forja vuelva a despertar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 500000000000
+    m_Localized: Materia Prima
+    m_Metadata:
+      m_Items: []
+  - m_Id: 600000000000
+    m_Localized: "Consigue hierro suficiente para alimentar las llamas de la herrer\xEDa
+      de Haldrik."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 700000000000
+    m_Localized: Sed de Venganza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 800000000000
+    m_Localized: "Derrota esqueletos acorazados y ayuda a Naisha a silenciar la rabia
+      que a\xFAn arde en su interior."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 900000000000
+    m_Localized: "Ecos de la Cacher\xEDa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1000000000000
+    m_Localized: Acaba con los guardianes con caso consumidos y calma los recuerdos
+      que persiguen a Naisha.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1100000000000
+    m_Localized: El Hambre de la Forja
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1200000000000
+    m_Localized: "Encuentra una gema lo bastante pura para alimentar el coraz\xF3n
+      ardiente de Haldrik, en el campamento de las dunas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300000000000
+    m_Localized: Huesos de una Bestia Antigua
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1400000000000
+    m_Localized: "Obt\xE9n el cr\xE1neo de una bestia ancestral para ayudar a Naisha
+      a reconstruir lo que perdi\xF3."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1500000000000
+    m_Localized: El Sello del Pasado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1600000000000
+    m_Localized: "Abre la puerta sellada y ad\xE9ntrate en aquello que llevaba siglos
+      oculto."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1700000000000
+    m_Localized: "La \xDAltima Cacher\xEDa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1800000000000
+    m_Localized: "Acaba con los responsables de la ca\xEDda de Naisha y limpia la
+      cueva de las criaturas que a\xFAn la corrompen."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

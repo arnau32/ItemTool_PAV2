@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b7492b73b61442fb88e115c95bc8bb5, type: 3}
+  m_Name: Sword_Shield_Tier4
+  m_EditorClassIdentifier: 
+  <uniqueID>k__BackingField: Sword & Shield Tier 4
+  itemType: 0
+  itemNameID: Sword & Shield Tier 4
+  localizedDisplayName:
+    m_TableReference:
+      m_TableCollectionName: GUID:2238abc9fc3eabf429fc99726df15768
+    m_TableEntryReference:
+      m_KeyId: 1590088142848
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  icon: {fileID: 21300000, guid: e43dc04f7b01dc645a13d2c86e95d75f, type: 3}
+  description: 'Attack + 10
+
+    Defense + 3'
+  descriptionBlocks: []
+  itemRarity: 0
+  value: 0
+  weight: 0
+  maxStack: 1
+  SlotDimension:
+    Height: 2
+    Width: 1
+  equipSlot: 3
+  modifiers:
+  - statTypeAffected: 4
+    type: 100
+    value: 55
+    order: 0
+  - statTypeAffected: 1
+    type: 100
+    value: 6
+    order: 0
+  prefab: {fileID: 7830352186692041238, guid: 55483ed225d5e7f4e818e6da2832d746, type: 3}
+  tier: 4
+  rollMode: 1
+  animatorOverride: {fileID: 9100000, guid: 38b65e7c8da33ec42b7f83b928053c10, type: 2}
+  handType: 2
+  familyType: 2
+  prefabVariant: {fileID: 2696974743846968208, guid: 3fb8de98c4ec6fc4ba23d0b21df7ab1f, type: 3}
+  combos:
+  - steps:
+    - input: 0
+      attack: {fileID: 11400000, guid: 601b8943daa991e428e3d90df7b6e7f6, type: 2}
+    - input: 0
+      attack: {fileID: 11400000, guid: b9423d818b5a9fd47abfd84e27c9d12d, type: 2}
+    - input: 0
+      attack: {fileID: 11400000, guid: 4e09c628822676f41b9f2a368bcda7f7, type: 2}
+  - steps:
+    - input: 3
+      attack: {fileID: 11400000, guid: d1f4c05f301b4dd498f379932789f298, type: 2}
+  dodgeSet: {fileID: 11400000, guid: 5de25dff825e7b44db4157b31a9cc169, type: 2}
+  parry: {fileID: 11400000, guid: 70e1d39840a8e9745b292e96142b1f82, type: 2}
+  weaponSkill: {fileID: 11400000, guid: 1516b7cd6aeb4ce4d8a6d68d623b5dcc, type: 2}
+  skillScoreNeeded: 160
+  weaponTier: 4
+  enemyDamageMultiplier: 1.8
+  references:
+    version: 2
+    RefIds: []

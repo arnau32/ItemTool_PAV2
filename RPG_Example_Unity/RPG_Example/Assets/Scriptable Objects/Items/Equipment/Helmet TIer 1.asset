@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bfae1544038f6245a6515c34c501431, type: 3}
+  m_Name: Helmet Tier 1
+  m_EditorClassIdentifier: 
+  <uniqueID>k__BackingField: Helmet Tier 1
+  itemType: 0
+  itemNameID: Helmet Tier 1
+  localizedDisplayName:
+    m_TableReference:
+      m_TableCollectionName: GUID:2238abc9fc3eabf429fc99726df15768
+    m_TableEntryReference:
+      m_KeyId: 3015367168000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  icon: {fileID: 21300000, guid: 48d85c363fde1cd47af014fbecaabcd0, type: 3}
+  description: 'Health + 50
+
+    Defense + 5'
+  descriptionBlocks: []
+  itemRarity: 0
+  value: 0
+  weight: 0
+  maxStack: 1
+  SlotDimension:
+    Height: 1
+    Width: 1
+  equipSlot: 1
+  modifiers:
+  - statTypeAffected: 0
+    type: 100
+    value: 18
+    order: 0
+  - statTypeAffected: 1
+    type: 100
+    value: 4
+    order: 0
+  prefab: {fileID: 0}
+  tier: 1
+  rollMode: 1
+  references:
+    version: 2
+    RefIds: []

@@ -1,0 +1,183 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI_Settings_en
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 034bb790011b845459ea80e79b70513a, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 221763170304
+    m_Localized: General
+    m_Metadata:
+      m_Items: []
+  - m_Id: 275467038720
+    m_Localized: Graphics
+    m_Metadata:
+      m_Items: []
+  - m_Id: 321809903616
+    m_Localized: Sounds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 354517086208
+    m_Localized: Control
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2074093645824
+    m_Localized: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2152615211008
+    m_Localized: Input Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 80783588814848
+    m_Localized: Resolution
+    m_Metadata:
+      m_Items: []
+  - m_Id: 80829650661376
+    m_Localized: Enable VSync
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81087533248512
+    m_Localized: Master Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81180147675136
+    m_Localized: BGM Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81430820253696
+    m_Localized: Ambience Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81748568141824
+    m_Localized: SFX Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84323157766144
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 106293177970688
+    m_Localized: Common
+    m_Metadata:
+      m_Items: []
+  - m_Id: 106479296016384
+    m_Localized: Move
+    m_Metadata:
+      m_Items: []
+  - m_Id: 107460008177664
+    m_Localized: Attack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 108122766929920
+    m_Localized: Ability Weapon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 108467630993408
+    m_Localized: Dodge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 108504943521792
+    m_Localized: Interact
+    m_Metadata:
+      m_Items: []
+  - m_Id: 108965507461120
+    m_Localized: Parry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 108930032037888
+    m_Localized: Sprint
+    m_Metadata:
+      m_Items: []
+  - m_Id: 110342396801024
+    m_Localized: Swap Target
+    m_Metadata:
+      m_Items: []
+  - m_Id: 111322836332544
+    m_Localized: Lock On / Lock Off
+    m_Metadata:
+      m_Items: []
+  - m_Id: 118012742823936
+    m_Localized: Inventory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 123025733021696
+    m_Localized: Open inventory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 123106263658496
+    m_Localized: Open menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 124208220565504
+    m_Localized: Pick Up / Drop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 125463688998912
+    m_Localized: Use / Equip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128285641895936
+    m_Localized: Close Inventory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128618317312000
+    m_Localized: Collect / Storage / Discard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128765990367232
+    m_Localized: Switch panel (left)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 129108581117952
+    m_Localized: Switch panel (right)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 129710845423616
+    m_Localized: Rotate item
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1481633930506240
+    m_Localized: Curosor Sensitivity (Inventory)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3010854364475392
+    m_Localized: Quality
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3010964448178176
+    m_Localized: Low
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3011060766175232
+    m_Localized: Medium
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3011146434834432
+    m_Localized: High
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3011212163772416
+    m_Localized: Ultra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3032403846983680
+    m_Localized: Enable FullScreen
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

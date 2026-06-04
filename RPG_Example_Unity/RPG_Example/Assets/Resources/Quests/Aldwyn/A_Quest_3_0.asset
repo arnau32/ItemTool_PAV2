@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da8ec4b613ba48f5a839ce9ca857e9fd, type: 3}
+  m_Name: A_Quest_3_0
+  m_EditorClassIdentifier: Assembly-CSharp::DeliverItemStepSO
+  objectiveText:
+    m_TableReference:
+      m_TableCollectionName: GUID:ca4ac9f513ebf8646a71bb55f3e82cd0
+    m_TableEntryReference:
+      m_KeyId: 1241254365556736
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  requiredItem: {fileID: 11400000, guid: 98f9d6fd8501c644f8521ad78358dd85, type: 2}
+  requiredQuantity: 1
+  consumeOnDelivery: 1
+  deliveryZoneId: Church
+  references:
+    version: 2
+    RefIds: []

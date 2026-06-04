@@ -1,0 +1,317 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Haldrik_Missions_ca
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: ca
+  m_SharedData: {fileID: 11400000, guid: f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 100000000000
+    m_Localized: "Aquest lloc no est\xE0 malament\u2026 parets de pedra, sostre mig
+      intacte\u2026 i nom\xE9s sento crits a la nit de vegades. S\xED, serveix com
+      a forja."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200000000000
+    m_Localized: "Ja hem\u2026 he muntat aqu\xED una cosa semblant a una ferreria.
+      El foc aguanta, l\u2019enclusa aguanta, i nosaltres tamb\xE9. M\xE9s o menys."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 300000000000
+    m_Localized: "Si aconsegueixes sobreviure all\xE0 fora, potser podr\xE9 millorar
+      les teves armes. Ning\xFA hauria d\u2019enfrontar-se a la boira amb ferro mediocre."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 400000000000
+    m_Localized: "Per cert... Abans d\u2019arribar vaig deixar un m\xE0nec d\u2019arma
+      als Camps de Penit\xE8ncia. Una obra mestra. B\xE9\u2026 gaireb\xE9. Porta-me\u2019l
+      i t\u2019ensenyar\xE9 el que unes bones mans poden fabricar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 500000000000
+    m_Localized: "Una bona arma necessita equilibri\u2026 i aquell m\xE0nec tenia
+      un equilibri perfecte. B\xE9, gaireb\xE9 perfecte. Tharims va deixar un costat
+      m\xE9s llarg. Vull dir\u2026 jo. Jo el vaig deixar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 600000000000
+    m_Localized: "Encara no l\u2019has trobat? Busca entre les ru\xEFnes dels Camps
+      de Penit\xE8ncia. Si els consumits no l\u2019han fet servir per colpejar-se
+      entre ells, hauria de seguir all\xE0."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 700000000000
+    m_Localized: "Mira aix\xF2! Sabia que encara era sencer\u2026 m\xE9s o menys.
+      Dona-me\u2019l abans que s\u2019oxidi un altre segle."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 800000000000
+    m_Localized: "Bon treball. Amb aix\xF2 podr\xE9 tornar a fabricar armes de deb\xF2.
+      B\xE9\u2026 armes perilloses per als teus enemics, vull dir."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 900000000000
+    m_Localized: "Dona\u2019m un moment\u2026 el metall necessita calor, paci\xE8ncia
+      i deixa de tocar aix\xF2! \u2026Ja gaireb\xE9 est\xE0."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1000000000000
+    m_Localized: "Vaig intentar forjar una armadura amb restes velles\u2026 ara protegeix
+      molt b\xE9\u2026 les rates. No \xE9s ideal."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1100000000000
+    m_Localized: "Necessito ferro de veritat. A les vetes del desert encara queden
+      minerals bons, enterrats sota aquella sorra tra\xEFdora."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1200000000000
+    m_Localized: "Porta\u2019m 8 peces de ferro i et far\xE9 una pe\xE7a d\u2019armadura.
+      Ben feta, resistent\u2026 i nom\xE9s una mica perillosa per a qui no siguis
+      tu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300000000000
+    m_Localized: Res
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1400000000000
+    m_Localized: "Encara segueixes viu all\xE0 fora? B\xE9. El desert no sol tornar
+      les coses senceres."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1500000000000
+    m_Localized: "8 peces de ferro. Ni una menys. Si tornes amb sorra, et far\xE9
+      una armadura de sorra. No \xE9s \xFAtil, per\xF2 seria simb\xF2lic."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1600000000000
+    m_Localized: "Perfecte\u2026 aix\xF2 \xE9s just el que necessitava. Dona\u2019m
+      un segon i la forjo. Si veus espurnes volant, \xE9s bon senyal\u2026 crec."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1700000000000
+    m_Localized: Res
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1800000000000
+    m_Localized: Res
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1900000000000
+    m_Localized: "D\u2019acord\u2026 aix\xF2 \xE9s senzill. Nom\xE9s necessito una
+      gemma. Una bona. Res estrany. Res\u2026 viu. Preferiblement."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2000000000000
+    m_Localized: "No preguntis per a qu\xE8 \xE9s. \xC9s per a la forja. S\xED. Aix\xF2.
+      La forja. No la meva\u2026 b\xE9, la forja."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2100000000000
+    m_Localized: "Porta\u2019m una gemma decent del desert. Del campament dels consumits..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2200000000000
+    m_Localized: Res
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2300000000000
+    m_Localized: "Si ja la tens, no la miris massa. Les gemmes bones\u2026 et miren
+      de tornada. \xC9s una teoria."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2400000000000
+    m_Localized: "Com va amb els consumits? No se\u2019ls veu gaire parladors."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2500000000000
+    m_Localized: Res
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2600000000000
+    m_Localized: Res
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2700000000000
+    m_Localized: "Perfecte\u2026 s\xED, aix\xF2 servir\xE0. No t\u2019acostis massa
+      mentre la poso a la forja\u2026 o al que sigui aix\xF2 ara."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2800000000000
+    m_Localized: "Dona\u2019m un moment\u2026 aix\xF2 necessitar\xE0 calor, metall
+      i\u2026 b\xE9, bastanta improvisaci\xF3. Sortir\xE0 una armadura completa.
+      Segurament bona."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2900000000000
+    m_Localized: Res
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3000000000000
+    m_Localized: "El metall millora\u2026 per\xF2 tu tamb\xE9 has de fer-ho."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3100000000000
+    m_Localized: Quaranta.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3200000000000
+    m_Localized: "Si agafar\xE0s el que faig\u2026 demostra que pots usar-ho."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3300000000000
+    m_Localized: "\u2026V\xE9s."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3400000000000
+    m_Localized: Quaranta.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3500000000000
+    m_Localized: "Aix\xF2 \xE9s el que vaig demanar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3600000000000
+    m_Localized: Quants en portes?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3700000000000
+    m_Localized: No pares.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3800000000000
+    m_Localized: "L'acer ja \xE9s a punt. Tu no."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3900000000000
+    m_Localized: Torna quan acabis.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4000000000000
+    m_Localized: "\u2026Ja est\xE0."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4100000000000
+    m_Localized: Es nota diferent ara.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4200000000000
+    m_Localized: "El ferro\u2026 i tu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300000000000
+    m_Localized: Oh! Hola. Salutacions. Benvinguda. Un dels tres anteriors.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4400000000000
+    m_Localized: "En qu\xE8 puc... podem... en qu\xE8 puc ajudar-te?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4500000000000
+    m_Localized: "El ferrer est\xE0 disponible. S\xF3c jo. El ferrer."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4600000000000
+    m_Localized: El foc parla. Tu, no.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4700000000000
+    m_Localized: Tinc feina.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4800000000000
+    m_Localized: "Qu\xE8 vols?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4900000000000
+    m_Localized: El martell no descansa.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5000000000000
+    m_Localized: "\u2026S\xED. Qu\xE9."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5100000000000
+    m_Localized: "Ei, ten\xEDem... tenia una idea. Per a un enc\xE0rrec. Si no est\xE0s
+      ocupada."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5200000000000
+    m_Localized: Necessitem demanar-te alguna cosa. Jo! Jo necessito demanar-te alguna
+      cosa.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5300000000000
+    m_Localized: Encara no has tornat amb tot! Vull dir... estic esperant.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5400000000000
+    m_Localized: "Com va? Ho pregunto per educaci\xF3. I perqu\xE8 estem expectants.
+      Jo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5500000000000
+    m_Localized: "Pren-te el teu temps. Encara que si pots anar m\xE9s r\xE0pid,
+      millor per a tots... per a mi."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5600000000000
+    m_Localized: "Fins aviat! Els tres... jo tamb\xE9 ho dic."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5700000000000
+    m_Localized: "Cuida't. Els ferrers valorem la integritat f\xEDsica dels nostres
+      clients."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5800000000000
+    m_Localized: "V\xE9s amb compte. I ja saps que si necessites alguna cosa... aqu\xED
+      estem. Estic."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14582977602842624
+    m_Localized: Millorar Armes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16045431673032704
+    m_Localized: "Parla amb en Haldrik per completar la missi\xF3"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12184221653725184
+    m_Localized: "No t\u2019acostis! Ah\u2026 no. No ets dels seus."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12184367854579712
+    m_Localized: "Soc Haldrik. Encara estic sencer\u2026 m\xE9s o menys."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12184507139026944
+    m_Localized: "Ens vam amagar aqu\xED per no tornar als forns de Thararel\u2026
+      era l\u2019\xFAnica manera de seguir amb vida."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12184625334513664
+    m_Localized: "Gr\xE0cies per treure\u2019m d\u2019aquest forat."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16374422064132096
+    m_Localized: "Anir\xE9 al poble, si les cames encara m\u2019obeeixen\u2026 i
+      all\xE0, potser, podr\xE9 tornar-te el favor."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

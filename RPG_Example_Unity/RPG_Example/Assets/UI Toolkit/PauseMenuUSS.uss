@@ -1,0 +1,69 @@
+.Button {
+    -unity-font-definition: url("project://database/Assets/Art/Fonts%20&%20TMP/Markazi/MarkaziText-SemiBold.ttf?fileID=12800000&guid=98886f0f284dda24e99e94dc6c320dce&type=3#MarkaziText-SemiBold");
+    font-size: 70px;
+    -unity-background-image-tint-color: rgb(160, 160, 160);
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    height: 85px;
+    overflow: visible;
+}
+
+#unity-tracker {
+    background-image: url("project://database/Assets/Synty/InterfaceDarkFantasyHUD/Sprites/DarkFantasy/SPR_DarkFantasy_Bar_09.png?fileID=2800000&guid=a0cfb837f72be904a85a0a1ccd80b3a2&type=3#SPR_DarkFantasy_Bar_09");
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    -unity-background-scale-mode: stretch-to-fill;
+    -unity-slice-top: 0;
+    -unity-slice-left: 31;
+    -unity-slice-right: 155;
+    height: 36px;
+    justify-content: flex-start;
+}
+
+#unity-dragger {
+    background-image: url("project://database/Assets/Synty/InterfaceDarkFantasyHUD/Sprites/Icons_Resources/ICON_SM_Prop_Jewel_03_Dungeon.png?fileID=2800000&guid=17aafb807d560a743a4a2e3996fefc69&type=3#ICON_SM_Prop_Jewel_03_Dungeon");
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+    -unity-background-scale-mode: scale-to-fit;
+    flex-grow: 1;
+    height: 72px;
+    width: 69px;
+    justify-content: flex-start;
+    align-items: auto;
+    margin-top: -21px;
+    margin-right: 0;
+    padding-right: 0;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+#unity-drag-container {
+    justify-content: flex-start;
+    align-content: auto;
+    align-items: auto;
+    align-self: stretch;
+    top: -12px;
+}
+
+.VolumeContainer {
+    width: 1085px;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 142px;
+    align-items: center;
+}
+
+.textSettings {
+    -unity-font-definition: url("project://database/Assets/Art/Fonts%20&%20TMP/Markazi/MarkaziText-SemiBold.ttf?fileID=12800000&guid=98886f0f284dda24e99e94dc6c320dce&type=3#MarkaziText-SemiBold");
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}

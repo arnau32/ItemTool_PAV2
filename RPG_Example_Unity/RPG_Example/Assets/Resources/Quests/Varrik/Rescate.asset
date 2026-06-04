@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 329b2ab435794f2409022a53e5452931, type: 3}
+  m_Name: Rescate
+  m_EditorClassIdentifier: Assembly-CSharp::QuestInfoSO
+  <id>k__BackingField: Rescate
+  qName:
+    m_TableReference:
+      m_TableCollectionName: GUID:ca4ac9f513ebf8646a71bb55f3e82cd0
+    m_TableEntryReference:
+      m_KeyId: 2305169866420232
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  description: 
+  icon: {fileID: 0}
+  questPreequisits: []
+  questSteps:
+  - {fileID: 11400000, guid: bc68684e6b7163d4b9b80b44f3aa652e, type: 2}
+  canFinishText:
+    m_TableReference:
+      m_TableCollectionName: GUID:6f49499dfe3cf4d4eb8fdbc7d00ffb4c
+    m_TableEntryReference:
+      m_KeyId: 1380164795863040
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  mapPOIs:
+  - {fileID: 11400000, guid: 6be291f1abec83f4aafecee3a7cd7244, type: 2}
+  - {fileID: 11400000, guid: 0af6198b7e41ff34f9530a65faeea9e9, type: 2}
+  - {fileID: 11400000, guid: 204d476d6e2dd4d4eb9a2d8e1c87288f, type: 2}
+  reward:
+    items: []
+    randomItems: []
+    auroraDust: 400
+  references:
+    version: 2
+    RefIds: []

@@ -1,0 +1,2158 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9752b0c8e144801967e6897679604b, type: 3}
+  m_Name: vHierarchy Data
+  m_EditorClassIdentifier: 
+  sceneDatas_byGuid:
+    keys:
+    - 3cf12a275693ec74cbbbe17b39eaff42
+    - d3aae545a7a6c5d49b2a091f218ec622
+    - c2eff7dc1abb08742882e1b4dcc97d4b
+    - d6af7993e263e03468fe441d7fb0fac0
+    - c9adadbe25fc90d45818a874fefb125e
+    - bbe0551dc799acf4fb2945956412085f
+    - 5d10680630ad7a24eb7df9ef0fe699dd
+    - dde337c424bc4de4090b960a26da3db9
+    - 03ee8e448c9244447912002128aa2950
+    - 66f0415a17657414d9d9b38927ecac3c
+    - ddf1bf71e5d6b1e4da8d9624a340f3b1
+    - 28d566593bf0d184b8ac96492d276f42
+    - bdf1e73667c49934bbacf71559c86091
+    - a7f6da4f8bf733b44822425f7a7264d1
+    - cca484b50ab62054eb55edb9bf45af1e
+    - 174f64fcbb4a0ad40bc4a7b952b7cb97
+    - 38cba6d11971e324099e23ebc9e508a2
+    - eecc6e9756ae6904290808af5f1edd3e
+    - 3c1996ce486203f4aaa4862cdce0886e
+    values:
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-2-3cf12a275693ec74cbbbe17b39eaff42-226188271-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3cf12a275693ec74cbbbe17b39eaff42-1818377447-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3cf12a275693ec74cbbbe17b39eaff42-1257485203-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3cf12a275693ec74cbbbe17b39eaff42-656857510-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3cf12a275693ec74cbbbe17b39eaff42-18072525-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3cf12a275693ec74cbbbe17b39eaff42-1075542244-0
+        values:
+        - colorIndex: 8
+          iconNameOrGuid: Folder Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: Folder Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 9
+          iconNameOrGuid: Favorite
+          isIconRecursive: 0
+          isColorRecursive: 0
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-1-d3aae545a7a6c5d49b2a091f218ec622-855884267351354883-0
+        values:
+        - colorIndex: 9
+          iconNameOrGuid: Camera Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-2-c2eff7dc1abb08742882e1b4dcc97d4b-226188271-0
+        - globalObjectIdString: GlobalObjectId_V1-2-c2eff7dc1abb08742882e1b4dcc97d4b-1818377447-0
+        - globalObjectIdString: GlobalObjectId_V1-2-c2eff7dc1abb08742882e1b4dcc97d4b-1257485203-0
+        - globalObjectIdString: GlobalObjectId_V1-2-c2eff7dc1abb08742882e1b4dcc97d4b-656857510-0
+        - globalObjectIdString: GlobalObjectId_V1-2-c2eff7dc1abb08742882e1b4dcc97d4b-1468504204-0
+        - globalObjectIdString: GlobalObjectId_V1-2-c2eff7dc1abb08742882e1b4dcc97d4b-1672746370-0
+        - globalObjectIdString: GlobalObjectId_V1-2-c2eff7dc1abb08742882e1b4dcc97d4b-4934883948986623056-1669623880
+        - globalObjectIdString: GlobalObjectId_V1-2-c2eff7dc1abb08742882e1b4dcc97d4b-839437457-0
+        - globalObjectIdString: GlobalObjectId_V1-2-c2eff7dc1abb08742882e1b4dcc97d4b-1530369644-0
+        - globalObjectIdString: GlobalObjectId_V1-2-c2eff7dc1abb08742882e1b4dcc97d4b-1951947326-0
+        - globalObjectIdString: GlobalObjectId_V1-2-c2eff7dc1abb08742882e1b4dcc97d4b-1746871023-0
+        values:
+        - colorIndex: 8
+          iconNameOrGuid: Folder Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: Folder Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 8
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 4
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 9
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: sv_icon_dot15_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-2-d6af7993e263e03468fe441d7fb0fac0-226188271-0
+        - globalObjectIdString: GlobalObjectId_V1-2-d6af7993e263e03468fe441d7fb0fac0-1818377447-0
+        - globalObjectIdString: GlobalObjectId_V1-2-d6af7993e263e03468fe441d7fb0fac0-1257485203-0
+        - globalObjectIdString: GlobalObjectId_V1-2-d6af7993e263e03468fe441d7fb0fac0-656857510-0
+        - globalObjectIdString: GlobalObjectId_V1-2-d6af7993e263e03468fe441d7fb0fac0-1608684161-0
+        - globalObjectIdString: GlobalObjectId_V1-2-d6af7993e263e03468fe441d7fb0fac0-1858932989-0
+        - globalObjectIdString: GlobalObjectId_V1-2-d6af7993e263e03468fe441d7fb0fac0-571493284912915895-1268255429
+        - globalObjectIdString: GlobalObjectId_V1-2-d6af7993e263e03468fe441d7fb0fac0-816110245-0
+        - globalObjectIdString: GlobalObjectId_V1-2-d6af7993e263e03468fe441d7fb0fac0-1434058159-0
+        - globalObjectIdString: GlobalObjectId_V1-2-d6af7993e263e03468fe441d7fb0fac0-1830202038-0
+        - globalObjectIdString: GlobalObjectId_V1-2-d6af7993e263e03468fe441d7fb0fac0-1178423089-0
+        - globalObjectIdString: GlobalObjectId_V1-2-d6af7993e263e03468fe441d7fb0fac0-741817596-0
+        - globalObjectIdString: GlobalObjectId_V1-2-d6af7993e263e03468fe441d7fb0fac0-410482360-0
+        - globalObjectIdString: GlobalObjectId_V1-2-d6af7993e263e03468fe441d7fb0fac0-155765537-0
+        - globalObjectIdString: GlobalObjectId_V1-2-d6af7993e263e03468fe441d7fb0fac0-1405035879-0
+        - globalObjectIdString: GlobalObjectId_V1-2-d6af7993e263e03468fe441d7fb0fac0-2060041519-0
+        - globalObjectIdString: GlobalObjectId_V1-2-d6af7993e263e03468fe441d7fb0fac0-514579205-0
+        - globalObjectIdString: GlobalObjectId_V1-2-d6af7993e263e03468fe441d7fb0fac0-150457821-0
+        values:
+        - colorIndex: 8
+          iconNameOrGuid: Folder Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: Folder Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 7
+          iconNameOrGuid: Folder Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 8
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 8
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 8
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 6
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 6
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 6
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 4
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 9
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 4
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 5
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-2-c9adadbe25fc90d45818a874fefb125e-226188271-0
+        - globalObjectIdString: GlobalObjectId_V1-2-c9adadbe25fc90d45818a874fefb125e-1818377447-0
+        - globalObjectIdString: GlobalObjectId_V1-2-c9adadbe25fc90d45818a874fefb125e-1257485203-0
+        - globalObjectIdString: GlobalObjectId_V1-2-c9adadbe25fc90d45818a874fefb125e-656857510-0
+        - globalObjectIdString: GlobalObjectId_V1-2-c9adadbe25fc90d45818a874fefb125e-18072525-0
+        values:
+        - colorIndex: 8
+          iconNameOrGuid: Folder Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: Folder Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-2-bbe0551dc799acf4fb2945956412085f-226188271-0
+        - globalObjectIdString: GlobalObjectId_V1-2-bbe0551dc799acf4fb2945956412085f-1818377447-0
+        - globalObjectIdString: GlobalObjectId_V1-2-bbe0551dc799acf4fb2945956412085f-1257485203-0
+        - globalObjectIdString: GlobalObjectId_V1-2-bbe0551dc799acf4fb2945956412085f-656857510-0
+        - globalObjectIdString: GlobalObjectId_V1-2-bbe0551dc799acf4fb2945956412085f-1608684161-0
+        - globalObjectIdString: GlobalObjectId_V1-2-bbe0551dc799acf4fb2945956412085f-1858932989-0
+        - globalObjectIdString: GlobalObjectId_V1-2-bbe0551dc799acf4fb2945956412085f-571493284912915895-1268255429
+        - globalObjectIdString: GlobalObjectId_V1-2-bbe0551dc799acf4fb2945956412085f-816110245-0
+        - globalObjectIdString: GlobalObjectId_V1-2-bbe0551dc799acf4fb2945956412085f-1434058159-0
+        - globalObjectIdString: GlobalObjectId_V1-2-bbe0551dc799acf4fb2945956412085f-1830202038-0
+        - globalObjectIdString: GlobalObjectId_V1-2-bbe0551dc799acf4fb2945956412085f-1178423089-0
+        - globalObjectIdString: GlobalObjectId_V1-2-bbe0551dc799acf4fb2945956412085f-741817596-0
+        - globalObjectIdString: GlobalObjectId_V1-2-bbe0551dc799acf4fb2945956412085f-410482360-0
+        - globalObjectIdString: GlobalObjectId_V1-2-bbe0551dc799acf4fb2945956412085f-155765537-0
+        - globalObjectIdString: GlobalObjectId_V1-2-bbe0551dc799acf4fb2945956412085f-1405035879-0
+        - globalObjectIdString: GlobalObjectId_V1-2-bbe0551dc799acf4fb2945956412085f-2060041519-0
+        - globalObjectIdString: GlobalObjectId_V1-2-bbe0551dc799acf4fb2945956412085f-514579205-0
+        - globalObjectIdString: GlobalObjectId_V1-2-bbe0551dc799acf4fb2945956412085f-1591391138-0
+        - globalObjectIdString: GlobalObjectId_V1-2-bbe0551dc799acf4fb2945956412085f-139482701-0
+        - globalObjectIdString: GlobalObjectId_V1-2-bbe0551dc799acf4fb2945956412085f-582551627-0
+        values:
+        - colorIndex: 8
+          iconNameOrGuid: Folder Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: Folder Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 7
+          iconNameOrGuid: Folder Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 8
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 8
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 8
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 6
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 6
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 6
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 4
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 9
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 4
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 6
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 8
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 8
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-2-5d10680630ad7a24eb7df9ef0fe699dd-1696827962-0
+        - globalObjectIdString: GlobalObjectId_V1-2-5d10680630ad7a24eb7df9ef0fe699dd-293147189-0
+        - globalObjectIdString: GlobalObjectId_V1-2-5d10680630ad7a24eb7df9ef0fe699dd-198951151-0
+        - globalObjectIdString: GlobalObjectId_V1-2-5d10680630ad7a24eb7df9ef0fe699dd-664064396-0
+        - globalObjectIdString: GlobalObjectId_V1-2-5d10680630ad7a24eb7df9ef0fe699dd-1246889018-0
+        - globalObjectIdString: GlobalObjectId_V1-2-5d10680630ad7a24eb7df9ef0fe699dd-1021053668-0
+        - globalObjectIdString: GlobalObjectId_V1-2-5d10680630ad7a24eb7df9ef0fe699dd-2072159409-0
+        values:
+        - colorIndex: 5
+          iconNameOrGuid: Terrain Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 8
+          iconNameOrGuid: sv_icon_dot15_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: Light Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 6
+          iconNameOrGuid: PreMatCylinder
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 9
+          iconNameOrGuid: EventSystem Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-1-dde337c424bc4de4090b960a26da3db9-3430931893855616564-0
+        values:
+        - colorIndex: 8
+          iconNameOrGuid: Camera Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-226188271-0
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-1818377447-0
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-1257485203-0
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-656857510-0
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-1608684161-0
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-1858932989-0
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-571493284912915895-1268255429
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-816110245-0
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-1434058159-0
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-1830202038-0
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-1178423089-0
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-741817596-0
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-410482360-0
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-155765537-0
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-1405035879-0
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-2060041519-0
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-514579205-0
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-150457821-0
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-1595792350-0
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-1034831998-0
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-887809932-0
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-1017559693-0
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-978495309-0
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-1116304598-0
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-1188580816-0
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-351222476-0
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-4664227-0
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-1025237962-0
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-1946593217-0
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-6739606492757593551-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-2030899262603615772-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-2809084698093040600-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-8977086904985585306-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-1627741954146449937-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-8040495636947141473-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-8362638504936657619-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-5081345487317088841-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-183052042894220561-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-5863256913946118301-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-8447620930369101433-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-1289848006-0
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-8284977-0
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-49244188-0
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-1301397994-0
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-8596212747271659933-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-1516416573-0
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-826847847-0
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-1256315125-0
+        - globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-2126569618-0
+        values:
+        - colorIndex: 8
+          iconNameOrGuid: Folder Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: Folder Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 7
+          iconNameOrGuid: Folder Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 8
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 8
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 8
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 6
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 6
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 6
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 4
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 9
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 4
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 5
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 7
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 9
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 5
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 5
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 4
+          iconNameOrGuid: AudioReverbZone Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 8
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 4
+          iconNameOrGuid: Terrain Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 7
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 4
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 8
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: Light Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: sv_icon_dot15_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 9
+          iconNameOrGuid: EventSystem Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 9
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-2-66f0415a17657414d9d9b38927ecac3c-136933793-0
+        - globalObjectIdString: GlobalObjectId_V1-2-66f0415a17657414d9d9b38927ecac3c-352531709-0
+        - globalObjectIdString: GlobalObjectId_V1-2-66f0415a17657414d9d9b38927ecac3c-1122196369-0
+        - globalObjectIdString: GlobalObjectId_V1-2-66f0415a17657414d9d9b38927ecac3c-1455269200-0
+        - globalObjectIdString: GlobalObjectId_V1-2-66f0415a17657414d9d9b38927ecac3c-319014053-0
+        - globalObjectIdString: GlobalObjectId_V1-2-66f0415a17657414d9d9b38927ecac3c-62219069-0
+        - globalObjectIdString: GlobalObjectId_V1-2-66f0415a17657414d9d9b38927ecac3c-197844372-0
+        - globalObjectIdString: GlobalObjectId_V1-2-66f0415a17657414d9d9b38927ecac3c-827710801-0
+        - globalObjectIdString: GlobalObjectId_V1-2-66f0415a17657414d9d9b38927ecac3c-3958897037621210021-1212381903
+        - globalObjectIdString: GlobalObjectId_V1-2-66f0415a17657414d9d9b38927ecac3c-571493284912915895-551379525
+        - globalObjectIdString: GlobalObjectId_V1-2-66f0415a17657414d9d9b38927ecac3c-455177848-0
+        - globalObjectIdString: GlobalObjectId_V1-2-66f0415a17657414d9d9b38927ecac3c-1021188079-0
+        - globalObjectIdString: GlobalObjectId_V1-2-66f0415a17657414d9d9b38927ecac3c-260256766-0
+        - globalObjectIdString: GlobalObjectId_V1-2-66f0415a17657414d9d9b38927ecac3c-160696754-0
+        - globalObjectIdString: GlobalObjectId_V1-2-66f0415a17657414d9d9b38927ecac3c-422236296-0
+        - globalObjectIdString: GlobalObjectId_V1-2-66f0415a17657414d9d9b38927ecac3c-895571229-0
+        values:
+        - colorIndex: 3
+          iconNameOrGuid: Light Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 5
+          iconNameOrGuid: Terrain Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 8
+          iconNameOrGuid: Camera Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 9
+          iconNameOrGuid: MeshCollider Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 9
+          iconNameOrGuid: LightProbes Icon
+          isIconRecursive: 0
+          isColorRecursive: 1
+        - colorIndex: 9
+          iconNameOrGuid: AudioReverbZone Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: sv_icon_dot15_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 1
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 7
+          iconNameOrGuid: EventSystem Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 9
+          iconNameOrGuid: Camera Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 9
+          iconNameOrGuid: Camera Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 5
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 1
+        - colorIndex: 9
+          iconNameOrGuid: ParticleSystem Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-2-ddf1bf71e5d6b1e4da8d9624a340f3b1-128891904-0
+        - globalObjectIdString: GlobalObjectId_V1-2-ddf1bf71e5d6b1e4da8d9624a340f3b1-464277210-0
+        - globalObjectIdString: GlobalObjectId_V1-2-ddf1bf71e5d6b1e4da8d9624a340f3b1-363258509-0
+        - globalObjectIdString: GlobalObjectId_V1-2-ddf1bf71e5d6b1e4da8d9624a340f3b1-308268643-0
+        - globalObjectIdString: GlobalObjectId_V1-2-ddf1bf71e5d6b1e4da8d9624a340f3b1-1514376315-0
+        - globalObjectIdString: GlobalObjectId_V1-2-ddf1bf71e5d6b1e4da8d9624a340f3b1-89959858-0
+        - globalObjectIdString: GlobalObjectId_V1-2-ddf1bf71e5d6b1e4da8d9624a340f3b1-1292538525-0
+        - globalObjectIdString: GlobalObjectId_V1-2-ddf1bf71e5d6b1e4da8d9624a340f3b1-1674636898-0
+        - globalObjectIdString: GlobalObjectId_V1-2-ddf1bf71e5d6b1e4da8d9624a340f3b1-1982134781-0
+        - globalObjectIdString: GlobalObjectId_V1-2-ddf1bf71e5d6b1e4da8d9624a340f3b1-3958897037621210021-1797367087
+        - globalObjectIdString: GlobalObjectId_V1-2-ddf1bf71e5d6b1e4da8d9624a340f3b1-1203221598-0
+        - globalObjectIdString: GlobalObjectId_V1-2-ddf1bf71e5d6b1e4da8d9624a340f3b1-136933793-0
+        - globalObjectIdString: GlobalObjectId_V1-2-ddf1bf71e5d6b1e4da8d9624a340f3b1-828381805-0
+        - globalObjectIdString: GlobalObjectId_V1-2-ddf1bf71e5d6b1e4da8d9624a340f3b1-1143355312-0
+        - globalObjectIdString: GlobalObjectId_V1-2-ddf1bf71e5d6b1e4da8d9624a340f3b1-7920309915679848748-88254973
+        - globalObjectIdString: GlobalObjectId_V1-2-ddf1bf71e5d6b1e4da8d9624a340f3b1-7920309915679848748-1941678752
+        - globalObjectIdString: GlobalObjectId_V1-2-ddf1bf71e5d6b1e4da8d9624a340f3b1-7920309915679848748-893123048
+        - globalObjectIdString: GlobalObjectId_V1-2-ddf1bf71e5d6b1e4da8d9624a340f3b1-1824518018-0
+        - globalObjectIdString: GlobalObjectId_V1-2-ddf1bf71e5d6b1e4da8d9624a340f3b1-576207347-0
+        values:
+        - colorIndex: 9
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 5
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 6
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 7
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 7
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 7
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 7
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 5
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 4
+          iconNameOrGuid: Terrain Icon
+          isIconRecursive: 0
+          isColorRecursive: 1
+        - colorIndex: 7
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: Light Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 5
+          iconNameOrGuid: MeshCollider Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: Terrain Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 9
+          iconNameOrGuid: EventSystem Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-1-28d566593bf0d184b8ac96492d276f42-1505576756307243725-0
+        - globalObjectIdString: GlobalObjectId_V1-1-28d566593bf0d184b8ac96492d276f42-5205519620023392063-0
+        - globalObjectIdString: GlobalObjectId_V1-1-28d566593bf0d184b8ac96492d276f42-5081345487317088841-0
+        - globalObjectIdString: GlobalObjectId_V1-1-28d566593bf0d184b8ac96492d276f42-8596212747271659933-0
+        - globalObjectIdString: GlobalObjectId_V1-1-28d566593bf0d184b8ac96492d276f42-1818169771262109558-0
+        - globalObjectIdString: GlobalObjectId_V1-1-28d566593bf0d184b8ac96492d276f42-5863256913946118301-0
+        - globalObjectIdString: GlobalObjectId_V1-1-28d566593bf0d184b8ac96492d276f42-6368797086147263620-0
+        - globalObjectIdString: GlobalObjectId_V1-1-28d566593bf0d184b8ac96492d276f42-7492203488483938635-0
+        values:
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 5
+          iconNameOrGuid: MeshCollider Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 4
+          iconNameOrGuid: Terrain Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: Light Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 9
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 7
+          iconNameOrGuid: BoxCollider Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 7
+          iconNameOrGuid: EventSystem Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 9
+          iconNameOrGuid: LightProbes Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-2-bdf1e73667c49934bbacf71559c86091-128891904-0
+        - globalObjectIdString: GlobalObjectId_V1-2-bdf1e73667c49934bbacf71559c86091-464277210-0
+        - globalObjectIdString: GlobalObjectId_V1-2-bdf1e73667c49934bbacf71559c86091-363258509-0
+        - globalObjectIdString: GlobalObjectId_V1-2-bdf1e73667c49934bbacf71559c86091-308268643-0
+        - globalObjectIdString: GlobalObjectId_V1-2-bdf1e73667c49934bbacf71559c86091-1514376315-0
+        - globalObjectIdString: GlobalObjectId_V1-2-bdf1e73667c49934bbacf71559c86091-89959858-0
+        - globalObjectIdString: GlobalObjectId_V1-2-bdf1e73667c49934bbacf71559c86091-1292538525-0
+        - globalObjectIdString: GlobalObjectId_V1-2-bdf1e73667c49934bbacf71559c86091-1674636898-0
+        - globalObjectIdString: GlobalObjectId_V1-2-bdf1e73667c49934bbacf71559c86091-1982134781-0
+        - globalObjectIdString: GlobalObjectId_V1-2-bdf1e73667c49934bbacf71559c86091-3958897037621210021-1797367087
+        - globalObjectIdString: GlobalObjectId_V1-2-bdf1e73667c49934bbacf71559c86091-1203221598-0
+        values:
+        - colorIndex: 9
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 5
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 6
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 7
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 7
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 7
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 7
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 5
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 4
+          iconNameOrGuid: Terrain Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 7
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-128891904-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-464277210-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-363258509-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-308268643-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-1514376315-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-89959858-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-1292538525-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-1674636898-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-1982134781-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-3958897037621210021-1797367087
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-1203221598-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-136933793-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-828381805-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-1143355312-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-7920309915679848748-88254973
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-7920309915679848748-1941678752
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-7920309915679848748-893123048
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-1824518018-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-1193587188-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-1756261056-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-31771337-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-1862785532-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-6807466-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-1174480310-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-1612633020-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-395563228-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-251021287-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-1570814625-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-587584629-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-114172710-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-1795530789-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-1150020034-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-1593747653-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-89388222-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-835312065-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-1062103001-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-591069919-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-194883157-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-891293409-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-366307919-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-13033008-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-1158726234-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-1249756017-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-521144307-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-2034221000-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-2088862520-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-770492962-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-2038089392-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-921723168-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-185813296-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-1376490008-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-635054721-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-265231478-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-266985118-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-962507287-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-130525492-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-136564723-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-13136468-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-185395561-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-1425569534-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-71494429-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-823625970-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-1940442923-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-1677189854-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-178116250-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-176043503-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-725199053-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-1644352282-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-538073531-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-568098361-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-707275871-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-1537082321-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-1963470406-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-597529778-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-1282196765-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-766792098-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-1949030873-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-1567357200-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-937744206-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-131645967-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-893146987-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-1532313611-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-1080082114-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-528122093-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-1069300883-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a7f6da4f8bf733b44822425f7a7264d1-1724948744-0
+        values:
+        - colorIndex: 9
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 5
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 6
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 7
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 7
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 7
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 7
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 5
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 4
+          iconNameOrGuid: Terrain Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 7
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: Light Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 5
+          iconNameOrGuid: MeshCollider Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: Terrain Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 9
+          iconNameOrGuid: EventSystem Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 4
+          iconNameOrGuid: Terrain Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 6
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 6
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: Light Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 6
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 9
+          iconNameOrGuid: PreMatSphere
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 5
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 9
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: Light Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 9
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 9
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AudioReverbZone Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 9
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 6
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 9
+          iconNameOrGuid: sv_icon_dot15_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 9
+          iconNameOrGuid: sv_icon_dot15_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 9
+          iconNameOrGuid: ReflectionProbe Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: Terrain Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: Terrain Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: Terrain Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: Terrain Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: Terrain Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: Terrain Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: Terrain Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: Terrain Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: Terrain Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: Terrain Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: Terrain Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: Terrain Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: Terrain Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: Terrain Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: Terrain Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: Terrain Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: Terrain Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: Terrain Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: Terrain Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 9
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: Light Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-226188271-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-1818377447-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-1257485203-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-656857510-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-1608684161-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-1858932989-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-571493284912915895-1268255429
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-816110245-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-1434058159-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-1830202038-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-1178423089-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-741817596-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-410482360-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-155765537-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-1405035879-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-2060041519-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-514579205-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-150457821-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-1595792350-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-1034831998-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-887809932-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-1017559693-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-978495309-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-1116304598-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-1188580816-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-351222476-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-4664227-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-1025237962-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-1946593217-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-6739606492757593551-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-2030899262603615772-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-2809084698093040600-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-8977086904985585306-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-1627741954146449937-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-8040495636947141473-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-8362638504936657619-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-5081345487317088841-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-183052042894220561-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-5863256913946118301-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-8447620930369101433-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-1289848006-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-8284977-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-49244188-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-1301397994-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-8596212747271659933-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-1516416573-0
+        values:
+        - colorIndex: 8
+          iconNameOrGuid: Folder Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: Folder Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 7
+          iconNameOrGuid: Folder Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 8
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 8
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 8
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 6
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 6
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 6
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 4
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 9
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 4
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 5
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 7
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 9
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 5
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 5
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 4
+          iconNameOrGuid: AudioReverbZone Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 8
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 4
+          iconNameOrGuid: Terrain Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 7
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 4
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 8
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: Light Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: sv_icon_dot15_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-226188271-0
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-1818377447-0
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-1257485203-0
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-656857510-0
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-1608684161-0
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-1858932989-0
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-571493284912915895-1268255429
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-816110245-0
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-1434058159-0
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-1830202038-0
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-1178423089-0
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-741817596-0
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-410482360-0
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-155765537-0
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-1405035879-0
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-2060041519-0
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-514579205-0
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-150457821-0
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-1595792350-0
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-1034831998-0
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-887809932-0
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-1017559693-0
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-978495309-0
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-1116304598-0
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-1188580816-0
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-351222476-0
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-4664227-0
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-1025237962-0
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-1946593217-0
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-6739606492757593551-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-2030899262603615772-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-2809084698093040600-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-8977086904985585306-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-1627741954146449937-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-8040495636947141473-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-8362638504936657619-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-5081345487317088841-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-183052042894220561-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-5863256913946118301-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-8447620930369101433-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-1289848006-0
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-8284977-0
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-49244188-0
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-1301397994-0
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-8596212747271659933-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-1516416573-0
+        values:
+        - colorIndex: 8
+          iconNameOrGuid: Folder Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: Folder Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 7
+          iconNameOrGuid: Folder Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 8
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 8
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 8
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 6
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 6
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 6
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 4
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 9
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 4
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 5
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 7
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 9
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 5
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 5
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 4
+          iconNameOrGuid: AudioReverbZone Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 8
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 4
+          iconNameOrGuid: Terrain Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 7
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 4
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 8
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: Light Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: sv_icon_dot15_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-2-38cba6d11971e324099e23ebc9e508a2-862726858-0
+        values:
+        - colorIndex: 8
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-2-eecc6e9756ae6904290808af5f1edd3e-449345643-0
+        - globalObjectIdString: GlobalObjectId_V1-2-eecc6e9756ae6904290808af5f1edd3e-276425549-0
+        - globalObjectIdString: GlobalObjectId_V1-2-eecc6e9756ae6904290808af5f1edd3e-1016392496237815170-943293619
+        - globalObjectIdString: GlobalObjectId_V1-2-eecc6e9756ae6904290808af5f1edd3e-7997358673223639761-933001117
+        - globalObjectIdString: GlobalObjectId_V1-2-eecc6e9756ae6904290808af5f1edd3e-986474051-0
+        - globalObjectIdString: GlobalObjectId_V1-2-eecc6e9756ae6904290808af5f1edd3e-1484147899-0
+        values:
+        - colorIndex: 9
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 5
+          iconNameOrGuid: Terrain Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: LightProbes Icon
+          isIconRecursive: 1
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: Light Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: LightProbes Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: Material Icon
+          isIconRecursive: 0
+          isColorRecursive: 1
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-226188271-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-1818377447-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-1257485203-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-656857510-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-1608684161-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-1858932989-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-571493284912915895-1268255429
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-816110245-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-1434058159-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-1830202038-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-1178423089-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-741817596-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-410482360-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-155765537-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-1405035879-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-2060041519-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-514579205-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-150457821-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-1595792350-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-1034831998-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-887809932-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-1017559693-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-978495309-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-1116304598-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-1188580816-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-351222476-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-4664227-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-1025237962-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-1946593217-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-6739606492757593551-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-2030899262603615772-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-2809084698093040600-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-8977086904985585306-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-1627741954146449937-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-8040495636947141473-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-8362638504936657619-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-5081345487317088841-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-183052042894220561-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-5863256913946118301-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-8447620930369101433-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-1289848006-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-8284977-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-49244188-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-1301397994-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-8596212747271659933-1628576774453580323
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-1516416573-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-826847847-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-1256315125-0
+        - globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-2126569618-0
+        values:
+        - colorIndex: 8
+          iconNameOrGuid: Folder Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: Folder Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 7
+          iconNameOrGuid: Folder Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 8
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 8
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 8
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 6
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 6
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 6
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 4
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 9
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 4
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 5
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 7
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 9
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 5
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 5
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 4
+          iconNameOrGuid: AudioReverbZone Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 8
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 4
+          iconNameOrGuid: Terrain Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 7
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 4
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 8
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: AvatarMask On Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 3
+          iconNameOrGuid: Light Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: sv_icon_dot15_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 9
+          iconNameOrGuid: EventSystem Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 9
+          iconNameOrGuid: sv_icon_dot7_pix16_gizmo
+          isIconRecursive: 0
+          isColorRecursive: 0
+  bookmarks:
+  - _go: {fileID: 0}
+    globalId:
+      globalObjectIdString: GlobalObjectId_V1-2-3cf12a275693ec74cbbbe17b39eaff42-2242900530896020266-475623793
+  - _go: {fileID: 0}
+    globalId:
+      globalObjectIdString: GlobalObjectId_V1-2-c2eff7dc1abb08742882e1b4dcc97d4b-2242900530896020266-475623793
+  - _go: {fileID: 0}
+    globalId:
+      globalObjectIdString: GlobalObjectId_V1-2-d6af7993e263e03468fe441d7fb0fac0-2242900530896020266-475623793
+  - _go: {fileID: 0}
+    globalId:
+      globalObjectIdString: GlobalObjectId_V1-2-c9adadbe25fc90d45818a874fefb125e-2242900530896020266-475623793
+  - _go: {fileID: 0}
+    globalId:
+      globalObjectIdString: GlobalObjectId_V1-2-bbe0551dc799acf4fb2945956412085f-2242900530896020266-475623793
+  - _go: {fileID: 0}
+    globalId:
+      globalObjectIdString: GlobalObjectId_V1-2-03ee8e448c9244447912002128aa2950-2242900530896020266-475623793
+  - _go: {fileID: 0}
+    globalId:
+      globalObjectIdString: GlobalObjectId_V1-2-cca484b50ab62054eb55edb9bf45af1e-2242900530896020266-475623793
+  - _go: {fileID: 0}
+    globalId:
+      globalObjectIdString: GlobalObjectId_V1-2-174f64fcbb4a0ad40bc4a7b952b7cb97-2242900530896020266-475623793
+  - _go: {fileID: 0}
+    globalId:
+      globalObjectIdString: GlobalObjectId_V1-2-3c1996ce486203f4aaa4862cdce0886e-2242900530896020266-475623793
+  bookmarkedScenePaths:
+  - Assets/_Scenes/OnBoarding.unity
+  - Assets/_Scenes/Map.unity
+  - Assets/_Scenes/Village.unity
+  - Assets/_Scenes/Polygon/Dungeon/Demo_Dungeon.unity
+  - Assets/_Scenes/Gym_Test_Map.unity
+  - Assets/_Scenes/Menu.unity

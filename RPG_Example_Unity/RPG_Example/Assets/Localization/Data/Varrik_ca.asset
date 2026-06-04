@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Varrik_ca
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: ca
+  m_SharedData: {fileID: 11400000, guid: 6f49499dfe3cf4d4eb8fdbc7d00ffb4c, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 6297980928
+    m_Localized: Em dic Varrik. Jo soc qui obre aquesta porta.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41102315520
+    m_Localized: "Pots sortir quan vulguis\u2026 per\xF2 si tornes\u2026 em quedar\xE9
+      la meitat dels teus Pols Aurora."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49063874064384
+    m_Localized: "Crec haver vist alguns encara fora\u2026 humans que resisteixen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49213296144384
+    m_Localized: "Un a prop de l\u2019entrada del nord, un altre a l\u2019est i un
+      altre al nord-oest."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49368586055680
+    m_Localized: "Si els trobes\u2026 porta'ls. Un negoci buit no es mant\xE9 sol."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59215461281792
+    m_Localized: "M\xE9s mans\u2026 m\xE9s intercanvi."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59688985620480
+    m_Localized: "Comen\xE7a a semblar un lloc decent. Bon negoci."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59939196825600
+    m_Localized: "Comen\xE7a a semblar un lloc decent. Bon negoci."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60021572956160
+    m_Localized: Considera't pagat per la teva gesta.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 347738454159360
+    m_Localized: "No em miris aix\xED. La porta no distingeix entre herois i cad\xE0vers\u2026
+      per\xF2 jo s\xED. I dels vius sempre se'n pot treure alguna cosa m\xE9s."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1380164795863040
+    m_Localized: "Parla amb en Varrik per completar la missi\xF3"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3231385565851648
+    m_Localized: Parla amb Valrrik per recollir la teva recompensa.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3491580892213248
+    m_Localized: "Hi ha una clau antiga\u2026 no serveix per a aquesta porta, per\xF2
+      s\xED per a alguna cosa molt m\xE9s interessant."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3491584239267840
+    m_Localized: "No \xE9s gratis, \xE9s clar. Res no ho \xE9s amb mi. Per\xF2 tu
+      ja saps com funciona aix\xF2."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3491586218979328
+    m_Localized: "Agafa-la. Obre\u2019m aquesta porta segellada del passat. I si
+      hi trobes alguna cosa dins\u2026 ja parlarem del repartiment."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3492350563774464
+    m_Localized: "...No m\u2019agrada el que se sent a l\u2019altre costat. I aix\xF2,
+      creu-me, ja \xE9s dir molt venint de mi."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3492352333770752
+    m_Localized: "Obrir aquesta porta\u2026 ha mogut alguna cosa que feia massa temps
+      que estava quieta. I el que est\xE0 quiet, aqu\xED, mai \xE9s bona senyal."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3492353508175872
+    m_Localized: "Agafa aquesta armadura. No \xE9s per lluitar millor\u2026 sin\xF3
+      perqu\xE8 continu\xEFs sent un client viu quan tornis."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3498946329112576
+    m_Localized: "Si alguna cosa brilla dins la boira, normalment \xE9s perqu\xE8
+      vol que l\u2019agafis\u2026 o perqu\xE8 vol agafar-te a tu primer."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3499326580518912
+    m_Localized: "No faig descomptes. Faig excepcions. I nom\xE9s quan em conv\xE9
+      recordar que tinc cor."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3499443073118208
+    m_Localized: "Les portes no s\u2019obren gratis\u2026 per\xF2 sempre hi ha alg\xFA
+      disposat a pagar m\xE9s pel que hi ha darrere."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

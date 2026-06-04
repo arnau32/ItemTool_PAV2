@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8558645297459882549
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1520306385025922801}
+  - component: {fileID: 6704685672879767921}
+  - component: {fileID: 4965126272672046856}
+  m_Layer: 0
+  m_Name: POI Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1520306385025922801
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8558645297459882549}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &6704685672879767921
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8558645297459882549}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 10
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4965126272672046856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8558645297459882549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f56271877c0e6124e8f8c13c2d6d7421, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MapPOITrigger
+  poiData:
+    id: Las Pilas de Purga
+    type: 0
+    worldTransform: {fileID: 1520306385025922801}
+    _size: 50
+    _iconscale: 0.7
+    icon: {fileID: 21300000, guid: 9afbccc45cd555549854b56716b2db7e, type: 3}
+    border: {fileID: 21300000, guid: 327ef5531d3b76f4e9cf0b6f6655b23f, type: 3}
+    background: {fileID: 21300000, guid: da4da7976a719a241b86e8bbe34db33b, type: 3}
+    background_color: {r: 0.05490196, g: 0.023529412, b: 0.007843138, a: 1}
+    icon_color: {r: 1, g: 1, b: 1, a: 1}
+    showIconFromStart: 0
+    localizedName:
+      m_TableReference:
+        m_TableCollectionName: GUID:00f7b6f6f7d644549bfe5e8410e1ab34
+      m_TableEntryReference:
+        m_KeyId: 434811011072
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    popupMode: 2
+  playerTag: Player
+  reenterCooldown: 10
+  references:
+    version: 2
+    RefIds: []

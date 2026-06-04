@@ -1,0 +1,143 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5657212161517058943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaa43389884f4dc7ae6de53effdf354c, type: 3}
+  m_Name: DistanceRangeConsideration_000
+  m_EditorClassIdentifier: Assembly-CSharp::DistanceRangeConsideration
+  minDistance: 0
+  maxDistance: 9
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.29964533
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.49471065
+      value: 0.9927733
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.6123103
+      value: 0.3364053
+      inSlope: -2.842505
+      outSlope: -2.842505
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.9995007
+      value: 0.0003618598
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 132c4ce011bb49f99790673355cfbf79, type: 3}
+  m_Name: A_SRanged_BackOff
+  m_EditorClassIdentifier: Assembly-CSharp::BackOffAction
+  considerations:
+  - {fileID: -5657212161517058943}
+  - {fileID: 898659296904509216}
+  category: 1
+  isMaintenanceMovement: 1
+  canBeInterrupted: 1
+  useHardLook: 1
+  baseScore: 85
+  targetRange: 5
+  duration: 1.5
+  backOffSpeed: 2.2
+  rangeJitter: 0.45
+  durationJitter01: 0.15
+  maxEffectiveDistance: 9
+  requireLOS: 0
+  repathInterval: 0.15
+  minTargetMove: 0.2
+  minDestDelta: 0.1
+--- !u!114 &898659296904509216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40746de89e2d4a409ea4f4a3ca051a80, type: 3}
+  m_Name: SelfHPConsideration_001
+  m_EditorClassIdentifier: Assembly-CSharp::SelfHPConsideration
+  preferHighHP: 0
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.34958693
+      outSlope: -0.34958693
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.42907792
+      value: 0.84999996
+      inSlope: -0.5206995
+      outSlope: -0.5206995
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.1449704
+    - serializedVersion: 3
+      time: 1
+      value: 0.20000076
+      inSlope: -0.72737074
+      outSlope: -0.72737074
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.1420121
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

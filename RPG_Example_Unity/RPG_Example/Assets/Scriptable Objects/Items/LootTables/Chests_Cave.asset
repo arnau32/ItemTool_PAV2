@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48ac4945e47be6e43b035f3074cc5c3c, type: 3}
+  m_Name: Chests_Cave
+  m_EditorClassIdentifier: 
+  guaranteedEntries:
+  - entryType: 0
+    item: {fileID: 11400000, guid: 6bf22ea5c9b4ac542aade919167492b6, type: 2}
+    nestedTable: {fileID: 0}
+    minQuantity: 25
+    maxQuantity: 200
+    weight: 0
+    equipableOverrideMode: 0
+    overrideFixedRarity: 0
+  weightedEntries:
+  - entryType: 0
+    item: {fileID: 11400000, guid: e4058284896c51b4f9b699b54082dc05, type: 2}
+    nestedTable: {fileID: 0}
+    minQuantity: 1
+    maxQuantity: 1
+    weight: 30
+    equipableOverrideMode: 0
+    overrideFixedRarity: 0
+  - entryType: 0
+    item: {fileID: 11400000, guid: 1f216e6409cf59d48ac7a20222e3d477, type: 2}
+    nestedTable: {fileID: 0}
+    minQuantity: 1
+    maxQuantity: 1
+    weight: 20
+    equipableOverrideMode: 0
+    overrideFixedRarity: 0
+  - entryType: 0
+    item: {fileID: 11400000, guid: 8cf596fc4a3f1824faac4e66f4fa780a, type: 2}
+    nestedTable: {fileID: 0}
+    minQuantity: 1
+    maxQuantity: 1
+    weight: 15
+    equipableOverrideMode: 0
+    overrideFixedRarity: 0
+  - entryType: 0
+    item: {fileID: 11400000, guid: 62553b919f2270e46ad76ad1d423187b, type: 2}
+    nestedTable: {fileID: 0}
+    minQuantity: 1
+    maxQuantity: 1
+    weight: 5
+    equipableOverrideMode: 0
+    overrideFixedRarity: 0
+  - entryType: 0
+    item: {fileID: 11400000, guid: 5fea518eb0356694694728d5f85ce3dd, type: 2}
+    nestedTable: {fileID: 0}
+    minQuantity: 1
+    maxQuantity: 1
+    weight: 1
+    equipableOverrideMode: 2
+    overrideFixedRarity: 0
+  - entryType: 0
+    item: {fileID: 11400000, guid: d9d428d8bc9402a4a8054de0a2653880, type: 2}
+    nestedTable: {fileID: 0}
+    minQuantity: 1
+    maxQuantity: 1
+    weight: 1
+    equipableOverrideMode: 2
+    overrideFixedRarity: 0
+  - entryType: 0
+    item: {fileID: 11400000, guid: 8fbd124fc77926a4f82d369608ae5827, type: 2}
+    nestedTable: {fileID: 0}
+    minQuantity: 1
+    maxQuantity: 1
+    weight: 1
+    equipableOverrideMode: 2
+    overrideFixedRarity: 0
+  - entryType: 0
+    item: {fileID: 11400000, guid: 73af2803467b0f7489eeabb12ea4c8af, type: 2}
+    nestedTable: {fileID: 0}
+    minQuantity: 1
+    maxQuantity: 1
+    weight: 1
+    equipableOverrideMode: 2
+    overrideFixedRarity: 0
+  minRandomPicks: 2
+  maxRandomPicks: 4

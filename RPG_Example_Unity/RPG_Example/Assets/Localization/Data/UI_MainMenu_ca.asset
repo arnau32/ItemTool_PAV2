@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI_MainMenu_ca
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: ca
+  m_SharedData: {fileID: 11400000, guid: 3f9d6ab73883653449106f6b2a53a3b7, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 10470912000
+    m_Localized: Partida nova
+    m_Metadata:
+      m_Items: []
+  - m_Id: 230137763033088
+    m_Localized: Continua la partida
+    m_Metadata:
+      m_Items: []
+  - m_Id: 230289328402432
+    m_Localized: "Configuraci\xF3\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 230376150495232
+    m_Localized: "Cr\xE8dits"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 230705776652288
+    m_Localized: Sortir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7516072116981760
+    m_Localized: Tornar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7515388827111424
+    m_Localized: Normal (Recomanada)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7516044992417792
+    m_Localized: Narratiu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7519241265975296
+    m_Localized: Dificultat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7548227331129344
+    m_Localized: "- Una experi\xE8ncia equilibrada centrada en la superviv\xE8ncia
+      i el risc.\n- La mort t\xE9 conseq\xFC\xE8ncies: perdr\xE0s l\u2019inventari
+      de l\u2019expedici\xF3 actual.\n- Explora amb cura, administra els teus recursos
+      i decideix quan retirar-te abans de perdre-ho tot."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7548198130384896
+    m_Localized: "- Una experi\xE8ncia m\xE9s relaxada centrada en l\u2019exploraci\xF3,
+      la hist\xF2ria i el combat.\n- En morir conservar\xE0s el teu inventari, cosa
+      que et permetr\xE0 avan\xE7ar sense penalitzacions severes.\n- Ideal per a
+      jugadors que volen descobrir el m\xF3n sense preocupar-se per perdre progr\xE9s."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

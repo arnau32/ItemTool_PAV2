@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 329b2ab435794f2409022a53e5452931, type: 3}
+  m_Name: Hierro I
+  m_EditorClassIdentifier: 
+  <id>k__BackingField: Hierro I
+  qName:
+    m_TableReference:
+      m_TableCollectionName: GUID:30e83be03e252314fa0a389c50676e6b
+    m_TableEntryReference:
+      m_KeyId: 300000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  description: 
+  icon: {fileID: 0}
+  questPreequisits: []
+  questSteps:
+  - {fileID: 3285457368813275565}
+  canFinishText:
+    m_TableReference:
+      m_TableCollectionName: GUID:f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6
+    m_TableEntryReference:
+      m_KeyId: 16045431673032704
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  mapPOIs:
+  - {fileID: 11400000, guid: a8b25cf3f76499840a812c8149594037, type: 2}
+  reward:
+    items: []
+    randomItems:
+    - pool:
+      - {fileID: 11400000, guid: 8ab516a2efd78c54d9027ef658b87f57, type: 2}
+      - {fileID: 11400000, guid: ebf38014ee191254aa1c98b92b7c187e, type: 2}
+      - {fileID: 11400000, guid: 04688f93ea060c846bc202ca7ef86d95, type: 2}
+      - {fileID: 11400000, guid: 14f07ec5ca98beb4f80dfd0407dc4d14, type: 2}
+      - {fileID: 11400000, guid: a37397f185d1b9d44bac305a733c757b, type: 2}
+      quantity: 1
+      overrideRarity: 1
+      forcedRarity: 1
+    auroraDust: 0
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &3285457368813275565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da8ec4b613ba48f5a839ce9ca857e9fd, type: 3}
+  m_Name: Hierro I_DeliverItemStepSO_1
+  m_EditorClassIdentifier: Assembly-CSharp::DeliverItemStepSO
+  objectiveText:
+    m_TableReference:
+      m_TableCollectionName: GUID:30e83be03e252314fa0a389c50676e6b
+    m_TableEntryReference:
+      m_KeyId: 400000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  requiredItem: {fileID: 11400000, guid: c74a3db68a496b044b10064d84a88ce0, type: 2}
+  requiredQuantity: 1
+  consumeOnDelivery: 1
+  deliveryZoneId: Forge
+  references:
+    version: 2
+    RefIds: []

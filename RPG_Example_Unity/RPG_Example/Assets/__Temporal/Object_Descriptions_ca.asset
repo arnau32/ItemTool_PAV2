@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Object_Descriptions_ca
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: ca
+  m_SharedData: {fileID: 11400000, guid: b74fd6cb1ab36b347b90c6fec1e27d5a, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 37212450816
+    m_Localized: "Pols brillant impregnada de llum antiga. Sembla mantenir la boira
+      a ratlla\u2026 de moment."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37304725504
+    m_Localized: "Gema polida d'origen incert. El seu valor va m\xE9s enll\xE0 del
+      material."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37304725505
+    m_Localized: "Est\xE0tua desgastada de Liora. Encara conserva un eco del vent
+      oblidat."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37304725506
+    m_Localized: "Corda gastada pel temps. Encara pot sostenir m\xE9s del que sembla."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37308919808
+    m_Localized: Restaura una petita quantitat de salut.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37308919809
+    m_Localized: Restaura una quantitat moderada de salut.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37308919810
+    m_Localized: Restaura una gran quantitat de salut.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37308919811
+    m_Localized: Carn sense tractar.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37308919812
+    m_Localized: Una mescla antiga de gran poder. Els seus efectes superen el conegut.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37308919813
+    m_Localized: "Un os gran, trencat per\xF2 resistent. Encara pot suportar pes."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37308919814
+    m_Localized: "Estructura \xF2ssia corba i s\xF2lida. Perfecta per donar forma
+      a alguna cosa m\xE9s gran."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37308919815
+    m_Localized: "Metall b\xE0sic de forja. Resistent, mal\xB7leable i sempre \xFAtil."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37308919816
+    m_Localized: "Un os fr\xE0gil i esquerdat. Amb prou feines conserva la seva forma
+      original."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37308919817
+    m_Localized: Fragment de roca resistent. Base de qualsevol estructura duradora.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37313114112
+    m_Localized: "Fusta seca i lleugera. La fusta en bon estat \xE9s escassa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1395170046701568
+    m_Localized: "Una mescla vigorosa que restaura l\u2019energia i alleuja el cansament."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1395612554162176
+    m_Localized: "Una f\xF3rmula antiga que enforteix el cos durant un breu instant."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

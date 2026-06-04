@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b7492b73b61442fb88e115c95bc8bb5, type: 3}
+  m_Name: Great_Sword_Tier3
+  m_EditorClassIdentifier: 
+  <uniqueID>k__BackingField: Great Sword Tier 3
+  itemType: 0
+  itemNameID: Great Sword Tier 3
+  localizedDisplayName:
+    m_TableReference:
+      m_TableCollectionName: GUID:2238abc9fc3eabf429fc99726df15768
+    m_TableEntryReference:
+      m_KeyId: 63474733056
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  icon: {fileID: 21300000, guid: 97056be997e03604daf1bae7c6f72fcd, type: 3}
+  description: Attack + 15
+  descriptionBlocks: []
+  itemRarity: 0
+  value: 0
+  weight: 0
+  maxStack: 1
+  SlotDimension:
+    Height: 3
+    Width: 1
+  equipSlot: 3
+  modifiers:
+  - statTypeAffected: 4
+    type: 100
+    value: 66
+    order: 0
+  prefab: {fileID: 269845549352391334, guid: e93f0bfd0deadc4449c829d9f2b09544, type: 3}
+  tier: 3
+  rollMode: 1
+  animatorOverride: {fileID: 9100000, guid: 4b802bfe4e1c7d1478286425c034ba8b, type: 2}
+  handType: 0
+  familyType: 4
+  prefabVariant: {fileID: 0}
+  combos:
+  - steps:
+    - input: 0
+      attack: {fileID: 11400000, guid: c2dde50231d73ed44aff4074f72658ac, type: 2}
+    - input: 0
+      attack: {fileID: 11400000, guid: c312e752e8fc5d244a05b230cd5932f5, type: 2}
+    - input: 0
+      attack: {fileID: 11400000, guid: 22f1bd87d6ba06146b2de3b58a14f3be, type: 2}
+    - input: 0
+      attack: {fileID: 11400000, guid: a40448ebff1daab409dc6cd2c3e7820c, type: 2}
+  - steps:
+    - input: 3
+      attack: {fileID: 11400000, guid: 8edd141363a530d43b6799e473fdccd4, type: 2}
+  dodgeSet: {fileID: 11400000, guid: 0c8bcd7c964f5724695ba6cb98adbfa6, type: 2}
+  parry: {fileID: 11400000, guid: 6ad25c36fdd1e8e459335a60098701f2, type: 2}
+  weaponSkill: {fileID: 11400000, guid: 8b618c3c92eade04696b4766d22a5f80, type: 2}
+  skillScoreNeeded: 140
+  weaponTier: 3
+  enemyDamageMultiplier: 1.4
+  references:
+    version: 2
+    RefIds: []

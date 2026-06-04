@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dfa6e7b685e1ee4f8bc93fcfedebfdf, type: 3}
+  m_Name: SmallPotion
+  m_EditorClassIdentifier: 
+  <uniqueID>k__BackingField: Small Potion
+  itemType: 1
+  itemNameID: Small Potion
+  localizedDisplayName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6b0b19b0a577497d9d4c69531bbaa14d
+    m_TableEntryReference:
+      m_KeyId: 122000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  icon: {fileID: 21300000, guid: 7399fd549d10f014e9d2243b9482134a, type: 3}
+  description: A small healing potion. Drinking it restores 2 health per second for
+    5 seconds.
+  descriptionBlocks:
+  - rid: 5009286545936220991
+  itemRarity: 0
+  value: 0
+  weight: 0
+  maxStack: 10
+  SlotDimension:
+    Height: 1
+    Width: 1
+  buffs:
+  - applicationMode: 2
+    statType: 0
+    modifierType: 100
+    baseValue: 5
+    duration: 5
+  references:
+    version: 2
+    RefIds:
+    - rid: 5009286545936220991
+      type: {class: TextDescriptionBlock, ns: , asm: Assembly-CSharp}
+      data:
+        text:
+          m_TableReference:
+            m_TableCollectionName: GUID:a47dd9c66e8f01b4ab9c07cd89ba9594
+          m_TableEntryReference:
+            m_KeyId: 19538997248
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []

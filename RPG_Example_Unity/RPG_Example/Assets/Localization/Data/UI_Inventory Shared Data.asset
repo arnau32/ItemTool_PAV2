@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: UI_Inventory Shared Data
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
+  m_TableCollectionName: UI_Inventory
+  m_TableCollectionNameGuidString: 07b8b7c85aa98444b91b45e91232ad70
+  m_Entries:
+  - m_Id: 11418824704
+    m_Key: Tab_Inventory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121401864192
+    m_Key: Tab_Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 334865461243904
+    m_Key: Inventory_HeaderIInventory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 335027281686528
+    m_Key: Inventory_HeaderILoots_Chest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 335116448395264
+    m_Key: Inventory_HeaderILoots_Bag
+    m_Metadata:
+      m_Items: []
+  - m_Id: 342135804882944
+    m_Key: Menu_Button_Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 342482816430080
+    m_Key: Menu_Button_Setting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 342631055716352
+    m_Key: Menu_Button_ExitGame
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349341526880256
+    m_Key: Input_SwitchPanel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349960937500672
+    m_Key: Input_HOLDStorageAll
+    m_Metadata:
+      m_Items: []
+  - m_Id: 350084120014848
+    m_Key: Input_HOLDCollect All
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348884783951872
+    m_Key: Input_PickUp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 350324529131520
+    m_Key: Input_Equip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 350772896034816
+    m_Key: Input_Use
+    m_Metadata:
+      m_Items: []
+  - m_Id: 350846568984576
+    m_Key: Input_EquipSlot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 350945751691264
+    m_Key: Input_Storage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 351044657573888
+    m_Key: Input_Discard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 351375604936704
+    m_Key: Input_Collect
+    m_Metadata:
+      m_Items: []
+  - m_Id: 351557482541056
+    m_Key: Input_PutDown
+    m_Metadata:
+      m_Items: []
+  - m_Id: 351651355258880
+    m_Key: Input_Rotate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 362220602880000
+    m_Key: Item_DSC_TypeConsumable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 362340291538944
+    m_Key: Item_DSC_TypeCollectable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 362351637131264
+    m_Key: Item_DSC_TypeCrafting
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 9118663391408554639
+  references:
+    version: 2
+    RefIds:
+    - rid: 9118663391408554639
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1777682936797

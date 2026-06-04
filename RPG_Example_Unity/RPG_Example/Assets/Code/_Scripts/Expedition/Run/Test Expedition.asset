@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 100b62174f4c34540a58da93bdc5f464, type: 3}
+  m_Name: Test Expedition
+  m_EditorClassIdentifier: 
+  expeditionId: 0
+  displayName: Test Expedition
+  minEnemyCount: 2
+  maxEnemyCount: 15
+  defaultAllowedEnemies:
+  - {fileID: 11400000, guid: cf4fcf38c7db16d49a2883aaea4554f4, type: 2}
+  - {fileID: 11400000, guid: bf72e4f9c51580c4b9f6bf438b25c45d, type: 2}
+  - {fileID: 11400000, guid: 05d9d08635e4973499f8c53dc80a0c28, type: 2}
+  defaultLootTables: []

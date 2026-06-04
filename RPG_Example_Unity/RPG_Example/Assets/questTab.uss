@@ -1,0 +1,11 @@
+:root {
+}
+
+.quest-item {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.quest-completed {
+    color: rgb(80, 255, 120);
+}

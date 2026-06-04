@@ -1,0 +1,187 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Dialogue_en
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 6b0b19b0a577497d9d4c69531bbaa14d, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 100000000000
+    m_Localized: Great Sword Tier 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 101000000000
+    m_Localized: Great Sword Tier 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 102000000000
+    m_Localized: Great Sword Tier 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 103000000000
+    m_Localized: Great Sword Tier 4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 104000000000
+    m_Localized: Hands Tier 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 105000000000
+    m_Localized: Hands Tier 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 106000000000
+    m_Localized: Hands Tier 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 107000000000
+    m_Localized: Hands Tier 4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 108000000000
+    m_Localized: Sword & Shield Tier 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 109000000000
+    m_Localized: Sword & Shield Tier 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 110000000000
+    m_Localized: Sword & Shield Tier 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 111000000000
+    m_Localized: Sword & Shield Tier 4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 112000000000
+    m_Localized: Ranged Skeleton Weapon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113000000000
+    m_Localized: Helmet Tier 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114000000000
+    m_Localized: Helmet Tier 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115000000000
+    m_Localized: Helmet Tier 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 116000000000
+    m_Localized: Pants Tier 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 117000000000
+    m_Localized: Pants Tier 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 118000000000
+    m_Localized: Pants Tier 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 119000000000
+    m_Localized: ChestPlate Tier 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120000000000
+    m_Localized: ChestPlate Tier 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121000000000
+    m_Localized: ChestPlate Tier 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 122000000000
+    m_Localized: Small Potion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 123000000000
+    m_Localized: Medium Potion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 124000000000
+    m_Localized: Big Potion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 125000000000
+    m_Localized: Taris Rune
+    m_Metadata:
+      m_Items: []
+  - m_Id: 126000000000
+    m_Localized: Raw Meat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 127000000000
+    m_Localized: Small Cracked Bone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128000000000
+    m_Localized: Big Cracked Bone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 129000000000
+    m_Localized: Bone Horn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 130000000000
+    m_Localized: Stone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 131000000000
+    m_Localized: Iron
+    m_Metadata:
+      m_Items: []
+  - m_Id: 132000000000
+    m_Localized: Wood
+    m_Metadata:
+      m_Items: []
+  - m_Id: 133000000000
+    m_Localized: Aurora Dust
+    m_Metadata:
+      m_Items: []
+  - m_Id: 134000000000
+    m_Localized: Rare Gem
+    m_Metadata:
+      m_Items: []
+  - m_Id: 135000000000
+    m_Localized: Liora Statue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 136000000000
+    m_Localized: Worn Rope
+    m_Metadata:
+      m_Items: []
+  - m_Id: 137000000000
+    m_Localized: Apple
+    m_Metadata:
+      m_Items: []
+  - m_Id: 138000000000
+    m_Localized: Meat Leg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 139000000000
+    m_Localized: Legendary Potion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 140000000000
+    m_Localized: Food Deluxe
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

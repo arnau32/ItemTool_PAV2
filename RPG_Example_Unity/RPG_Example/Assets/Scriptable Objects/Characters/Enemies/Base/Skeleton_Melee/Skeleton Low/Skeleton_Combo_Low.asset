@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5466076252894751476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaa43389884f4dc7ae6de53effdf354c, type: 3}
+  m_Name: DistanceRangeConsideration_002_Local
+  m_EditorClassIdentifier: Assembly-CSharp::DistanceRangeConsideration
+  minDistance: 0.5
+  maxDistance: 6
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &-2762494490384312591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d734a192d3a4bffba7fb698c3f803bd, type: 3}
+  m_Name: AngleFrontalConsideration_004_Local
+  m_EditorClassIdentifier: 
+  frontalHalfAngle: 60
+--- !u!114 &-1617854411482213512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5e44b9e6b2941439a167347c6c22c7a, type: 3}
+  m_Name: AttackIntentConsideration_003_Local
+  m_EditorClassIdentifier: 
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.104766846
+      inSlope: 0.26372588
+      outSlope: 0.26372588
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.09929076
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5888e0000a504f97ab8e84fcc769d8f9, type: 3}
+  m_Name: Skeleton_Combo_Low
+  m_EditorClassIdentifier: Assembly-CSharp::ComboAttackAction
+  considerations:
+  - {fileID: -2762494490384312591}
+  - {fileID: -1617854411482213512}
+  - {fileID: -5466076252894751476}
+  category: 0
+  isMaintenanceMovement: 0
+  canBeInterrupted: 0
+  useHardLook: 1
+  baseScore: 100
+  attackData: {fileID: 11400000, guid: e8c799f9c9a9b3d4780cc594824b2d1a, type: 2}
+  canBeInterruptedByKnockback: 1
+  canBeInterruptedByKnockdown: 1
+  minCooldown: 4.75
+  maxCooldown: 6
+  commitSeconds: 0.35
+  cadenceDelay: 0.9
+  selectionWeight: 1
+  randomness: 0
+  repeatPenalty: 0
+  positioningOptimalRangeOverride: 0
+  additionalHits:
+  - {fileID: 11400000, guid: a014e6ee5dc5ba24799f0303b28a6d39, type: 2}
+  - {fileID: 11400000, guid: 2bae96af48bd6d34fb33833229043a88, type: 2}
+  - {fileID: 11400000, guid: 679bcb8d308f0c34da10ae3988c6718c, type: 2}
+  chainChancePerHit:
+  - 0
+  - 0
+  - 0.5
+  comboChance: 1
+  gapBetweenHits: 0

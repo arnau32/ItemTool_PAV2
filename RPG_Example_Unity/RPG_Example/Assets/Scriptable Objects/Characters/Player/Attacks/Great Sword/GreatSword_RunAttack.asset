@@ -1,0 +1,187 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71246b79fc814bb5abf2624dec1ba480, type: 3}
+  m_Name: GreatSword_RunAttack
+  m_EditorClassIdentifier: 
+  triggerAnimation: Run_Attack
+  animationClip: {fileID: 7400000, guid: 41eddace38ec5d84ab3fdd425b4eb485, type: 2}
+  timeToChangeAnim: 0.7054054
+  crossFade: 0.3
+  abilityScoreOnHit: 20
+  useAnimatorSpeedCurve: 1
+  animatorSpeedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.605
+      inSlope: 0.4994675
+      outSlope: 0.4994675
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.23024523
+      value: 0.72
+      inSlope: 1.2671595
+      outSlope: 1.2671595
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.3678474
+      value: 1
+      inSlope: 1.2926857
+      outSlope: 1.2926857
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.495
+      value: 1.07
+      inSlope: -0.001960367
+      outSlope: -0.001960367
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.62125343
+      value: 1
+      inSlope: -0.3828319
+      outSlope: -0.3828319
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0.92
+      inSlope: -0.21122299
+      outSlope: -0.21122299
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  useRootMotionMultiplier: 1
+  rootMotionMultiplierCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1.5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1.5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  useProceduralForwardMove: 0
+  proceduralForwardMoveCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  proceduralForwardMoveDistance: 0.6
+  attackName: 
+  attackHitType: 1
+  staminaCost: 33
+  damage: 0
+  damageMultiplier: 1
+  poiseDamage: 30
+  hasHyperArmor: 0
+  damageWindows:
+  - window:
+      start: 0.42374772
+      end: 0.5822675
+    weaponHand: 0
+    slot: 0
+    allowMultiHit: 0
+    perTargetCooldown: 0
+    maxHitsPerTarget: 1
+  vfxWindows:
+  - vfxId: 4
+    window:
+      start: 0.42307693
+      end: 0.571049
+    disableOnEnd: 0
+  weaponVfxWindows: []
+  audioTriggers:
+  - triggerAt: 0.42307693
+    sound:
+      Guid:
+        Data1: 198005073
+        Data2: 1089649978
+        Data3: -1243604574
+        Data4: 1872396416
+      Path: event:/SFX_Weapons/SFX_GreatSword_Atk
+  audioWindows: []
+  usesCombo: 0
+  comboWindow:
+    start: 0
+    end: 0.8193485
+  allowDodgeCancelWindow: 1
+  dodgeCancelWindows:
+  - start: 0.6474907
+    end: 1
+  allowMoveCancel: 1
+  moveCancelWindows:
+  - start: 0.7921621
+    end: 1
+  allowMoveRotation: 1
+  moveRotationWindows:
+  - start: 0.16463414
+    end: 0.47365853
+  allowCanBeParriedWindow: 0
+  canBeParriedWindows: []
+  parryCancel:
+  - start: 0.65642273
+    end: 1
+  useHardLookWindow: 0
+  hardLookWindow: []

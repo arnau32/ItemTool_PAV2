@@ -1,0 +1,270 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8287924472870353233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Nodo Choise 1_Option_2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
+  localizedOptionText:
+    m_TableReference:
+      m_TableCollectionName: GUID:9d19e2569c0e0e84fa7d123238b2dfc6
+    m_TableEntryReference:
+      m_KeyId: 189028144222208
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 
+  conditions:
+  - {fileID: 11400000, guid: 08cdd0aefaf6c304fbb810f94ff74cb2, type: 2}
+  actions:
+  - {fileID: 11400000, guid: 7c541e0119dfa3546b090c5374a821a3, type: 2}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-4744130483196115010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Op 1_0_Option_0
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
+  localizedOptionText:
+    m_TableReference:
+      m_TableCollectionName: GUID:9d19e2569c0e0e84fa7d123238b2dfc6
+    m_TableEntryReference:
+      m_KeyId: 131954918354944
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: d042abaf
+  conditions:
+  - {fileID: 11400000, guid: 87bf16a1fe1f90541837ea5c7072d084, type: 2}
+  actions:
+  - {fileID: 11400000, guid: 196f47dbe2e898f49bfb8f949d2ef6d3, type: 2}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-2625452694568785211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Nodo Choise 1_Option_1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
+  localizedOptionText:
+    m_TableReference:
+      m_TableCollectionName: GUID:9d19e2569c0e0e84fa7d123238b2dfc6
+    m_TableEntryReference:
+      m_KeyId: 131988858662912
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 3774707d
+  conditions: []
+  actions: []
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-1301753851031376108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: Nodo 0
+  m_EditorClassIdentifier: 
+  id: 47d6989f
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6
+    m_TableEntryReference:
+      m_KeyId: 12184221653725184
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 3bdaa966
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 60, y: 80}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-360975273127612836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: Nodo 3
+  m_EditorClassIdentifier: 
+  id: a9eb3bc1
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6
+    m_TableEntryReference:
+      m_KeyId: 12184625334513664
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 60, y: 326}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a9b39f4adf73084cb69b16020143e7a, type: 3}
+  m_Name: Haldrick_Map
+  m_EditorClassIdentifier: 
+  characterIllustration: {fileID: 21300000, guid: 1f8d12017c68cc04d8cc747d9116c251, type: 3}
+  characterName: Haldrick
+  startNodeId: 47d6989f
+  nodes:
+  - {fileID: -1301753851031376108}
+  - {fileID: 8695141875456565604}
+  - {fileID: 7359036611493652341}
+  - {fileID: -360975273127612836}
+  - {fileID: 1728334342888081217}
+  pinnedNodeIds: []
+--- !u!114 &1728334342888081217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: Nodo 4
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  id: b235bcf7
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6
+    m_TableEntryReference:
+      m_KeyId: 16374422064132096
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 
+  onEnterActions:
+  - {fileID: 11400000, guid: d2dac0a07aa982d479fdd7a419c18561, type: 2}
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 947.2, y: 379.4}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &7359036611493652341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: Nodo 2
+  m_EditorClassIdentifier: 
+  id: df8212dc
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6
+    m_TableEntryReference:
+      m_KeyId: 12184507139026944
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: a9eb3bc1
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 60, y: 244}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &8695141875456565604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: Nodo 1
+  m_EditorClassIdentifier: 
+  id: 3bdaa966
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6
+    m_TableEntryReference:
+      m_KeyId: 12184367854579712
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: df8212dc
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 60, y: 162}
+  references:
+    version: 2
+    RefIds: []

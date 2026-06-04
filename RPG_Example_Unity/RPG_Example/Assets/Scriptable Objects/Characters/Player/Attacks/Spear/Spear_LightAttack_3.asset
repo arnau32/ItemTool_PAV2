@@ -1,0 +1,232 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71246b79fc814bb5abf2624dec1ba480, type: 3}
+  m_Name: Spear_LightAttack_3
+  m_EditorClassIdentifier: 
+  triggerAnimation: Atk_3
+  animationClip: {fileID: 7400000, guid: 7f84eebd986bc0c40a5a85474203a45c, type: 2}
+  timeToChangeAnim: 0.90200806
+  crossFade: 0.1
+  abilityScoreOnHit: 20
+  useAnimatorSpeedCurve: 1
+  animatorSpeedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.681
+      inSlope: 0.221166
+      outSlope: 0.221166
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.21251002
+      value: 0.728
+      inSlope: 7.8193073
+      outSlope: 7.8193073
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.23015237
+      value: 1
+      inSlope: 7.7087245
+      outSlope: 7.7087245
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.45709702
+      value: 1
+      inSlope: -2.5286381
+      outSlope: -2.5286381
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.48596632
+      value: 0.854
+      inSlope: -2.607716
+      outSlope: -2.607716
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.6503609
+      value: 0.828
+      inSlope: -0.0476169
+      outSlope: -0.0476169
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0.85
+      inSlope: 0.06292206
+      outSlope: 0.06292206
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  useRootMotionMultiplier: 1
+  rootMotionMultiplierCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.06575782
+      value: 1
+      inSlope: 3.4109116
+      outSlope: 3.4109116
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.093023255
+      value: 1.186
+      inSlope: 3.4185386
+      outSlope: 3.4185386
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.61748195
+      value: 1.194
+      inSlope: -2.433309
+      outSlope: -2.433309
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.6551724
+      value: 1.01
+      inSlope: -2.455436
+      outSlope: -2.455436
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: -0.028999971
+      outSlope: -0.028999971
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  useProceduralForwardMove: 0
+  proceduralForwardMoveCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  proceduralForwardMoveDistance: 0.6
+  attackName: 
+  attackHitType: 0
+  staminaCost: 22
+  damage: 0
+  damageMultiplier: 1
+  poiseDamage: 24
+  hasHyperArmor: 0
+  damageWindows:
+  - window:
+      start: 0.2334878
+      end: 0.262829
+    weaponHand: 0
+    slot: 0
+    allowMultiHit: 0
+    perTargetCooldown: 0
+    maxHitsPerTarget: 0
+  vfxWindows:
+  - vfxId: 3
+    window:
+      start: 0.22891566
+      end: 0.26136547
+    disableOnEnd: 0
+  weaponVfxWindows: []
+  audioTriggers:
+  - triggerAt: 0.23052208
+    sound:
+      Guid:
+        Data1: -1920526365
+        Data2: 1229813139
+        Data3: -13148772
+        Data4: -1720783540
+      Path: event:/SFX_Weapons/SFX_Spear_Atk
+  audioWindows: []
+  usesCombo: 0
+  comboWindow:
+    start: 0
+    end: 0.54399997
+  allowDodgeCancelWindow: 1
+  dodgeCancelWindows:
+  - start: 0.27173784
+    end: 1
+  allowMoveCancel: 1
+  moveCancelWindows:
+  - start: 0.6614334
+    end: 1
+  allowMoveRotation: 1
+  moveRotationWindows:
+  - start: 0.19614145
+    end: 0.2334646
+  allowCanBeParriedWindow: 0
+  canBeParriedWindows: []
+  parryCancel:
+  - start: 0.26314798
+    end: 1
+  useHardLookWindow: 0
+  hardLookWindow: []

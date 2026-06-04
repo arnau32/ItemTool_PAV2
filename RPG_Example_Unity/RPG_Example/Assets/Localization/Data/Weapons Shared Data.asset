@@ -1,0 +1,164 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Weapons Shared Data
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
+  m_TableCollectionName: Weapons
+  m_TableCollectionNameGuidString: 2238abc9fc3eabf429fc99726df15768
+  m_Entries:
+  - m_Id: 10731360256
+    m_Key: W_GS_T1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63474733056
+    m_Key: W_GS_T2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66872119296
+    m_Key: W_GS_T3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69153820672
+    m_Key: W_GS_T4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1500648804352
+    m_Key: W_H_T1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1503731617792
+    m_Key: W_H_T2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1505992347648
+    m_Key: W_H_T3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1509960159232
+    m_Key: W_H_T4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1583985430528
+    m_Key: W_SS_T1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1586707533824
+    m_Key: W_SS_T2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1588389449728
+    m_Key: W_SS_T3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1590088142848
+    m_Key: W_SS_T4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2623791140864
+    m_Key: CP_T1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2661191749632
+    m_Key: CP_T2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2662798168064
+    m_Key: CP_T3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3015367168000
+    m_Key: HL_T1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3017443348480
+    m_Key: HL_T2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3018550644736
+    m_Key: HL_T3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3793662218240
+    m_Key: LA_T1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3795864227840
+    m_Key: LA_T2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3797139296256
+    m_Key: LA_T3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14685682503680
+    m_Key: SWORD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14715805995008
+    m_Key: GREATSWORD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14738040000512
+    m_Key: WARRIOR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14749691777024
+    m_Key: SPEAR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15147756392448
+    m_Key: HANSS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1360435523850240
+    m_Key: DG_T1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1360453827792896
+    m_Key: DG_T2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1360455891390464
+    m_Key: DG_T3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1360478800678912
+    m_Key: DG_T4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1679027087839232
+    m_Key: SP_T1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1679030262927360
+    m_Key: SP_T2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1679032087449600
+    m_Key: SP_T3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1679033547067392
+    m_Key: SP_T4
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 5134528056360435802
+  references:
+    version: 2
+    RefIds:
+    - rid: 5134528056360435802
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1777773556998

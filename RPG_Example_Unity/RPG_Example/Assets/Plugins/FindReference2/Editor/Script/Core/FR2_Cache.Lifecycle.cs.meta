@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 3012f53d110324aa3b447c7d302c44a7
+AssetOrigin:
+  serializedVersion: 1
+  productId: 59092
+  packageName: Find Reference 2
+  packageVersion: 2.6.6
+  assetPath: Assets/FindReference2/Editor/Script/Core/FR2_Cache.Lifecycle.cs
+  uploadId: 796006
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

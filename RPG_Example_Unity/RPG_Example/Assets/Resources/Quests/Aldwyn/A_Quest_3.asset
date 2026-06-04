@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 329b2ab435794f2409022a53e5452931, type: 3}
+  m_Name: A_Quest_3
+  m_EditorClassIdentifier: Assembly-CSharp::QuestInfoSO
+  <id>k__BackingField: A_Quest_3
+  qName:
+    m_TableReference:
+      m_TableCollectionName: GUID:ca4ac9f513ebf8646a71bb55f3e82cd0
+    m_TableEntryReference:
+      m_KeyId: 2305169866420230
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  description: 
+  icon: {fileID: 0}
+  questPreequisits:
+  - {fileID: 11400000, guid: a11ce0627685223499ae5b7c997560d2, type: 2}
+  questSteps:
+  - {fileID: 11400000, guid: 327ea0531155f154180d5e41685481aa, type: 2}
+  canFinishText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 16045007289159680
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  mapPOIs: []
+  reward:
+    items:
+    - item: {fileID: 11400000, guid: 2320c50be746ed74aa1ecd97909fae1e, type: 2}
+      quantity: 3
+    - item: {fileID: 11400000, guid: 1419de1a81fd90647826b5373535c138, type: 2}
+      quantity: 2
+    - item: {fileID: 11400000, guid: 1256eaa218550a047a65ca18226e9402, type: 2}
+      quantity: 2
+    randomItems: []
+    auroraDust: 250
+  references:
+    version: 2
+    RefIds: []

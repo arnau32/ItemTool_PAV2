@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Misions_General Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Misions_General
+  m_TableCollectionNameGuidString: 30e83be03e252314fa0a389c50676e6b
+  m_Entries:
+  - m_Id: 100000000000
+    m_Key: MG_Q1_Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200000000000
+    m_Key: MG_Q1_Desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 300000000000
+    m_Key: MG_Q2_Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 400000000000
+    m_Key: MG_Q2_Desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 500000000000
+    m_Key: MG_Q3_Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 600000000000
+    m_Key: MG_Q3_Desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 700000000000
+    m_Key: MG_Q4_Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 800000000000
+    m_Key: MG_Q4_Desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 900000000000
+    m_Key: MG_Q5_Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1000000000000
+    m_Key: MG_Q5_Desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1100000000000
+    m_Key: MG_Q6_Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1200000000000
+    m_Key: MG_Q6_Desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300000000000
+    m_Key: MG_Q7_Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1400000000000
+    m_Key: MG_Q7_Desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1500000000000
+    m_Key: MG_Q8_Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1600000000000
+    m_Key: MG_Q8_Desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1700000000000
+    m_Key: MG_Q9_Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1800000000000
+    m_Key: MG_Q9_Desc
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 1003000000000000001
+  references:
+    version: 2
+    RefIds:
+    - rid: 1003000000000000001
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1776000000000

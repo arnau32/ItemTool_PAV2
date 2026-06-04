@@ -1,0 +1,256 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Village Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Village
+  m_TableCollectionNameGuidString: 9d19e2569c0e0e84fa7d123238b2dfc6
+  m_Entries:
+  - m_Id: 192871460864
+    m_Key: V_Aldwyn_1_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1523485044736
+    m_Key: V_Pedro_1_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3594712051712
+    m_Key: V_Pedro_1_021
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4076192985088
+    m_Key: V_Pedro_1_022
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115128876462080
+    m_Key: V_Aldwyn_1_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115357159845888
+    m_Key: V_Aldwyn_1_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115485799149568
+    m_Key: V_Aldwyn_1_04
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115691542343680
+    m_Key: V_Aldwyn_1_05
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115910652784640
+    m_Key: V_Aldwyn_1_06
+    m_Metadata:
+      m_Items: []
+  - m_Id: 116142736207872
+    m_Key: New Entry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 116250408185856
+    m_Key: V_Kyrathris_1_01_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 116307995979776
+    m_Key: V_Kyrathris_1_02_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 116629107699712
+    m_Key: V_Aldwyn_1_01_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 117073221578752
+    m_Key: V_Aldwyn_1_01_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 117807308664832
+    m_Key: V_Aldwyn_1_02_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 118351683186688
+    m_Key: V_Aldwyn_1_02_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 118915288592384
+    m_Key: V_Aldwyn_1_02_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 119202816520192
+    m_Key: V_Aldwyn_1_07
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121785606008832
+    m_Key: V_Aldwyn_1_08
+    m_Metadata:
+      m_Items: []
+  - m_Id: 122189051916288
+    m_Key: V_Aldwyn_1_09
+    m_Metadata:
+      m_Items: []
+  - m_Id: 122391473221632
+    m_Key: V_Aldwyn_1_10
+    m_Metadata:
+      m_Items: []
+  - m_Id: 123001811562496
+    m_Key: V_Aldwyn_1_11
+    m_Metadata:
+      m_Items: []
+  - m_Id: 123202752278528
+    m_Key: V_Aldwyn_1_12
+    m_Metadata:
+      m_Items: []
+  - m_Id: 123343999660032
+    m_Key: V_Aldwyn_1_13
+    m_Metadata:
+      m_Items: []
+  - m_Id: 129939144241152
+    m_Key: V_Haldrick_1_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 130304325513216
+    m_Key: V_Haldrick_1_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 130497435463680
+    m_Key: V_Haldrick_1_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 130782576832512
+    m_Key: V_Haldrick_1_04
+    m_Metadata:
+      m_Items: []
+  - m_Id: 130945701703680
+    m_Key: V_Haldrick_1_05
+    m_Metadata:
+      m_Items: []
+  - m_Id: 131108251955200
+    m_Key: V_Haldrick_1_06
+    m_Metadata:
+      m_Items: []
+  - m_Id: 131304285335552
+    m_Key: V_Haldrick_1_07
+    m_Metadata:
+      m_Items: []
+  - m_Id: 131478625775616
+    m_Key: New Entry 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 131954918354944
+    m_Key: V_Kyrathris_2_01_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 131988858662912
+    m_Key: V_Kyrathris_2_02_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 136758877024256
+    m_Key: V_Kyrathris_2_01_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 136913336463360
+    m_Key: V_Kyrathris_2_01_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 137488522342400
+    m_Key: V_Kyrathris_2_01_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 137865548328960
+    m_Key: V_Kyrathris_2_01_5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 138050206756864
+    m_Key: V_Kyrathris_2_01_6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 138187041730560
+    m_Key: V_Kyrathris_2_01_7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 138442189631488
+    m_Key: V_Kyrathris_2_02_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 138573634924544
+    m_Key: V_Kyrathris_2_02_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 140912139759616
+    m_Key: V_Morran_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 141060467126272
+    m_Key: V_Morran_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 141246413205504
+    m_Key: V_Morran_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 141338427846656
+    m_Key: V_Morran_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 141450956828672
+    m_Key: V_Morran_5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 141548054966272
+    m_Key: V_Morran_6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 165763193827328
+    m_Key: O_Random_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 165915841327104
+    m_Key: V_Random_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166027112017920
+    m_Key: V_Random_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 167303161901056
+    m_Key: "\u2026Suppose so."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 167907166842880
+    m_Key: V_Kyrathris_1_01_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 168623432331264
+    m_Key: New Entry 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 169727876460544
+    m_Key: V_Kyrathris_1_01_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 189028144222208
+    m_Key: V_Kyrathis_Beafnbioas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589290876928
+    m_Key: Tha
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 4621676374010888271
+  references:
+    version: 2
+    RefIds:
+    - rid: 4621676374010888271
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1772973196109

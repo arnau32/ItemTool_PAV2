@@ -1,0 +1,250 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71246b79fc814bb5abf2624dec1ba480, type: 3}
+  m_Name: GreatSword_Attack_1
+  m_EditorClassIdentifier: 
+  triggerAnimation: Atk_1
+  animationClip: {fileID: 7400000, guid: 845e6ca4195fada44847db58178580b8, type: 2}
+  timeToChangeAnim: 0.562249
+  crossFade: 0.15
+  abilityScoreOnHit: 20
+  useAnimatorSpeedCurve: 1
+  animatorSpeedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.68
+      inSlope: 0.0867595
+      outSlope: 0.0867595
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.23052208
+      value: 0.7
+      inSlope: 0.772872
+      outSlope: 0.772872
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.33333334
+      value: 0.85
+      inSlope: 2.5377064
+      outSlope: 2.5377064
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.38393575
+      value: 1.033
+      inSlope: 5.272256
+      outSlope: 5.272256
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.418
+      value: 1.269
+      inSlope: 3.4397235
+      outSlope: 3.4397235
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.54136544
+      value: 1.263
+      inSlope: -5.7697616
+      outSlope: -5.7697616
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.574
+      value: 0.888
+      inSlope: -7.5539546
+      outSlope: -7.5539546
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.621
+      value: 0.718
+      inSlope: -1.9932077
+      outSlope: -1.9932077
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0.578
+      inSlope: -0.36939308
+      outSlope: -0.36939308
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  useRootMotionMultiplier: 0
+  rootMotionMultiplierCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  useProceduralForwardMove: 1
+  proceduralForwardMoveCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.284
+      value: 0.1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.429
+      value: 1.033
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.6287571
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.6669375
+      value: 0.1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0.1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  proceduralForwardMoveDistance: 1.5
+  attackName: 
+  attackHitType: 0
+  staminaCost: 18
+  damage: 0
+  damageMultiplier: 1
+  poiseDamage: 35
+  hasHyperArmor: 0
+  damageWindows:
+  - window:
+      start: 0.38065863
+      end: 0.557871
+    weaponHand: 0
+    slot: 0
+    allowMultiHit: 0
+    perTargetCooldown: 0
+    maxHitsPerTarget: 1
+  vfxWindows:
+  - vfxId: 0
+    window:
+      start: 0.43292683
+      end: 0.56738466
+    disableOnEnd: 0
+  weaponVfxWindows: []
+  audioTriggers:
+  - triggerAt: 0.42245457
+    sound:
+      Guid:
+        Data1: 198005073
+        Data2: 1089649978
+        Data3: -1243604574
+        Data4: 1872396416
+      Path: event:/SFX_Weapons/SFX_GreatSword_Atk
+  audioWindows: []
+  usesCombo: 1
+  comboWindow:
+    start: 0.32997656
+    end: 0.5790244
+  allowDodgeCancelWindow: 1
+  dodgeCancelWindows:
+  - start: 0.59623456
+    end: 1
+  allowMoveCancel: 1
+  moveCancelWindows:
+  - start: 0.8057959
+    end: 1
+  allowMoveRotation: 1
+  moveRotationWindows:
+  - start: 0.22297561
+    end: 0.42123497
+  allowCanBeParriedWindow: 0
+  canBeParriedWindows: []
+  parryCancel:
+  - start: 0.5710569
+    end: 1
+  useHardLookWindow: 0
+  hardLookWindow: []

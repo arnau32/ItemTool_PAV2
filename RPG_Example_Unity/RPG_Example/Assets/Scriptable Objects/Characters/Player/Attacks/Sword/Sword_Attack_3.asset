@@ -1,0 +1,194 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71246b79fc814bb5abf2624dec1ba480, type: 3}
+  m_Name: Sword_Attack_3
+  m_EditorClassIdentifier: 
+  triggerAnimation: Atk_3
+  animationClip: {fileID: 7400000, guid: 1d49e6d1ded994e4499a77799ebcba0a, type: 2}
+  timeToChangeAnim: 0.9058296
+  crossFade: 0.05
+  abilityScoreOnHit: 20
+  useAnimatorSpeedCurve: 1
+  animatorSpeedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.7
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.12666667
+      value: 0.7
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.14833333
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  useRootMotionMultiplier: 0
+  rootMotionMultiplierCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  useProceduralForwardMove: 0
+  proceduralForwardMoveCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  proceduralForwardMoveDistance: 0.6
+  attackName: 
+  attackHitType: 1
+  staminaCost: 21
+  damage: 0
+  damageMultiplier: 1
+  poiseDamage: 34
+  hasHyperArmor: 0
+  damageWindows:
+  - window:
+      start: 0.08100945
+      end: 0.12428371
+    weaponHand: 0
+    slot: 0
+    allowMultiHit: 0
+    perTargetCooldown: 0
+    maxHitsPerTarget: 1
+  - window:
+      start: 0.34772727
+      end: 0.38252547
+    weaponHand: 0
+    slot: 0
+    allowMultiHit: 0
+    perTargetCooldown: 0
+    maxHitsPerTarget: 1
+  vfxWindows:
+  - vfxId: 2
+    window:
+      start: 0.07738815
+      end: 0.13856462
+    disableOnEnd: 0
+  - vfxId: 3
+    window:
+      start: 0.34456685
+      end: 0.4069438
+    disableOnEnd: 0
+  weaponVfxWindows: []
+  audioTriggers:
+  - triggerAt: 0.07692308
+    sound:
+      Guid:
+        Data1: -1750297843
+        Data2: 1077109476
+        Data3: 1279494061
+        Data4: 1771528018
+      Path: event:/SFX_Weapons/SFX_Sword_Atk
+  - triggerAt: 0.3409091
+    sound:
+      Guid:
+        Data1: -1750297843
+        Data2: 1077109476
+        Data3: 1279494061
+        Data4: 1771528018
+      Path: event:/SFX_Weapons/SFX_Sword_Atk
+  audioWindows: []
+  usesCombo: 0
+  comboWindow:
+    start: 0.058333334
+    end: 0.59092623
+  allowDodgeCancelWindow: 1
+  dodgeCancelWindows:
+  - start: 0.40914798
+    end: 1
+  - start: 0.13883677
+    end: 0.32825515
+  allowMoveCancel: 1
+  moveCancelWindows:
+  - start: 0.769292
+    end: 1
+  allowMoveRotation: 1
+  moveRotationWindows:
+  - start: 0.23409364
+    end: 0.36609843
+  allowCanBeParriedWindow: 0
+  canBeParriedWindows: []
+  parryCancel:
+  - start: 0.13883677
+    end: 0.32450283
+  - start: 0.41095683
+    end: 1
+  useHardLookWindow: 0
+  hardLookWindow: []

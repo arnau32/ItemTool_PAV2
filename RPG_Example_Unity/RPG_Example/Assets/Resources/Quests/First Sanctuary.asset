@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 769a56ea71c64c82b1e4713456688d7e, type: 3}
+  m_Name: First Sanctuary_VisitZoneStepSO_0
+  m_EditorClassIdentifier: 
+  objectiveText:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  zoneId: First Sanctuary
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 329b2ab435794f2409022a53e5452931, type: 3}
+  m_Name: First Sanctuary
+  m_EditorClassIdentifier: 
+  <id>k__BackingField: First Sanctuary
+  qName:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  description: The wind has a direction and an intention. Seek the oldest sanctuary,
+    the origin of Liora's network, which Aldwyn believed lost forever.
+  icon: {fileID: 0}
+  questPreequisits:
+  - {fileID: 11400000, guid: aa000003000000000000000000000003, type: 2}
+  questSteps:
+  - {fileID: 100}
+  canFinishText:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  mapPOIs: []
+  reward:
+    items: []
+    randomItems: []
+    auroraDust: 0
+  references:
+    version: 2
+    RefIds: []

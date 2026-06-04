@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b7492b73b61442fb88e115c95bc8bb5, type: 3}
+  m_Name: Spear_Tier3
+  m_EditorClassIdentifier: 
+  <uniqueID>k__BackingField: Spear Tier 3
+  itemType: 0
+  itemNameID: Spear Tier 3
+  localizedDisplayName:
+    m_TableReference:
+      m_TableCollectionName: GUID:2238abc9fc3eabf429fc99726df15768
+    m_TableEntryReference:
+      m_KeyId: 1679032087449600
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  icon: {fileID: 21300000, guid: 45b5e915ec2c46a42991c62376fc0556, type: 3}
+  description: 
+  descriptionBlocks: []
+  itemRarity: 0
+  value: 0
+  weight: 0
+  maxStack: 1
+  SlotDimension:
+    Height: 3
+    Width: 1
+  equipSlot: 3
+  modifiers:
+  - statTypeAffected: 4
+    type: 100
+    value: 42
+    order: 0
+  prefab: {fileID: 269845549352391334, guid: 36ad0ce5f0be3164eaa869c924ebafc0, type: 3}
+  tier: 3
+  rollMode: 1
+  animatorOverride: {fileID: 9100000, guid: 84cd35d8b5a3f8c458bdc0fc4ee84ad5, type: 2}
+  handType: 0
+  familyType: 3
+  prefabVariant: {fileID: 0}
+  combos:
+  - steps:
+    - input: 0
+      attack: {fileID: 11400000, guid: 3b36c23b53022504cbf49225acebf359, type: 2}
+    - input: 0
+      attack: {fileID: 11400000, guid: f4e572db86cc0ef418501df9ffe94e68, type: 2}
+    - input: 0
+      attack: {fileID: 11400000, guid: cccdf3e9aba67ec438421ccb7a79d92b, type: 2}
+  - steps:
+    - input: 3
+      attack: {fileID: 11400000, guid: 665b1a0e60b042e4d8bc8fd6c274c6ed, type: 2}
+  dodgeSet: {fileID: 11400000, guid: 5de25dff825e7b44db4157b31a9cc169, type: 2}
+  parry: {fileID: 11400000, guid: 44d9f7267ad9a51488e2a473c829f444, type: 2}
+  weaponSkill: {fileID: 11400000, guid: 3efa10a16677a70428a1fa97aa56f766, type: 2}
+  skillScoreNeeded: 160
+  weaponTier: 3
+  enemyDamageMultiplier: 1
+  references:
+    version: 2
+    RefIds: []

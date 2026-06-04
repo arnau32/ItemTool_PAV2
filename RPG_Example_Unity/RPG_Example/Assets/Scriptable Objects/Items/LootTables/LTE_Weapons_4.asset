@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48ac4945e47be6e43b035f3074cc5c3c, type: 3}
+  m_Name: LTE_Weapons_4
+  m_EditorClassIdentifier: Assembly-CSharp::LootTable
+  guaranteedEntries: []
+  weightedEntries:
+  - entryType: 0
+    item: {fileID: 11400000, guid: cf8ca52a407c7434082dbc82e17e77cf, type: 2}
+    nestedTable: {fileID: 0}
+    minQuantity: 1
+    maxQuantity: 1
+    weight: 1
+    equipableOverrideMode: 2
+    overrideFixedRarity: 0
+  - entryType: 0
+    item: {fileID: 11400000, guid: 6cc29f50df1171848a18873793d284f2, type: 2}
+    nestedTable: {fileID: 0}
+    minQuantity: 1
+    maxQuantity: 1
+    weight: 1
+    equipableOverrideMode: 2
+    overrideFixedRarity: 0
+  - entryType: 0
+    item: {fileID: 11400000, guid: cf0161fbd511ab145a9b2969925c8304, type: 2}
+    nestedTable: {fileID: 0}
+    minQuantity: 1
+    maxQuantity: 1
+    weight: 1
+    equipableOverrideMode: 2
+    overrideFixedRarity: 0
+  - entryType: 0
+    item: {fileID: 11400000, guid: 8fbd124fc77926a4f82d369608ae5827, type: 2}
+    nestedTable: {fileID: 0}
+    minQuantity: 1
+    maxQuantity: 1
+    weight: 1
+    equipableOverrideMode: 2
+    overrideFixedRarity: 0
+  - entryType: 0
+    item: {fileID: 11400000, guid: 3889658bf9cbdba44a55b4c5a06f0d86, type: 2}
+    nestedTable: {fileID: 0}
+    minQuantity: 1
+    maxQuantity: 1
+    weight: 1
+    equipableOverrideMode: 2
+    overrideFixedRarity: 0
+  minRandomPicks: 1
+  maxRandomPicks: 1

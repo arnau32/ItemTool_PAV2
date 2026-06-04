@@ -1,0 +1,31 @@
+:root {
+}
+
+#progress-root {
+    width: 200px;
+    height: 20px;
+
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 6px;
+
+    overflow: hidden;
+}
+
+#progress-fill {
+    width: 0%;
+    height: 100%;
+
+    background-color: rgb(0, 200, 255);
+}
+
+#progress-label {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    unity-text-align: middle-center;
+    color: white;
+    font-size: 12px;
+}

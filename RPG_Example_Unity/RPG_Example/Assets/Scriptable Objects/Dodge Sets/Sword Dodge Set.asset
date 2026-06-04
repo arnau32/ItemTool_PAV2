@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a538c5aca3194f948ba57fb0e258d005, type: 3}
+  m_Name: Sword Dodge Set
+  m_EditorClassIdentifier: 
+  staminaCost: 25
+  groundPointOffset: 0.03
+  freeDodge: {fileID: 11400000, guid: 57f3618dcc5db0b48849bddd07c55262, type: 2}
+  forwardDodge: {fileID: 11400000, guid: 57f3618dcc5db0b48849bddd07c55262, type: 2}
+  backwardDodge: {fileID: 11400000, guid: ca37c970b78e73d4db607e02186336f7, type: 2}
+  leftDodge: {fileID: 11400000, guid: 56044fbfd79aa40419ab863d1da3bc70, type: 2}
+  rightDodge: {fileID: 11400000, guid: 7eefa0ad5b0313143ad07973827fd482, type: 2}

@@ -1,0 +1,153 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-Assets-Shared
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-Assets-Shared
+  m_GUID: db4a7584563033743beeb33df4ffd86d
+  m_SerializeEntries:
+  - m_GUID: 00f7b6f6f7d644549bfe5e8410e1ab34
+    m_Address: Assets/Localization/POI Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 034bb790011b845459ea80e79b70513a
+    m_Address: Assets/Localization/UI_Settings Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 07b8b7c85aa98444b91b45e91232ad70
+    m_Address: Assets/Localization/UI_Inventory Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1cec0089f0181b741b953f562581011e
+    m_Address: Assets/Localization/UI Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 20321d82a12d51d44aa84212e150e253
+    m_Address: Assets/Localization/Cinematic Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2238abc9fc3eabf429fc99726df15768
+    m_Address: Assets/Localization/Weapons Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 30e83be03e252314fa0a389c50676e6b
+    m_Address: Assets/Localization/Tables/Misions_General Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3622512747ed6d2448a79b9906d88d16
+    m_Address: Assets/Localization/Notes Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3f9d6ab73883653449106f6b2a53a3b7
+    m_Address: Assets/Localization/UI_MainMenu Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 604d55305f6d0d04da921287f7828f8d
+    m_Address: Assets/Localization/Tables/Missions_V2 Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6b0b19b0a577497d9d4c69531bbaa14d
+    m_Address: Assets/Localization/Data/Dialogue Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6f49499dfe3cf4d4eb8fdbc7d00ffb4c
+    m_Address: Assets/Localization/Varrik Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7a918d7eb290a4647bc4a9b04160b3ae
+    m_Address: Assets/Localization/Interactables Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8b6f419eee9aa6c4c8ae9bfc34cbacd6
+    m_Address: Assets/Localization/Stats Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9d19e2569c0e0e84fa7d123238b2dfc6
+    m_Address: Assets/Localization/Village Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a16e40725cca8bf4f9854135d6985d63
+    m_Address: Assets/Localization/OnBoarding Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a47dd9c66e8f01b4ab9c07cd89ba9594
+    m_Address: Assets/Localization/Item Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b74fd6cb1ab36b347b90c6fec1e27d5a
+    m_Address: Assets/__Temporal/Object_Descriptions Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c0d1e2f3a4b5c6f1a2b3c4d5e6f7a8b9
+    m_Address: Assets/Localization/Tables/Naisha_Missions Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4
+    m_Address: Assets/Localization/Tables/Morran_Interactions Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ca4ac9f513ebf8646a71bb55f3e82cd0
+    m_Address: Assets/Localization/Quests Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e94557620545797449b61a903d40f81c
+    m_Address: Assets/Localization/Tables/Aldwyn_Missions Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6
+    m_Address: Assets/Localization/Tables/Haldrik_Missions Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f1c22726e77c5a64f9610ee61ad807e2
+    m_Address: Assets/Localization/Tables/Morran_Missions Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f1e2d3c4b5a697886950413223140506
+    m_Address: Assets/Localization/Data/Objects Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fa78e3850a549ff40b82b48c371e0f64
+    m_Address: Assets/Localization/Data/Upgrades Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 705b2f905134c3442a7588c76775441c, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 10cf3906592925443a627e65fca6b15c, type: 2}
+    - {fileID: 11400000, guid: 25cd694e10065174facd5e775bd97179, type: 2}

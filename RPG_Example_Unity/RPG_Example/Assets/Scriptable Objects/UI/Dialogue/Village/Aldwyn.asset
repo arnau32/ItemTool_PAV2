@@ -1,0 +1,2942 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8992443635951251217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: Revivir_0
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  id: 82951e87
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 14677897961336832
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 2bdeaf6b
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 947.2, y: 379.4}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-7138562620064531073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bec6673e949474283627180b0170fb1, type: 3}
+  m_Name: MisionRouter_Opt_AD_Can_Start
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
+  localizedOptionText:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 90a2bb30
+  conditions:
+  - {fileID: 11400000, guid: 66b0f198607488e45a3ac72ca3dfac41, type: 2}
+  actions: []
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-6987745078443481570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M1_Fin_05
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  id: 3d944c8b
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 14242909021335552
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 69712e0f
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 947.2, y: 379.4}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-6410290716446982389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M1_Fin_06
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  id: 69712e0f
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 14330350554116096
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 5a9cbb6f
+  onEnterActions:
+  - {fileID: 11400000, guid: 389f468137250fc4fbf579ecb89d9b26, type: 2}
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 1127.2, y: 379.4}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-4761673409381479751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: Revivir_1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  id: 2bdeaf6b
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 14678109299732480
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 1b80af11
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 1127.2, y: 379.4}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-4749870703951778151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: Revivir_2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  id: 1b80af11
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 14678421603414016
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 1307.2, y: 379.4}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-2031649285963917877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: Dialog_Curar_Random
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  id: 2f00bc16
+  nodeType: 3
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000001
+  onEnterActions:
+  - {fileID: 11400000, guid: e9b33c89b9cb340448bd93043bcd603f, type: 2}
+  randomTexts:
+  - m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 14547915515686912
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 14548077587787776
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 14548360053190656
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 1241.6, y: 238.6}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-1322571847695342185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bec6673e949474283627180b0170fb1, type: 3}
+  m_Name: MisionRouter_Opt_Default
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
+  localizedOptionText:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000001
+  conditions: []
+  actions: []
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: Hub
+  m_EditorClassIdentifier: 
+  id: 00000001
+  nodeType: 1
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options:
+  - {fileID: 200}
+  - {fileID: 201}
+  - {fileID: 202}
+  editorPosition: {x: 40, y: 40}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: Hablar_Router
+  m_EditorClassIdentifier: 
+  id: 00000002
+  nodeType: 1
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 1
+  options:
+  - {fileID: 214}
+  - {fileID: 210}
+  - {fileID: 211}
+  - {fileID: 212}
+  - {fileID: 213}
+  editorPosition: {x: -400, y: 200}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: Talk_Default
+  m_EditorClassIdentifier: 
+  id: 00000003
+  nodeType: 3
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000001
+  onEnterActions: []
+  randomTexts:
+  - m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 7200000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 7300000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 7400000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 7500000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 7600000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: -900, y: 400}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: Talk_M1_Durante
+  m_EditorClassIdentifier: 
+  id: 00000004
+  nodeType: 3
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000001
+  onEnterActions: []
+  randomTexts:
+  - m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 3600000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 3700000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 3800000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 3800000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: -600, y: 400}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: Talk_M2_Durante
+  m_EditorClassIdentifier: 
+  id: 00000005
+  nodeType: 3
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000001
+  onEnterActions: []
+  randomTexts:
+  - m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 4900000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 5000000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 5100000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: -300, y: 400}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: Talk_M3_Durante
+  m_EditorClassIdentifier: 
+  id: 00000006
+  nodeType: 3
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000001
+  onEnterActions: []
+  randomTexts:
+  - m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 6200000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 6300000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 6400000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 0, y: 400}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: Mision_Router
+  m_EditorClassIdentifier: 
+  id: 00000007
+  nodeType: 1
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 1
+  options:
+  - {fileID: 230}
+  - {fileID: 231}
+  - {fileID: 220}
+  - {fileID: 221}
+  - {fileID: 222}
+  - {fileID: 223}
+  - {fileID: 224}
+  - {fileID: 225}
+  - {fileID: 226}
+  - {fileID: 227}
+  - {fileID: 228}
+  - {fileID: -7138562620064531073}
+  - {fileID: 229}
+  - {fileID: -1322571847695342185}
+  editorPosition: {x: 300, y: -70}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: Despedida
+  m_EditorClassIdentifier: 
+  id: 00000008
+  nodeType: 3
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000009
+  onEnterActions: []
+  randomTexts:
+  - m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 8200000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 8300000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 8400000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 880, y: 170}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: End
+  m_EditorClassIdentifier: 
+  id: 00000009
+  nodeType: 2
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 880, y: 270}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M1_Inicio_01
+  m_EditorClassIdentifier: 
+  id: 0000000a
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 3100000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 0000000b
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: -200, y: 700}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M1_Inicio_02
+  m_EditorClassIdentifier: 
+  id: 0000000b
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 3200000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 0000000c
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: -200, y: 780}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M1_Inicio_03
+  m_EditorClassIdentifier: 
+  id: 0000000c
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 3300000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 0000000d
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: -200, y: 860}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M1_Inicio_04
+  m_EditorClassIdentifier: 
+  id: 0000000d
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 3400000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000009
+  onEnterActions:
+  - {fileID: 11400000, guid: 494be46c0fd8e654a92e76dde43aabe6, type: 2}
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: -200, y: 940}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M1_Fin_01
+  m_EditorClassIdentifier: 
+  id: 0000000f
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 3900000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000010
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 200, y: 700}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M1_Fin_02
+  m_EditorClassIdentifier: 
+  id: 00000010
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 4000000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000011
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 200, y: 780}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M1_Fin_03
+  m_EditorClassIdentifier: 
+  id: 00000011
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 4100000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000012
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 200, y: 860}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M1_Fin_04
+  m_EditorClassIdentifier: 
+  id: 00000012
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 4200000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 3d944c8b
+  onEnterActions:
+  - {fileID: 11400000, guid: dd000004000000000000000000000004, type: 2}
+  - {fileID: 11400000, guid: 70a8b273f0884b34e9172461eb272be0, type: 2}
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 200, y: 940}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M2_Inicio_01
+  m_EditorClassIdentifier: 
+  id: 00000013
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 4300000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000014
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 600, y: 700}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M2_Inicio_02
+  m_EditorClassIdentifier: 
+  id: 00000014
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 4400000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000015
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 600, y: 780}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M2_Inicio_03
+  m_EditorClassIdentifier: 
+  id: 00000015
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 4500000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000016
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 600, y: 860}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M2_Inicio_04
+  m_EditorClassIdentifier: 
+  id: 00000016
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 4600000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000017
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 600, y: 940}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M2_Inicio_05
+  m_EditorClassIdentifier: 
+  id: 00000017
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 4700000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000018
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 600, y: 1020}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M2_Inicio_06
+  m_EditorClassIdentifier: 
+  id: 00000018
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 4800000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000009
+  onEnterActions:
+  - {fileID: 11400000, guid: dd000005000000000000000000000005, type: 2}
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 600, y: 1100}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M2_Fin_01
+  m_EditorClassIdentifier: 
+  id: 00000019
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 5200000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 0000001a
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 1000, y: 700}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M2_Fin_02
+  m_EditorClassIdentifier: 
+  id: 0000001a
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 5300000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 0000001b
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 1000, y: 780}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M2_Fin_03
+  m_EditorClassIdentifier: 
+  id: 0000001b
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 5400000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 0000001c
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 1000, y: 860}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M2_Fin_04
+  m_EditorClassIdentifier: 
+  id: 0000001c
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 5500000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000009
+  onEnterActions:
+  - {fileID: 11400000, guid: dd000006000000000000000000000006, type: 2}
+  - {fileID: 11400000, guid: 283c00ee3fcadba45b1e2e0a405a631c, type: 2}
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 1000, y: 940}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M3_Inicio_01
+  m_EditorClassIdentifier: 
+  id: 0000001d
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 5600000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 0000001e
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 1400, y: 700}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M3_Inicio_02
+  m_EditorClassIdentifier: 
+  id: 0000001e
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 5700000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 0000001f
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 1400, y: 780}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M3_Inicio_03
+  m_EditorClassIdentifier: 
+  id: 0000001f
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 5800000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000020
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 1400, y: 860}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M3_Inicio_04
+  m_EditorClassIdentifier: 
+  id: 00000020
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 5900000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000021
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 1400, y: 940}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M3_Inicio_05
+  m_EditorClassIdentifier: 
+  id: 00000021
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 6000000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000022
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 1400, y: 1020}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M3_Inicio_06
+  m_EditorClassIdentifier: 
+  id: 00000022
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 6100000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000009
+  onEnterActions:
+  - {fileID: 11400000, guid: dd000007000000000000000000000007, type: 2}
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 1400, y: 1100}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M3_Fin_01
+  m_EditorClassIdentifier: 
+  id: 00000023
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 6500000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000024
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 1800, y: 700}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M3_Fin_02
+  m_EditorClassIdentifier: 
+  id: 00000024
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 6600000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000025
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 1800, y: 780}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M3_Fin_03
+  m_EditorClassIdentifier: 
+  id: 00000025
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 6700000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000026
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 1800, y: 860}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M3_Fin_04
+  m_EditorClassIdentifier: 
+  id: 00000026
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 6800000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000009
+  onEnterActions:
+  - {fileID: 11400000, guid: dd000008000000000000000000000008, type: 2}
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 1800, y: 940}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: Talk_AD_Durante
+  m_EditorClassIdentifier: 
+  id: 00000027
+  nodeType: 3
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000001
+  onEnterActions: []
+  randomTexts:
+  - m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 7900000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 8000000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 8100000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: -900, y: 200}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: AD_Fin_01
+  m_EditorClassIdentifier: 
+  id: 00000028
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 2500000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000029
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: -1200, y: 700}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: AD_Fin_02
+  m_EditorClassIdentifier: 
+  id: 00000029
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 2600000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 0000002a
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: -1200, y: 780}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: AD_Fin_03
+  m_EditorClassIdentifier: 
+  id: 0000002a
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 2700000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000009
+  onEnterActions:
+  - {fileID: 11400000, guid: c1f8d47967bf36b439b4e37eec801350, type: 2}
+  - {fileID: 11400000, guid: ab2f7aad6fc4c2c4790df98f114b8d30, type: 2}
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: -1200, y: 860}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: AD_Fin_04
+  m_EditorClassIdentifier: 
+  id: 0000002b
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 2800000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 0000002c
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: -1200, y: 940}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: AD_Fin_05
+  m_EditorClassIdentifier: 
+  id: 0000002c
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 2900000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000009
+  onEnterActions:
+  - {fileID: 11400000, guid: 52b6752bd1dc5ba498e9e02b23b7bb87, type: 2}
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: -1200, y: 1020}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: AD_Fin_06
+  m_EditorClassIdentifier: 
+  id: 0000002d
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 3000000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000009
+  onEnterActions:
+  - {fileID: 11400000, guid: dd000002000000000000000000000002, type: 2}
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: -1200, y: 1100}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: AD_Durante_01
+  m_EditorClassIdentifier: 
+  id: 0000002e
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 7900000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 0000002f
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: -1600, y: 700}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: AD_Durante_02
+  m_EditorClassIdentifier: 
+  id: 0000002f
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 8000000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000030
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: -1600, y: 780}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: AD_Durante_03
+  m_EditorClassIdentifier: 
+  id: 00000030
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 8100000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000001
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: -1600, y: 860}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M0_Inicio_03
+  m_EditorClassIdentifier: 
+  id: 00000031
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 300000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000032
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: -2000, y: 700}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M0_Inicio_04
+  m_EditorClassIdentifier: 
+  id: 00000032
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 400000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000009
+  onEnterActions:
+  - {fileID: 11400000, guid: dae16efa3ebc70843bbf734553a8b619, type: 2}
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: -2000, y: 780}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M0_Inicio_05
+  m_EditorClassIdentifier: 
+  id: 00000033
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 500000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000034
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: -2000, y: 860}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M0_Inicio_06
+  m_EditorClassIdentifier: 
+  id: 00000034
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 600000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000035
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: -2000, y: 940}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M0_Inicio_07
+  m_EditorClassIdentifier: 
+  id: 00000035
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 700000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000036
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: -2000, y: 1020}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M0_Inicio_08
+  m_EditorClassIdentifier: 
+  id: 00000036
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 800000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000009
+  onEnterActions:
+  - {fileID: 11400000, guid: dd000001000000000000000000000001, type: 2}
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: -2000, y: 1100}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bec6673e949474283627180b0170fb1, type: 3}
+  m_Name: Hub_Opt_Hablar
+  m_EditorClassIdentifier: 
+  localizedOptionText:
+    m_TableReference:
+      m_TableCollectionName: GUID:1cec0089f0181b741b953f562581011e
+    m_TableEntryReference:
+      m_KeyId: 5014364453662720
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000002
+  conditions: []
+  actions: []
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bec6673e949474283627180b0170fb1, type: 3}
+  m_Name: Hub_Opt_Curar
+  m_EditorClassIdentifier: 
+  localizedOptionText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 11433369229914112
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 2f00bc16
+  conditions:
+  - {fileID: 11400000, guid: 994edbc2808cd244985eb9d2eacaea24, type: 2}
+  actions:
+  - {fileID: 11400000, guid: 24b8d83def3e2aa44953731ccc4dd717, type: 2}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bec6673e949474283627180b0170fb1, type: 3}
+  m_Name: Hub_Opt_Adios
+  m_EditorClassIdentifier: 
+  localizedOptionText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 11433149075091456
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000008
+  conditions: []
+  actions: []
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bec6673e949474283627180b0170fb1, type: 3}
+  m_Name: HablarRouter_Opt_LS_InProgress
+  m_EditorClassIdentifier: 
+  localizedOptionText:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000004
+  conditions:
+  - {fileID: 11400000, guid: cc000003000000000000000000000003, type: 2}
+  actions: []
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bec6673e949474283627180b0170fb1, type: 3}
+  m_Name: HablarRouter_Opt_WS_InProgress
+  m_EditorClassIdentifier: 
+  localizedOptionText:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000005
+  conditions:
+  - {fileID: 11400000, guid: cc000005000000000000000000000005, type: 2}
+  actions: []
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bec6673e949474283627180b0170fb1, type: 3}
+  m_Name: HablarRouter_Opt_FS_InProgress
+  m_EditorClassIdentifier: 
+  localizedOptionText:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000006
+  conditions:
+  - {fileID: 11400000, guid: cc000007000000000000000000000007, type: 2}
+  actions: []
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bec6673e949474283627180b0170fb1, type: 3}
+  m_Name: HablarRouter_Opt_Default
+  m_EditorClassIdentifier: 
+  localizedOptionText:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000003
+  conditions: []
+  actions: []
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bec6673e949474283627180b0170fb1, type: 3}
+  m_Name: HablarRouter_Opt_AD_InProgress
+  m_EditorClassIdentifier: 
+  localizedOptionText:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000027
+  conditions:
+  - {fileID: 11400000, guid: cc000001000000000000000000000001, type: 2}
+  actions: []
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bec6673e949474283627180b0170fb1, type: 3}
+  m_Name: MisionRouter_Opt_LS_CanStart
+  m_EditorClassIdentifier: 
+  localizedOptionText:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 0000000a
+  conditions:
+  - {fileID: 11400000, guid: cc000010000000000000000000000010, type: 2}
+  actions: []
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bec6673e949474283627180b0170fb1, type: 3}
+  m_Name: MisionRouter_Opt_LS_InProgress
+  m_EditorClassIdentifier: 
+  localizedOptionText:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000001
+  conditions:
+  - {fileID: 11400000, guid: cc000003000000000000000000000003, type: 2}
+  actions: []
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bec6673e949474283627180b0170fb1, type: 3}
+  m_Name: MisionRouter_Opt_LS_CanFinish
+  m_EditorClassIdentifier: 
+  localizedOptionText:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 0000000f
+  conditions:
+  - {fileID: 11400000, guid: cc000004000000000000000000000004, type: 2}
+  actions: []
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bec6673e949474283627180b0170fb1, type: 3}
+  m_Name: MisionRouter_Opt_WS_CanStart
+  m_EditorClassIdentifier: 
+  localizedOptionText:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000013
+  conditions:
+  - {fileID: 11400000, guid: cc000011000000000000000000000011, type: 2}
+  actions: []
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bec6673e949474283627180b0170fb1, type: 3}
+  m_Name: MisionRouter_Opt_WS_InProgress
+  m_EditorClassIdentifier: 
+  localizedOptionText:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000001
+  conditions:
+  - {fileID: 11400000, guid: cc000005000000000000000000000005, type: 2}
+  actions: []
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bec6673e949474283627180b0170fb1, type: 3}
+  m_Name: MisionRouter_Opt_WS_CanFinish
+  m_EditorClassIdentifier: 
+  localizedOptionText:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000019
+  conditions:
+  - {fileID: 11400000, guid: cc000006000000000000000000000006, type: 2}
+  actions: []
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bec6673e949474283627180b0170fb1, type: 3}
+  m_Name: MisionRouter_Opt_FS_CanStart
+  m_EditorClassIdentifier: 
+  localizedOptionText:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 0000001d
+  conditions:
+  - {fileID: 11400000, guid: cc000012000000000000000000000012, type: 2}
+  actions: []
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bec6673e949474283627180b0170fb1, type: 3}
+  m_Name: MisionRouter_Opt_FS_InProgress
+  m_EditorClassIdentifier: 
+  localizedOptionText:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000001
+  conditions:
+  - {fileID: 11400000, guid: cc000007000000000000000000000007, type: 2}
+  actions: []
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bec6673e949474283627180b0170fb1, type: 3}
+  m_Name: MisionRouter_Opt_FS_CanFinish
+  m_EditorClassIdentifier: 
+  localizedOptionText:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000023
+  conditions:
+  - {fileID: 11400000, guid: cc000008000000000000000000000008, type: 2}
+  actions: []
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bec6673e949474283627180b0170fb1, type: 3}
+  m_Name: MisionRouter_Opt_Encender_CanFinish
+  m_EditorClassIdentifier: 
+  localizedOptionText:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 0000002b
+  conditions:
+  - {fileID: 11400000, guid: 9cd5cd97f9d0a32448f2ac655f20dbd0, type: 2}
+  actions: []
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bec6673e949474283627180b0170fb1, type: 3}
+  m_Name: MisionRouter_Opt_AD_CanFinish
+  m_EditorClassIdentifier: 
+  localizedOptionText:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000028
+  conditions:
+  - {fileID: 11400000, guid: cc000002000000000000000000000002, type: 2}
+  actions: []
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bec6673e949474283627180b0170fb1, type: 3}
+  m_Name: MisionRouter_Opt_AD_InProgress
+  m_EditorClassIdentifier: 
+  localizedOptionText:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000001
+  conditions:
+  - {fileID: 11400000, guid: cc000001000000000000000000000001, type: 2}
+  actions: []
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a9b39f4adf73084cb69b16020143e7a, type: 3}
+  m_Name: Aldwyn
+  m_EditorClassIdentifier: 
+  characterIllustration: {fileID: 21300000, guid: 0613332732f61d4409408d55fa752aad, type: 3}
+  characterName: Aldwyn
+  startNodeId: 00000007
+  nodes:
+  - {fileID: 100}
+  - {fileID: 101}
+  - {fileID: 102}
+  - {fileID: 103}
+  - {fileID: 104}
+  - {fileID: 105}
+  - {fileID: 106}
+  - {fileID: 107}
+  - {fileID: 108}
+  - {fileID: 109}
+  - {fileID: 110}
+  - {fileID: 111}
+  - {fileID: 112}
+  - {fileID: 114}
+  - {fileID: 115}
+  - {fileID: 116}
+  - {fileID: 117}
+  - {fileID: 118}
+  - {fileID: 119}
+  - {fileID: 120}
+  - {fileID: 121}
+  - {fileID: 122}
+  - {fileID: 123}
+  - {fileID: 124}
+  - {fileID: 125}
+  - {fileID: 126}
+  - {fileID: 127}
+  - {fileID: 128}
+  - {fileID: 129}
+  - {fileID: 130}
+  - {fileID: 131}
+  - {fileID: 132}
+  - {fileID: 133}
+  - {fileID: 134}
+  - {fileID: 135}
+  - {fileID: 136}
+  - {fileID: 137}
+  - {fileID: 138}
+  - {fileID: 139}
+  - {fileID: 140}
+  - {fileID: 141}
+  - {fileID: 142}
+  - {fileID: 143}
+  - {fileID: 144}
+  - {fileID: 145}
+  - {fileID: 146}
+  - {fileID: 147}
+  - {fileID: 3869102292611591920}
+  - {fileID: 8659453096700510477}
+  - {fileID: 148}
+  - {fileID: 149}
+  - {fileID: 150}
+  - {fileID: 151}
+  - {fileID: 152}
+  - {fileID: 153}
+  - {fileID: -6987745078443481570}
+  - {fileID: -6410290716446982389}
+  - {fileID: -2031649285963917877}
+  - {fileID: 3710859272561138625}
+  - {fileID: 8412442776408382501}
+  - {fileID: -8992443635951251217}
+  - {fileID: -4761673409381479751}
+  - {fileID: -4749870703951778151}
+  pinnedNodeIds: []
+--- !u!114 &3710859272561138625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M1_Fin_07
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  id: 5a9cbb6f
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 14563846547632128
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: eb46ef32
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 1487.2, y: 379.4}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &3869102292611591920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M0_Inicio_01
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  id: 90a2bb30
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 100000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 70b4d181
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 600, y: 570}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &8412442776408382501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M1_Fin_08
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  id: eb46ef32
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 14564048343986176
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 
+  onEnterActions:
+  - {fileID: 11400000, guid: 40868944f86c75a4e98e360a61f9d72d, type: 2}
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 767.2, y: 379.4}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &8659453096700510477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8cd2ce5fc049047a05692efd7fd0c1, type: 3}
+  m_Name: M0_Inicio_02
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  id: 70b4d181
+  nodeType: 0
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 200000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  nextNodeId: 00000031
+  onEnterActions: []
+  randomTexts: []
+  isRouter: 0
+  options: []
+  editorPosition: {x: 600, y: 630}
+  references:
+    version: 2
+    RefIds: []

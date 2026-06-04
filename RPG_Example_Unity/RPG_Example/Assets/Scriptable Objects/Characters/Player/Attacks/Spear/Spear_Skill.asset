@@ -1,0 +1,151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71246b79fc814bb5abf2624dec1ba480, type: 3}
+  m_Name: Spear_Skill
+  m_EditorClassIdentifier: 
+  triggerAnimation: Skill
+  animationClip: {fileID: 7400000, guid: e6d9429922dc31548bb7d24474d28ac1, type: 2}
+  timeToChangeAnim: 0.59294873
+  crossFade: 0
+  abilityScoreOnHit: 20
+  useAnimatorSpeedCurve: 0
+  animatorSpeedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  useRootMotionMultiplier: 0
+  rootMotionMultiplierCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  useProceduralForwardMove: 0
+  proceduralForwardMoveCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  proceduralForwardMoveDistance: 0.6
+  attackName: 
+  attackHitType: 0
+  staminaCost: 38
+  damage: 30
+  damageMultiplier: 1
+  poiseDamage: 15
+  hasHyperArmor: 1
+  damageWindows:
+  - window:
+      start: 0.42811245
+      end: 0.6629719
+    weaponHand: 0
+    slot: 4
+    allowMultiHit: 0
+    perTargetCooldown: 0
+    maxHitsPerTarget: 0
+  vfxWindows:
+  - vfxId: 4
+    window:
+      start: 0.4297189
+      end: 0.6605623
+    disableOnEnd: 1
+  weaponVfxWindows: []
+  audioTriggers:
+  - triggerAt: 0.42088354
+    sound:
+      Guid:
+        Data1: -508735172
+        Data2: 1131423862
+        Data3: 1466562455
+        Data4: 1300818209
+      Path: event:/SFX_Weapons/SFX_Spear_Ability
+  audioWindows: []
+  usesCombo: 0
+  comboWindow:
+    start: 0
+    end: 0
+  allowDodgeCancelWindow: 1
+  dodgeCancelWindows:
+  - start: 0.6091666
+    end: 1
+  allowMoveCancel: 1
+  moveCancelWindows:
+  - start: 0.7934615
+    end: 1
+  allowMoveRotation: 1
+  moveRotationWindows:
+  - start: 0.21955131
+    end: 0.31551284
+  allowCanBeParriedWindow: 0
+  canBeParriedWindows: []
+  parryCancel:
+  - start: 0.6155769
+    end: 1
+  useHardLookWindow: 0
+  hardLookWindow: []

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 202ec70248954b21a58d9794d99ea003
+AssetOrigin:
+  serializedVersion: 1
+  productId: 59092
+  packageName: Find Reference 2
+  packageVersion: 2.6.6
+  assetPath: Assets/FindReference2/Editor/Script/Duplicate/FR2_DuplicateTree2.cs
+  uploadId: 796006
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 329b2ab435794f2409022a53e5452931, type: 3}
+  m_Name: Matar II
+  m_EditorClassIdentifier: 
+  <id>k__BackingField: Matar II
+  qName:
+    m_TableReference:
+      m_TableCollectionName: GUID:ca4ac9f513ebf8646a71bb55f3e82cd0
+    m_TableEntryReference:
+      m_KeyId: 2305169866420241
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  description: 
+  icon: {fileID: 0}
+  questPreequisits:
+  - {fileID: 11400000, guid: fa010003000000000000000000000003, type: 2}
+  questSteps:
+  - {fileID: 1000000004}
+  canFinishText:
+    m_TableReference:
+      m_TableCollectionName: GUID:f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6
+    m_TableEntryReference:
+      m_KeyId: 16045431673032704
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  mapPOIs: []
+  reward:
+    items: []
+    randomItems: []
+    auroraDust: 500
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &1000000004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef4e38b12b644d25b5153ab9bb91d47d, type: 3}
+  m_Name: Matar II_KillEnemyStepSO_0
+  m_EditorClassIdentifier: 
+  objectiveText:
+    m_TableReference:
+      m_TableCollectionName: GUID:ca4ac9f513ebf8646a71bb55f3e82cd0
+    m_TableEntryReference:
+      m_KeyId: 2048413256970240
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  targetEnemy: {fileID: 0}
+  requiredKills: 10
+  references:
+    version: 2
+    RefIds: []

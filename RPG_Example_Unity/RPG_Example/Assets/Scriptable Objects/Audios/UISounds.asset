@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbac4b230b8ef144ca13d725f1fd9ffe, type: 3}
+  m_Name: UISounds
+  m_EditorClassIdentifier: Assembly-CSharp::UISounds
+  <ButtonClick>k__BackingField:
+    Guid:
+      Data1: -113773663
+      Data2: 1107553493
+      Data3: 969892742
+      Data4: -1532788825
+    Path: event:/UI/UI_Button_Click
+  <MenuNavigate>k__BackingField:
+    Guid:
+      Data1: 18091425
+      Data2: 1089873906
+      Data3: 738672552
+      Data4: 985912905
+    Path: event:/UI/UI_Move
+  <SliderMove>k__BackingField:
+    Guid:
+      Data1: 636522159
+      Data2: 1317183670
+      Data3: -693355587
+      Data4: -411926909
+    Path: event:/UI/UI_Slider
+  <MapOpen>k__BackingField:
+    Guid:
+      Data1: -203092857
+      Data2: 1289007864
+      Data3: 1779932603
+      Data4: 300431171
+    Path: event:/UI/UI_Book_Page
+  <CursorMove>k__BackingField:
+    Guid:
+      Data1: 2018283579
+      Data2: 1231902628
+      Data3: 174932414
+      Data4: -1723674202
+    Path: event:/UI/UI_Cursor_Move
+  <ItemPickUp>k__BackingField:
+    Guid:
+      Data1: 238147653
+      Data2: 1192432586
+      Data3: 1201684355
+      Data4: -1339081194
+    Path: event:/UI/UI_LootAll
+  <LootAllComplete>k__BackingField:
+    Guid:
+      Data1: 238147653
+      Data2: 1192432586
+      Data3: 1201684355
+      Data4: -1339081194
+    Path: event:/UI/UI_LootAll
+  _equipSounds:
+  - slot: 1
+    sound:
+      Guid:
+        Data1: -214321516
+        Data2: 1219708545
+        Data3: 1864275588
+        Data4: -158055424
+      Path: event:/Inventory/INV_Armor_Heavy
+  - slot: 2
+    sound:
+      Guid:
+        Data1: -705030534
+        Data2: 1120418461
+        Data3: 792325259
+        Data4: 1937008879
+      Path: event:/Inventory/INV_Armor_Leather
+  - slot: 3
+    sound:
+      Guid:
+        Data1: -1883274079
+        Data2: 1288056575
+        Data3: 1593350820
+        Data4: -2088280748
+      Path: event:/EquipWeapon
+  - slot: 4
+    sound:
+      Guid:
+        Data1: -2100557098
+        Data2: 1136954206
+        Data3: 2117536659
+        Data4: 1768076143
+      Path: event:/Inventory/INV_Armor_Cloth
+  <UpgradeComplete>k__BackingField:
+    Guid:
+      Data1: -2139397004
+      Data2: 1249766786
+      Data3: -107271037
+      Data4: 257016117
+    Path: event:/UI/UI_Upgrade
+  <DialoguePageTurn>k__BackingField:
+    Guid:
+      Data1: -203092857
+      Data2: 1289007864
+      Data3: 1779932603
+      Data4: 300431171
+    Path: event:/UI/UI_Book_Page
+  <DialogueLetter>k__BackingField:
+    Guid:
+      Data1: 261204495
+      Data2: 1292556488
+      Data3: 1599515021
+      Data4: 986422321
+    Path: event:/UI/UI_Button_Letters

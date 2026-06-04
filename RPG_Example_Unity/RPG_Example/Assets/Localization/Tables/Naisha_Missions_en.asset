@@ -1,0 +1,300 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Naisha_Missions_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: c0d1e2f3a4b5c6f1a2b3c4d5e6f7a8b9, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 100000000000
+    m_Localized: "This place\u2026 holds. It is not alive, but it is not fully dead
+      either."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200000000000
+    m_Localized: The Mist has not finished it. That is rare. And useful.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 300000000000
+    m_Localized: There are consumed creatures around. They have not stopped moving,
+      even though they should. Go and eliminate them.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 400000000000
+    m_Localized: "My hunger for the hunt does not calm itself\u2026 and yours shouldn\u2019t
+      either. If you do\u2026 I will give you a weapon worthy of your combat. No
+      more. No less."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 500000000000
+    m_Localized: "My wings do not heal on their own. The Mist does not break\u2026
+      it corrupts. And what is broken needs something stronger to be rejoined."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 600000000000
+    m_Localized: There is the corpse of a ferocious beast in these lands. Its skull
+      should still retain enough of what I need. Bring it to me.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 700000000000
+    m_Localized: "You brought it\u2026 it still feels as though it defends something."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 800000000000
+    m_Localized: "Good. It will do. Not to honor it\u2026 but to rebuild myself."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 900000000000
+    m_Localized: Take it. This weapon is yours. It is not a gift. It is a debt settled
+      between hunters.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1000000000000
+    m_Localized: "Something is wrong in that cave\u2026 even by the Mist\u2019s standards.
+      These are not simple consumed creatures, they are too persistent."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1100000000000
+    m_Localized: Go in and kill the strongest enemies you find. No matter how many
+      there are.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1200000000000
+    m_Localized: "When you come out\u2026 if you come out\u2026 I will give you something
+      only granted to those who survive what should not still stand."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1400000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1500000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1600000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1700000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1800000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1900000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2000000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2100000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2200000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2300000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2400000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2500000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2600000000000
+    m_Localized: What?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2700000000000
+    m_Localized: You come at a good time. Or not. Doesn't matter.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2800000000000
+    m_Localized: Tell me.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2900000000000
+    m_Localized: I've been tracking the north perimeter this morning. Something moving,
+      but not in your direction. For now.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3000000000000
+    m_Localized: The wings are improving. Don't ask me how much. I don't know yet.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3100000000000
+    m_Localized: I used to fly so high the clouds couldn't reach. Now I settle for
+      not falling.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3200000000000
+    m_Localized: The Mist has patterns. If you survive long enough, you start to
+      see them.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3300000000000
+    m_Localized: You know there are birds that fly with a broken wing? They don't
+      fly well. But they fly.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3400000000000
+    m_Localized: There's something I need you to do. When you have a moment to spare.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3500000000000
+    m_Localized: I have a job for you. It's not optional if you want me to keep being
+      useful.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3600000000000
+    m_Localized: You haven't finished yet.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3700000000000
+    m_Localized: Problems? You don't look like you have problems. Keep going.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3800000000000
+    m_Localized: I'm waiting. Which is not something I do well.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3900000000000
+    m_Localized: Right.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4000000000000
+    m_Localized: Come back in one piece. I need you to keep being useful.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4100000000000
+    m_Localized: Don't take too long. I have eyes, but they're not yours.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12187371890601984
+    m_Localized: ...don't come near...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12187548307222528
+    m_Localized: If you're coming for me... finish the job... or free me.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12187958174609408
+    m_Localized: ...I owe you one. But don't think you've earned my trust.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14885084675502080
+    m_Localized: "I fell into an ancient trap\u2026 made by humans. Their hatred
+      for us endures."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14886260028534784
+    m_Localized: My wings are damaged, I need to rest.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14887010897031168
+    m_Localized: "For now\u2026 I will follow you and go to your refuge. I have no
+      other choice."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14890810152120320
+    m_Localized: "I would go myself\u2026 if I could."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14891669439180800
+    m_Localized: I wouldn't ask you if I didn't need it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14892204225523712
+    m_Localized: I need my wings to be able to return to my homeland.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14895437622865920
+    m_Localized: This will do. I can work with this.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14895589037240320
+    m_Localized: I won't fly today, but it's a start.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14895739776331776
+    m_Localized: I owe you another one. I'm keeping count.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14896555950141440
+    m_Localized: If you are capable of coming back alive I will reward you as you
+      deserve.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15056270944432128
+    m_Localized: "This\u2026 is not enough. The bones you brought before wouldn't
+      support the weight."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15056801096069120
+    m_Localized: Bring me bones that have supported something bigger than me.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15069359941152768
+    m_Localized: "They supported something worthy\u2026 you can still tell."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15069434708815872
+    m_Localized: "\u2026I wouldn't have managed without you."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15069579919814656
+    m_Localized: Accept this as a symbol of respect.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15070045193957376
+    m_Localized: My mobility is improving.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15070123057016832
+    m_Localized: In a little while I will be able to be free again.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16045658681348096
+    m_Localized: Talk to Naisha to complete the quest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4200000000000
+    m_Localized: "If you succeed\u2026 I will use its bones to try to regenerate
+      what I lost. And I will give you a weapon worthy of your hunt."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18927919540269056
+    m_Localized: Legends tell that it was a great beast that saved Caelvran from
+      the conquest of Tharalel when the Spire was shattered.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

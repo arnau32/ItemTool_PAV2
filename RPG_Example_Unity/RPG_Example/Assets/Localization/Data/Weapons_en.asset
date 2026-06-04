@@ -1,0 +1,159 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Weapons_en
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 2238abc9fc3eabf429fc99726df15768, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 10731360256
+    m_Localized: Fallen Bastion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63474733056
+    m_Localized: Greatsword of Corrupted Viridia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66872119296
+    m_Localized: Mark of the Abyssal Forge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69153820672
+    m_Localized: Relic of the Withered Core
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1583985430528
+    m_Localized: Bone of the First Fallen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1586707533824
+    m_Localized: "Scavenger\u2019s Fangs"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1588389449728
+    m_Localized: Guard of the Red Banner
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1590088142848
+    m_Localized: Oath of the Crimson Sun
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1500648804352
+    m_Localized: "Survivor\u2019s Fists"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1503731617792
+    m_Localized: "Scavenger\u2019s Claws"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1505992347648
+    m_Localized: Hands of the Iron Warden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1509960159232
+    m_Localized: Seal of the Golden Sun
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2623791140864
+    m_Localized: Chestguard of the Forsaken
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2661191749632
+    m_Localized: Cuirass of the Iron Wanderer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2662798168064
+    m_Localized: Cuirass of the Golden Vigil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3015367168000
+    m_Localized: Hood of the Forsaken
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3017443348480
+    m_Localized: Helm of the Iron Wanderer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3018550644736
+    m_Localized: Helm of the Golden Vigil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3797139296256
+    m_Localized: Greaves of the Golden Vigil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3795864227840
+    m_Localized: Legguards of the Iron Wanderer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3793662218240
+    m_Localized: Legguards of the Forsaken
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14738040000512
+    m_Localized: Warrior
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14685682503680
+    m_Localized: Sword
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14715805995008
+    m_Localized: Great sword
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14749691777024
+    m_Localized: Spear
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15147756392448
+    m_Localized: Fists
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1360455891390464
+    m_Localized: Crimson Fangs
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1360453827792896
+    m_Localized: Moons of Shadow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1360435523850240
+    m_Localized: Blades of the Forsaken
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1360478800678912
+    m_Localized: Whispers of the Abyss
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1679033547067392
+    m_Localized: Spear of the Withered Aurora
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1679032087449600
+    m_Localized: Spear of the Golden Herald
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1679030262927360
+    m_Localized: Borderwarden Pike
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1679027087839232
+    m_Localized: Spear of the Crimson Watcher
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc54e184f52d478eb9be70f312211cd1, type: 3}
+  m_Name: GlobalMusicAmbience
+  m_EditorClassIdentifier: 
+  <Music>k__BackingField:
+    Guid:
+      Data1: 141473418
+      Data2: 1120202176
+      Data3: 836369286
+      Data4: 824631221
+    Path: event:/Music/Main
+  <CombatMusic>k__BackingField:
+    Guid:
+      Data1: 114509909
+      Data2: 1319103967
+      Data3: 1620750989
+      Data4: -886479755
+    Path: event:/Music/Music_Combat
+  <Ambience>k__BackingField:
+    Guid:
+      Data1: 470826401
+      Data2: 1205993476
+      Data3: -955295812
+      Data4: -1241723415
+    Path: event:/Ambience/Global
+  <AmbientLayers>k__BackingField: []

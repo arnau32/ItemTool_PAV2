@@ -1,0 +1,241 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Morran_Interactions_ca
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: ca
+  m_SharedData: {fileID: 11400000, guid: c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 100000000000
+    m_Localized: "...No t\u2019acostis massa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200000000000
+    m_Localized: "Encara s\xF3c aqu\xED... per\xF2 no sempre."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 300000000000
+    m_Localized: "Quan no hi s\xF3c... alguna cosa ocupa el meu lloc."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 400000000000
+    m_Localized: "Puc ser \xFAtil. Si em portes el que necessito... puc parlar amb
+      ella."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 500000000000
+    m_Localized: "Amb la Boira. Et donar\xE0 m\xE9s temps all\xE0 fora."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 600000000000
+    m_Localized: Abans de sortir...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 700000000000
+    m_Localized: "Necessito alguna cosa d\u2019all\xE0 fora."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 800000000000
+    m_Localized: ...si pots portar-ho.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 900000000000
+    m_Localized: "S\xED... aix\xF2 serveix."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1000000000000
+    m_Localized: "Deixa\u2019m."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1100000000000
+    m_Localized: Fet.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1200000000000
+    m_Localized: ...La Boira ja et coneix. Tingues cura de totes maneres.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300000000000
+    m_Localized: De vegades sento les seves veus. Les dels que no van resistir.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1400000000000
+    m_Localized: "Em diuen que m\u2019uneixi."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1500000000000
+    m_Localized: ...Encara no.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12189765160464384
+    m_Localized: "...espera... No... no vull... Encara soc aqu\xED\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12189917040406528
+    m_Localized: "Ajuda\u2019m a controlar-ho... lliga\u2019m, fes el que vulguis,
+      per\xF2 no em matis."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16375362599055360
+    m_Localized: "\u2026Si us plau\u2026 No em deixis aqu\xED\u2026 Porta\u2019m
+      al poble\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260090755280896
+    m_Localized: "\u2026sortir\xE0s una altra vegada\u2026 ho noto\u2026 la Boira
+      est\xE0 inquieta\u2026 porta\u2019m restes abans que torni a xiuxiuejar-me\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260093569658880
+    m_Localized: "Escolto xiuxiueigs quan dormo\u2026 encara que ja no hauria de
+      dormir\u2026 porta\u2019m fragments d\u2019all\xE0 fora\u2026 potser aix\xED
+      callaran\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260095222214656
+    m_Localized: "La carn consumida encara conserva escalfor\u2026 Umbra ho sent\u2026
+      necessito restes dels caiguts\u2026 r\xE0pid\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260096597946368
+    m_Localized: "Hi ha objectes que la Boira no aconsegueix digerir\u2026 troba\u2019ls\u2026
+      porta-me\u2019ls\u2026 no preguntis per qu\xE8\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260098057564160
+    m_Localized: "\u2026les cadenes ja no s\xF3n suficients\u2026 necessito alguna
+      cosa antiga\u2026 alguna cosa trencada\u2026 abans que ella torni a parlar-me\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260099508793344
+    m_Localized: "Els consumits arrosseguen fragments d\u2019ella als seus cossos\u2026
+      mata\u2019ls\u2026 porta\u2019m el que trobis\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260101048102912
+    m_Localized: "\u2026la Boira t\xE9 gana\u2026 i quan t\xE9 gana\u2026 somia\u2026
+      porta\u2019m alguna cosa valuosa\u2026 brillant\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260102570635264
+    m_Localized: "No recordo quant temps fa que estic encadenat aqu\xED\u2026 per\xF2
+      ella s\xED\u2026 porta\u2019m materials de la Boira\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260104114139136
+    m_Localized: "A vegades em desperto amb terra sota les ungles\u2026 necessito
+      objectes antics\u2026 r\xE0pid\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260105561174016
+    m_Localized: "\u2026Umbra xiuxiueja des de llocs profunds\u2026 diu que encara
+      queden coses enterrades esperant-me\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260106815270912
+    m_Localized: "\u2026s\xED\u2026 aix\xF2 servir\xE0\u2026 per un moment el xiuxiueig
+      s\u2019allunya\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610880
+    m_Localized: "Ho noto\u2026 menys soroll\u2026 menys veus\u2026 gr\xE0cies\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260110132965376
+    m_Localized: "\u2026ella volia aix\xF2\u2026 millor que ho tingui jo\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260111487725568
+    m_Localized: "Puc respirar una altra vegada\u2026 encara que no hauria de necessitar-ho\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260112611799040
+    m_Localized: "\u2026les cadenes pesen menys quan la Boira est\xE0 satisfeta\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260114293714944
+    m_Localized: "B\xE9\u2026 b\xE9\u2026 ara callar\xE0\u2026 durant un temps\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260115728166912
+    m_Localized: "\u2026encara recordes com tornar\u2026 aix\xF2 \xE9s bo\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260117158424576
+    m_Localized: "La Boira observa menys quan rep ofrenes\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610881
+    m_Localized: "\u2026s\xED\u2026 aix\xF2 mant\xE9 Umbra lluny de la meva ment\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610882
+    m_Localized: "Encara continuo aqu\xED\u2026 gr\xE0cies a aix\xF2\u2026 encara
+      continuo aqu\xED\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610883
+    m_Localized: "\u2026la Boira apr\xE8n els noms dels qui sobreviuen\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610884
+    m_Localized: "A vegades sento passos al voltant del refugi\u2026 per\xF2 ning\xFA
+      entra\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610885
+    m_Localized: "\u2026Umbra somriu quan alg\xFA mor lluny de la llum\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610886
+    m_Localized: "No tanquis els ulls massa temps all\xE0 fora\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610887
+    m_Localized: "\u2026alguna cosa es mou sota la terra quan cau el silenci\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610888
+    m_Localized: "La llum mant\xE9 fora la Boira\u2026 per\xF2 no els seus records\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610889
+    m_Localized: "\u2026hi ha consumits que encara recorden qui eren\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883651805184
+    m_Localized: "Les cadenes cruixen a la nit\u2026 encara que jo no em moc\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883651805185
+    m_Localized: "\u2026la Boira encara no et vol matar\u2026 aix\xF2 t\u2019hauria
+      de preocupar\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883651805186
+    m_Localized: "Escolto veus dins del vent\u2026 algunes encara tenen rostre\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883651805187
+    m_Localized: "\u2026alguna cosa observa des de la foscor entre les fogueres\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883651805188
+    m_Localized: "Els morts aqu\xED baix triguen massa a acceptar que han mort\u2026"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

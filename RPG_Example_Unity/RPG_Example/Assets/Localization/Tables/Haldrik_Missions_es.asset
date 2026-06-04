@@ -1,0 +1,278 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Haldrik_Missions_es
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 100000000000
+    m_Localized: "No est\xE1 mal este sitio\u2026 paredes de piedra, techo medio
+      entero\u2026 y solo escucho gritos por la noche a veces. S\xED, sirve para
+      una forja."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200000000000
+    m_Localized: "Ya hemos\u2026 he montado algo parecido a una herrer\xEDa aqu\xED.
+      El fuego aguanta, el yunque aguanta, y nosotros tambi\xE9n. M\xE1s o menos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 300000000000
+    m_Localized: "Si consigues sobrevivir ah\xED fuera, quiz\xE1 pueda mejorar tus
+      armas. Nadie deber\xEDa enfrentarse a la niebla con hierro mediocre."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 400000000000
+    m_Localized: "Por cierto... Antes de llegar dej\xE9 un mango de arma en los Campos
+      de Penitencia. Una obra maestra. Bueno\u2026 casi. Tr\xE1emelo y te ense\xF1ar\xE9
+      lo que unas buenas manos pueden fabricar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 500000000000
+    m_Localized: "Un arma buena necesita equilibrio\u2026 y ese mango ten\xEDa un
+      equilibrio perfecto. Bueno, casi perfecto. Tharims dej\xF3 un lado m\xE1s largo.
+      Digo\u2026 yo. Yo lo dej\xE9."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 600000000000
+    m_Localized: "\xBFA\xFAn no lo has encontrado? Busca entre las ruinas de los
+      Campos de Penitencia. Si los consumidos no lo han usado para golpearse entre
+      ellos, deber\xEDa seguir all\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 700000000000
+    m_Localized: "\xA1Mira eso! Sab\xEDa que segu\xEDa entero\u2026 m\xE1s o menos.
+      Dame eso antes de que se oxide otro siglo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 800000000000
+    m_Localized: "Buen trabajo. Con esto podr\xE9 volver a fabricar armas de verdad.
+      Bueno\u2026 armas peligrosas para tus enemigos, quiero decir."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 900000000000
+    m_Localized: "Dame un momento\u2026 el metal necesita calor, paciencia y \xA1deja
+      de tocar eso! \u2026Ya casi est\xE1."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1000000000000
+    m_Localized: "Intent\xE9 forjar una armadura con restos viejos\u2026 ahora protege
+      muy bien\u2026 a las ratas. No es ideal."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1100000000000
+    m_Localized: "Necesito hierro de verdad. En las vetas del desierto a\xFAn quedan
+      minerales buenos, enterrados bajo esa arena traicionera."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1200000000000
+    m_Localized: "Tr\xE1eme 8 piezas de hierro y te har\xE9 una pieza de armadura.
+      Bien hecha, resistente\u2026 y solo un poco peligrosa para quien no seas t\xFA."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300000000000
+    m_Localized: Nada
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1400000000000
+    m_Localized: "\xBFSigues vivo ah\xED fuera? Bien. El desierto no suele devolver
+      cosas completas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1500000000000
+    m_Localized: "8 piezas de hierro. Ni una menos. Si vuelves con arena, te har\xE9
+      una armadura de arena. No es \xFAtil, pero ser\xEDa simb\xF3lico."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1600000000000
+    m_Localized: "Perfecto\u2026 esto es justo lo que necesitaba. Dame un segundo
+      y la forjo. Si ves chispas salir volando, es buena se\xF1al\u2026 creo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1700000000000
+    m_Localized: Nada
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1800000000000
+    m_Localized: Nada
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1900000000000
+    m_Localized: "Vale\u2026 esto es sencillo. Solo necesito una gema. Una buena.
+      Nada raro. Nada\u2026 vivo. Preferiblemente."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2000000000000
+    m_Localized: "No preguntes para qu\xE9 es. Es para la forja. S\xED. Eso. La forja.
+      No mi\u2026 bueno, la forja."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2100000000000
+    m_Localized: "Tr\xE1eme una gema decente del desierto. Del campamento de consumidos..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2200000000000
+    m_Localized: Nada
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2300000000000
+    m_Localized: "Si la tienes ya, no la mires demasiado. Las gemas buenas\u2026
+      te miran de vuelta. Es una teor\xEDa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2400000000000
+    m_Localized: Como va con los consumidos? No se les ve muy habladores.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2500000000000
+    m_Localized: Nada
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2600000000000
+    m_Localized: Nada
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2700000000000
+    m_Localized: "Perfecto\u2026 s\xED, eso servir\xE1. No te acerques demasiado
+      mientras la coloco en la forja\u2026 o en lo que sea esto ya."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2800000000000
+    m_Localized: "Dame un momento\u2026 esto va a necesitar calor, metal y\u2026
+      bueno, bastante improvisaci\xF3n. Saldr\xE1 una armadura completa. Seguramente
+      una buena."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2900000000000
+    m_Localized: Nada
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3000000000000
+    m_Localized: "El metal mejora\u2026 pero t\xFA tambi\xE9n debes hacerlo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3100000000000
+    m_Localized: Cuarenta.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3200000000000
+    m_Localized: "Si vas a empu\xF1ar lo que hago\u2026 demuestra que puedes usarlo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3300000000000
+    m_Localized: "\u2026Ve."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3400000000000
+    m_Localized: Cuarenta.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3500000000000
+    m_Localized: "Eso es lo que ped\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3600000000000
+    m_Localized: "\xBFCu\xE1ntos llevas?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3700000000000
+    m_Localized: No pares.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3800000000000
+    m_Localized: "El acero ya est\xE1 listo. T\xFA no."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3900000000000
+    m_Localized: Vuelve cuando acabes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4000000000000
+    m_Localized: "\u2026Ya est\xE1."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4100000000000
+    m_Localized: Se siente distinto ahora.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4200000000000
+    m_Localized: "El hierro\u2026 y t\xFA."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4600000000000
+    m_Localized: "\u2026El fuego habla. T\xFA, no."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4700000000000
+    m_Localized: Tengo trabajo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4800000000000
+    m_Localized: "\xBFQu\xE9 quieres?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4900000000000
+    m_Localized: El martillo no descansa.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5000000000000
+    m_Localized: "\u2026S\xED. Qu\xE9."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5600000000000
+    m_Localized: Bien.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5700000000000
+    m_Localized: "\u2026S\xED. Vete."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5800000000000
+    m_Localized: El fuego sigue ardiendo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14582977602842624
+    m_Localized: Mejorar Armas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16045431673032704
+    m_Localized: "Habla con Haldrik para completar la misi\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12184221653725184
+    m_Localized: "\xA1No te acerques! Ah\u2026 no. No eres de ellos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12184367854579712
+    m_Localized: "Soy Haldrik. Sigo entero\u2026 m\xE1s o menos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12184507139026944
+    m_Localized: "Nos escondimos aqu\xED para no volver a los hornos de Thararel\u2026
+      fue la \xFAnica forma de seguir con vida."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12184625334513664
+    m_Localized: Gracias por sacarme de este agujero.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16374422064132096
+    m_Localized: "Ir\xE9 a la aldea, si las piernas a\xFAn me obedecen\u2026 y all\xED,
+      quiz\xE1, pueda devolverte el favor."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

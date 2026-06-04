@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xargs -I {} basename \"{}\")",
+      "Bash(xargs grep:*)",
+      "Bash(where python3:*)",
+      "Bash(where python:*)",
+      "Bash(where py:*)",
+      "Bash(python3:*)",
+      "Bash(powershell:*)",
+      "Bash(grep \"^guid:\" \"C:/Users/Ivan Leris/TFG_BetweenShadows/BetweenShadows_UP/Assets/Code/_Scripts/Quest Systen/Quest/CollectItemQuestStep.cs.meta\" find \"C:/Users/Ivan Leris/TFG_BetweenShadows/BetweenShadows_UP/Assets/Scriptable Objects\" -name \"*EnemyDefinition*\" -o -name \"*Enemy*Definition*\")",
+      "Bash(find \"C:/Users/Ivan Leris/TFG_BetweenShadows/BetweenShadows_UP/Assets/Scriptable Objects/Items\" -name \"*.asset\" -exec grep -l \"iron\\\\|Iron\\\\|Hierro\\\\|hierro\\\\|ore\\\\|Ore\" {} \\\\;)",
+      "Bash(xargs -I{} basename \"{}\")",
+      "Bash(find \"C:/Users/Ivan Leris/TFG_BetweenShadows/BetweenShadows_UP/Assets/Localization\" -name \"Village*\" -exec echo {} \\\\;)",
+      "Bash(find . -path ./Plugins -prune -o -name \"*.cs\" -type f -exec grep -l \"disappear\\\\|Disappear\" {} \\\\;)",
+      "Bash(find Code/_Scripts/Quest* -name \"*.cs\" -type f)",
+      "Bash(xargs ls:*)",
+      "Read(//c/Users/Ivan Leris/Desktop/5t/TFG/CSV Tabkes/**)",
+      "Bash(perl -i -0777 -pe ':*)",
+      "Bash(dotnet run:*)",
+      "Bash(grep \"\\\\.cs$\")",
+      "Bash(grep:*)"
+    ]
+  }
+}

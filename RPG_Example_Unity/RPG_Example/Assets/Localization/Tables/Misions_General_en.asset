@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Misions_General_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 30e83be03e252314fa0a389c50676e6b, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 100000000000
+    m_Localized: What Still Remains
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200000000000
+    m_Localized: Search for the lost survivors beyond the mist and guide them back
+      to Fallowrest.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 300000000000
+    m_Localized: Echoes of a Lost Forge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 400000000000
+    m_Localized: Recover the ancient weapon handle hidden within the Fields of Penance
+      and deliver it to Haldrik so the forge may awaken once more.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 500000000000
+    m_Localized: Raw Material
+    m_Metadata:
+      m_Items: []
+  - m_Id: 600000000000
+    m_Localized: Obtain enough iron to feed the flames of Haldrik's forge.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 700000000000
+    m_Localized: Thirst for Vengeance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 800000000000
+    m_Localized: Defeat armored skeletons and help Naisha silence the rage still
+      burning within her.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 900000000000
+    m_Localized: Echoes of the Hunt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1000000000000
+    m_Localized: Defeat more consumed guardians, now with helmet and calm the memories
+      that haunt Naisha.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1100000000000
+    m_Localized: The Hunger of the Forge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1200000000000
+    m_Localized: Find a gem pure enough to feed Haldrik's burning heart within the
+      Dune Camp.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300000000000
+    m_Localized: Bones of an Ancient Beast
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1400000000000
+    m_Localized: Obtain the skull of an ancient beast to help Naisha rebuild what
+      she lost.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1500000000000
+    m_Localized: The Seal of the Past
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1600000000000
+    m_Localized: Open the sealed gate and venture into what has remained hidden for
+      centuries.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1700000000000
+    m_Localized: The Final Hunt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1800000000000
+    m_Localized: Put an end to those responsible for Naisha's fall and cleanse the
+      cave of the creatures still corrupting it.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

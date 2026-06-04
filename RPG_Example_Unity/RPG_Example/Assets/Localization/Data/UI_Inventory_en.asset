@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI_Inventory_en
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 07b8b7c85aa98444b91b45e91232ad70, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 11418824704
+    m_Localized: Inventory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121401864192
+    m_Localized: Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 334865461243904
+    m_Localized: Inventory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 335027281686528
+    m_Localized: Chest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 335116448395264
+    m_Localized: Bag
+    m_Metadata:
+      m_Items: []
+  - m_Id: 342135804882944
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 342482816430080
+    m_Localized: Setting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 342631055716352
+    m_Localized: Exit Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348884783951872
+    m_Localized: Pick Up
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349341526880256
+    m_Localized: Switch Panel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349960937500672
+    m_Localized: (HOLD) Storage All
+    m_Metadata:
+      m_Items: []
+  - m_Id: 350084120014848
+    m_Localized: (HOLD) Collect All
+    m_Metadata:
+      m_Items: []
+  - m_Id: 350324529131520
+    m_Localized: Equip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 350772896034816
+    m_Localized: Use
+    m_Metadata:
+      m_Items: []
+  - m_Id: 350846568984576
+    m_Localized: Equip slot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 350945751691264
+    m_Localized: Storage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 351044657573888
+    m_Localized: Discard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 351375604936704
+    m_Localized: Collect
+    m_Metadata:
+      m_Items: []
+  - m_Id: 351557482541056
+    m_Localized: Put down
+    m_Metadata:
+      m_Items: []
+  - m_Id: 351651355258880
+    m_Localized: Rotate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 362220602880000
+    m_Localized: Consumable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 362340291538944
+    m_Localized: Collectable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 362351637131264
+    m_Localized: Crafting
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -1,0 +1,324 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Village_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 9d19e2569c0e0e84fa7d123238b2dfc6, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 4621676374010888273
+  m_TableData:
+  - m_Id: 192871460864
+    m_Localized: "So you\u2019re the one who stopped those skeletons."
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888273
+  - m_Id: 1523485044736
+    m_Localized: I need silver, Do u want to help me?
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888273
+  - m_Id: 3594712051712
+    m_Localized: Do u want to give me de gem
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888273
+  - m_Id: 4076192985088
+    m_Localized: Exit
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888273
+  - m_Id: 115128876462080
+    m_Localized: They would have breached the gate in minutes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115357159845888
+    m_Localized: "We blocked it\u2026 but it won\u2019t hold much longer."
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888273
+  - m_Id: 115485799149568
+    m_Localized: "Wait\u2026"
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888273
+  - m_Id: 115691542343680
+    m_Localized: "That emblem on your cloak\u2026"
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888273
+  - m_Id: 115910652784640
+    m_Localized: It looks like you bear the mark of the Shadow Hunters.
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888273
+  - m_Id: 116250408185856
+    m_Localized: "\u2026Suppose so."
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888273
+  - m_Id: 116307995979776
+    m_Localized: Shadow Hunters?
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888273
+  - m_Id: 116629107699712
+    m_Localized: "Then you\u2019ve arrived at a bad time."
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888273
+  - m_Id: 117073221578752
+    m_Localized: The last of our kind went out days ago.
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888273
+  - m_Id: 117807308664832
+    m_Localized: Hunters of the Mist.
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888273
+  - m_Id: 118351683186688
+    m_Localized: The only ones bold enough to venture beyond the fog.
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888273
+  - m_Id: 118915288592384
+    m_Localized: "We had one. He went out days ago\u2026 and never returned."
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888273
+  - m_Id: 119202816520192
+    m_Localized: Maybe you can discover what happened to him.
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888273
+  - m_Id: 121785606008832
+    m_Localized: "One more thing. If you wish to venture beyond\u2026 seek Morran."
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888273
+  - m_Id: 122189051916288
+    m_Localized: "He will open the Northern Gate\u2026 if he so chooses."
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888273
+  - m_Id: 122391473221632
+    m_Localized: "And\u2026 there\u2019s someone else who can help you."
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888273
+  - m_Id: 123001811562496
+    m_Localized: "Haldrik. He\u2019s\u2026 peculiar."
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888273
+  - m_Id: 123202752278528
+    m_Localized: A little strange, but he knows how to improve gear and tools.
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888273
+  - m_Id: 123343999660032
+    m_Localized: Worth seeking out.
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888273
+  - m_Id: 129939144241152
+    m_Localized: "Ah! I\u2019ve been expecting you!"
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888273
+  - m_Id: 130304325513216
+    m_Localized: "\u2026or at least one of us."
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888273
+  - m_Id: 130497435463680
+    m_Localized: "I\u2019m the head! I make the decisions!"
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888273
+  - m_Id: 130782576832512
+    m_Localized: "Well, then decide faster\u2014the iron\u2019s cooling!"
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888273
+  - m_Id: 130945701703680
+    m_Localized: "Quiet, both of you\u2026 he\u2019s watching!"
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888273
+  - m_Id: 131108251955200
+    m_Localized: "Alright\u2026 never mind. You. Yes, you."
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888273
+  - m_Id: 131304285335552
+    m_Localized: I need some fresh iron ore.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 131478625775616
+    m_Localized: "The mines around here are no good anymore\u2026 everything\u2019s
+      been corrupted by the Mist."
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888273
+  - m_Id: 131954918354944
+    m_Localized: I can help.
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888273
+  - m_Id: 131988858662912
+    m_Localized: "I\u2019m not interested."
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888273
+  - m_Id: 136758877024256
+    m_Localized: Excellent!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 136913336463360
+    m_Localized: "But listen\u2026 to get out, you\u2019ll have to go through the
+      Northern Gate."
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888273
+  - m_Id: 137488522342400
+    m_Localized: "Morran can open it\u2026 yes, the serious guy who\u2019s always
+      watching."
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888273
+  - m_Id: 137865548328960
+    m_Localized: "Once you\u2019re out, look for the iron ore."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 138050206756864
+    m_Localized: "Bring enough, and we can upgrade your gear\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 138187041730560
+    m_Localized: "\u2026or at least try, without burning your fingers!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 138442189631488
+    m_Localized: "\u2026Hmm. Well, you know where to find me if you change your mind."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 138573634924544
+    m_Localized: "Don\u2019t complain when your weapons break\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 140912139759616
+    m_Localized: "You shouldn\u2019t be here."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 141060467126272
+    m_Localized: "The Northern Gate leads straight into the Mist. Many leave\u2026
+      few return."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 141246413205504
+    m_Localized: "If you plan to go out\u2026 I\u2019ll be clear."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 141338427846656
+    m_Localized: "Once I open the gate, I won\u2019t open it again."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 141450956828672
+    m_Localized: "Find a Return Portal, or we won\u2019t see each other again."
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888273
+  - m_Id: 141548054966272
+    m_Localized: "When you\u2019re ready, approach the gate\u2026 and I\u2019ll let
+      you pass."
+    m_Metadata:
+      m_Items:
+      - rid: 4621676374010888273
+  - m_Id: 165763193827328
+    m_Localized: I can feel it spreading through my blood.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 165915841327104
+    m_Localized: I will not allow it to turn me into one of those things.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166027112017920
+    m_Localized: "I\u2019d rather die here\u2026 while I am still myself."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 167303161901056
+    m_Localized: "\u2026Suppose so."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 167907166842880
+    m_Localized: Shadow Hunters?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 169727876460544
+    m_Localized: "\u2026Suppose so."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 189028144222208
+    m_Localized: Thanks! I'll let you know if i need something more
+    m_Metadata:
+      m_Items: []
+  - m_Id: 198589290876928
+    m_Localized: Thanks! I'll let you know if i need something more
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 4621676374010888273
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 
+        m_SharedEntries:
+        - id: 192871460864
+        - id: 1523485044736
+        - id: 3594712051712
+        - id: 4076192985088
+        - id: 115357159845888
+        - id: 115485799149568
+        - id: 115691542343680
+        - id: 115910652784640
+        - id: 116250408185856
+        - id: 116307995979776
+        - id: 116629107699712
+        - id: 117073221578752
+        - id: 117807308664832
+        - id: 118351683186688
+        - id: 118915288592384
+        - id: 119202816520192
+        - id: 121785606008832
+        - id: 122189051916288
+        - id: 122391473221632
+        - id: 123001811562496
+        - id: 123202752278528
+        - id: 123343999660032
+        - id: 129939144241152
+        - id: 130304325513216
+        - id: 130497435463680
+        - id: 130782576832512
+        - id: 130945701703680
+        - id: 131108251955200
+        - id: 131478625775616
+        - id: 131954918354944
+        - id: 131988858662912
+        - id: 136913336463360
+        - id: 137488522342400
+        - id: 141450956828672
+        - id: 141548054966272

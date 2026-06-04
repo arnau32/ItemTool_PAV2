@@ -1,0 +1,162 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
+using System.Threading.Tasks;
+using CommunityToolkit.Mvvm.Input;
+using ItemTool.Application.Abstractions;
+using ItemTool.Application.DTOs;
+using ItemTool.Application.Validation;
+using ItemTool.Domain.Enums;
+using ItemTool.Domain.Validation;
+
+namespace ItemTool.App.ViewModels;
+
+public sealed partial class ItemBrowserViewModel : ViewModelBase
+{
+    private readonly IItemRepository _repository;
+    private readonly ItemValidator _validator;
+
+    public ObservableCollection<ItemListItemViewModel> Items { get; } = new();
+
+    private ItemListItemViewModel? _selectedListItem;
+    public ItemListItemViewModel? SelectedListItem
+    {
+        get => _selectedListItem;
+        set
+        {
+            if (SetProperty(ref _selectedListItem, value))
+            {
+                Editor.SelectedItem = value?.Item;
+                RefreshValidation();
+                RefreshDimensionPreview();
+            }
+        }
+    }
+
+    private string _validationSummary = string.Empty;
+    public string ValidationSummary
+    {
+        get => _validationSummary;
+        set => SetProperty(ref _validationSummary, value);
+    }
+
+    private string _dimensionPreviewText = "No item selected";
+    public string DimensionPreviewText
+    {
+        get => _dimensionPreviewText;
+        set => SetProperty(ref _dimensionPreviewText, value);
+    }
+
+    public ItemEditorViewModel Editor { get; } = new();
+
+    public Array ItemTypes => Enum.GetValues(typeof(ItemType));
+    public Array ItemRarities => Enum.GetValues(typeof(ItemRarity));
+
+    public ItemBrowserViewModel(IItemRepository repository, ItemValidator validator)
+    {
+        _repository = repository;
+        _validator = validator;
+
+        Editor.ItemChanged += OnEditorItemChanged;
+    }
+
+    private void OnEditorItemChanged()
+    {
+        RefreshValidation();
+        RefreshDimensionPreview();
+    }
+
+    [RelayCommand]
+    public async Task LoadAsync()
+    {
+        IReadOnlyList<ItemDto> items = await _repository.GetAllAsync();
+
+        Items.Clear();
+        foreach (ItemDto item in items)
+        {
+            Items.Add(new ItemListItemViewModel(item));
+        }
+
+        if (Items.Count > 0)
+            SelectedListItem = Items[0];
+        else
+        {
+            RefreshValidation();
+            RefreshDimensionPreview();
+        }
+    }
+
+    [RelayCommand]
+    public async Task SaveAsync()
+    {
+        List<ItemDto> items = Items.Select(x => x.Item).ToList();
+        await _repository.SaveAllAsync(items);
+    }
+
+    [RelayCommand]
+    public void NewItem()
+    {
+        ItemDto newItem = new()
+        {
+            Id = Guid.NewGuid().ToString("N"),
+            ItemName = "New Item",
+            ItemType = ItemType.Equipable,
+            ItemRarity = ItemRarity.Common,
+            MaxStack = 1
+        };
+
+        ItemListItemViewModel vm = new(newItem);
+        Items.Add(vm);
+        SelectedListItem = vm;
+
+        RefreshValidation();
+        RefreshDimensionPreview();
+    }
+
+    [RelayCommand]
+    public void RefreshValidation()
+    {
+        List<ItemDto> allItems = Items.Select(x => x.Item).ToList();
+
+        foreach (ItemListItemViewModel itemVm in Items)
+        {
+            IReadOnlyList<ValidationIssue> issues = _validator.Validate(itemVm.Item, allItems);
+            itemVm.Severity = issues.Count == 0
+                ? ValidationSeverity.None
+                : issues.MaxBy(x => x.Severity)?.Severity ?? ValidationSeverity.None;
+        }
+
+        if (SelectedListItem == null)
+        {
+            ValidationSummary = string.Empty;
+            return;
+        }
+
+        IReadOnlyList<ValidationIssue> selectedIssues = _validator.Validate(SelectedListItem.Item, allItems);
+        ValidationSummary = selectedIssues.Count == 0
+            ? "Sin errores ni warnings."
+            : string.Join(Environment.NewLine, selectedIssues.Select(x => $"- [{x.Severity}] {x.Message}"));
+    }
+
+    private void RefreshDimensionPreview()
+    {
+        if (SelectedListItem?.Item?.SlotDimension == null)
+        {
+            DimensionPreviewText = "No item selected";
+            return;
+        }
+
+        int width = Math.Max(1, SelectedListItem.Item.SlotDimension.Width);
+        int height = Math.Max(1, SelectedListItem.Item.SlotDimension.Height);
+
+        List<string> rows = new();
+
+        for (int y = 0; y < height; y++)
+        {
+            rows.Add(string.Join(" ", Enumerable.Repeat("■", width)));
+        }
+
+        DimensionPreviewText = $"{width}x{height}{Environment.NewLine}{Environment.NewLine}{string.Join(Environment.NewLine, rows)}";
+    }
+}

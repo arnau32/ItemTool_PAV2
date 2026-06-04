@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48ac4945e47be6e43b035f3074cc5c3c, type: 3}
+  m_Name: LTE_Armor_3
+  m_EditorClassIdentifier: Assembly-CSharp::LootTable
+  guaranteedEntries: []
+  weightedEntries:
+  - entryType: 0
+    item: {fileID: 11400000, guid: 04eceead328b4cd428457a72787af6ae, type: 2}
+    nestedTable: {fileID: 0}
+    minQuantity: 1
+    maxQuantity: 1
+    weight: 10
+    equipableOverrideMode: 2
+    overrideFixedRarity: 0
+  - entryType: 0
+    item: {fileID: 11400000, guid: 0a67991c5e27e4e4f933247843eae707, type: 2}
+    nestedTable: {fileID: 0}
+    minQuantity: 1
+    maxQuantity: 1
+    weight: 10
+    equipableOverrideMode: 2
+    overrideFixedRarity: 0
+  - entryType: 0
+    item: {fileID: 11400000, guid: 10430e2b057a0bd48a08c8dac2d7cfb5, type: 2}
+    nestedTable: {fileID: 0}
+    minQuantity: 1
+    maxQuantity: 1
+    weight: 10
+    equipableOverrideMode: 2
+    overrideFixedRarity: 0
+  minRandomPicks: 1
+  maxRandomPicks: 1

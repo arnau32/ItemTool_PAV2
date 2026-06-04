@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b7492b73b61442fb88e115c95bc8bb5, type: 3}
+  m_Name: Dagger_Tier1
+  m_EditorClassIdentifier: 
+  <uniqueID>k__BackingField: Dagger Tier 1
+  itemType: 0
+  itemNameID: Dagger Tier 1
+  localizedDisplayName:
+    m_TableReference:
+      m_TableCollectionName: GUID:2238abc9fc3eabf429fc99726df15768
+    m_TableEntryReference:
+      m_KeyId: 1360435523850240
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  icon: {fileID: 21300000, guid: 1e626d676d2b073468c92dde73cd92f6, type: 3}
+  description: 'Attack + 10
+
+    Defense + 3'
+  descriptionBlocks: []
+  itemRarity: 0
+  value: 0
+  weight: 0
+  maxStack: 1
+  SlotDimension:
+    Height: 2
+    Width: 1
+  equipSlot: 3
+  modifiers:
+  - statTypeAffected: 4
+    type: 100
+    value: 6
+    order: 0
+  prefab: {fileID: 269845549352391334, guid: c9a1e22eb8473d04f86bfc54f551aaea, type: 3}
+  tier: 1
+  rollMode: 1
+  animatorOverride: {fileID: 9100000, guid: 0aca0dab821c66147b9ea5791396ec60, type: 2}
+  handType: 2
+  familyType: 5
+  prefabVariant: {fileID: 269845549352391334, guid: bd80a84d320736e43a7593ef3d8b75ab, type: 3}
+  combos:
+  - steps:
+    - input: 0
+      attack: {fileID: 11400000, guid: a2bc9a880a700b340b7ca7e898db651a, type: 2}
+    - input: 0
+      attack: {fileID: 11400000, guid: 7f1392f9fc2ad61429b93a2ee9e9cc27, type: 2}
+    - input: 0
+      attack: {fileID: 11400000, guid: 9841c4c245c13ac4d8a1bae76767e951, type: 2}
+    - input: 0
+      attack: {fileID: 11400000, guid: ae343997bf96aa34f8e977cd9821bdbc, type: 2}
+  - steps:
+    - input: 3
+      attack: {fileID: 11400000, guid: 5f647f3648aa9504babc47019649dd07, type: 2}
+  dodgeSet: {fileID: 11400000, guid: 5de25dff825e7b44db4157b31a9cc169, type: 2}
+  parry: {fileID: 11400000, guid: 79dddd30bf903e543a594302ca0f682a, type: 2}
+  weaponSkill: {fileID: 11400000, guid: 3afa8a5bd97047b478bae6631968dedd, type: 2}
+  skillScoreNeeded: 180
+  weaponTier: 1
+  enemyDamageMultiplier: 1
+  references:
+    version: 2
+    RefIds: []

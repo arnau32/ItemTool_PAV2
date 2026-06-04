@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="ItemTool.Application/ItemTool.Application.csproj" />
+  <Project Path="ItemTool.Domain/ItemTool.Domain.csproj" />
+  <Project Path="ItemTool.Infrastructure/ItemTool.Infrastructure.csproj" />
+  <Project Path="ItemTool/ItemTool.App.csproj" />
+</Solution>

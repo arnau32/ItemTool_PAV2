@@ -1,0 +1,19 @@
+.choice-button {
+    height: 33%;
+    font-size: 33px;
+    -unity-text-align: middle-left;
+    background-color: rgba(12, 12, 12, 0);
+    color: rgb(255, 255, 255);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.choice-button-focus {
+    background-color: rgba(140, 140, 140, 0.64);
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}

@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b7492b73b61442fb88e115c95bc8bb5, type: 3}
+  m_Name: Hands_Tier2
+  m_EditorClassIdentifier: 
+  <uniqueID>k__BackingField: Hans_Tier2
+  itemType: 0
+  itemNameID: Hans_Tier2
+  localizedDisplayName:
+    m_TableReference:
+      m_TableCollectionName: GUID:2238abc9fc3eabf429fc99726df15768
+    m_TableEntryReference:
+      m_KeyId: 1503731617792
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  icon: {fileID: 21300000, guid: aa77a120ddf48aa458cdcf17497f637e, type: 3}
+  description: Attack + 7
+  descriptionBlocks: []
+  itemRarity: 0
+  value: 0
+  weight: 0
+  maxStack: 1
+  SlotDimension:
+    Height: 2
+    Width: 1
+  equipSlot: 3
+  modifiers:
+  - statTypeAffected: 4
+    type: 100
+    value: 19
+    order: 0
+  prefab: {fileID: 8375075049235946255, guid: c9b6493fc9ca78b4b9376392343f4866, type: 3}
+  tier: 2
+  rollMode: 1
+  animatorOverride: {fileID: 9100000, guid: affc1e7fe63fb544c82da1814e6f19d5, type: 2}
+  handType: 2
+  familyType: 0
+  prefabVariant: {fileID: 8950119384066342873, guid: da55a5548abceb44693ecca6b004e8a1, type: 3}
+  combos:
+  - steps:
+    - input: 0
+      attack: {fileID: 11400000, guid: f4917849195ee114a9091bd513db83bd, type: 2}
+    - input: 0
+      attack: {fileID: 11400000, guid: 653c37ca4f57d3941a878c21c34d1796, type: 2}
+    - input: 0
+      attack: {fileID: 11400000, guid: d213593fd8fdad043852a1397e03dc45, type: 2}
+    - input: 0
+      attack: {fileID: 11400000, guid: abf30192ec7bf404eac7b6c7c42c60f1, type: 2}
+  - steps:
+    - input: 3
+      attack: {fileID: 11400000, guid: 893785811319b564897c16efc493e32e, type: 2}
+  dodgeSet: {fileID: 11400000, guid: 465292417f9ce434ab445146e49ef198, type: 2}
+  parry: {fileID: 11400000, guid: fb0c9ce6d023c804b98c9df16922c6a9, type: 2}
+  weaponSkill: {fileID: 11400000, guid: 742eebae4edb78f46bf3c2deeee12b41, type: 2}
+  skillScoreNeeded: 140
+  weaponTier: 2
+  enemyDamageMultiplier: 1
+  references:
+    version: 2
+    RefIds: []

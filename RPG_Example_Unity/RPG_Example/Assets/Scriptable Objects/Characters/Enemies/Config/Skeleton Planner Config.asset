@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5958ffbb7b7e4e7393241c3f9f7996b0, type: 3}
+  m_Name: Skeleton Planner Config
+  m_EditorClassIdentifier: 
+  evaluationRate: 0.12
+  minScoreToAct: 25
+  stickinessMultiplier: 1.8
+  switchPenalty: 0.65
+  interruptThreshold: 1.25
+  hasMultipleAttakcs: 1

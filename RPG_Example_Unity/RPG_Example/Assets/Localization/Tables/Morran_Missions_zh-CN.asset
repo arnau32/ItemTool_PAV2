@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Morran_Missions_zh-CN
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: zh-CN
+  m_SharedData: {fileID: 11400000, guid: f1c22726e77c5a64f9610ee61ad807e2, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 8053649408
+    m_Localized: "\u5411Morran\u4EA4\u4ED810\u4E2A\u5C0F\u9AA8\u5934"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10486345728
+    m_Localized: "\u5411Morran\u4EA4\u4ED85\u4E2A\u5C0F\u9AA8\u5934"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12503805952
+    m_Localized: "\u5411Morran\u4EA4\u4ED88\u5757\u77F3\u5934"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14261219328
+    m_Localized: "\u5411Morran\u4EA4\u4ED86\u5757\u6728\u677F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16375148544
+    m_Localized: "\u5411Morran\u4EA4\u4ED83\u74F6\u5C0F\u578B\u836F\u6C34"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19432796160
+    m_Localized: "\u5411Morran\u4EA4\u4ED88\u5757\u7A00\u6709\u8089"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22389780480
+    m_Localized: "\u5411Morran\u4EA4\u4ED85\u6839\u7EF3\u5B50"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25141243904
+    m_Localized: "\u8FF7\u96FE\u7684\u610F\u5FD7"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

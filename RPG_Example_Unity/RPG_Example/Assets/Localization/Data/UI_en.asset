@@ -1,0 +1,187 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI_en
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 1cec0089f0181b741b953f562581011e, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 61880897536
+    m_Localized: RETURN TO MAIN MENU
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10018328576
+    m_Localized: RESPAWN BASE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3034598051840
+    m_Localized: LOST ITEMS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4365173886976
+    m_Localized: YOU DIED
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1675727219167232
+    m_Localized: Loading
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1772806268489728
+    m_Localized: "Close\t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3628857007771648
+    m_Localized: Movement
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3629377273434112
+    m_Localized: Move
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3629446659805184
+    m_Localized: Sprint
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3642622189211648
+    m_Localized: Attack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3810591720574976
+    m_Localized: Dodge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3810673895378944
+    m_Localized: Combo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3810913033621504
+    m_Localized: Weapon ability when loaded
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3838717854978048
+    m_Localized: Open inventory and menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3842211940896768
+    m_Localized: Consumable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3842468506472448
+    m_Localized: You can equip and use consumable items from the inventory. Once
+      equipped, they can be used directly during the game.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4209804719656960
+    m_Localized: EXTRACTION SYSTEM
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4209961536294912
+    m_Localized: During your journey, you must seek the hidden <u><color=#C9A64B>Extraction
+      Points</color></u>. The first time you find them, you must awaken their <u><color=#C9A64B>magic</color></u>.
+      Once awakened, they shall remain bound to their <u><color=#C9A64B>creator</color></u>,
+      and you may use them whenever needed.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4294116295020544
+    m_Localized: Press to lock on or lock off.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4294437826170880
+    m_Localized: Move to switch target.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4399549412249600
+    m_Localized: EXTRACTION POINT UNLOCKED
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5014364453662720
+    m_Localized: Talk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5113654917558272
+    m_Localized: Credits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5296982614839296
+    m_Localized: Quests
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5297422626689024
+    m_Localized: EXTRACTION COMPLETED
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5298089248395264
+    m_Localized: EXTRACTED ITEMS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5814959500136448
+    m_Localized: You don't have any aurora dust
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5817325687377920
+    m_Localized: Extracting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5817328656945152
+    m_Localized: Hold to extract
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5824639622418432
+    m_Localized: 'You have paid '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6212753817833472
+    m_Localized: Quest Completed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6214263901491200
+    m_Localized: New Mission Received
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6223726586859520
+    m_Localized: New Objective
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6947192298508288
+    m_Localized: Open map
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8666515987730432
+    m_Localized: 'Minimum: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8666440741916672
+    m_Localized: 'Pay to Varrik '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9639636924338176
+    m_Localized: ABILITY READY
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9745746628939776
+    m_Localized: You can get up quickly after a knockdown by dodging
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10894070627143680
+    m_Localized: Complete the indications first
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10909705851604992
+    m_Localized: Loot and complete the objectives first.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5570865248966890610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da8ec4b613ba48f5a839ce9ca857e9fd, type: 3}
+  m_Name: Hierro II_DeliverItemStepSO_1
+  m_EditorClassIdentifier: Assembly-CSharp::DeliverItemStepSO
+  objectiveText:
+    m_TableReference:
+      m_TableCollectionName: GUID:30e83be03e252314fa0a389c50676e6b
+    m_TableEntryReference:
+      m_KeyId: 600000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  requiredItem: {fileID: 11400000, guid: 3048d4d1a77661c40b928064821fe7d2, type: 2}
+  requiredQuantity: 8
+  consumeOnDelivery: 1
+  deliveryZoneId: Forge
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 329b2ab435794f2409022a53e5452931, type: 3}
+  m_Name: Hierro II
+  m_EditorClassIdentifier: 
+  <id>k__BackingField: Hierro II
+  qName:
+    m_TableReference:
+      m_TableCollectionName: GUID:30e83be03e252314fa0a389c50676e6b
+    m_TableEntryReference:
+      m_KeyId: 500000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  description: 
+  icon: {fileID: 0}
+  questPreequisits:
+  - {fileID: 11400000, guid: fa010001000000000000000000000001, type: 2}
+  questSteps:
+  - {fileID: -5570865248966890610}
+  canFinishText:
+    m_TableReference:
+      m_TableCollectionName: GUID:f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6
+    m_TableEntryReference:
+      m_KeyId: 16045431673032704
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  mapPOIs:
+  - {fileID: 11400000, guid: 4c55fcf9138f6a848a4f4a571256e738, type: 2}
+  reward:
+    items: []
+    randomItems:
+    - pool:
+      - {fileID: 11400000, guid: fa8b678a1ef87084fadb4261b432871d, type: 2}
+      - {fileID: 11400000, guid: a8acecf50693a214fb0495d21f4f2aa5, type: 2}
+      - {fileID: 11400000, guid: 67b45f2f292cc3d498e5a9fac63d2261, type: 2}
+      quantity: 1
+      overrideRarity: 1
+      forcedRarity: 1
+    auroraDust: 0
+  references:
+    version: 2
+    RefIds: []

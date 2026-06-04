@@ -1,0 +1,214 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71246b79fc814bb5abf2624dec1ba480, type: 3}
+  m_Name: Sword_Attack_1
+  m_EditorClassIdentifier: 
+  triggerAnimation: Atk_1
+  animationClip: {fileID: 7400000, guid: 813fff63c69d6bc45afcdbdb352749c6, type: 2}
+  timeToChangeAnim: 0.41008174
+  crossFade: 0.3
+  abilityScoreOnHit: 20
+  useAnimatorSpeedCurve: 1
+  animatorSpeedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.6
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 69
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.216
+      value: 0.6
+      inSlope: -0
+      outSlope: 7.843139
+      tangentMode: 69
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.267
+      value: 1
+      inSlope: 7.843139
+      outSlope: 0
+      tangentMode: 69
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.4400545
+      value: 1
+      inSlope: -0
+      outSlope: -4.5875015
+      tangentMode: 69
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.48365122
+      value: 0.8
+      inSlope: -4.5875015
+      outSlope: 0
+      tangentMode: 69
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0.8
+      inSlope: -0
+      outSlope: 0
+      tangentMode: 69
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  useRootMotionMultiplier: 0
+  rootMotionMultiplierCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  useProceduralForwardMove: 1
+  proceduralForwardMoveCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0.4225352
+      outSlope: 0.4225352
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.23666666
+      value: 0.1
+      inSlope: 4.43854
+      outSlope: 4.43854
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.31
+      value: 0.72
+      inSlope: 6.1717167
+      outSlope: 6.1717167
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.382
+      value: 1
+      inSlope: 1.9444443
+      outSlope: 1.9444443
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  proceduralForwardMoveDistance: 1.5
+  attackName: 
+  attackHitType: 0
+  staminaCost: 13
+  damage: 0
+  damageMultiplier: 1
+  poiseDamage: 18
+  hasHyperArmor: 0
+  damageWindows:
+  - window:
+      start: 0.3030032
+      end: 0.4119155
+    weaponHand: 0
+    slot: 0
+    allowMultiHit: 0
+    perTargetCooldown: 0
+    maxHitsPerTarget: 1
+  vfxWindows:
+  - vfxId: 0
+    window:
+      start: 0.32893157
+      end: 0.41411763
+    disableOnEnd: 0
+  weaponVfxWindows: []
+  audioTriggers:
+  - triggerAt: 0.33041957
+    sound:
+      Guid:
+        Data1: -1750297843
+        Data2: 1077109476
+        Data3: 1279494061
+        Data4: 1771528018
+      Path: event:/SFX_Weapons/SFX_Sword_Atk
+  audioWindows: []
+  usesCombo: 1
+  comboWindow:
+    start: 0.26561862
+    end: 0.5140312
+  allowDodgeCancelWindow: 1
+  dodgeCancelWindows:
+  - start: 0.42686427
+    end: 1
+  allowMoveCancel: 1
+  moveCancelWindows:
+  - start: 0.5093151
+    end: 1
+  allowMoveRotation: 1
+  moveRotationWindows:
+  - start: 0.13735393
+    end: 0.39229754
+  allowCanBeParriedWindow: 0
+  canBeParriedWindows: []
+  parryCancel:
+  - start: 0.43722326
+    end: 1
+  useHardLookWindow: 0
+  hardLookWindow: []

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67134bb76fc98ee41ac0e00a033ddfed, type: 3}
+  m_Name: Skeleton_Tier1_Elite
+  m_EditorClassIdentifier: 
+  id: skeleton_tier1_elite
+  displayName: Skeleton T1 Elite
+  prefab: {fileID: 3131871213643397135, guid: 4f6dddb9fc33c7d44a7d8eb087b2033d, type: 3}
+  baseStats: {fileID: 11400000, guid: 866044fb38aff0c4a9193089383a7b7c, type: 2}
+  maxPoise: 150
+  poiseRegenDelay: 4
+  poiseRegenRate: 20
+  stunDuration: 2.5
+  parryPoiseDamage: 40
+  perfectParryPoiseDamage: 80
+  zone: 1
+  category: 3
+  lootTable: {fileID: 11400000, guid: 6b04f64f5ed89ad43b0174d844efbedd, type: 2}

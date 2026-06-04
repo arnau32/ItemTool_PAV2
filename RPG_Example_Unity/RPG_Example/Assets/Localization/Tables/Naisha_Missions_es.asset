@@ -1,0 +1,302 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Naisha_Missions_es
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: c0d1e2f3a4b5c6f1a2b3c4d5e6f7a8b9, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 100000000000
+    m_Localized: "Este lugar\u2026 resiste. No est\xE1 vivo, pero tampoco ha muerto
+      del todo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200000000000
+    m_Localized: "La Niebla no lo ha terminado. Eso es raro. Y \xFAtil."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 300000000000
+    m_Localized: "Hay criaturas consumidas alrededor. No han dejado de moverse, aunque
+      deber\xEDan. Ve y elim\xEDnalas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 400000000000
+    m_Localized: "Mi sed de caza no se calma sola\u2026 y la tuya tampoco deber\xEDa.
+      Si lo haces\u2026 te dar\xE9 un arma a la altura de tu combate. No m\xE1s.
+      No menos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 500000000000
+    m_Localized: "Mis alas no sanan solas. La Niebla no rompe\u2026 corrompe. Y lo
+      que est\xE1 roto, necesita algo m\xE1s fuerte para volver a unirse."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 600000000000
+    m_Localized: "Hay el cad\xE1ver de una bestia feroz en estas tierras. Su cr\xE1neo
+      a\xFAn deber\xEDa conservar lo suficiente para lo que necesito. Tr\xE1emelo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 700000000000
+    m_Localized: "Lo has tra\xEDdo\u2026 a\xFAn pesa como si siguiera defendiendo
+      algo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 800000000000
+    m_Localized: "Bien. Servir\xE1. No para honrarla\u2026 sino para reconstruirme."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 900000000000
+    m_Localized: Toma. Este arma es tuya. No es un regalo. Es una deuda saldada entre
+      cazadores.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1000000000000
+    m_Localized: "Hay algo mal en esa cueva\u2026 incluso para la Niebla. No son
+      simples criaturas consumidas, son demasiado persistentes."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1100000000000
+    m_Localized: "Entra y acaba con los enemigos m\xE1s fuertes que encuentres. No
+      importa cu\xE1ntos sean."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1200000000000
+    m_Localized: "Cuando salgas\u2026 si sales\u2026 te dar\xE9 algo que solo se
+      entrega a quienes sobreviven a lo que no deber\xEDa seguir en pie."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1400000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1500000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1600000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1700000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1800000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1900000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2000000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2100000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2200000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2300000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2400000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2500000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2600000000000
+    m_Localized: "\xBFQu\xE9?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2700000000000
+    m_Localized: Llegas en buen momento. O no. Da igual.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2800000000000
+    m_Localized: Dime.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2900000000000
+    m_Localized: "He estado rastreando el per\xEDmetro norte esta ma\xF1ana. Hay
+      algo movi\xE9ndose, pero no en tu direcci\xF3n. Por ahora."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3000000000000
+    m_Localized: "Las alas mejoran. No me preguntes cu\xE1nto. No lo s\xE9 todav\xEDa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3100000000000
+    m_Localized: "Antes sol\xEDa volar tan alto que las nubes no llegaban. Ahora
+      me conformo con no caer."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3200000000000
+    m_Localized: La Niebla tiene patrones. Si sobrevives suficiente, empiezas a verlos.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3300000000000
+    m_Localized: "\xBFSabes que hay aves que vuelan con un ala rota? No vuelan bien.
+      Pero vuelan."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3400000000000
+    m_Localized: Hay algo que necesito que hagas. Cuando tengas un momento que se
+      pueda desperdiciar.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3500000000000
+    m_Localized: "Tengo un encargo para ti. No es opcional si quieres que siga siendo
+      \xFAtil."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3600000000000
+    m_Localized: "Todav\xEDa no has terminado."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3700000000000
+    m_Localized: "\xBFProblemas? No tienes cara de tener problemas. Sigue."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3800000000000
+    m_Localized: Estoy esperando. Lo cual no es algo que haga bien.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3900000000000
+    m_Localized: Ya.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4000000000000
+    m_Localized: "Vuelve en una pieza. Necesito que sigas siendo \xFAtil."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4100000000000
+    m_Localized: No te retrases demasiado. Tengo ojos, pero no son los tuyos.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12187371890601984
+    m_Localized: ...no te acerques...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12187548307222528
+    m_Localized: "Si vienes por m\xED... termina el trabajo... o lib\xE9rame."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12187958174609408
+    m_Localized: ...te debo una. Pero no creas que te has ganado mi confianza.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14885084675502080
+    m_Localized: "Ca\xED en una trampa antigua\u2026 de humanos. Su odio hacia nosotros
+      perdura."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14886260028534784
+    m_Localized: "Mis alas est\xE1n da\xF1adas, necesito descansar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14887010897031168
+    m_Localized: "Por ahora\u2026 te seguire e ir\xE9 a tu refugio. No tengo otra
+      opci\xF3n."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14890810152120320
+    m_Localized: "Ir\xEDa yo\u2026 si pudiera."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14891669439180800
+    m_Localized: "No te lo pedir\xEDa si no lo necesitara."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14892204225523712
+    m_Localized: Necesito mis alas para poder volver a mi tierra natal.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14895437622865920
+    m_Localized: Esto sirve. Puedo trabajar con esto.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14895589037240320
+    m_Localized: "No volar\xE9 hoy, pero es un comienzo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14895739776331776
+    m_Localized: "Te debo una m\xE1s. Lo apunto."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14896555950141440
+    m_Localized: Si eres capaz de volve con vida te recompensare como es debido.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15056270944432128
+    m_Localized: "Esto\u2026 no es suficiente. Los huesos que trajiste antes no soportar\xEDan
+      el peso."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15056801096069120
+    m_Localized: "Tr\xE1eme huesos que hayan sostenido algo m\xE1s grande que yo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15069359941152768
+    m_Localized: "Sostuvieron algo digno\u2026 a\xFAn se nota."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15069434708815872
+    m_Localized: "\u2026No lo habr\xEDa conseguido sin ti."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15069579919814656
+    m_Localized: Acepta esto como simbolo de respeto.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15070045193957376
+    m_Localized: Mi movilidad esta mejorando.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15070123057016832
+    m_Localized: "En poco tiempo podr\xE9 volver a ser libre."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16045658681348096
+    m_Localized: "Habla con Naisha para completar la misi\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4200000000000
+    m_Localized: "Si lo consigues\u2026 usar\xE9 sus huesos para intentar regenerar
+      lo que perd\xED. Y te dar\xE9 un arma a la altura de tu caza."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18927919540269056
+    m_Localized: 'Las leyendas cuentan que fue una gran bestia que salvo a Caelvran
+      de la conquista de Tharalel en cuando se rompio laaguja.
+
+'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

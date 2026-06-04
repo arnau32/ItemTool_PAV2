@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: fbf22ae3bb7041a6a2065d0866647508
+AssetOrigin:
+  serializedVersion: 1
+  productId: 59092
+  packageName: Find Reference 2
+  packageVersion: 2.6.6
+  assetPath: Assets/FindReference2/Editor/v2/Parser/FR2_Parser.cs
+  uploadId: 796006
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

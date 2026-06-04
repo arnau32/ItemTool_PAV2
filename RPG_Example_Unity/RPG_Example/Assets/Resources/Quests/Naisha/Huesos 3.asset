@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-2390408807987257320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef4e38b12b644d25b5153ab9bb91d47d, type: 3}
+  m_Name: Huesos 3_KillEnemyStepSO_0
+  m_EditorClassIdentifier: Assembly-CSharp::KillEnemyStepSO
+  objectiveText:
+    m_TableReference:
+      m_TableCollectionName: GUID:30e83be03e252314fa0a389c50676e6b
+    m_TableEntryReference:
+      m_KeyId: 1800000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  targetEnemy: {fileID: 11400000, guid: bfaeb5e658c6dd14281dd338365da19c, type: 2}
+  requiredKills: 10
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 329b2ab435794f2409022a53e5452931, type: 3}
+  m_Name: Huesos 3
+  m_EditorClassIdentifier: Assembly-CSharp::QuestInfoSO
+  <id>k__BackingField: Huesos 3
+  qName:
+    m_TableReference:
+      m_TableCollectionName: GUID:ca4ac9f513ebf8646a71bb55f3e82cd0
+    m_TableEntryReference:
+      m_KeyId: 2305169866420235
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  description: 
+  icon: {fileID: 0}
+  questPreequisits:
+  - {fileID: 11400000, guid: ec2d6e8fabc6da141bc31489ce5b835c, type: 2}
+  questSteps:
+  - {fileID: -2390408807987257320}
+  canFinishText:
+    m_TableReference:
+      m_TableCollectionName: GUID:c0d1e2f3a4b5c6f1a2b3c4d5e6f7a8b9
+    m_TableEntryReference:
+      m_KeyId: 16045658681348096
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  mapPOIs: []
+  reward:
+    items: []
+    randomItems:
+    - pool:
+      - {fileID: 11400000, guid: 6cc29f50df1171848a18873793d284f2, type: 2}
+      - {fileID: 11400000, guid: 8fbd124fc77926a4f82d369608ae5827, type: 2}
+      - {fileID: 11400000, guid: cf8ca52a407c7434082dbc82e17e77cf, type: 2}
+      - {fileID: 11400000, guid: 3889658bf9cbdba44a55b4c5a06f0d86, type: 2}
+      - {fileID: 11400000, guid: cf0161fbd511ab145a9b2969925c8304, type: 2}
+      quantity: 1
+      overrideRarity: 0
+      forcedRarity: 3
+    auroraDust: 0
+  references:
+    version: 2
+    RefIds: []

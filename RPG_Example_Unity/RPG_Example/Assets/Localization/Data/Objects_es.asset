@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Objects_es
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: f1e2d3c4b5a697886950413223140506, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 10000000000
+    m_Localized: Polvo brillante impregnado de la antigua luz. Parece mantener la
+      niebla a raya\u2026 por ahora.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000000000
+    m_Localized: "Gema pulida de origen incierto. Su valor va m\xE1s all\xE1 de lo
+      material."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30000000000
+    m_Localized: Estatua desgastada de Liora. A\u00fan conserva un eco del viento
+      olvidado.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 40000000000
+    m_Localized: Cuerda gastada por el tiempo. A\u00fan puede sostener m\u00e1s de
+      lo que parece.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50000000000
+    m_Localized: Restaura una peque\u00f1a cantidad de salud.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60000000000
+    m_Localized: Recupera salud de forma moderada.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70000000000
+    m_Localized: Restaura una gran cantidad de salud.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 80000000000
+    m_Localized: Carne sin tratar.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 90000000000
+    m_Localized: Una mezcla antigua de gran poder. Sus efectos superan lo conocido.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100000000000
+    m_Localized: Hueso grande, roto pero resistente. A\u00fan puede soportar peso.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 110000000000
+    m_Localized: Estructura \u00f3sea curva y s\u00f3lida. Perfecta para dar forma
+      a algo m\u00e1s grande.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120000000000
+    m_Localized: Metal b\u00e1sico de forja. Resistente, maleable y siempre \u00fatil.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 130000000000
+    m_Localized: Hueso fragil y agrietado. Apenas conserva su forma original.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 140000000000
+    m_Localized: Fragmento de roca resistente. Base de toda estructura duradera.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 150000000000
+    m_Localized: Madera seca y ligera. Queda poca madera en buen estado.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3534277799636992
+    m_Localized: Pierna de carne muy apetitosa.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3535889683247104
+    m_Localized: "Poci\xF3n de Energ\xEDa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3538622884671488
+    m_Localized: "Poci\xF3n de Fuerza"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6475911524839424
+    m_Localized: Mango de espada antiguo
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

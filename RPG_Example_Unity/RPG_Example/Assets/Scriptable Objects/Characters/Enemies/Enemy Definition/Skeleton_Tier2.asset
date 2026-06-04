@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67134bb76fc98ee41ac0e00a033ddfed, type: 3}
+  m_Name: Skeleton_Tier2
+  m_EditorClassIdentifier: 
+  id: skeleton_tier2
+  displayName: Skeleton T2
+  prefab: {fileID: 3131871213643397135, guid: 4f6dddb9fc33c7d44a7d8eb087b2033d, type: 3}
+  baseStats: {fileID: 11400000, guid: b9c72bb8f04033344ab5b75c1c8fd64e, type: 2}
+  maxPoise: 180
+  poiseRegenDelay: 3
+  poiseRegenRate: 25
+  stunDuration: 2
+  parryPoiseDamage: 35
+  perfectParryPoiseDamage: 70
+  zone: 2
+  category: 0
+  lootTable: {fileID: 11400000, guid: f7574fc6cdc8d0e4d86f67bbde69fe44, type: 2}

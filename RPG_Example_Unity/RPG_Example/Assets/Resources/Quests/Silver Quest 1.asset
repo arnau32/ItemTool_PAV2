@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 329b2ab435794f2409022a53e5452931, type: 3}
+  m_Name: Silver Quest 1
+  m_EditorClassIdentifier: 
+  <id>k__BackingField: Silver Quest 1
+  qName:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  description: "Haldrik needs fresh iron ore.\nThe mines near the village are corrupted
+    by the Mist, so I\u2019ll have to search outside the Northern Gate.\nBring back
+    10 pieces of iron ore."
+  icon: {fileID: 21300000, guid: f4ee836df822c55448a5c1c0ff474c03, type: 3}
+  questPreequisits: []
+  questSteps:
+  - {fileID: 2523299645643557120}
+  canFinishText:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  mapPOIs: []
+  reward:
+    items:
+    - item: {fileID: 11400000, guid: 8fbd124fc77926a4f82d369608ae5827, type: 2}
+      quantity: 1
+    randomItems: []
+    auroraDust: 0
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &2523299645643557120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da8ec4b613ba48f5a839ce9ca857e9fd, type: 3}
+  m_Name: Silver Quest 1_DeliverItemStepSO_0
+  m_EditorClassIdentifier: 
+  objectiveText:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  requiredItem: {fileID: 11400000, guid: 3048d4d1a77661c40b928064821fe7d2, type: 2}
+  requiredQuantity: 3
+  consumeOnDelivery: 1
+  deliveryZoneId: Forge
+  references:
+    version: 2
+    RefIds: []

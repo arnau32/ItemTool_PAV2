@@ -1,0 +1,261 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Morran_Interactions_es
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 100000000000
+    m_Localized: ...No te acerques demasiado.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200000000000
+    m_Localized: "Sigo aqu\xED... pero no siempre."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 300000000000
+    m_Localized: Cuando no estoy... algo ocupa mi lugar.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 400000000000
+    m_Localized: "Puedo ser \xFAtil. Si me traes lo que necesito... puedo hablar
+      con ella."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 500000000000
+    m_Localized: "Con la Niebla. Te dar\xE1 m\xE1s tiempo ah\xED fuera."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 600000000000
+    m_Localized: Antes de que salgas...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 700000000000
+    m_Localized: "Necesito algo de ah\xED fuera."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 800000000000
+    m_Localized: ...si puedes traerlo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 900000000000
+    m_Localized: "S\xED... esto sirve."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1000000000000
+    m_Localized: "D\xE9jame."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1100000000000
+    m_Localized: Hecho.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1200000000000
+    m_Localized: ...La Niebla ya te conoce. Ten cuidado de todas formas.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300000000000
+    m_Localized: A veces oigo sus voces. Las de los que no resistieron.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1400000000000
+    m_Localized: Me dicen que me una.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1500000000000
+    m_Localized: "...Todav\xEDa no."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12189765160464384
+    m_Localized: "...espera... No... no quiero... Sigo aqu\xED..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12189917040406528
+    m_Localized: "Ay\xFAdame a controlarlo... \xE1tame, haz lo que quieras, pero
+      no me mates."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16375362599055360
+    m_Localized: "\u2026Por favor\u2026 No me dejes aqu\xED\u2026 Ll\xE9vame a la
+      aldea\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18213125506002944
+    m_Localized: Consigue esto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18217147935813632
+    m_Localized: 'Toma esto
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18217408079130624
+    m_Localized: Hola
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18238217258594304
+    m_Localized: Mision Random
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18238277144866816
+    m_Localized: Dame flan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260090755280896
+    m_Localized: "\u2026vas a salir otra vez\u2026 lo noto\u2026 la Niebla est\xE1
+      inquieta\u2026 tr\xE1eme restos antes de que vuelva a susurrarme\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260093569658880
+    m_Localized: "Escucho susurros cuando duermo\u2026 aunque ya no deber\xEDa dormir\u2026
+      tr\xE1eme fragmentos de ah\xED fuera\u2026 quiz\xE1 as\xED callen\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260095222214656
+    m_Localized: "La carne consumida todav\xEDa guarda calor\u2026 Umbra lo siente\u2026
+      necesito restos de los ca\xEDdos\u2026 r\xE1pido\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260096597946368
+    m_Localized: "Hay objetos que la Niebla no logra digerir\u2026 encu\xE9ntralos\u2026
+      tr\xE1emelos\u2026 no preguntes por qu\xE9\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260098057564160
+    m_Localized: "\u2026las cadenas ya no bastan\u2026 necesito algo antiguo\u2026
+      algo roto\u2026 antes de que ella vuelva a hablarme\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260099508793344
+    m_Localized: "Los consumidos arrastran fragmentos de ella en sus cuerpos\u2026
+      m\xE1talos\u2026 tr\xE1eme lo que encuentres\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260101048102912
+    m_Localized: "\u2026la Niebla tiene hambre\u2026 y cuando tiene hambre\u2026
+      sue\xF1a\u2026 tr\xE1eme algo valioso\u2026 brillante\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260102570635264
+    m_Localized: "No recuerdo cu\xE1nto llevo aqu\xED encadenado\u2026 pero ella
+      s\xED\u2026 tr\xE1eme materiales de la Niebla\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260104114139136
+    m_Localized: "A veces despierto con tierra bajo las u\xF1as\u2026 necesito objetos
+      antiguos\u2026 r\xE1pido\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260105561174016
+    m_Localized: "\u2026Umbra susurra desde lugares profundos\u2026 dice que a\xFAn
+      quedan cosas enterradas esper\xE1ndome\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260106815270912
+    m_Localized: "\u2026s\xED\u2026 eso servir\xE1\u2026 por un momento el susurro
+      se aleja\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610880
+    m_Localized: "Lo siento\u2026 menos ruido\u2026 menos voces\u2026 gracias\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260110132965376
+    m_Localized: "\u2026ella quer\xEDa esto\u2026 mejor que lo tenga yo\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260111487725568
+    m_Localized: "Puedo respirar otra vez\u2026 aunque no deber\xEDa necesitar hacerlo\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260112611799040
+    m_Localized: "\u2026las cadenas pesan menos cuando la Niebla est\xE1 satisfecha\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260114293714944
+    m_Localized: "Bien\u2026 bien\u2026 ahora estar\xE1 callada\u2026 por un tiempo\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260115728166912
+    m_Localized: "\u2026a\xFAn recuerdas c\xF3mo volver\u2026 eso es bueno\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260117158424576
+    m_Localized: "La Niebla observa menos cuando le entregan ofrendas\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610881
+    m_Localized: "\u2026s\xED\u2026 esto mantiene a Umbra lejos de mi mente\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610882
+    m_Localized: "Todav\xEDa sigo aqu\xED\u2026 gracias a esto\u2026 todav\xEDa sigo
+      aqu\xED\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610883
+    m_Localized: "\u2026la Niebla aprende los nombres de quienes sobreviven\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610884
+    m_Localized: "A veces escucho pasos alrededor del refugio\u2026 pero nadie entra\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610885
+    m_Localized: "\u2026Umbra sonr\xEDe cuando alguien muere lejos de la luz\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610886
+    m_Localized: "No cierres los ojos demasiado tiempo ah\xED fuera\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610887
+    m_Localized: "\u2026algo se mueve bajo la tierra cuando cae el silencio\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610888
+    m_Localized: "La luz mantiene fuera a la Niebla\u2026 pero no sus recuerdos\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610889
+    m_Localized: "\u2026hay consumidos que todav\xEDa recuerdan qui\xE9nes eran\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883651805184
+    m_Localized: "Las cadenas crujen por la noche\u2026 aunque yo no me muevo\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883651805185
+    m_Localized: "\u2026la Niebla no quiere matarte todav\xEDa\u2026 eso deber\xEDa
+      preocuparte\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883651805186
+    m_Localized: "Escucho voces dentro del viento\u2026 algunas a\xFAn tienen rostro\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883651805187
+    m_Localized: "\u2026algo observa desde la oscuridad entre las hogueras\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883651805188
+    m_Localized: "Los muertos aqu\xED abajo tardan demasiado en aceptar que han muerto\u2026"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -1,0 +1,238 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Morran_Interactions_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 100000000000
+    m_Localized: ...Don't come too close.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200000000000
+    m_Localized: I'm still here... but not always.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 300000000000
+    m_Localized: When I'm not... something takes my place.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 400000000000
+    m_Localized: I can be useful. If you bring me what I need... I can speak to it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 500000000000
+    m_Localized: To the Mist. It will give you more time out there.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 600000000000
+    m_Localized: Before you go out...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 700000000000
+    m_Localized: I need something from out there.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 800000000000
+    m_Localized: ...if you can bring it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 900000000000
+    m_Localized: Yes... this will do.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1000000000000
+    m_Localized: Leave me.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1100000000000
+    m_Localized: Done.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1200000000000
+    m_Localized: ...The Mist knows you now. Be careful anyway.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300000000000
+    m_Localized: Sometimes I hear their voices. Those who didn't resist.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1400000000000
+    m_Localized: They tell me to join them.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1500000000000
+    m_Localized: ...Not yet.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12189765160464384
+    m_Localized: "...wait... No... I don\u2019t want to... I\u2019m still here\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12189917040406528
+    m_Localized: "Help me control it\u2026 tie me up, do whatever you want, but don\u2019t
+      kill me."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16375362599055360
+    m_Localized: "\u2026Please\u2026 Don\u2019t leave me here\u2026 Take me to the
+      village\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260090755280896
+    m_Localized: "\u2026you are going out again\u2026 I can feel it\u2026 the Mist
+      is restless\u2026 bring me remains before it whispers to me again\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260093569658880
+    m_Localized: "I hear whispers when I sleep\u2026 even though I should no longer
+      sleep\u2026 bring me fragments from out there\u2026 maybe then they will quiet
+      down\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260095222214656
+    m_Localized: "Consumed flesh still holds warmth\u2026 Umbra can feel it\u2026
+      I need remains from the fallen\u2026 quickly\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260096597946368
+    m_Localized: "There are objects the Mist cannot fully digest\u2026 find them\u2026
+      bring them to me\u2026 do not ask why\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260098057564160
+    m_Localized: "\u2026the chains are no longer enough\u2026 I need something ancient\u2026
+      something broken\u2026 before she speaks to me again\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260099508793344
+    m_Localized: "The consumed drag fragments of her within their bodies\u2026 kill
+      them\u2026 bring me whatever you find\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260101048102912
+    m_Localized: "\u2026the Mist is hungry\u2026 and when it is hungry\u2026 it dreams\u2026
+      bring me something valuable\u2026 something bright\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260102570635264
+    m_Localized: "I do not remember how long I have been chained here\u2026 but she
+      does\u2026 bring me materials touched by the Mist\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260104114139136
+    m_Localized: "Sometimes I wake with dirt beneath my nails\u2026 I need ancient
+      objects\u2026 quickly\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260105561174016
+    m_Localized: "\u2026Umbra whispers from deep places\u2026 it says there are still
+      things buried out there waiting for me\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260106815270912
+    m_Localized: "\u2026yes\u2026 this will do\u2026 for a moment the whispering
+      fades away\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610880
+    m_Localized: "I feel it\u2026 less noise\u2026 fewer voices\u2026 thank you\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260110132965376
+    m_Localized: "\u2026she wanted this\u2026 better that I keep it\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260111487725568
+    m_Localized: "I can breathe again\u2026 even though I should not need to\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260112611799040
+    m_Localized: "\u2026the chains feel lighter when the Mist is satisfied\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260114293714944
+    m_Localized: "Good\u2026 good\u2026 now she will stay quiet\u2026 for a while\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260115728166912
+    m_Localized: "\u2026you still remember how to return\u2026 that is good\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18260117158424576
+    m_Localized: "The Mist watches less when it is given offerings\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610881
+    m_Localized: "\u2026yes\u2026 this keeps Umbra away from my mind\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610882
+    m_Localized: "I am still here\u2026 because of this\u2026 I am still here\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610883
+    m_Localized: "\u2026the Mist learns the names of those who survive\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610884
+    m_Localized: "Sometimes I hear footsteps around the refuge\u2026 but no one enters\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610885
+    m_Localized: "\u2026Umbra smiles when someone dies far from the light\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610886
+    m_Localized: "Do not close your eyes for too long out there\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610887
+    m_Localized: "\u2026something moves beneath the earth when silence falls\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610888
+    m_Localized: "Light keeps the Mist away\u2026 but not its memories\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883647610889
+    m_Localized: "\u2026there are consumed ones who still remember who they were\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883651805184
+    m_Localized: "The chains creak during the night\u2026 even though I do not move\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883651805185
+    m_Localized: "\u2026the Mist does not want to kill you yet\u2026 that should
+      worry you\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883651805186
+    m_Localized: "I hear voices inside the wind\u2026 some still have faces\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883651805187
+    m_Localized: "\u2026something watches from the darkness between the bonfires\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18263883651805188
+    m_Localized: "The dead down here take far too long to accept they are dead\u2026"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

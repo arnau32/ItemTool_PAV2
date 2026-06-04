@@ -1,0 +1,296 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Haldrik_Missions Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Haldrik_Missions
+  m_TableCollectionNameGuidString: f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6
+  m_Entries:
+  - m_Id: 100000000000
+    m_Key: V_Haldrik_1_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200000000000
+    m_Key: V_Haldrik_1_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 300000000000
+    m_Key: V_Haldrik_1_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 400000000000
+    m_Key: V_Haldrik_1_04
+    m_Metadata:
+      m_Items: []
+  - m_Id: 500000000000
+    m_Key: V_Haldrik_2_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 600000000000
+    m_Key: V_Haldrik_2_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 700000000000
+    m_Key: V_Haldrik_3_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 800000000000
+    m_Key: V_Haldrik_3_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 900000000000
+    m_Key: V_Haldrik_3_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1000000000000
+    m_Key: V_Haldrik_4_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1100000000000
+    m_Key: V_Haldrik_4_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1200000000000
+    m_Key: V_Haldrik_4_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300000000000
+    m_Key: V_Haldrik_4_04
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1400000000000
+    m_Key: V_Haldrik_5_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1500000000000
+    m_Key: V_Haldrik_5_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1600000000000
+    m_Key: V_Haldrik_6_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1700000000000
+    m_Key: V_Haldrik_6_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1800000000000
+    m_Key: V_Haldrik_6_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1900000000000
+    m_Key: V_Haldrik_7_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2000000000000
+    m_Key: V_Haldrik_7_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2100000000000
+    m_Key: V_Haldrik_7_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2200000000000
+    m_Key: V_Haldrik_7_04
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2300000000000
+    m_Key: V_Haldrik_8_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2400000000000
+    m_Key: V_Haldrik_8_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2500000000000
+    m_Key: V_Haldrik_8_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2600000000000
+    m_Key: V_Haldrik_8_04
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2700000000000
+    m_Key: V_Haldrik_9_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2800000000000
+    m_Key: V_Haldrik_9_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2900000000000
+    m_Key: V_Haldrik_9_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3000000000000
+    m_Key: V_Haldrik_10_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3100000000000
+    m_Key: V_Haldrik_10_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3200000000000
+    m_Key: V_Haldrik_10_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3300000000000
+    m_Key: V_Haldrik_10_04
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3400000000000
+    m_Key: V_Haldrik_11_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3500000000000
+    m_Key: V_Haldrik_11_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3600000000000
+    m_Key: V_Haldrik_11_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3700000000000
+    m_Key: V_Haldrik_11_04
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3800000000000
+    m_Key: V_Haldrik_11_05
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3900000000000
+    m_Key: V_Haldrik_11_06
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4000000000000
+    m_Key: V_Haldrik_12_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4100000000000
+    m_Key: V_Haldrik_12_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4200000000000
+    m_Key: V_Haldrik_12_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300000000000
+    m_Key: V_Haldrik_G_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4400000000000
+    m_Key: V_Haldrik_G_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4500000000000
+    m_Key: V_Haldrik_G_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4600000000000
+    m_Key: V_Haldrik_T_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4700000000000
+    m_Key: V_Haldrik_T_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4800000000000
+    m_Key: V_Haldrik_T_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4900000000000
+    m_Key: V_Haldrik_T_04
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5000000000000
+    m_Key: V_Haldrik_T_05
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5100000000000
+    m_Key: V_Haldrik_MN_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5200000000000
+    m_Key: V_Haldrik_MN_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5300000000000
+    m_Key: V_Haldrik_MA_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5400000000000
+    m_Key: V_Haldrik_MA_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5500000000000
+    m_Key: V_Haldrik_MA_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5600000000000
+    m_Key: V_Haldrik_F_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5700000000000
+    m_Key: V_Haldrik_F_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5800000000000
+    m_Key: V_Haldrik_F_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12184221653725184
+    m_Key: Rescate_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12184367854579712
+    m_Key: Rescate_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12184507139026944
+    m_Key: Rescate_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12184625334513664
+    m_Key: Rescate_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14569696842543104
+    m_Key: New Entry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14582977602842624
+    m_Key: Haldrik_choice_Upgrade
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16045431673032704
+    m_Key: H_TALK_TO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16374153288937472
+    m_Key: New Entry 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16374422064132096
+    m_Key: New Entry 2
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 1002000000000000001
+  references:
+    version: 2
+    RefIds:
+    - rid: 1002000000000000001
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1774000000000

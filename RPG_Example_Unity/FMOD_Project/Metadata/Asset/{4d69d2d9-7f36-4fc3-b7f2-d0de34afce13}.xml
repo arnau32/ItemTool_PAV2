@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{4d69d2d9-7f36-4fc3-b7f2-d0de34afce13}">
+		<property name="color">
+			<value>Magenta</value>
+		</property>
+		<property name="assetPath">
+			<value>SFX/Crafting/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{bf91320e-88fb-44ab-9c54-c0d6bd490e28}</destination>
+		</relationship>
+	</object>
+</objects>

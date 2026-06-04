@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Misions_General_ca
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: ca
+  m_SharedData: {fileID: 11400000, guid: 30e83be03e252314fa0a389c50676e6b, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 100000000000
+    m_Localized: El que encara queda
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200000000000
+    m_Localized: "Busca els supervivents perduts m\xE9s enll\xE0 de la boira i guia'ls
+      de tornada a Fallowrest."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 300000000000
+    m_Localized: Ecos d'una Forja Perduda
+    m_Metadata:
+      m_Items: []
+  - m_Id: 400000000000
+    m_Localized: "Recupera l'antic m\xE0nec d'arma ocult als Camps de Penit\xE8ncia
+      i entrega'l a Haldrik perqu\xE8 la forja torni a despertar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 500000000000
+    m_Localized: "Mat\xE8ria Primera"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 600000000000
+    m_Localized: Aconsegueix prou ferro per alimentar les flames de la ferreria d'en
+      Haldrik.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 700000000000
+    m_Localized: "Set de Venjan\xE7a"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 800000000000
+    m_Localized: "Derrota esquelets cuirassats i ajuda Naisha a silenciar la r\xE0bia
+      que encara crema dins seu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 900000000000
+    m_Localized: "Ecos de la Ca\xE7a"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1000000000000
+    m_Localized: "Acaba amb m\xE9s guardians consumits i calma els records que persegueixen
+      Naisha."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1100000000000
+    m_Localized: La Fam de la Forja
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1200000000000
+    m_Localized: Troba una gema prou pura per alimentar el cor ardent d'en Haldrik,
+      al Campament de les Dunes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300000000000
+    m_Localized: "Ossos d'una B\xE8stia Antiga"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1400000000000
+    m_Localized: "Obt\xE9n el crani d'una b\xE8stia ancestral per ajudar Naisha a
+      reconstruir all\xF2 que va perdre."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1500000000000
+    m_Localized: El Segell del Passat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1600000000000
+    m_Localized: "Obre la porta segellada i endinsa't en all\xF2 que feia segles
+      que restava ocult."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1700000000000
+    m_Localized: "L'\xDAltima Ca\xE7a"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1800000000000
+    m_Localized: Acaba amb els responsables de la caiguda de Naisha i neteja la cova
+      de les criatures que encara la corrompen.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Object_Descriptions Shared Data
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
+  m_TableCollectionName: Object_Descriptions
+  m_TableCollectionNameGuidString: b74fd6cb1ab36b347b90c6fec1e27d5a
+  m_Entries:
+  - m_Id: 37212450816
+    m_Key: ITEM_DSC_AURORA_DUST
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37304725504
+    m_Key: ITEM_DSC_GEM
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37304725505
+    m_Key: ITEM_DSC_STATUE_LIORA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37304725506
+    m_Key: ITEM_DSC_ROPE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37308919808
+    m_Key: ITEM_DSC_POTION_SMALL
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37308919809
+    m_Key: ITEM_DSC_POTION_MED
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37308919810
+    m_Key: ITEM_DSC_POTION_LARGE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37308919811
+    m_Key: ITEM_DSC_MEAT_RAW
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37308919812
+    m_Key: ITEM_DSC_MIXTURE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37308919813
+    m_Key: ITEM_DSC_BONE_LARGE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37308919814
+    m_Key: ITEM_DSC_BONE_CURVED
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37308919815
+    m_Key: ITEM_DSC_METAL_FORGE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37308919816
+    m_Key: ITEM_DSC_BONE_SMALL
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37308919817
+    m_Key: ITEM_DSC_ROCK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37313114112
+    m_Key: ITEM_DSC_WOOD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1395170046701568
+    m_Key: Description_Stamina_Potion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1395612554162176
+    m_Key: Description_Strong_Potion
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 3349712839063371873
+  references:
+    version: 2
+    RefIds:
+    - rid: 3349712839063371873
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1777841469655

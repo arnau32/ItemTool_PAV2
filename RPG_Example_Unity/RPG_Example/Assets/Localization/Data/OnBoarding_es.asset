@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: OnBoarding_es
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: a16e40725cca8bf4f9854135d6985d63, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 50354950144
+    m_Localized: "\u2026Esos ojos\u2026 \xBFElira\u2026? No\u2026 no puede ser\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69535502336
+    m_Localized: "La niebla miente\u2026 pero tus ojos\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71372607488
+    m_Localized: "\u2026Sin Aurora\u2026 ya no puedo\u2026 distinguir la verdad\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73222295552
+    m_Localized: "\xA1Si eres real\u2026 habla\u2026 o muere!"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

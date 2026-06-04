@@ -1,0 +1,173 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6251904544724843598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 038ba36f60b44e5bab940d7dccd6ddda, type: 3}
+  m_Name: AntiAttackIntentConsideration_000
+  m_EditorClassIdentifier: Assembly-CSharp::AntiAttackIntentConsideration
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.2999878
+      inSlope: 1.6646129
+      outSlope: 1.6646129
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.085106365
+    - serializedVersion: 3
+      time: 1.00177
+      value: 1
+      inSlope: 0.14921267
+      outSlope: 0.14921267
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.111501925
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &-1763320547549874302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaa43389884f4dc7ae6de53effdf354c, type: 3}
+  m_Name: DistanceRangeConsideration_001
+  m_EditorClassIdentifier: Assembly-CSharp::DistanceRangeConsideration
+  minDistance: 3
+  maxDistance: 7
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 10.14892
+      outSlope: 10.14892
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.098112024
+      value: 0.99573106
+      inSlope: 0.018349182
+      outSlope: 0.018349182
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 1
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.90070903
+      value: 0.99966246
+      inSlope: 0.002230429
+      outSlope: 0.002230429
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0.004760742
+      inSlope: -10.020062
+      outSlope: -10.020062
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c56a7f7aa3ea44019a12754640aed846, type: 3}
+  m_Name: A_SRanged_OrbitStrafe
+  m_EditorClassIdentifier: Assembly-CSharp::OrbitStrafeAction
+  considerations:
+  - {fileID: -6251904544724843598}
+  - {fileID: -1763320547549874302}
+  - {fileID: 2620340356754529638}
+  category: 1
+  isMaintenanceMovement: 0
+  canBeInterrupted: 1
+  useHardLook: 1
+  baseScore: 90
+  desiredRadius: 4.5
+  duration: 0.8
+  direction: 0
+  strafeSpeed: 1.8
+  radialCorrection: 3.5
+  angularSpeedDeg: 140
+  flipChanceOnExecute: 0.22
+  minHoldBeforeFlip: 1.5
+  radiusJitter: 0.35
+  durationJitter01: 0.2
+  flipBlendTime: 0.28
+  angularAccelDamp: 10
+  minPeriodicFlipInterval: 2
+  maxPeriodicFlipInterval: 4
+  periodicFlipChance: 0.65
+  requireLOS: 1
+  requireSpaceFree: 1
+  minDistance: 3
+  maxDistance: 7
+  repathInterval: 0.1
+  sampleRadius: 2
+  stuckSpeed: 0.1
+--- !u!114 &2620340356754529638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47964abe23b24481af9f644d1a6dbe29, type: 3}
+  m_Name: LateralPositionConsideration_002
+  m_EditorClassIdentifier: Assembly-CSharp::LateralPositionConsideration
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -1
+      outSlope: -1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -1
+      outSlope: -1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

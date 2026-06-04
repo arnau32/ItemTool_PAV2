@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5515bd30444ac3afa26c9d8e62d8f0, type: 3}
+  m_Name: Aurora Dust_CollectItemStepSO_0
+  m_EditorClassIdentifier: 
+  objectiveText:
+    m_TableReference:
+      m_TableCollectionName: GUID:ca4ac9f513ebf8646a71bb55f3e82cd0
+    m_TableEntryReference:
+      m_KeyId: 124409581568
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  targetItem: {fileID: 11400000, guid: 6bf22ea5c9b4ac542aade919167492b6, type: 2}
+  requiredQuantity: 50
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 329b2ab435794f2409022a53e5452931, type: 3}
+  m_Name: A_Quest_1
+  m_EditorClassIdentifier: 
+  <id>k__BackingField: A_Quest_1
+  qName:
+    m_TableReference:
+      m_TableCollectionName: GUID:ca4ac9f513ebf8646a71bb55f3e82cd0
+    m_TableEntryReference:
+      m_KeyId: 2305169866420227
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  description: Aldwyn needs 50 Aurora Dust to keep the central bonfire lit and hold
+    back the Mist from Fallowrest.
+  icon: {fileID: 0}
+  questPreequisits: []
+  questSteps:
+  - {fileID: 976932654453559424}
+  canFinishText:
+    m_TableReference:
+      m_TableCollectionName: GUID:e94557620545797449b61a903d40f81c
+    m_TableEntryReference:
+      m_KeyId: 16045007289159680
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  mapPOIs: []
+  reward:
+    items: []
+    randomItems: []
+    auroraDust: 100
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &976932654453559424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da8ec4b613ba48f5a839ce9ca857e9fd, type: 3}
+  m_Name: A_Quest_1_DeliverItemStepSO_1
+  m_EditorClassIdentifier: Assembly-CSharp::DeliverItemStepSO
+  objectiveText:
+    m_TableReference:
+      m_TableCollectionName: GUID:ca4ac9f513ebf8646a71bb55f3e82cd0
+    m_TableEntryReference:
+      m_KeyId: 124409581568
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  requiredItem: {fileID: 11400000, guid: 6bf22ea5c9b4ac542aade919167492b6, type: 2}
+  requiredQuantity: 20
+  consumeOnDelivery: 0
+  deliveryZoneId: Dust
+  references:
+    version: 2
+    RefIds: []

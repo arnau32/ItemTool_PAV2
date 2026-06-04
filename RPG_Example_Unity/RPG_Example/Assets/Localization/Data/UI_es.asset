@@ -1,0 +1,188 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI_es
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: 1cec0089f0181b741b953f562581011e, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 61880897536
+    m_Localized: VOLVER AL MENU PRINCIPAL
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10018328576
+    m_Localized: REAPARECER EN LA BASE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3034598051840
+    m_Localized: ITEMS PERDIDOS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4365173886976
+    m_Localized: HAS MUERTO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1675727219167232
+    m_Localized: Cargando
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1772806268489728
+    m_Localized: Cerrar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3628857007771648
+    m_Localized: Movimiento
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3629377273434112
+    m_Localized: Moverse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3629446659805184
+    m_Localized: Esprintar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3642622189211648
+    m_Localized: Atacar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3810591720574976
+    m_Localized: Esquivar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3810673895378944
+    m_Localized: Combo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3810913033621504
+    m_Localized: Habilidad al estar cargada
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3838717854978048
+    m_Localized: Abrir inventario y menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3842211940896768
+    m_Localized: Consumible
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3842468506472448
+    m_Localized: "Puedes equipar y usar los objetos consumibles del inventario. Una
+      vez equipados, podr\xE1s utilizarlos directamente durante la partida."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4209804719656960
+    m_Localized: "SISTEMA DE EXTRACCI\xD3N"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4209961536294912
+    m_Localized: "Durante la exploraci\xF3n, deber\xE1s hallar los <u><color=#C9A64B>Puntos
+      de Extracci\xF3n</color></u> ocultos. La primera vez que los encuentres, deber\xE1s
+      activar su <u><color=#C9A64B>magia</color></u>. Una vez despiertos, permanecer\xE1n
+      enlazados a su <u><color=#C9A64B>creador</color></u>, y podr\xE1s usarlos siempre
+      que lo necesites."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4294116295020544
+    m_Localized: Pulsa para fijar o liberar el objetivo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4294437826170880
+    m_Localized: "Mu\xE9vete para cambiar de objetivo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4399549412249600
+    m_Localized: "PUNTO DE EXTRACCI\xD3N DESBLOQUEADO"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5014364453662720
+    m_Localized: Hablar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5113654917558272
+    m_Localized: "Cr\xE9ditos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5296982614839296
+    m_Localized: Misiones
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5297422626689024
+    m_Localized: "EXTRACCI\xD3N COMPLETADA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5298089248395264
+    m_Localized: "OBJETOS EXTRA\xCDDOS"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5814959500136448
+    m_Localized: No tienes polvo de aurora
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5817325687377920
+    m_Localized: Extrayendo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5817328656945152
+    m_Localized: "Mant\xE9n pulsado para extraer"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5824639622418432
+    m_Localized: 'Has pagado '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6212753817833472
+    m_Localized: "Misi\xF3n Completada"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6214263901491200
+    m_Localized: "Nueva Misi\xF3n Recibida"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6223726586859520
+    m_Localized: Nuevo Objetivo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6947192298508288
+    m_Localized: Abrir mapa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8666515987730432
+    m_Localized: "M\xEDnimo: "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8666440741916672
+    m_Localized: 'Pagar a Varrik '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9639636924338176
+    m_Localized: HABILIDAD LISTA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9745746628939776
+    m_Localized: "Puedes levantarte r\xE1pido tras un knockdown esquivando"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10894070627143680
+    m_Localized: Completa las indicaciones primero
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10909705851604992
+    m_Localized: "Consigue bot\xEDn y completa los objetivos antes."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

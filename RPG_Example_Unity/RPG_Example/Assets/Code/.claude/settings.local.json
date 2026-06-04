@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -i \"\\\\.cs$\")",
+      "Bash(xargs grep:*)"
+    ]
+  }
+}

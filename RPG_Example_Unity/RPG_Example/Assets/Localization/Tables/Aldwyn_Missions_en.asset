@@ -1,0 +1,432 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Aldwyn_Missions_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: e94557620545797449b61a903d40f81c, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 100000000000
+    m_Localized: "Aldwyn\u2026 that is all I have left."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200000000000
+    m_Localized: "The mist came, and only the embers of Aurora keep it out\u2026
+      but they are fading."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 300000000000
+    m_Localized: If you still confuse luck with courage, go out through the north
+      door and look for what the ancients call Aurora Dust. With it, we will recover
+      the fire.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 400000000000
+    m_Localized: Varrik will open the door for you. Only Aurora Dust will decide
+      if there is still a home to return to.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 500000000000
+    m_Localized: I can no longer cross it. There is nothing left in me that the mist
+      cannot claim.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 600000000000
+    m_Localized: If you want to help this village, or what is left of it... Bring
+      me 50 Aurora Dust.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 700000000000
+    m_Localized: Take the north exit, it's the only one still standing.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 800000000000
+    m_Localized: If you find it... bring it back.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 900000000000
+    m_Localized: Without the flame we won't last long.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1000000000000
+    m_Localized: Only Aurora Dust can keep it alive.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1100000000000
+    m_Localized: But going out there... is a death sentence.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1200000000000
+    m_Localized: For anyone who isn't you, it seems.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300000000000
+    m_Localized: I need fifty Aurora Dust.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1400000000000
+    m_Localized: If the Mist truly shuns you... perhaps you're our only chance.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1500000000000
+    m_Localized: A blacksmith.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1600000000000
+    m_Localized: Haven't seen one around here in years.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1700000000000
+    m_Localized: ...Something about him doesn't add up. But the forge doesn't lie.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1800000000000
+    m_Localized: Those wings weren't broken by the Mist.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1900000000000
+    m_Localized: They were broken by something worse. Loss.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2000000000000
+    m_Localized: Don't push her. She knows exactly what she's lost.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2100000000000
+    m_Localized: Bringing a consumed one inside the refuge...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2200000000000
+    m_Localized: If he loses control, none of us will be able to stop him.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2300000000000
+    m_Localized: But what's left of him is still fighting. Not many make it this
+      far.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2400000000000
+    m_Localized: ...The fire seems bigger tonight.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2500000000000
+    m_Localized: ...I didn't think you'd make it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2600000000000
+    m_Localized: "The Aurora Dust\u2026 it still holds the memory of light."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2700000000000
+    m_Localized: "Use it on the bonfire\u2026 before the mist consumes us."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2800000000000
+    m_Localized: I didn't think I'd see this burn again.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2900000000000
+    m_Localized: ...Perhaps there is still something worth saving.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3000000000000
+    m_Localized: ...and its flame will do more than just illuminate.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3100000000000
+    m_Localized: "The bridge in the northwest, inside the village\u2026 has fallen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3200000000000
+    m_Localized: It was the path to the church.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3300000000000
+    m_Localized: "If you could restore the passage\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3400000000000
+    m_Localized: The church could still serve to heal.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3500000000000
+    m_Localized: I already tried... years ago.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3600000000000
+    m_Localized: I don't know why I still hope. I already know how this ends.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3700000000000
+    m_Localized: We tried to repair it at the time, but everything the mist touches
+      rots.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3800000000000
+    m_Localized: If you bring more Aurora Dust to the bonfire, you will increase
+      the power of the light.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3900000000000
+    m_Localized: The wind...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4000000000000
+    m_Localized: I haven't felt it like this in years.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4100000000000
+    m_Localized: It's weak. Barely a whisper.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4200000000000
+    m_Localized: But it's there.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300000000000
+    m_Localized: Liora's Shrine has been rotting in the same silence since my feet
+      first profaned this ground. It is a corpse of stone that refuses to rest.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4400000000000
+    m_Localized: "The power is gone from it\u2026 nor the faith it once held."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4500000000000
+    m_Localized: There used to be many churches.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4600000000000
+    m_Localized: Each one with its own image.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4700000000000
+    m_Localized: "If any of them are still standing\u2026 bring their statues back."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4800000000000
+    m_Localized: Perhaps this one will recover some of its strength.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4900000000000
+    m_Localized: I notice something in the air. Different.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5000000000000
+    m_Localized: The last time I felt this there were still other monks here.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5100000000000
+    m_Localized: Hurry. I don't know how long it lasts.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5200000000000
+    m_Localized: I feel it. The wind is moving between them again.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5300000000000
+    m_Localized: Not with the strength of the past, but much more than I ever expected
+      to feel again.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5400000000000
+    m_Localized: "If there are still abandoned churches\u2026 bring their statues.
+      Perhaps then\u2026 Liora will answer."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5500000000000
+    m_Localized: "Take this\u2026 it is little, but it is all I can give you."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5600000000000
+    m_Localized: This... doesn't come from here.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5700000000000
+    m_Localized: The wind has direction. Intent.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5800000000000
+    m_Localized: There's something older...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5900000000000
+    m_Localized: The first shrine. The origin of all of this.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6000000000000
+    m_Localized: I never looked for it. I didn't believe anything remained.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6100000000000
+    m_Localized: ...Perhaps I was wrong.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6200000000000
+    m_Localized: I don't know if it truly exists. Perhaps it's just an echo of what
+      I want to believe.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6300000000000
+    m_Localized: I've spent years telling myself nothing remains. And now...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6400000000000
+    m_Localized: Come back. Whatever you find, come back.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6500000000000
+    m_Localized: ...You found it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6600000000000
+    m_Localized: All this time I thought it was too late.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6700000000000
+    m_Localized: That there was nothing left to feel.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6800000000000
+    m_Localized: ...Perhaps it wasn't.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6900000000000
+    m_Localized: What do you need?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7000000000000
+    m_Localized: You're still here.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7100000000000
+    m_Localized: ...Something wrong?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7200000000000
+    m_Localized: The Mist came close last night. More than usual.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7300000000000
+    m_Localized: There's a corner of the forest where the wind still sounds like
+      it used to. Don't go in.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7400000000000
+    m_Localized: There used to be a market here. On the eighth day of the week.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7500000000000
+    m_Localized: I don't know how long you've been awake. But I've been like this
+      for four years.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7600000000000
+    m_Localized: How's the outside?... No. Better not tell me.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7700000000000
+    m_Localized: There's something you could help with. If you want to hear it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7800000000000
+    m_Localized: ...There's a favor I need to ask. When you're ready.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7900000000000
+    m_Localized: Back already? There's still work to do.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8000000000000
+    m_Localized: No rush. But there's no time to waste either.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8100000000000
+    m_Localized: Found anything?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8200000000000
+    m_Localized: Take care out there.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8300000000000
+    m_Localized: ...Come back.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8400000000000
+    m_Localized: I don't take long to forget what it feels like to have someone nearby.
+      I don't.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11433369229914112
+    m_Localized: Heal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11433149075091456
+    m_Localized: Bye
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11432770195222528
+    m_Localized: Talk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14242909021335552
+    m_Localized: Perhaps I can still use what little wind remains to heal.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14330350554116096
+    m_Localized: "If you come back from out there\u2026 come to the church."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14547915515686912
+    m_Localized: "\u2026let me see."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14548077587787776
+    m_Localized: I will heal your wounds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14548360053190656
+    m_Localized: I will heal your wounds.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14563846547632128
+    m_Localized: "\u2026I'll be waiting for you."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14564048343986176
+    m_Localized: Ah... Take this for your expeditions.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14677897961336832
+    m_Localized: "\u2026You've come back."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14678109299732480
+    m_Localized: "It shouldn't be possible\u2026 "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14678421603414016
+    m_Localized: "\u2026You still carry something \u2026Of what should no longer
+      exist."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16045007289159680
+    m_Localized: Talk to Aldwyn to complete the quest
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

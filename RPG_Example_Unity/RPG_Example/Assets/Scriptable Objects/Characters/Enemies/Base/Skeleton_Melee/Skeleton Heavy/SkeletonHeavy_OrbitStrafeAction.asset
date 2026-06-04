@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-253126483055885882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d6ff14fc94645d3b8aa52588f0f4610, type: 3}
+  m_Name: LOSConsideration_002
+  m_EditorClassIdentifier: 
+  requireLOS: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c56a7f7aa3ea44019a12754640aed846, type: 3}
+  m_Name: SkeletonHeavy_OrbitStrafeAction
+  m_EditorClassIdentifier: 
+  considerations:
+  - {fileID: 564275700384797049}
+  - {fileID: 1417285796502044951}
+  - {fileID: 11400000, guid: 0f39e8f3450d14f499044bdcf8adfe51, type: 2}
+  category: 1
+  isMaintenanceMovement: 0
+  canBeInterrupted: 1
+  useHardLook: 1
+  baseScore: 90
+  desiredRadius: 2.8
+  duration: 1.2
+  direction: 0
+  strafeSpeed: 2
+  radialCorrection: 3.5
+  angularSpeedDeg: 140
+  flipChanceOnExecute: 0.322
+  minHoldBeforeFlip: 0.7
+  radiusJitter: 0.3
+  durationJitter01: 0.2
+  flipBlendTime: 0.28
+  angularAccelDamp: 10
+  periodicFlipInterval: 3
+  periodicFlipChance: 0.65
+  requireLOS: 1
+  requireSpaceFree: 1
+  minDistance: 1.5
+  maxDistance: 5
+  repathInterval: 0.1
+  sampleRadius: 2
+  stuckSpeed: 0.1
+--- !u!114 &564275700384797049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaa43389884f4dc7ae6de53effdf354c, type: 3}
+  m_Name: DistanceRangeConsideration_000
+  m_EditorClassIdentifier: 
+  minDistance: 1.5
+  maxDistance: 5
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1417285796502044951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 038ba36f60b44e5bab940d7dccd6ddda, type: 3}
+  m_Name: AntiAttackIntentConsideration_001
+  m_EditorClassIdentifier: 
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.2999878
+      inSlope: 1.6646129
+      outSlope: 1.6646129
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.085106365
+    - serializedVersion: 3
+      time: 1.00177
+      value: 1
+      inSlope: 0.14921267
+      outSlope: 0.14921267
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.111501925
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaa79d64d42cdac46a98410f52815676, type: 3}
+  m_Name: IconBgColor
+  m_EditorClassIdentifier: Assembly-CSharp::RarityColorConfig
+  entries:
+  - rarity: 0
+    color: {r: 0.14150941, g: 0.14150941, b: 0.14150941, a: 1}
+    localizedName:
+      m_TableReference:
+        m_TableCollectionName: GUID:8b6f419eee9aa6c4c8ae9bfc34cbacd6
+      m_TableEntryReference:
+        m_KeyId: 14757350576128
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+  - rarity: 1
+    color: {r: 0.007843138, g: 0.18039216, b: 0.007843138, a: 1}
+    localizedName:
+      m_TableReference:
+        m_TableCollectionName: GUID:8b6f419eee9aa6c4c8ae9bfc34cbacd6
+      m_TableEntryReference:
+        m_KeyId: 14775595798528
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+  - rarity: 2
+    color: {r: 0.21176471, g: 0.003921569, b: 0.34117648, a: 1}
+    localizedName:
+      m_TableReference:
+        m_TableCollectionName: GUID:8b6f419eee9aa6c4c8ae9bfc34cbacd6
+      m_TableEntryReference:
+        m_KeyId: 14831891746816
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+  - rarity: 3
+    color: {r: 0.4745098, g: 0.32941177, b: 0, a: 1}
+    localizedName:
+      m_TableReference:
+        m_TableCollectionName: GUID:8b6f419eee9aa6c4c8ae9bfc34cbacd6
+      m_TableEntryReference:
+        m_KeyId: 14848270503936
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

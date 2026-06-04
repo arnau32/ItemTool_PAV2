@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Quests_ca
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: ca
+  m_SharedData: {fileID: 11400000, guid: ca4ac9f513ebf8646a71bb55f3e82cd0, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 124409581568
+    m_Localized: Recull 20 Pols d'Aurora per encendre la foguera central del refugi.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1211487121633280
+    m_Localized: "Repara el pont de l'esgl\xE9sia."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1211649785131008
+    m_Localized: "Troba el pont que comunica amb l'esgl\xE9sia dins del poble de
+      Fallowrest"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1241254365556736
+    m_Localized: "Recupera l'est\xE0tua d'una esgl\xE9sia perduda. I porta-la a l'Aldwyn."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1670921245487104
+    m_Localized: "Enc\xE9n la foguera amb les pols Aurora"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1683367553200128
+    m_Localized: Rescata els aldeanos perduts
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1859559430352896
+    m_Localized: Recull 5 ossos petits dels consumits per regenerar les ales de la
+      Naisha
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2019642244132864
+    m_Localized: Recull Ossos Esquerdats Petits dels enemics
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2020244328083456
+    m_Localized: Recull Banyes d'enemics perillosos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2031836633559040
+    m_Localized: Recull Ossos Esquerdats Petits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2047823932092416
+    m_Localized: Aconsegueix ferro per al ferrer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2048413256970240
+    m_Localized: Prova les armes d'en Haldrik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2305169866420227
+    m_Localized: Cendres de l'Alba
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2305169866420228
+    m_Localized: "El Cam\xED Oblidat"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2305169866420229
+    m_Localized: Cap al Santuari Caigut
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2305169866420230
+    m_Localized: "Ecos de Devoci\xF3"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2305169866420231
+    m_Localized: Que la Llum Romangui
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2305169866420232
+    m_Localized: El que Encara Queda
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2305169866420233
+    m_Localized: Fragments Trencats
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2305169866420235
+    m_Localized: Enemics pesants
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2305169866420239
+    m_Localized: Restes del que va ser
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2305169866420240
+    m_Localized: "Mat\xE8ria Primera"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2305169866420241
+    m_Localized: La Fulla es Demostra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2932640705998848
+    m_Localized: Mineral Antic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2933143724683264
+    m_Localized: "Porta la gema extra\xF1a perduda en la cova a Halldrik"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

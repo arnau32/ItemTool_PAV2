@@ -1,0 +1,232 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71246b79fc814bb5abf2624dec1ba480, type: 3}
+  m_Name: Dual_LightAttack_1
+  m_EditorClassIdentifier: 
+  triggerAnimation: Atk_1
+  animationClip: {fileID: 7400000, guid: 7647ed6df1fd89641abfb2d3b07cb7ee, type: 2}
+  timeToChangeAnim: 0.44551283
+  crossFade: 0.1
+  abilityScoreOnHit: 20
+  useAnimatorSpeedCurve: 0
+  animatorSpeedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  useRootMotionMultiplier: 1
+  rootMotionMultiplierCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.103
+      value: 1
+      inSlope: 33.428562
+      outSlope: 33.428562
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.14102565
+      value: 2.5
+      inSlope: 33.428562
+      outSlope: 33.428562
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.4054487
+      value: 2.5
+      inSlope: -6.9850717
+      outSlope: -6.9850717
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.51282054
+      value: 1
+      inSlope: -6.9850717
+      outSlope: -6.9850717
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  useProceduralForwardMove: 1
+  proceduralForwardMoveCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.56
+      inSlope: 2.4468086
+      outSlope: 2.4468086
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.188
+      value: 1.02
+      inSlope: -9.261686
+      outSlope: -9.261686
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.253
+      value: 0.56
+      inSlope: -10.776206
+      outSlope: -10.776206
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0.1
+      inSlope: -0.5822312
+      outSlope: -0.5822312
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  proceduralForwardMoveDistance: 0.6
+  attackName: 
+  attackHitType: 0
+  staminaCost: 8
+  damage: 0
+  damageMultiplier: 1
+  poiseDamage: 8
+  hasHyperArmor: 0
+  damageWindows:
+  - window:
+      start: 0.21153846
+      end: 0.26423076
+    weaponHand: 1
+    slot: 1
+    allowMultiHit: 0
+    perTargetCooldown: 0
+    maxHitsPerTarget: 0
+  - window:
+      start: 0.3525641
+      end: 0.38442308
+    weaponHand: 0
+    slot: 0
+    allowMultiHit: 0
+    perTargetCooldown: 0
+    maxHitsPerTarget: 0
+  vfxWindows:
+  - vfxId: 0
+    window:
+      start: 0.20481928
+      end: 0.24289156
+    disableOnEnd: 0
+  - vfxId: 1
+    window:
+      start: 0.34859437
+      end: 0.39309236
+    disableOnEnd: 0
+  weaponVfxWindows: []
+  audioTriggers:
+  - triggerAt: 0.20160642
+    sound:
+      Guid:
+        Data1: 1885993978
+        Data2: 1199800765
+        Data3: -867661425
+        Data4: -29273170
+      Path: event:/SFX_Weapons/SFX_Dagger_Atk
+  - triggerAt: 0.34538153
+    sound:
+      Guid:
+        Data1: 1885993978
+        Data2: 1199800765
+        Data3: -867661425
+        Data4: -29273170
+      Path: event:/SFX_Weapons/SFX_Dagger_Atk
+  audioWindows: []
+  usesCombo: 1
+  comboWindow:
+    start: 0.08827597
+    end: 0.5532125
+  allowDodgeCancelWindow: 1
+  dodgeCancelWindows:
+  - start: 0.27473053
+    end: 0.33939773
+  - start: 0.41477865
+    end: 1
+  allowMoveCancel: 1
+  moveCancelWindows:
+  - start: 0.64715314
+    end: 1
+  allowMoveRotation: 1
+  moveRotationWindows:
+  - start: 0.13180435
+    end: 0.223737
+  - start: 0.31595832
+    end: 0.37180436
+  allowCanBeParriedWindow: 0
+  canBeParriedWindows: []
+  parryCancel:
+  - start: 0.4594619
+    end: 1
+  - start: 0.27100962
+    end: 0.34610182
+  useHardLookWindow: 0
+  hardLookWindow: []

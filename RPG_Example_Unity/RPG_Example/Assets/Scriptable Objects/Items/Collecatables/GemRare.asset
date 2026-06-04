@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46837e4c511bbba4bb1cde2ddd056bb2, type: 3}
+  m_Name: GemRare
+  m_EditorClassIdentifier: 
+  <uniqueID>k__BackingField: Rare Gem
+  itemType: 3
+  itemNameID: Rare Gem
+  localizedDisplayName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6b0b19b0a577497d9d4c69531bbaa14d
+    m_TableEntryReference:
+      m_KeyId: 134000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  icon: {fileID: 21300000, guid: e264729968aea29458431d350053fbf0, type: 3}
+  description: A strange red gem of considerable value. Used in certain quests and
+    sought after by merchants and collectors.
+  descriptionBlocks:
+  - rid: 3349712839063371888
+  itemRarity: 3
+  value: 0
+  weight: 0
+  maxStack: 1
+  SlotDimension:
+    Height: 2
+    Width: 1
+  collectionID: 0
+  isAuroraDust: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 3349712839063371888
+      type: {class: TextDescriptionBlock, ns: , asm: Assembly-CSharp}
+      data:
+        text:
+          m_TableReference:
+            m_TableCollectionName: GUID:b74fd6cb1ab36b347b90c6fec1e27d5a
+          m_TableEntryReference:
+            m_KeyId: 37304725504
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []

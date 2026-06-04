@@ -1,0 +1,302 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Naisha_Missions_ca
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: ca
+  m_SharedData: {fileID: 11400000, guid: c0d1e2f3a4b5c6f1a2b3c4d5e6f7a8b9, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 100000000000
+    m_Localized: "Aquest lloc\u2026 resisteix. No est\xE0 viu, per\xF2 tampoc ha
+      mort del tot."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200000000000
+    m_Localized: "La Boira no l\u2019ha acabat. Aix\xF2 \xE9s estrany. I \xFAtil."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 300000000000
+    m_Localized: "Hi ha criatures consumides al voltant. No han deixat de moure\u2019s,
+      encara que haurien de fer-ho. Ves-hi i elimina-les."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 400000000000
+    m_Localized: "La meva set de ca\xE7a no es calma sola\u2026 i la teva tampoc
+      hauria de fer-ho. Si ho fas\u2026 et donar\xE9 una arma a l\u2019altura del
+      teu combat. Ni m\xE9s. Ni menys."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 500000000000
+    m_Localized: "Les meves ales no sanen soles. La Boira no trenca\u2026 corromp.
+      I el que est\xE0 trencat necessita quelcom m\xE9s fort per tornar-se a unir."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 600000000000
+    m_Localized: "Hi ha el cad\xE0ver d\u2019una b\xE8stia ferotge en aquestes terres.
+      El seu crani encara hauria de conservar prou del que necessito. Porta-me\u2019l."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 700000000000
+    m_Localized: "L\u2019has portat\u2026 encara pesa com si continu\xE9s defensant
+      alguna cosa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 800000000000
+    m_Localized: "B\xE9. Servir\xE0. No per honorar-la\u2026 sin\xF3 per reconstruir-me."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 900000000000
+    m_Localized: "T\xE9. Aquesta arma \xE9s teva. No \xE9s un regal. \xC9s un deute
+      saldat entre ca\xE7adors."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1000000000000
+    m_Localized: "Hi ha alguna cosa malament en aquella cova\u2026 fins i tot per
+      a la Boira. No s\xF3n simples criatures consumides, s\xF3n massa persistents."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1100000000000
+    m_Localized: "Entra i acaba amb els enemics m\xE9s forts que trobis. No importa
+      quants siguin."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1200000000000
+    m_Localized: "Quan surtis\u2026 si en surts\u2026 et donar\xE9 alguna cosa que
+      nom\xE9s es lliura als qui sobreviuen a all\xF2 que no hauria de seguir en
+      peu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1400000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1500000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1600000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1700000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1800000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1900000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2000000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2100000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2200000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2300000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2400000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2500000000000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2600000000000
+    m_Localized: "Qu\xE8?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2700000000000
+    m_Localized: "Arribes en bon moment. O no. \xC9s igual."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2800000000000
+    m_Localized: Digues.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2900000000000
+    m_Localized: "He estat rastreant el per\xEDmetre nord aquest mat\xED. Hi ha alguna
+      cosa movent-se, per\xF2 no en la teva direcci\xF3. De moment."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3000000000000
+    m_Localized: "Les ales milloren. No em preguntis quant. Encara no ho s\xE9."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3100000000000
+    m_Localized: "Abans solia volar tan alt que els n\xFAvols no hi arribaven. Ara
+      m'acontento amb no caure."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3200000000000
+    m_Localized: "La Boira t\xE9 patrons. Si sobrevius prou, comences a veure'ls."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3300000000000
+    m_Localized: "Saps que hi ha ocells que volen amb una ala trencada? No volen
+      b\xE9. Per\xF2 volen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3400000000000
+    m_Localized: Hi ha alguna cosa que necessito que facis. Quan tinguis un moment
+      que es pugui malgastar.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3500000000000
+    m_Localized: "Tinc un enc\xE0rrec per a tu. No \xE9s opcional si vols que continu\xEF
+      sent \xFAtil."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3600000000000
+    m_Localized: Encara no has acabat.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3700000000000
+    m_Localized: Problemes? No tens cara de tenir problemes. Continua.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3800000000000
+    m_Localized: "Estic esperant. Cosa que no faig b\xE9."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3900000000000
+    m_Localized: Ja.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4000000000000
+    m_Localized: "Torna sencera. Necessito que continu\xEFs sent \xFAtil."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4100000000000
+    m_Localized: "No tardis massa. Tinc ulls, per\xF2 no s\xF3n els teus."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12187371890601984
+    m_Localized: ...no t'acostis...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12187548307222528
+    m_Localized: "Si v\xE9ns per mi... acaba el treball... o allibera'm."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12187958174609408
+    m_Localized: "...et dec una. Per\xF2 no creguis que t'has guanyat la meva confian\xE7a."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14885084675502080
+    m_Localized: "Vaig caure en una trampa antiga\u2026 d'humans. El seu odi cap
+      a nosaltres perdura."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14886260028534784
+    m_Localized: Les meves ales estan danyades, necessito descansar.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14887010897031168
+    m_Localized: "Per ara\u2026 et seguire i anir\xE9 al teu refugi. No tinc altra
+      opci\xF3."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14890810152120320
+    m_Localized: "Hi aniria jo\u2026 si pogu\xE9s."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14891669439180800
+    m_Localized: "No t'ho demanaria si no ho necessit\xE9s."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14892204225523712
+    m_Localized: Necessito les meves ales per poder tornar a la meva terra natal.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14895437622865920
+    m_Localized: "Aix\xF2 serveix. Puc treballar amb aix\xF2."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14895589037240320
+    m_Localized: "Avui no volar\xE9, per\xF2 \xE9s un comen\xE7ament."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14895739776331776
+    m_Localized: "Et dec una m\xE9s. Ho apunto."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14896555950141440
+    m_Localized: "Si ets capa\xE7 de tornar viva et recompensar\xE9 com cal."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15056270944432128
+    m_Localized: "Aix\xF2\u2026 no \xE9s suficient. Els ossos que vas portar abans
+      no aguantarien el pes."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15056801096069120
+    m_Localized: "Porta'm ossos que hagin sostingut alguna cosa m\xE9s gran que jo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15069359941152768
+    m_Localized: "Van sostenir alguna cosa digna\u2026 encara es nota."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15069434708815872
+    m_Localized: "\u2026No ho hauria aconseguit sense tu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15069579919814656
+    m_Localized: "Accepta aix\xF2 com a s\xEDmbol de respecte."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15070045193957376
+    m_Localized: "La meva mobilitat est\xE0 millorant."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15070123057016832
+    m_Localized: "En poc temps podr\xE9 tornar a ser lliure."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16045658681348096
+    m_Localized: "Parla amb la Naisha per completar la missi\xF3"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4200000000000
+    m_Localized: "Si ho aconsegueixes\u2026 far\xE9 servir els seus ossos per intentar
+      regenerar el que vaig perdre. I et donar\xE9 una arma a l\u2019altura de la
+      teva ca\xE7a."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18927919540269056
+    m_Localized: "Les llegendes expliquen que va ser una gran b\xE8stia que va salvar
+      Caelvran de la conquesta de Tharalel quan l\u2019Agulla es va trencar."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

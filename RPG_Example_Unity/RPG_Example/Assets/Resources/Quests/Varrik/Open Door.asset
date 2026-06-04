@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 329b2ab435794f2409022a53e5452931, type: 3}
+  m_Name: Open Door
+  m_EditorClassIdentifier: Assembly-CSharp::QuestInfoSO
+  <id>k__BackingField: Open Door
+  qName:
+    m_TableReference:
+      m_TableCollectionName: GUID:30e83be03e252314fa0a389c50676e6b
+    m_TableEntryReference:
+      m_KeyId: 1500000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  description: 
+  icon: {fileID: 0}
+  questPreequisits:
+  - {fileID: 11400000, guid: 970ecba11cf60af419d961526795b22f, type: 2}
+  questSteps:
+  - {fileID: 11400000, guid: fc92ef55ce2fbc54e926ad5c59ee5fd3, type: 2}
+  canFinishText:
+    m_TableReference:
+      m_TableCollectionName: GUID:30e83be03e252314fa0a389c50676e6b
+    m_TableEntryReference:
+      m_KeyId: 1600000000000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  mapPOIs:
+  - {fileID: 11400000, guid: 1d5cd9f711ed62042b6dd83aa592a172, type: 2}
+  reward:
+    items: []
+    randomItems:
+    - pool:
+      - {fileID: 11400000, guid: 04eceead328b4cd428457a72787af6ae, type: 2}
+      - {fileID: 11400000, guid: 0a67991c5e27e4e4f933247843eae707, type: 2}
+      - {fileID: 11400000, guid: 10430e2b057a0bd48a08c8dac2d7cfb5, type: 2}
+      quantity: 1
+      overrideRarity: 0
+      forcedRarity: 2
+    - pool:
+      - {fileID: 11400000, guid: 04eceead328b4cd428457a72787af6ae, type: 2}
+      - {fileID: 11400000, guid: 0a67991c5e27e4e4f933247843eae707, type: 2}
+      - {fileID: 11400000, guid: 10430e2b057a0bd48a08c8dac2d7cfb5, type: 2}
+      quantity: 1
+      overrideRarity: 0
+      forcedRarity: 2
+    auroraDust: 0
+  references:
+    version: 2
+    RefIds: []

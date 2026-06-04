@@ -1,0 +1,196 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71246b79fc814bb5abf2624dec1ba480, type: 3}
+  m_Name: GreatSword_Attack_3
+  m_EditorClassIdentifier: 
+  triggerAnimation: Atk_3
+  animationClip: {fileID: 7400000, guid: 2ad0923d29dd1ac47925246da8ec0466, type: 2}
+  timeToChangeAnim: 0.51626015
+  crossFade: 0.15
+  abilityScoreOnHit: 20
+  useAnimatorSpeedCurve: 1
+  animatorSpeedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.691
+      inSlope: 0.1835207
+      outSlope: 0.1835207
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.267
+      value: 0.74
+      inSlope: 0.6232373
+      outSlope: 0.6232373
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.35261044
+      value: 0.831
+      inSlope: 4.4951453
+      outSlope: 4.4951453
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.3955
+      value: 1.171
+      inSlope: 3.9636683
+      outSlope: 3.9636683
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.5121
+      value: 1.171
+      inSlope: -2.5760558
+      outSlope: -2.5760558
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.57751006
+      value: 0.834
+      inSlope: -2.7251718
+      outSlope: -2.7251718
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0.708
+      inSlope: -0.29823193
+      outSlope: -0.29823193
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  useRootMotionMultiplier: 0
+  rootMotionMultiplierCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  useProceduralForwardMove: 0
+  proceduralForwardMoveCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  proceduralForwardMoveDistance: 0.6
+  attackName: 
+  attackHitType: 1
+  staminaCost: 26
+  damage: 0
+  damageMultiplier: 1
+  poiseDamage: 55
+  hasHyperArmor: 0
+  damageWindows:
+  - window:
+      start: 0.39482874
+      end: 0.5109821
+    weaponHand: 0
+    slot: 0
+    allowMultiHit: 0
+    perTargetCooldown: 0
+    maxHitsPerTarget: 1
+  vfxWindows:
+  - vfxId: 2
+    window:
+      start: 0.40447155
+      end: 0.5244715
+    disableOnEnd: 0
+  weaponVfxWindows: []
+  audioTriggers:
+  - triggerAt: 0.38286713
+    sound:
+      Guid:
+        Data1: 198005073
+        Data2: 1089649978
+        Data3: -1243604574
+        Data4: 1872396416
+      Path: event:/SFX_Weapons/SFX_GreatSword_Atk
+  audioWindows: []
+  usesCombo: 1
+  comboWindow:
+    start: 0.2676829
+    end: 0.6275116
+  allowDodgeCancelWindow: 1
+  dodgeCancelWindows:
+  - start: 0.5222764
+    end: 1
+  allowMoveCancel: 1
+  moveCancelWindows:
+  - start: 0.6279675
+    end: 1
+  allowMoveRotation: 1
+  moveRotationWindows:
+  - start: 0.1706504
+    end: 0.4105691
+  allowCanBeParriedWindow: 0
+  canBeParriedWindows: []
+  parryCancel:
+  - start: 0.52837396
+    end: 1
+  useHardLookWindow: 0
+  hardLookWindow: []

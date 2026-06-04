@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Missions_V2_zh-CN
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: zh-CN
+  m_SharedData: {fileID: 11400000, guid: 604d55305f6d0d04da921287f7828f8d, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 34695868416
+    m_Localized: 仍存之物
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34762977280
+    m_Localized: 寻找迷雾之外失踪的幸存者，并带领他们返回法洛瑞斯特。
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34762977281
+    m_Localized: 失落熔炉的回响
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34767171584
+    m_Localized: 找回隐藏在忏悔原野中的古老武器握柄，并将其交给哈尔德里克，让锻炉再次苏醒。
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34767171585
+    m_Localized: 原始材料
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34767171586
+    m_Localized: 收集足够的铁矿，为哈尔德里克的铁匠铺提供燃料。
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34767171587
+    m_Localized: 复仇之渴
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34767171588
+    m_Localized: 击败披甲骷髅，帮助奈莎平息内心仍在燃烧的愤怒。
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34767171589
+    m_Localized: 狩猎的回响
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34767171590
+    m_Localized: 消灭更多被吞噬的守卫，平息纠缠奈莎的记忆。
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34767171591
+    m_Localized: 熔炉的饥渴
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34767171592
+    m_Localized: 在沙丘营地寻找一颗足够纯净的宝石，用来滋养哈尔德里克炽热的核心。
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34767171593
+    m_Localized: 远古巨兽之骨
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34767171594
+    m_Localized: 取得一头远古巨兽的头骨，帮助奈莎重建她失去的一切。
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34767171595
+    m_Localized: 过去的封印
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34767171596
+    m_Localized: 打开被封印的大门，深入那沉睡数百年的秘密之中。
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34767171597
+    m_Localized: 最后的狩猎
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34767171598
+    m_Localized: 消灭导致奈莎陨落的罪魁祸首，并清除仍在腐化洞穴的怪物。
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

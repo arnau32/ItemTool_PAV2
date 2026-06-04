@@ -1,0 +1,52 @@
+Prefixes:
+
+Add "AMB_" before ambience clips.
+
+Add "M_" before music clips.
+
+Add "SFX_" before sound effect clips.
+
+Add "VO_" before voices clips.
+
+Add "UI_" before UI sound clips.
+
+File naming format:
+
+<PREFIX>_<Category>_<Context>_<Descriptor>_<Var##_optional>_v##.wav
+
+Examples:
+
+	AMB_Forest_Bed_Day_Loop_v02.wav
+
+	M_Exploration_Forest_Loop_120bpm_v03.wav
+
+	SFX_Player_Footstep_Stone_Soft_03_v01.wav
+
+	UI_Inventory_Open_v01.wav
+
+	VO_NPC_Merchant_Greeting_01_v01.wav
+
+
+Rules:
+
+- No spaces use "_" instead.
+- No accents (ASCII only).
+- If temporary, add "_WIP" at the end (before the extension).
+- If old but kept for compatibility, add "_OLD" at the end.
+- Maximum 4 folder depth levels (no more).
+- New audios to be added goes to "_Temporal" until we use it.
+- Maintain a consistent folder order everywhere.
+
+
+DO
+
+ - Use short, descriptive names.
+ - Use numeric variations (_01, _02, _03).
+ - Put the version at the end: v01, v02, v03 (always last, if needed).
+ - move from _Temporal to final folder when added.
+
+DON’T
+
+ - Use names like: "final_final2.wav"
+ - Use spaces or random capitalization.
+ - Mix UI inside SFX because it "sounds similar"

@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2165d6b427c4fe1a33cb78a4014c00b, type: 3}
+  m_Name: Dodge_Forward
+  m_EditorClassIdentifier: 
+  animationName: Dodge_Forward
+  crossFade: 0.15
+  animationClip: {fileID: 7400000, guid: cb4b940908d552a46bd717aa143bda78, type: 2}
+  dodgeSpeedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 7.25
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.442
+      value: 7.25
+      inSlope: -11.750366
+      outSlope: -11.750366
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.6471
+      value: 2.43
+      inSlope: -15.414373
+      outSlope: -15.414373
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.8477
+      value: 0.96
+      inSlope: -3.4998577
+      outSlope: -3.4998577
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1.01
+      inSlope: 0.3282995
+      outSlope: 0.3282995
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  useAnimatorSpeedCurve: 1
+  animatorSpeedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1.15
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.2823
+      value: 1.15
+      inSlope: -0.50261706
+      outSlope: -0.50261706
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.6454219
+      value: 0.78497744
+      inSlope: -0.90447134
+      outSlope: -0.90447134
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0.5
+      inSlope: -0.80370855
+      outSlope: -0.80370855
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  iFrameWindow:
+    start: 0.04256785
+    end: 0.8283981
+  onBufferEndDodgeAnimation:
+    start: 0.5391006
+    end: 0.8258827
+  movementCancelation:
+    start: 0.55866885
+    end: 1
+  attackBufferWindow:
+    start: 0.28807914
+    end: 1

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a0104b91001f4474b7ccdb647abfeef2
+AssetOrigin:
+  serializedVersion: 1
+  productId: 59092
+  packageName: Find Reference 2
+  packageVersion: 2.6.6
+  assetPath: Assets/FindReference2/Editor/v2/UI/AssetRefUI.cs
+  uploadId: 796006
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

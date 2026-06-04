@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Varrik Shared Data
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
+  m_TableCollectionName: Varrik
+  m_TableCollectionNameGuidString: 6f49499dfe3cf4d4eb8fdbc7d00ffb4c
+  m_Entries:
+  - m_Id: 6297980928
+    m_Key: VAR_INTRO_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41102315520
+    m_Key: VAR_INTRO_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49063874064384
+    m_Key: M_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49213296144384
+    m_Key: M_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49368586055680
+    m_Key: M_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59215461281792
+    m_Key: MF_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59688985620480
+    m_Key: New Entry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59939196825600
+    m_Key: MF_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60021572956160
+    m_Key: MF_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 347738454159360
+    m_Key: New Entry 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1380164795863040
+    m_Key: V_TALKTO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3231385565851648
+    m_Key: New Entry 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3491580892213248
+    m_Key: M_2_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3491584239267840
+    m_Key: 'M_2_2
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3491586218979328
+    m_Key: M_2_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3492350563774464
+    m_Key: 'Fin_M2_1
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3492352333770752
+    m_Key: 'Fin_M2_2
+
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3492353508175872
+    m_Key: 'Fin_M2_3
+
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3498946329112576
+    m_Key: Random_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3499326580518912
+    m_Key: New Entry 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3499443073118208
+    m_Key: New Entry 4
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 1466257705435660378
+  references:
+    version: 2
+    RefIds:
+    - rid: 1466257705435660378
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1777496568890

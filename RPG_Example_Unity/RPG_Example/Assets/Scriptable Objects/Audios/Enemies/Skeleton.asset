@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46264ecd51bd40c495b2f46309fe02a0, type: 3}
+  m_Name: Skeleton
+  m_EditorClassIdentifier: 
+  <Footstep>k__BackingField:
+    Guid:
+      Data1: 1648219713
+      Data2: 1289945127
+      Data3: 1495119760
+      Data4: -191573011
+    Path: event:/SFX_Player/Footsteps/Footsteps
+  <Hurt>k__BackingField:
+    Guid:
+      Data1: 1183233193
+      Data2: 1270805830
+      Data3: -1417478261
+      Data4: 2069963381
+    Path: event:/SFX_Enemy/Skeleton/Skeleton_GetDamage
+  <Death>k__BackingField:
+    Guid:
+      Data1: -751819015
+      Data2: 1330061841
+      Data3: 1679998628
+      Data4: 317689491
+    Path: event:/SFX_Enemy/Skeleton/Skeleton_Death
+  <HitReaction>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <Idle>k__BackingField:
+    Guid:
+      Data1: 405674960
+      Data2: 1080267768
+      Data3: -1261723761
+      Data4: 2143037453
+    Path: event:/SFX_Enemy/Skeleton/Skeleton_Idle
+  <Alert>k__BackingField:
+    Guid:
+      Data1: -1993321951
+      Data2: 1144588904
+      Data3: -843969873
+      Data4: -275828938
+    Path: event:/SFX_Enemy/Skeleton/Alert

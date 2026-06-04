@@ -1,0 +1,196 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: UI_Settings Shared Data
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
+  m_TableCollectionName: UI_Settings
+  m_TableCollectionNameGuidString: 034bb790011b845459ea80e79b70513a
+  m_Entries:
+  - m_Id: 3031946953060352
+    m_Key: New Entry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3031951344496640
+    m_Key: New Entry 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84323157766144
+    m_Key: UI_Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 108122766929920
+    m_Key: UI_Common_AbilityWeapon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 107460008177664
+    m_Key: UI_Common_Attack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 108467630993408
+    m_Key: UI_Common_Dodge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 108504943521792
+    m_Key: UI_Common_Interact
+    m_Metadata:
+      m_Items: []
+  - m_Id: 111322836332544
+    m_Key: UI_Common_LockOn/LockOff
+    m_Metadata:
+      m_Items: []
+  - m_Id: 106479296016384
+    m_Key: UI_Common_Move
+    m_Metadata:
+      m_Items: []
+  - m_Id: 123025733021696
+    m_Key: UI_Common_OpenInventory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 123106263658496
+    m_Key: UI_Common_OpenMenu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 108965507461120
+    m_Key: UI_Common_Parry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 108930032037888
+    m_Key: UI_Common_Sprint
+    m_Metadata:
+      m_Items: []
+  - m_Id: 110342396801024
+    m_Key: UI_Common_SwapTarget
+    m_Metadata:
+      m_Items: []
+  - m_Id: 106293177970688
+    m_Key: UI_Header_Common
+    m_Metadata:
+      m_Items: []
+  - m_Id: 118012742823936
+    m_Key: UI_Header_Inventory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128285641895936
+    m_Key: UI_Inventory_CloseInventory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128618317312000
+    m_Key: UI_Inventory_Collect/Storage/Discard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 124208220565504
+    m_Key: UI_Inventory_PickUp/Drop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 129710845423616
+    m_Key: UI_Inventory_RotateItem
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128765990367232
+    m_Key: UI_Inventory_SwitchPanelLeft
+    m_Metadata:
+      m_Items: []
+  - m_Id: 129108581117952
+    m_Key: UI_Inventory_SwitchPanelRight
+    m_Metadata:
+      m_Items: []
+  - m_Id: 125463688998912
+    m_Key: UI_Inventory_Use/Equip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3011146434834432
+    m_Key: UI_Quality_High
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3010964448178176
+    m_Key: UI_Quality_Low
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3011060766175232
+    m_Key: UI_Quality_Medium
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3011212163772416
+    m_Key: UI_Quality_Ultra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2152615211008
+    m_Key: UI_Selector_InputIcon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1481633930506240
+    m_Key: UI_Selector_InventoryCurosorSensitivity
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2074093645824
+    m_Key: UI_Selector_Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3010854364475392
+    m_Key: UI_Selector_Quality
+    m_Metadata:
+      m_Items: []
+  - m_Id: 80783588814848
+    m_Key: UI_Selector_Resolution
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81430820253696
+    m_Key: UI_Slider_AmbienceVolume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81180147675136
+    m_Key: UI_Slider_BGMVolume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81087533248512
+    m_Key: UI_Slider_MasterVolume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81748568141824
+    m_Key: UI_Slider_SFXVolume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 354517086208
+    m_Key: UI_TAB_Control
+    m_Metadata:
+      m_Items: []
+  - m_Id: 221763170304
+    m_Key: UI_TAB_General
+    m_Metadata:
+      m_Items: []
+  - m_Id: 275467038720
+    m_Key: UI_TAB_Graphics
+    m_Metadata:
+      m_Items: []
+  - m_Id: 321809903616
+    m_Key: UI_TAB_Sounds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 80829650661376
+    m_Key: UI_Toggle_VSync
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3032403846983680
+    m_Key: UI_Toggle_FullScreen
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 5009286586876821596
+  references:
+    version: 2
+    RefIds:
+    - rid: 5009286586876821596
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1777475888543

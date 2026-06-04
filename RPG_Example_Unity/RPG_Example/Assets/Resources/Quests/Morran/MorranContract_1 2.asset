@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc3f991086eb6f3428675dbf111f9140, type: 3}
+  m_Name: MorranContract_1 2
+  m_EditorClassIdentifier: Assembly-CSharp::MorranContractSO
+  <contractId>k__BackingField: 8396e0df-5d67-4f4f-81e0-9fe4c8ed7536
+  contractName:
+    m_TableReference:
+      m_TableCollectionName: GUID:f1c22726e77c5a64f9610ee61ad807e2
+    m_TableEntryReference:
+      m_KeyId: 25141243904
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  contractDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:f1c22726e77c5a64f9610ee61ad807e2
+    m_TableEntryReference:
+      m_KeyId: 12503805952
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  requiredItems:
+  - item: {fileID: 11400000, guid: cc156d6eac0d8014fb402bbb441945da, type: 2}
+    quantity: 8
+  reward:
+    items: []
+    randomItems:
+    - pool:
+      - {fileID: 11400000, guid: 5fea518eb0356694694728d5f85ce3dd, type: 2}
+      - {fileID: 11400000, guid: 9f78a4e75a241724fa382dce867b6b1f, type: 2}
+      - {fileID: 11400000, guid: e05f0633f528d0c4eab0b34bac131c7d, type: 2}
+      - {fileID: 11400000, guid: 14fe1d38d6d64a946b7ac2dbd8bfd5cc, type: 2}
+      quantity: 1
+      overrideRarity: 0
+      forcedRarity: 1
+    auroraDust: 0
+  references:
+    version: 2
+    RefIds: []

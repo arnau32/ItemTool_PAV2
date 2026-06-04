@@ -1,0 +1,43 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xargs grep:*)",
+      "Bash(find \"C:/Users/Ivan Leris/TFG_BetweenShadows/BetweenShadows_UP/Assets\" -name \"*.meta\" -exec grep -l \"guid: cc000001\" {} \\\\;)",
+      "Bash(grep \"^guid:\" \"Assets/Scriptable Objects/NPCs/Dialogue/Village/Haldrik_\"*.meta)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\nahue\\\\Desktop\\\\CloneRepositoryGitHub\\\\TFG_BetweenShadows\\\\BetweenShadows_UP\" -Recurse -Directory)",
+      "Bash(Select-Object -ExpandProperty FullName)",
+      "Bash(grep -E \"\\\\.cs$\")",
+      "Bash(Get-ChildItem -Path \"Assets\\\\Code\" -Filter \"*.cs\" -Recurse)",
+      "Bash(Select-String -Pattern \"bank|Bank\" -List)",
+      "Bash(Select-Object -ExpandProperty Path)",
+      "Bash(Get-Unique)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\nahue\\\\Desktop\\\\CloneRepositoryGitHub\\\\TFG_BetweenShadows\\\\BetweenShadows_UP\\\\Assets\\\\Code\\\\Editor\\\\WeaponBalance\" -File -Recurse)",
+      "Bash(Select-Object FullName)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\nahue\\\\Desktop\\\\CloneRepositoryGitHub\\\\TFG_BetweenShadows\\\\BetweenShadows_UP\\\\Assets\\\\Code\\\\_Scripts\" -Recurse -Filter \"*.cs\")",
+      "Bash(Select-Object -ExpandProperty Name)",
+      "Bash(Sort-Object)",
+      "Bash(grep -i \"\\\\.cs$\")",
+      "Bash(grep \"\\\\.cs$\")",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\nahue\\\\Desktop\\\\CloneRepositoryGitHub\\\\TFG_BetweenShadows\\\\BetweenShadows_UP\\\\Assets\\\\Code\\\\_Scripts\" -Recurse -Directory)",
+      "Bash(Get-ChildItem *)",
+      "Bash(grep -v \"//\")",
+      "Bash(powershell *)",
+      "Bash(git -C \"C:\\\\Users\\\\nahue\\\\Desktop\\\\CloneRepositoryGitHub\\\\TFG_BetweenShadows\\\\BetweenShadows_UP\" status --short)",
+      "Bash(Measure-Object -Line)",
+      "PowerShell(git status --short 2>&1 | Where-Object { $_ -notmatch \"^D \" } | Select-Object -First 100)",
+      "PowerShell($all = git status --short 2>&1; $deleted = \\($all | Where-Object { $_ -match \"^D \" }\\).Count; $others = \\($all | Where-Object { $_ -notmatch \"^D \" }\\).Count; \"Total: $\\($all.Count\\) | Deleted: $deleted | New/Modified: $others\")",
+      "Bash(Select-Object -First 20)",
+      "Bash(Sort-Object FullName)",
+      "Bash(python *)",
+      "Bash(git log *)",
+      "Bash(Select-Object Name)",
+      "Bash(grep -E \"\\\\.\\(cs|asset\\)$\")",
+      "Bash(find \"C:\\\\\\\\Users\\\\\\\\nahue\\\\\\\\Desktop\\\\\\\\CloneRepositoryGitHub\\\\\\\\TFG_BetweenShadows\\\\\\\\BetweenShadows_UP\\\\\\\\Assets\\\\\\\\Code\\\\\\\\_Scripts\\\\\\\\Characters\\\\\\\\Player\" -type f -name \"*.cs\")",
+      "Bash(find C:\\\\\\\\Users\\\\\\\\nahue\\\\\\\\Desktop\\\\\\\\CloneRepositoryGitHub\\\\\\\\TFG_BetweenShadows\\\\\\\\BetweenShadows_UP\\\\\\\\Assets\\\\\\\\Code\\\\\\\\_Scripts\\\\\\\\Abilities *)",
+      "Bash(find C:\\\\\\\\Users\\\\\\\\nahue\\\\\\\\Desktop\\\\\\\\CloneRepositoryGitHub\\\\\\\\TFG_BetweenShadows\\\\\\\\BetweenShadows_UP\\\\\\\\Assets\\\\\\\\Code\\\\\\\\_Scripts\\\\\\\\Combat *)",
+      "Bash(find \"C:\\\\\\\\Users\\\\\\\\nahue\\\\\\\\Desktop\\\\\\\\CloneRepositoryGitHub\\\\\\\\TFG_BetweenShadows\\\\\\\\BetweenShadows_UP\" -type f -name \"*StateMachine*.cs\" -o -name \"*State*.cs\")",
+      "Bash(find \"C:\\\\\\\\Users\\\\\\\\nahue\\\\\\\\Desktop\\\\\\\\CloneRepositoryGitHub\\\\\\\\TFG_BetweenShadows\\\\\\\\BetweenShadows_UP\\\\\\\\Assets\\\\\\\\Code\\\\\\\\_Scripts\" -type f -name \"*.cs\")",
+      "Bash(grep *)"
+    ]
+  }
+}

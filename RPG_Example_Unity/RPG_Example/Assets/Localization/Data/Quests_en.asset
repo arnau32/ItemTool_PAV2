@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Quests_en
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: ca4ac9f513ebf8646a71bb55f3e82cd0, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 124409581568
+    m_Localized: Collect 20 Aurora Dust to light the shelter's central bonfire.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1211487121633280
+    m_Localized: Repair the church bridge.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1211649785131008
+    m_Localized: Find the bridge that connects to the church inside the village of
+      Fallowrest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1241254365556736
+    m_Localized: Recover the statue from a lost church. And bring it to Aldwyn.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1670921245487104
+    m_Localized: Light the bonfire with the Aurora Dust
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1683367553200128
+    m_Localized: Rescue the lost villagers
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1859559430352896
+    m_Localized: Collect 5 small bones from the consumed to regenerate Naisha's wings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2019642244132864
+    m_Localized: Collect Small Cracked Bones from enemies
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2020244328083456
+    m_Localized: Collect Horns from dangerous enemies
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2031836633559040
+    m_Localized: Collect Small Cracked Bones
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2047823932092416
+    m_Localized: Obtain iron for the blacksmith
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2048413256970240
+    m_Localized: Test Haldrik's weapons
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2305169866420227
+    m_Localized: Ashes of the Dawn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2305169866420228
+    m_Localized: The Forgotten Path
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2305169866420229
+    m_Localized: Towards the Fallen Sanctuary
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2305169866420230
+    m_Localized: Echoes of Devotion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2305169866420231
+    m_Localized: May the Light Remain
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2305169866420232
+    m_Localized: What Still Remains
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2305169866420233
+    m_Localized: Broken Fragments
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2305169866420235
+    m_Localized: Heavy Enemies
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2305169866420239
+    m_Localized: Remnants of What Was
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2305169866420240
+    m_Localized: Raw Material
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2305169866420241
+    m_Localized: The Blade Proves Itself
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2932640705998848
+    m_Localized: Old Orb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2933143724683264
+    m_Localized: Obtain the rare gem, lost in the cave, for the blacksmith
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

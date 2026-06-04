@@ -1,0 +1,196 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71246b79fc814bb5abf2624dec1ba480, type: 3}
+  m_Name: Sword_Skill
+  m_EditorClassIdentifier: 
+  triggerAnimation: Skill
+  animationClip: {fileID: 7400000, guid: dfa692e93cb67fc448501e99058ff6a8, type: 2}
+  timeToChangeAnim: 0.714
+  crossFade: 0.3
+  abilityScoreOnHit: 20
+  useAnimatorSpeedCurve: 1
+  animatorSpeedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1.2
+      inSlope: -0.60606074
+      outSlope: -0.60606074
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.165
+      value: 1.1
+      inSlope: 0.6618819
+      outSlope: 0.6618819
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.419
+      value: 1.65
+      inSlope: 1.473109
+      outSlope: 1.473109
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.5483871
+      value: 1.75
+      inSlope: 0.21558586
+      outSlope: 0.21558586
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.668
+      value: 1.68
+      inSlope: -1.9592764
+      outSlope: -1.9592764
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.776
+      value: 1.32
+      inSlope: -1.9568441
+      outSlope: -1.9568441
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1.19
+      inSlope: -0.5803572
+      outSlope: -0.5803572
+      tangentMode: 35
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  useRootMotionMultiplier: 0
+  rootMotionMultiplierCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  useProceduralForwardMove: 0
+  proceduralForwardMoveCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  proceduralForwardMoveDistance: 0.6
+  attackName: 
+  attackHitType: 1
+  staminaCost: 0
+  damage: 35
+  damageMultiplier: 1
+  poiseDamage: 70
+  hasHyperArmor: 0
+  damageWindows:
+  - window:
+      start: 0.54643744
+      end: 0.71399355
+    weaponHand: 0
+    slot: 4
+    allowMultiHit: 0
+    perTargetCooldown: 0
+    maxHitsPerTarget: 1
+  vfxWindows:
+  - vfxId: 4
+    window:
+      start: 0.56249774
+      end: 0.72144055
+    disableOnEnd: 0
+  weaponVfxWindows: []
+  audioTriggers:
+  - triggerAt: 0.5582329
+    sound:
+      Guid:
+        Data1: 1245991381
+        Data2: 1095086342
+        Data3: -312216946
+        Data4: -83060493
+      Path: event:/SFX_Weapons/SFX_Sword_Shield_Ability
+  audioWindows: []
+  usesCombo: 0
+  comboWindow:
+    start: 0
+    end: 0
+  allowDodgeCancelWindow: 1
+  dodgeCancelWindows:
+  - start: 0.7205405
+    end: 1
+  allowMoveCancel: 1
+  moveCancelWindows:
+  - start: 0.717762
+    end: 1
+  allowMoveRotation: 1
+  moveRotationWindows:
+  - start: 0
+    end: 0.6280488
+  allowCanBeParriedWindow: 0
+  canBeParriedWindows: []
+  parryCancel:
+  - start: 0.727561
+    end: 1
+  useHardLookWindow: 0
+  hardLookWindow: []

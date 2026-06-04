@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Varrik_es
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: 6f49499dfe3cf4d4eb8fdbc7d00ffb4c, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 6297980928
+    m_Localized: Me llamo Varrik. Yo soy quien abre esta puerta.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41102315520
+    m_Localized: "Puedes salir cuando quieras\u2026 pero si vuelves\u2026 Me llevar\xE9
+      la mitad de tus Auroras."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49063874064384
+    m_Localized: "Creo haber visto a algunos todav\xEDa fuera\u2026 humanos que resisten."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49213296144384
+    m_Localized: Uno al cerca de la entrada al norte, otro al este y otro al noroeste.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49368586055680
+    m_Localized: "Si los encuentras\u2026 tr\xE1elos. Un negocio vac\xEDo no se mantiene
+      solo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59215461281792
+    m_Localized: "M\xE1s manos\u2026 m\xE1s intercambio."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59688985620480
+    m_Localized: Empieza a parecer un lugar decente. Buen negocio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59939196825600
+    m_Localized: Empieza a parecer un lugar decente. Buen negocio.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60021572956160
+    m_Localized: "Considerate pagado por tu haza\xF1a."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 347738454159360
+    m_Localized: "No me mires as\xED. La puerta no distingue entre h\xE9roes y cad\xE1veres\u2026
+      pero yo s\xED. Y de los vivos siempre se puede sacar algo m\xE1s."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1380164795863040
+    m_Localized: "Habla con Varrik para completar la misi\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3231385565851648
+    m_Localized: Habla con Varrik para recoger tu recompensa.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3491580892213248
+    m_Localized: "Hay una llave antigua\u2026 no sirve para esta puerta, pero s\xED
+      para algo mucho m\xE1s interesante."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3491584239267840
+    m_Localized: "No es gratis, claro. Nada lo es conmigo. Pero t\xFA ya sabes c\xF3mo
+      funciona esto."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3491586218979328
+    m_Localized: "T\xF3mala. \xC1breme esa puerta sellada del pasado. Y si encuentras
+      algo dentro\u2026 ya hablaremos de reparto."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3492350563774464
+    m_Localized: "...No me gusta lo que se siente al otro lado. Y eso, cr\xE9eme,
+      ya es decir mucho viniendo de m\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3492352333770752
+    m_Localized: "Abrir esa puerta\u2026 ha movido algo que llevaba demasiado tiempo
+      quieto. Y lo quieto, aqu\xED, nunca es buena se\xF1al."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3492353508175872
+    m_Localized: "Toma esta armadura. No es para pelear mejor\u2026 es para que sigas
+      siendo un cliente vivo cuando vuelvas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3498946329112576
+    m_Localized: "Si algo brilla en la niebla, normalmente es porque quiere que lo
+      cojas\u2026 o porque quiere cogerte a ti primero."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3499326580518912
+    m_Localized: "No hago descuentos. Hago excepciones. Y solo cuando me conviene
+      recordar que tengo coraz\xF3n."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3499443073118208
+    m_Localized: "Las puertas no se abren gratis\u2026 pero siempre hay alguien dispuesto
+      a pagar m\xE1s por lo que hay detr\xE1s."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

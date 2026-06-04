@@ -1,0 +1,28 @@
+.action-hint {
+    flex-direction: row;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.action-hint-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 6px;
+    -unity-background-scale-mode: scale-to-fit;
+    min-height: 30px;
+    min-width: 30px;
+}
+
+.action-hint-label {
+    unity-font-style: bold;
+    font-size: 30px;
+    color: white;
+    -unity-font-definition: url("project://database/Assets/Art/Fonts%20&%20TMP/Markazi/MarkaziText-SemiBold.ttf?fileID=12800000&guid=98886f0f284dda24e99e94dc6c320dce&type=3#MarkaziText-SemiBold");
+    -unity-font-style: normal;
+    text-shadow: 5px 0 5px rgb(0, 0, 0);
+}
+
+.action-hint-icon-container {
+    flex-direction: row;
+    align-items: center;
+}

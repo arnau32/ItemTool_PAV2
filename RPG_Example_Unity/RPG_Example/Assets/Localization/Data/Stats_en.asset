@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Stats_en
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 8b6f419eee9aa6c4c8ae9bfc34cbacd6, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 81262776320
+    m_Localized: Life
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63143383040
+    m_Localized: Stamina
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14212632576
+    m_Localized: Attack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 101684842496
+    m_Localized: Weight
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176741912576
+    m_Localized: Defense
+    m_Metadata:
+      m_Items: []
+  - m_Id: 117346373632
+    m_Localized: Speed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14848270503936
+    m_Localized: Legendary
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14831891746816
+    m_Localized: Epic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14775595798528
+    m_Localized: Uncommon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14757350576128
+    m_Localized: Common
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

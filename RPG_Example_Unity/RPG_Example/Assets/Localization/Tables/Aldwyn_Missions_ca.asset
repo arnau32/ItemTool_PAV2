@@ -1,0 +1,432 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Aldwyn_Missions_ca
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: ca
+  m_SharedData: {fileID: 11400000, guid: e94557620545797449b61a903d40f81c, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 100000000000
+    m_Localized: "Aldwyn\u2026 \xE9s tot el que em queda."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200000000000
+    m_Localized: "La boira va arribar, i nom\xE9s les brases d'Aurora la mantenen
+      fora\u2026 per\xF2 s'apaguen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 300000000000
+    m_Localized: "Si encara confons sort amb valor, surt per la porta del nord i
+      busca el que els antics anomenen Pols d'Aurora. Amb aix\xF2, recuperarem el
+      foc."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 400000000000
+    m_Localized: "El Varrik t'obrir\xE0 la porta. Nom\xE9s el Pols d'Aurora decidir\xE0
+      si queda una llar a la qual tornar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 500000000000
+    m_Localized: Jo ja no puc creuar-la. No em queda res que la boira no pugui reclamar.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 600000000000
+    m_Localized: Si vols ajudar aquest poble, o el que en queda... Porta'm 50 Pols
+      Aurora.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 700000000000
+    m_Localized: "Pren la sortida del nord, \xE9s l'\xFAnica que queda dempeus."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 800000000000
+    m_Localized: Si ho trobes... porta-ho.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 900000000000
+    m_Localized: Sense la flama no durarem gaire.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1000000000000
+    m_Localized: "Nom\xE9s el Pols d'Aurora pot mantenir-la viva."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1100000000000
+    m_Localized: "Per\xF2 sortir all\xE0 fora... \xE9s una sent\xE8ncia de mort."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1200000000000
+    m_Localized: Per a qualsevol que no siguis tu, sembla.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300000000000
+    m_Localized: Necessito cinquanta Pols Aurora.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1400000000000
+    m_Localized: "Si de deb\xF2 la Boira t'evita... potser ets la nostra \xFAnica
+      oportunitat."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1500000000000
+    m_Localized: Un ferrer.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1600000000000
+    m_Localized: "Feia anys que no en veia cap per aqu\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1700000000000
+    m_Localized: "...Alguna cosa en ell no quadra. Per\xF2 la forja no menteix."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1800000000000
+    m_Localized: Aquestes ales no les va trencar la Boira.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1900000000000
+    m_Localized: "Les va trencar alguna cosa pitjor. La p\xE8rdua."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2000000000000
+    m_Localized: "No la pressionis. Sap molt b\xE9 el que ha perdut."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2100000000000
+    m_Localized: Portar un consumit dins del refugi...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2200000000000
+    m_Localized: "Si perd el control, cap de nosaltres el podr\xE0 frenar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2300000000000
+    m_Localized: "Per\xF2 el que queda d'ell encara lluita. Pocs arriben tan lluny."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2400000000000
+    m_Localized: "...El foc sembla m\xE9s gran aquesta nit."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2500000000000
+    m_Localized: ...No pensava que ho aconseguiries.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2600000000000
+    m_Localized: "El Pols d'Aurora\u2026 encara conserva la mem\xF2ria de la llum."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2700000000000
+    m_Localized: "Usa'l a la foguera\u2026 abans que la boira ens consumeixi."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2800000000000
+    m_Localized: No pensava que tornaria a veure-ho cremar.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2900000000000
+    m_Localized: ...Potser encara queda alguna cosa que salvar.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3000000000000
+    m_Localized: "...i la seva flama no nom\xE9s il\xB7luminar\xE0."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3100000000000
+    m_Localized: "El pont del nord-oest, dins de l'aldea\u2026 ha caigut."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3200000000000
+    m_Localized: "Era el pas cap a l'esgl\xE9sia."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3300000000000
+    m_Localized: "Si poguessis tornar-li el pas\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3400000000000
+    m_Localized: "L'esgl\xE9sia encara podria servir per sanar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3500000000000
+    m_Localized: Jo ja ho vaig intentar... fa anys.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3600000000000
+    m_Localized: "No s\xE9 per qu\xE8 encara confio. Si ja s\xE9 com acaba aix\xF2."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3700000000000
+    m_Localized: "Ho vam intentar reparar al seu moment, per\xF2 tot el que toca
+      la boira es podreix."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3800000000000
+    m_Localized: "Si portes m\xE9s Pols Aurora a la foguera, augmentar\xE0s el poder
+      de la llum."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3900000000000
+    m_Localized: El vent...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4000000000000
+    m_Localized: "Fa anys que no el sentia aix\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4100000000000
+    m_Localized: "\xC9s feble. Gaireb\xE9 un murmuri."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4200000000000
+    m_Localized: "Per\xF2 hi \xE9s."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300000000000
+    m_Localized: "El Santuari de Liora es podreix en el mateix silenci des que els
+      meus peus van profanar aquest s\xF2l. \xC9s un cad\xE0ver de pedra que es nega
+      a descansar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4400000000000
+    m_Localized: "Ja no hi queda el poder\u2026 ni la fe que una vegada va tenir."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4500000000000
+    m_Localized: "Abans hi havia moltes esgl\xE9sies."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4600000000000
+    m_Localized: "Cada una amb la seva pr\xF2pia imatge."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4700000000000
+    m_Localized: "Si alguna d'elles encara es mant\xE9 dempeus\u2026 porta les seves
+      est\xE0tues de tornada."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4800000000000
+    m_Localized: "Potser aquesta recuperi part de la seva for\xE7a."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4900000000000
+    m_Localized: Noto alguna cosa en l'aire. Diferent.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5000000000000
+    m_Localized: "L'\xFAltima vegada que vaig sentir aix\xF2 encara hi havia altres
+      monjos aqu\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5100000000000
+    m_Localized: "D\xF3na't pressa. No s\xE9 quant dura."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5200000000000
+    m_Localized: Ho pressento. El vent torna a moure's entre ells.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5300000000000
+    m_Localized: "No amb la for\xE7a del passat, per\xF2 molt m\xE9s del que esperava
+      tornar a sentir."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5400000000000
+    m_Localized: "Si encara queden esgl\xE9sies abandonades\u2026 porta les seves
+      est\xE0tues. Potser llavors\u2026 Liora respongui."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5500000000000
+    m_Localized: "Pren-ho\u2026 \xE9s poc, per\xF2 \xE9s tot el que puc donar-te."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5600000000000
+    m_Localized: "Aix\xF2... no ve d'aqu\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5700000000000
+    m_Localized: "El vent t\xE9 direcci\xF3. Intenci\xF3."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5800000000000
+    m_Localized: "Hi ha alguna cosa m\xE9s antiga..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5900000000000
+    m_Localized: "El primer santuari. L'origen de tot aix\xF2."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6000000000000
+    m_Localized: "Mai no l'he buscat. No creia que qued\xE9s res."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6100000000000
+    m_Localized: ...Potser m'equivocava.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6200000000000
+    m_Localized: "No s\xE9 si existeix de deb\xF2. Potser \xE9s nom\xE9s un eco del
+      que vull creure."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6300000000000
+    m_Localized: Porto anys dient-me que no queda res. I ara...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6400000000000
+    m_Localized: Torna. Sigui el que sigui el que trobis, torna.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6500000000000
+    m_Localized: ...L'has trobat.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6600000000000
+    m_Localized: Tot aquest temps vaig pensar que era massa tard.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6700000000000
+    m_Localized: Que no quedava res per sentir.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6800000000000
+    m_Localized: ...Potser no ho era.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6900000000000
+    m_Localized: "Qu\xE8 necessites?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7000000000000
+    m_Localized: "Continues aqu\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7100000000000
+    m_Localized: ...Alguna cosa va malament?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7200000000000
+    m_Localized: "La Boira va estar a prop ahir a la nit. M\xE9s que de costum."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7300000000000
+    m_Localized: "Hi ha un rac\xF3 del bosc on el vent encara sona com abans. No
+      hi entris."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7400000000000
+    m_Localized: "Abans hi havia un mercat aqu\xED. El vuit\xE8 dia de la setmana."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7500000000000
+    m_Localized: "No s\xE9 quant de temps portes desperta. Per\xF2 jo porto quatre
+      anys aix\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7600000000000
+    m_Localized: "Com est\xE0 l'exterior? ...No. Millor no me'n diguis res."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7700000000000
+    m_Localized: Hi ha alguna cosa en la qual podries ajudar. Si vols escoltar-ho.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7800000000000
+    m_Localized: ...Tinc un favor que demanar-te. Quan estiguis llesta.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7900000000000
+    m_Localized: Ja has tornat? Encara falta.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8000000000000
+    m_Localized: "No hi ha pressa. Per\xF2 tampoc no hi ha temps a perdre."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8100000000000
+    m_Localized: Has trobat alguna cosa?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8200000000000
+    m_Localized: "Cuida't all\xE0 fora."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8300000000000
+    m_Localized: ...Torna.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8400000000000
+    m_Localized: "Tardo poc a oblidar el que se sent quan hi ha alg\xFA a prop. Poc."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11433369229914112
+    m_Localized: Curar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11433149075091456
+    m_Localized: "Ad\xE9u-siau"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11432770195222528
+    m_Localized: Parlar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14242909021335552
+    m_Localized: Potser encara puc usar el poc vent que queda per sanar.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14330350554116096
+    m_Localized: "Si tornes d'all\xE0 fora\u2026 vine a l'esgl\xE9sia."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14547915515686912
+    m_Localized: "\u2026deixa'm veure."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14548077587787776
+    m_Localized: "Et curar\xE9 les ferides"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14548360053190656
+    m_Localized: "Et curar\xE9 les ferides."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14563846547632128
+    m_Localized: "\u2026t'estar\xE9 esperant."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14564048343986176
+    m_Localized: "Ah... Pren aix\xF2 per a les teves expedicions."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14677897961336832
+    m_Localized: "\u2026Has tornat."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14678109299732480
+    m_Localized: "No hauria de ser possible\u2026 "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14678421603414016
+    m_Localized: "\u2026Encara portes alguna cosa \u2026Del que ja no hauria d'existir."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16045007289159680
+    m_Localized: "Parla amb l\u2019Aldwyn per completar la missi\xF3"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
