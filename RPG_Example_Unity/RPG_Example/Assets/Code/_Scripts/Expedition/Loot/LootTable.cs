@@ -33,6 +33,8 @@ public class LootTable : ScriptableObject
         
     }
 
+    public string lootTableID;
+    
     public List<Entry> guaranteedEntries = new();
     public List<Entry> weightedEntries = new();
 

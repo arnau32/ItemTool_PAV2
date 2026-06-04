@@ -13,7 +13,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{6906d4e6-6e42-8e55-50af-811fa169e2c0}</ProjectGuid>
+    <ProjectGuid>{d82ec7ae-f9b4-5ae0-eea4-22eb6a9c7349}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -1021,25 +1021,25 @@
       <HintPath>C:\Program Files\Unity\Hub\Editor\6000.3.10f1\Editor\Data\Managed\UnityEngine\UnityEditor.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Collections.LowLevel.ILSupport">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\PackageCache\com.unity.collections@aea9d3bd5e19\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\PackageCache\com.unity.collections@aea9d3bd5e19\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\PackageCache\com.unity.ext.nunit@d8c07649098d\net40\unity-custom\nunit.framework.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\PackageCache\com.unity.ext.nunit@d8c07649098d\net40\unity-custom\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Hashing">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\PackageCache\com.unity.collections@aea9d3bd5e19\Unity.Collections.Tests\System.IO.Hashing\System.IO.Hashing.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\PackageCache\com.unity.collections@aea9d3bd5e19\Unity.Collections.Tests\System.IO.Hashing\System.IO.Hashing.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\PackageCache\com.unity.visualscripting@191c0d7e3b69\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\PackageCache\com.unity.visualscripting@191c0d7e3b69\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\PackageCache\com.unity.nuget.newtonsoft-json@4dfd81071c64\Runtime\Newtonsoft.Json.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\PackageCache\com.unity.nuget.newtonsoft-json@4dfd81071c64\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff\Mono.Cecil.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff\Mono.Cecil.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\PackageCache\com.unity.collections@aea9d3bd5e19\Unity.Collections.Tests\System.Runtime.CompilerServices.Unsafe\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\PackageCache\com.unity.collections@aea9d3bd5e19\Unity.Collections.Tests\System.Runtime.CompilerServices.Unsafe\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Android.Types">
       <HintPath>C:\Program Files\Unity\Hub\Editor\6000.3.10f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
@@ -1414,322 +1414,322 @@
       <HintPath>C:\Program Files\Unity\Hub\Editor\6000.3.10f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI.Analytics">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\UnityEditor.UI.Analytics.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\UnityEditor.UI.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rendering.LightTransport.Editor">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.Rendering.LightTransport.Editor.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.Rendering.LightTransport.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.AI.Navigation">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ScriptableBuildPipeline">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.ScriptableBuildPipeline.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.ScriptableBuildPipeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Recorder.Editor">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.Recorder.Editor.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.Recorder.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Splines.Editor">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.Splines.Editor.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.Splines.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.2D.Editor.Overrides">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.2D.Editor.Overrides.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.2D.Editor.Overrides.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Editor">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.AI.Navigation.Updater">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.AI.Navigation.Editor">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Addressables">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.Addressables.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.Addressables.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Animation.Rigging.Editor">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.Animation.Rigging.Editor.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.Animation.Rigging.Editor.dll</HintPath>
     </Reference>
     <Reference Include="PPv2URPConverters">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime.Shared">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.Shared.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.Shared.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.2D.Runtime">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.2D.Runtime.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.2D.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Searcher.Editor">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ScriptableBuildPipeline.Editor">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Localization.Editor">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.Localization.Editor.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.Localization.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Editor">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Bindings.OpenImageIO.Editor">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.Bindings.OpenImageIO.Editor.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.Bindings.OpenImageIO.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Recorder.Base">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.Recorder.Base.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.Recorder.Base.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Cinemachine.Editor">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.Cinemachine.Editor.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.Cinemachine.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.UnifiedRayTracing.Runtime">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.UnifiedRayTracing.Runtime.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.UnifiedRayTracing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Cinemachine">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.Cinemachine.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.Cinemachine.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Animation.Rigging">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.Animation.Rigging.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.Animation.Rigging.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Recorder">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.Recorder.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.Recorder.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TerrainTools">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.TerrainTools.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.TerrainTools.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.Editor">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow.Editor">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ResourceManager">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.ResourceManager.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.ResourceManager.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Collections">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.Collections.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.Collections.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Profiling.Core">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.Profiling.Core.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.Profiling.Core.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InputSystem.ForUI">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.InputSystem.ForUI.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.InputSystem.ForUI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Localization">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.Localization.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.Localization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Multiplayer.Center.Common">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.Multiplayer.Center.Common.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.Multiplayer.Center.Common.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.GPUDriven.Runtime">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.RenderPipelines.GPUDriven.Runtime.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.RenderPipelines.GPUDriven.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core.Editor">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.004">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.004.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.004.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Multiplayer.Center.Editor">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.Multiplayer.Center.Editor.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.Multiplayer.Center.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TerrainTools.Editor">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.TerrainTools.Editor.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.TerrainTools.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.ProBuilder.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.ProBuilder.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Config.Runtime">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Config.Runtime.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Config.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Collections.Editor">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.Collections.Editor.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.Collections.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor.Shared">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.Shared.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.Shared.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InputSystem">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Settings.Editor">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.Settings.Editor.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.Settings.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Splines">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.Splines.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.Splines.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Addressables.Editor">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.Addressables.Editor.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.Addressables.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.AutoGroupGenerator.Editor">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\Unity.AutoGroupGenerator.Editor.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\Unity.AutoGroupGenerator.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:\Users\usuario\Desktop\RPG Example Unity\RPG Example\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+      <HintPath>C:\Users\usuario\Desktop\ItemTool_PAV2\RPG_Example_Unity\RPG_Example\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="FMODUnityEditor.csproj">
-      <Project>{1d7a28eb-d755-d818-a69c-7be03c8a396d}</Project>
+      <Project>{66f201b3-dec4-2342-eb8b-122b19b40472}</Project>
       <Name>FMODUnityEditor</Name>
     </ProjectReference>
     <ProjectReference Include="UniTask.TextMeshPro.csproj">
-      <Project>{e6af2020-3fd5-ec10-2088-2fe41b5f4cb3}</Project>
+      <Project>{72179c89-db4f-3cd7-3efa-f73c1770aa2f}</Project>
       <Name>UniTask.TextMeshPro</Name>
     </ProjectReference>
     <ProjectReference Include="UniTask.DOTween.csproj">
-      <Project>{ff1194de-865d-3c6b-9c64-7b60a19ce15b}</Project>
+      <Project>{91726c5c-18d9-da3b-8aff-139b1a07ea1d}</Project>
       <Name>UniTask.DOTween</Name>
     </ProjectReference>
     <ProjectReference Include="MagicaClothV2.Editor.csproj">
-      <Project>{202dbf4f-5507-3452-4334-8e33f5a3805e}</Project>
+      <Project>{93d0afd6-18e0-5db9-b106-58fcc5e3a570}</Project>
       <Name>MagicaClothV2.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="VInspector.csproj">
-      <Project>{6e238765-b9b1-6cb1-71f9-c3c94c875870}</Project>
+      <Project>{765b2acf-5366-6745-d6ac-b615a723fd7a}</Project>
       <Name>VInspector</Name>
     </ProjectReference>
     <ProjectReference Include="UniTask.Addressables.csproj">
-      <Project>{41e63b7a-a9e0-4cf9-0adc-184e6b5b7bf1}</Project>
+      <Project>{1cf6c1e7-7ece-09f1-d210-fb7e91676452}</Project>
       <Name>UniTask.Addressables</Name>
     </ProjectReference>
     <ProjectReference Include="FR2.csproj">
-      <Project>{c4329183-6039-960e-3496-fcb2161f254b}</Project>
+      <Project>{a2ad35bc-856a-b51a-5353-1496a8c935e8}</Project>
       <Name>FR2</Name>
     </ProjectReference>
     <ProjectReference Include="FMODUnityHaptics.csproj">
-      <Project>{18c247fc-38fe-cac1-12b3-9e06137b47b5}</Project>
+      <Project>{ce011ac0-0e11-cef3-e733-8274b22d6ebb}</Project>
       <Name>FMODUnityHaptics</Name>
     </ProjectReference>
     <ProjectReference Include="MagicaClothV2.csproj">
-      <Project>{730a1866-605b-e8ea-a33e-9038ac46c43e}</Project>
+      <Project>{f47ffc60-1286-ac0f-8efe-c73730d4c7a0}</Project>
       <Name>MagicaClothV2</Name>
     </ProjectReference>
     <ProjectReference Include="HeurekaGames.AssetHunterPRO.Editor.csproj">
-      <Project>{2f98911d-9e57-8446-98a9-c403dd5e2c7b}</Project>
+      <Project>{ccb4157a-a74f-1c9a-242b-7499857fbc15}</Project>
       <Name>HeurekaGames.AssetHunterPRO.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="FMODUnityResonance.csproj">
-      <Project>{07817ed5-e4ec-44cd-1677-5b323b906582}</Project>
+      <Project>{10201bb7-4a99-5fec-bd70-da0146dc0ac0}</Project>
       <Name>FMODUnityResonance</Name>
     </ProjectReference>
     <ProjectReference Include="VFolders.csproj">
-      <Project>{ad4b32d1-6069-7f31-53f4-f893940c18c7}</Project>
+      <Project>{83b3212a-7a26-d407-9964-887184c4a49e}</Project>
       <Name>VFolders</Name>
     </ProjectReference>
     <ProjectReference Include="FMODUnity.csproj">
-      <Project>{498b821d-941c-3a63-2993-0eab9154035f}</Project>
+      <Project>{66e78fa9-fd2d-eef4-db37-205dbcfc970d}</Project>
       <Name>FMODUnity</Name>
     </ProjectReference>
     <ProjectReference Include="VTabs.csproj">
-      <Project>{60cb855b-248b-62e1-534d-f1e05a0901ab}</Project>
+      <Project>{2648a995-b249-0730-2a74-a1884aebb6f9}</Project>
       <Name>VTabs</Name>
     </ProjectReference>
     <ProjectReference Include="UniTask.Linq.csproj">
-      <Project>{20971ff5-993d-ea3b-d7ba-ead9a4e01021}</Project>
+      <Project>{8b26b5e0-7f85-0a3b-8971-9e7499f48fff}</Project>
       <Name>UniTask.Linq</Name>
     </ProjectReference>
     <ProjectReference Include="UniTask.csproj">
-      <Project>{a5393a82-9a75-c2c2-3781-2d6f9acbc6a3}</Project>
+      <Project>{4dba577f-379a-d6f5-afb6-8f7fe00a2fe2}</Project>
       <Name>UniTask</Name>
     </ProjectReference>
     <ProjectReference Include="VHierarchy.csproj">
-      <Project>{1dfe6b65-8b4c-f99f-5702-7abda9f89989}</Project>
+      <Project>{3e7045c8-ca7b-b0fd-289a-eb78f7fd1aac}</Project>
       <Name>VHierarchy</Name>
     </ProjectReference>
     <ProjectReference Include="HeurekaGames.Utils.csproj">
-      <Project>{79b4e4d8-32fd-d7f5-85c8-258810627abb}</Project>
+      <Project>{4974dcad-1dad-3926-11b3-4a4d03a7a883}</Project>
       <Name>HeurekaGames.Utils</Name>
     </ProjectReference>
     <ProjectReference Include="FMODUnityResonanceEditor.csproj">
-      <Project>{2c73972d-57cc-6e3e-f079-c4ab4db38bb0}</Project>
+      <Project>{0cce4129-e6cb-5e4e-b156-0fa99f437b04}</Project>
       <Name>FMODUnityResonanceEditor</Name>
     </ProjectReference>
     <ProjectReference Include="Heureka.Upgrade.csproj">
-      <Project>{8a06c05a-ea2a-7de8-3093-1e157ad19b76}</Project>
+      <Project>{edb6d781-cc6d-a92f-bfc1-d12b0b627e8b}</Project>
       <Name>Heureka.Upgrade</Name>
     </ProjectReference>
   </ItemGroup>
