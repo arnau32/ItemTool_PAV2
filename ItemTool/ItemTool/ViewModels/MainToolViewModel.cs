@@ -14,20 +14,27 @@ namespace ItemTool.App.ViewModels;
 public sealed partial class MainToolViewModel : ViewModelBase
 {
     private readonly IContentDatabaseRepository _repository;
+    private readonly IUnityContentImporter _unityContentImporter;
+    private readonly IUnityContentExporter _unityContentExporter;
     private readonly IFilePickerService _filePickerService;
 
     private ToolWorkspace _activeWorkspace = ToolWorkspace.Items;
     private string _unityProjectRootPath = string.Empty;
     private string _projectSettingsStatusText = "No Unity project selected.";
+    private string _unityContentOperationStatusText = "Import/export not run yet.";
 
     public MainToolViewModel(
         IContentDatabaseRepository repository,
+        IUnityContentImporter unityContentImporter,
+        IUnityContentExporter unityContentExporter,
         ItemValidator itemValidator,
         LootTableValidator lootTableValidator,
         ItemFactory itemFactory,
         IFilePickerService filePickerService)
     {
         _repository = repository;
+        _unityContentImporter = unityContentImporter;
+        _unityContentExporter = unityContentExporter;
         _filePickerService = filePickerService;
 
         Items = new ItemBrowserViewModel(
@@ -69,6 +76,12 @@ public sealed partial class MainToolViewModel : ViewModelBase
     {
         get => _projectSettingsStatusText;
         private set => SetProperty(ref _projectSettingsStatusText, value);
+    }
+
+    public string UnityContentOperationStatusText
+    {
+        get => _unityContentOperationStatusText;
+        private set => SetProperty(ref _unityContentOperationStatusText, value);
     }
 
     public string SelectedItemUsageSummary
@@ -141,6 +154,47 @@ public sealed partial class MainToolViewModel : ViewModelBase
     }
 
     [RelayCommand]
+    public async Task ImportUnityContentAsync()
+    {
+        UnityContentOperationStatusText = "Importing Unity content...";
+
+        await SaveProjectSettingsAsync();
+
+        UnityContentOperationResultDto result = await _unityContentImporter.ImportAsync(
+            UnityProjectRootPath);
+
+        UnityContentOperationStatusText = FormatOperationResult(result);
+
+        if (!result.Succeeded || result.ImportedDatabase == null)
+            return;
+
+        result.ImportedDatabase.ProjectSettings.UnityProjectRootPath = UnityProjectRootPath;
+
+        await _repository.SaveAsync(result.ImportedDatabase);
+
+        await Items.LoadAsync();
+        await LootTables.LoadAsync();
+
+        RefreshSelectedItemUsages();
+    }
+
+    [RelayCommand]
+    public async Task ExportUnityContentAsync()
+    {
+        UnityContentOperationStatusText = "Exporting Unity content...";
+
+        await SaveProjectSettingsAsync();
+
+        ContentDatabaseDto database = await CreateDatabaseSnapshotAsync();
+
+        UnityContentOperationResultDto result = await _unityContentExporter.ExportAsync(
+            database,
+            UnityProjectRootPath);
+
+        UnityContentOperationStatusText = FormatOperationResult(result);
+    }
+
+    [RelayCommand]
     public void ShowItemsWorkspace()
     {
         ActiveWorkspace = ToolWorkspace.Items;
@@ -198,6 +252,29 @@ public sealed partial class MainToolViewModel : ViewModelBase
         RefreshSelectedItemUsages();
     }
 
+    private async Task<ContentDatabaseDto> CreateDatabaseSnapshotAsync()
+    {
+        ContentDatabaseDto database = await _repository.LoadAsync();
+
+        database.ProjectSettings.UnityProjectRootPath = UnityProjectRootPath;
+
+        if (Items.Items.Count > 0)
+        {
+            database.Items = Items.Items
+                .Select(x => x.Item)
+                .ToList();
+        }
+
+        if (LootTables.LootTables.Count > 0)
+        {
+            database.LootTables = LootTables.LootTables
+                .Select(x => x.LootTable)
+                .ToList();
+        }
+
+        return database;
+    }
+
     private void RefreshSelectedItemUsages()
     {
         SelectedItemLootUsages.Clear();
@@ -238,5 +315,22 @@ public sealed partial class MainToolViewModel : ViewModelBase
             return "Assets folder found, but ProjectSettings is missing.";
 
         return "Selected folder does not look like a Unity project.";
+    }
+
+    private static string FormatOperationResult(UnityContentOperationResultDto result)
+    {
+        string status = result.Succeeded
+            ? "Success"
+            : "Failed";
+
+        string message = $"[{status}] {result.Message}";
+
+        if (!string.IsNullOrWhiteSpace(result.OutputPath))
+            message += $" Output: {result.OutputPath}";
+
+        if (result.Warnings.Count > 0)
+            message += $" Warnings: {string.Join(" | ", result.Warnings)}";
+
+        return message;
     }
 }

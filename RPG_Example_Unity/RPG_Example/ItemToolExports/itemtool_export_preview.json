@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 1,
+  "projectSettings": {
+    "unityProjectRootPath": "C:\\Users\\usuario\\Desktop\\ItemTool_PAV2\\RPG_Example_Unity\\RPG_Example"
+  },
+  "items": [
+    {
+      "id": "51117e885ff043d78e5f28beab08cc2f",
+      "itemKind": "Equipment",
+      "itemType": "Equipable",
+      "itemNameId": "dsadasdas",
+      "displayName": "New Equipment Item",
+      "description": "dasdasdsa",
+      "iconPath": "C:\\Users\\usuario\\Desktop\\ItemTool_PAV2\\RPG_Example_Unity\\RPG_Example\\Assets\\Art\\UI\\Icons\\Weapons\\SP_T4.png",
+      "itemRarity": "Epic",
+      "value": 12,
+      "weight": 1,
+      "maxStack": 12,
+      "slotDimension": {
+        "width": 5,
+        "height": 5
+      },
+      "equipable": {
+        "modifiers": [],
+        "equipSlot": "Backpack",
+        "tier": 0,
+        "rollMode": "RandomRarityRandomStats",
+        "prefabPath": null
+      },
+      "weapon": null,
+      "consumable": null,
+      "collectable": null
+    },
+    {
+      "id": "xczxcxzc",
+      "itemKind": "Equipment",
+      "itemType": "Equipable",
+      "itemNameId": "xcxzcxzczx",
+      "displayName": "cxzczxczx",
+      "description": "",
+      "iconPath": null,
+      "itemRarity": "Epic",
+      "value": 0,
+      "weight": 0,
+      "maxStack": 1,
+      "slotDimension": {
+        "width": 12,
+        "height": 2
+      },
+      "equipable": {
+        "modifiers": [],
+        "equipSlot": "Backpack",
+        "tier": 0,
+        "rollMode": "RandomRarityRandomStats",
+        "prefabPath": null
+      },
+      "weapon": null,
+      "consumable": null,
+      "collectable": null
+    },
+    {
+      "id": "new_equipment_item_1",
+      "itemKind": "Equipment",
+      "itemType": "Equipable",
+      "itemNameId": "new_equipment_item_1",
+      "displayName": "New Equipment Item",
+      "description": "",
+      "iconPath": null,
+      "itemRarity": "Common",
+      "value": 0,
+      "weight": 0,
+      "maxStack": 1,
+      "slotDimension": {
+        "width": 2,
+        "height": 3
+      },
+      "equipable": {
+        "modifiers": [],
+        "equipSlot": "Backpack",
+        "tier": 0,
+        "rollMode": "RandomRarityRandomStats",
+        "prefabPath": null
+      },
+      "weapon": null,
+      "consumable": null,
+      "collectable": null
+    },
+    {
+      "id": "new_equipment_item_2",
+      "itemKind": "Equipment",
+      "itemType": "Equipable",
+      "itemNameId": "new_equipment_item_2",
+      "displayName": "New Equipment Item",
+      "description": "",
+      "iconPath": "C:\\Users\\usuario\\Desktop\\ItemTool_PAV2\\RPG_Example_Unity\\RPG_Example\\Assets\\Art\\UI\\Icons\\Weapons\\GS_Tier2.png",
+      "itemRarity": "Common",
+      "value": 0,
+      "weight": 0,
+      "maxStack": 1,
+      "slotDimension": {
+        "width": 1,
+        "height": 1
+      },
+      "equipable": {
+        "modifiers": [],
+        "equipSlot": "Backpack",
+        "tier": 0,
+        "rollMode": "RandomRarityRandomStats",
+        "prefabPath": null
+      },
+      "weapon": null,
+      "consumable": null,
+      "collectable": null
+    },
+    {
+      "id": "new_equipment_item_3",
+      "itemKind": "Equipment",
+      "itemType": "Equipable",
+      "itemNameId": "new_equipment_item_3",
+      "displayName": "New Equipment Item",
+      "description": "",
+      "iconPath": null,
+      "itemRarity": "Common",
+      "value": 0,
+      "weight": 0,
+      "maxStack": 1,
+      "slotDimension": {
+        "width": 1,
+        "height": 1
+      },
+      "equipable": {
+        "modifiers": [],
+        "equipSlot": "Backpack",
+        "tier": 0,
+        "rollMode": "RandomRarityRandomStats",
+        "prefabPath": null
+      },
+      "weapon": null,
+      "consumable": null,
+      "collectable": null
+    },
+    {
+      "id": "1231243142314",
+      "itemKind": "Weapon",
+      "itemType": "Equipable",
+      "itemNameId": "11111111111",
+      "displayName": "New Weapon Item",
+      "description": "",
+      "iconPath": null,
+      "itemRarity": "Common",
+      "value": 0,
+      "weight": 0,
+      "maxStack": 1,
+      "slotDimension": {
+        "width": 1,
+        "height": 3
+      },
+      "equipable": {
+        "modifiers": [],
+        "equipSlot": "Weapon",
+        "tier": 0,
+        "rollMode": "RandomRarityRandomStats",
+        "prefabPath": null
+      },
+      "weapon": {
+        "handType": "Single",
+        "familyType": "Sword",
+        "weaponTier": 1,
+        "enemyDamageMultiplier": 1,
+        "skillScoreNeeded": 6,
+        "prefabVariantPath": null
+      },
+      "consumable": null,
+      "collectable": null
+    },
+    {
+      "id": "new_consumable_item",
+      "itemKind": "Consumable",
+      "itemType": "Consumable",
+      "itemNameId": "new_consumable_item",
+      "displayName": "New Consumable Item",
+      "description": "",
+      "iconPath": null,
+      "itemRarity": "Common",
+      "value": 0,
+      "weight": 0,
+      "maxStack": 1,
+      "slotDimension": {
+        "width": 1,
+        "height": 1
+      },
+      "equipable": null,
+      "weapon": null,
+      "consumable": {
+        "buffs": []
+      },
+      "collectable": null
+    },
+    {
+      "id": "new_crafting_item",
+      "itemKind": "Crafting",
+      "itemType": "Crafting",
+      "itemNameId": "new_crafting_item",
+      "displayName": "New Crafting Item",
+      "description": "",
+      "iconPath": null,
+      "itemRarity": "Common",
+      "value": 0,
+      "weight": 0,
+      "maxStack": 1,
+      "slotDimension": {
+        "width": 1,
+        "height": 1
+      },
+      "equipable": null,
+      "weapon": null,
+      "consumable": null,
+      "collectable": null
+    },
+    {
+      "id": "new_collectable_item",
+      "itemKind": "Collectable",
+      "itemType": "Collectable",
+      "itemNameId": "new_collectable_item",
+      "displayName": "New Collectable Item",
+      "description": "",
+      "iconPath": null,
+      "itemRarity": "Common",
+      "value": 0,
+      "weight": 0,
+      "maxStack": 1,
+      "slotDimension": {
+        "width": 1,
+        "height": 1
+      },
+      "equipable": null,
+      "weapon": null,
+      "consumable": null,
+      "collectable": {
+        "collectionId": 0,
+        "isAuroraDust": false
+      }
+    },
+    {
+      "id": "new_crafting_item_1",
+      "itemKind": "Crafting",
+      "itemType": "Crafting",
+      "itemNameId": "new_crafting_item_1",
+      "displayName": "New Crafting Item",
+      "description": "",
+      "iconPath": null,
+      "itemRarity": "Common",
+      "value": 0,
+      "weight": 0,
+      "maxStack": 1,
+      "slotDimension": {
+        "width": 1,
+        "height": 1
+      },
+      "equipable": null,
+      "weapon": null,
+      "consumable": null,
+      "collectable": null
+    },
+    {
+      "id": "new_equipment_item_4",
+      "itemKind": "Equipment",
+      "itemType": "Equipable",
+      "itemNameId": "new_equipment_item_4",
+      "displayName": "New Equipment Item",
+      "description": "",
+      "iconPath": null,
+      "itemRarity": "Common",
+      "value": 0,
+      "weight": 0,
+      "maxStack": 1,
+      "slotDimension": {
+        "width": 1,
+        "height": 1
+      },
+      "equipable": {
+        "modifiers": [
+          {
+            "statType": "Defense",
+            "value": 0
+          }
+        ],
+        "equipSlot": "Backpack",
+        "tier": 0,
+        "rollMode": "RandomRarityRandomStats",
+        "prefabPath": null
+      },
+      "weapon": null,
+      "consumable": null,
+      "collectable": null
+    }
+  ],
+  "lootTables": [
+    {
+      "guaranteedEntries": [
+        {
+          "id": "8d46d1e7e98b474abbd3731caeb2e2d6",
+          "entryType": "Item",
+          "itemId": "51117e885ff043d78e5f28beab08cc2f",
+          "nestedLootTableId": null,
+          "minQuantity": 1,
+          "maxQuantity": 1,
+          "weight": 1,
+          "equipableOverrideMode": "None",
+          "overrideFixedRarity": "Common"
+        }
+      ],
+      "weightedEntries": [],
+      "id": "fdsfdsf",
+      "name": "New Loot Table",
+      "minRandomPicks": 1,
+      "maxRandomPicks": 1
+    },
+    {
+      "guaranteedEntries": [],
+      "weightedEntries": [],
+      "id": "new_loot_table",
+      "name": "New Loot Table",
+      "minRandomPicks": 1,
+      "maxRandomPicks": 1
+    },
+    {
+      "guaranteedEntries": [],
+      "weightedEntries": [],
+      "id": "hcdfgdfdg123123213",
+      "name": "New Loot Table",
+      "minRandomPicks": 1,
+      "maxRandomPicks": 1
+    },
+    {
+      "guaranteedEntries": [],
+      "weightedEntries": [],
+      "id": "new_loot_table_2",
+      "name": "New Loot Table",
+      "minRandomPicks": 1,
+      "maxRandomPicks": 1
+    }
+  ]
+}

@@ -58,6 +58,8 @@
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
 
                 <TextBlock
@@ -76,6 +78,11 @@
                         FontSize="11"
                         Opacity="0.7"
                         Text="{Binding ProjectSettingsStatusText}" />
+
+                    <TextBlock
+                        FontSize="11"
+                        Opacity="0.7"
+                        Text="{Binding UnityContentOperationStatusText}" />
                 </StackPanel>
 
                 <Button
@@ -89,6 +96,18 @@
                     VerticalAlignment="Top"
                     Command="{Binding SaveProjectSettingsCommand}"
                     Content="Save Config" />
+
+                <Button
+                    Grid.Column="4"
+                    VerticalAlignment="Top"
+                    Command="{Binding ImportUnityContentCommand}"
+                    Content="Import" />
+
+                <Button
+                    Grid.Column="5"
+                    VerticalAlignment="Top"
+                    Command="{Binding ExportUnityContentCommand}"
+                    Content="Export" />
             </Grid>
         </Border>
 
