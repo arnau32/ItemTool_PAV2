@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.Input;
 using ItemTool.Application.Abstractions;
 using ItemTool.Application.DTOs;
+using ItemTool.Application.Validation;
 using ItemTool.Domain.Enums;
 using ItemTool.Domain.Validation;
 
@@ -14,12 +15,16 @@ namespace ItemTool.App.ViewModels;
 public sealed partial class LootBrowserViewModel : ViewModelBase
 {
     private readonly IContentDatabaseRepository _repository;
+    private readonly LootTableValidator _validator;
 
     private LootTableListItemViewModel? _selectedListItem;
 
-    public LootBrowserViewModel(IContentDatabaseRepository repository)
+    public LootBrowserViewModel(
+        IContentDatabaseRepository repository,
+        LootTableValidator validator)
     {
         _repository = repository;
+        _validator = validator;
     }
 
     public ObservableCollection<LootTableListItemViewModel> LootTables { get; } = new();
@@ -156,7 +161,7 @@ public sealed partial class LootBrowserViewModel : ViewModelBase
             .Select(x => x.LootTable)
             .ToList();
 
-        IReadOnlyList<ValidationIssue> selectedIssues = ValidateLootTable(
+        IReadOnlyList<ValidationIssue> selectedIssues = _validator.Validate(
             SelectedLootTable,
             allLootTables);
 
@@ -364,7 +369,9 @@ public sealed partial class LootBrowserViewModel : ViewModelBase
 
         foreach (LootTableListItemViewModel lootTableVm in LootTables)
         {
-            IReadOnlyList<ValidationIssue> issues = ValidateLootTable(lootTableVm.LootTable, allLootTables);
+            IReadOnlyList<ValidationIssue> issues = _validator.Validate(
+                lootTableVm.LootTable,
+                allLootTables);
 
             lootTableVm.Severity = issues.Count == 0
                 ? ValidationSeverity.None
@@ -378,7 +385,9 @@ public sealed partial class LootBrowserViewModel : ViewModelBase
             return;
         }
 
-        IReadOnlyList<ValidationIssue> selectedIssues = ValidateLootTable(SelectedLootTable, allLootTables);
+        IReadOnlyList<ValidationIssue> selectedIssues = _validator.Validate(
+            SelectedLootTable,
+            allLootTables);
 
         ValidationSummary = selectedIssues.Count == 0
             ? "Sin errores ni warnings."
@@ -420,132 +429,6 @@ public sealed partial class LootBrowserViewModel : ViewModelBase
     {
         NotifyHeaderChanged();
         RefreshValidation();
-    }
-
-    private static IReadOnlyList<ValidationIssue> ValidateLootTable(
-        LootTableDto lootTable,
-        IReadOnlyList<LootTableDto> allLootTables)
-    {
-        List<ValidationIssue> issues = new();
-
-        if (string.IsNullOrWhiteSpace(lootTable.Id))
-        {
-            issues.Add(Error("Loot table Id is required."));
-        }
-        else
-        {
-            int duplicatedIds = allLootTables.Count(x =>
-                !ReferenceEquals(x, lootTable) &&
-                !string.IsNullOrWhiteSpace(x.Id) &&
-                string.Equals(x.Id.Trim(), lootTable.Id.Trim(), StringComparison.OrdinalIgnoreCase));
-
-            if (duplicatedIds > 0)
-                issues.Add(Error($"Duplicated loot table Id: \"{lootTable.Id}\"."));
-        }
-
-        if (string.IsNullOrWhiteSpace(lootTable.Name))
-            issues.Add(Warning("Loot table Name is empty."));
-
-        if (lootTable.MinRandomPicks < 0)
-            issues.Add(Error("Min Random Picks cannot be negative."));
-
-        if (lootTable.MaxRandomPicks < 0)
-            issues.Add(Error("Max Random Picks cannot be negative."));
-
-        if (lootTable.MaxRandomPicks < lootTable.MinRandomPicks)
-            issues.Add(Error("Max Random Picks cannot be lower than Min Random Picks."));
-
-        ValidateEntries(
-            lootTable,
-            allLootTables,
-            lootTable.GuaranteedEntries,
-            "Guaranteed",
-            requiresWeight: false,
-            issues);
-
-        ValidateEntries(
-            lootTable,
-            allLootTables,
-            lootTable.WeightedEntries,
-            "Weighted",
-            requiresWeight: true,
-            issues);
-
-        if (lootTable.MaxRandomPicks > 0 && lootTable.WeightedEntries.Count == 0)
-            issues.Add(Warning("Random picks are configured, but there are no weighted entries."));
-
-        return issues;
-    }
-
-    private static void ValidateEntries(
-        LootTableDto owner,
-        IReadOnlyList<LootTableDto> allLootTables,
-        IEnumerable<LootEntryDto> entries,
-        string groupName,
-        bool requiresWeight,
-        List<ValidationIssue> issues)
-    {
-        int index = 1;
-
-        foreach (LootEntryDto entry in entries)
-        {
-            string prefix = $"{groupName} entry #{index}";
-
-            if (entry.MinQuantity < 1)
-                issues.Add(Error($"{prefix}: Min Quantity must be at least 1."));
-
-            if (entry.MaxQuantity < 1)
-                issues.Add(Error($"{prefix}: Max Quantity must be at least 1."));
-
-            if (entry.MaxQuantity < entry.MinQuantity)
-                issues.Add(Error($"{prefix}: Max Quantity cannot be lower than Min Quantity."));
-
-            if (requiresWeight && entry.Weight <= 0)
-                issues.Add(Error($"{prefix}: Weight must be greater than 0."));
-
-            switch (entry.EntryType)
-            {
-                case LootEntryType.Item:
-                    if (string.IsNullOrWhiteSpace(entry.ItemId))
-                    {
-                        issues.Add(Error($"{prefix}: Item Id is required."));
-                    }
-
-                    break;
-
-                case LootEntryType.LootTable:
-                    if (string.IsNullOrWhiteSpace(entry.NestedLootTableId))
-                    {
-                        issues.Add(Error($"{prefix}: Nested Loot Table Id is required."));
-                    }
-                    else
-                    {
-                        bool referencesSelf = !string.IsNullOrWhiteSpace(owner.Id) &&
-                                              string.Equals(owner.Id.Trim(), entry.NestedLootTableId.Trim(),
-                                                  StringComparison.OrdinalIgnoreCase);
-
-                        if (referencesSelf)
-                        {
-                            issues.Add(Error($"{prefix}: A loot table cannot reference itself."));
-                        }
-
-                        bool exists = allLootTables.Any(x =>
-                            !string.IsNullOrWhiteSpace(x.Id) &&
-                            string.Equals(x.Id.Trim(), entry.NestedLootTableId.Trim(),
-                                StringComparison.OrdinalIgnoreCase));
-
-                        if (!exists)
-                        {
-                            issues.Add(Error(
-                                $"{prefix}: Nested Loot Table \"{entry.NestedLootTableId}\" does not exist."));
-                        }
-                    }
-
-                    break;
-            }
-
-            index++;
-        }
     }
 
     private string GenerateUniqueId(string baseId)
@@ -615,24 +498,6 @@ public sealed partial class LootBrowserViewModel : ViewModelBase
         OnPropertyChanged(nameof(HeaderTechnicalInfo));
         OnPropertyChanged(nameof(HeaderBadgeText));
         OnPropertyChanged(nameof(HeaderPreviewText));
-    }
-
-    private static ValidationIssue Error(string message)
-    {
-        return new ValidationIssue
-        {
-            Severity = ValidationSeverity.Error,
-            Message = message
-        };
-    }
-
-    private static ValidationIssue Warning(string message)
-    {
-        return new ValidationIssue
-        {
-            Severity = ValidationSeverity.Warning,
-            Message = message
-        };
     }
 
     private static void UpsertLootTable(

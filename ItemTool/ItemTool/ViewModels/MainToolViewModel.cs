@@ -1,10 +1,10 @@
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.Input;
+using ItemTool.App.Services;
 using ItemTool.Application.Abstractions;
 using ItemTool.Application.Services;
 using ItemTool.Application.Validation;
-using ItemTool.App.Services;
 
 namespace ItemTool.App.ViewModels;
 
@@ -15,6 +15,7 @@ public sealed partial class MainToolViewModel : ViewModelBase
     public MainToolViewModel(
         IContentDatabaseRepository repository,
         ItemValidator itemValidator,
+        LootTableValidator lootTableValidator,
         ItemFactory itemFactory,
         IFilePickerService filePickerService)
     {
@@ -24,7 +25,9 @@ public sealed partial class MainToolViewModel : ViewModelBase
             itemFactory,
             filePickerService);
 
-        LootTables = new LootBrowserViewModel(repository);
+        LootTables = new LootBrowserViewModel(
+            repository,
+            lootTableValidator);
 
         Items.SelectedItemChanged += RefreshSelectedItemUsages;
     }
