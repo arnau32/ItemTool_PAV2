@@ -1,4 +1,6 @@
-﻿using ItemTool.Application.DTOs;
+﻿using System.Windows.Media;
+using ItemTool.App.Visuals;
+using ItemTool.Application.DTOs;
 using ItemTool.Domain.Validation;
 
 namespace ItemTool.App.ViewModels;
@@ -25,6 +27,13 @@ public sealed class ItemListItemViewModel : ViewModelBase
             {
                 OnPropertyChanged(nameof(Type));
                 OnPropertyChanged(nameof(Subtitle));
+                OnPropertyChanged(nameof(KindBrush));
+            }
+
+            if (e.PropertyName == nameof(ItemDto.ItemRarity))
+            {
+                OnPropertyChanged(nameof(RarityText));
+                OnPropertyChanged(nameof(RarityBrush));
             }
         };
     }
@@ -44,6 +53,12 @@ public sealed class ItemListItemViewModel : ViewModelBase
     }
 
     public string Type => Item.ItemKind.ToString();
+
+    public string RarityText => Item.ItemRarity.ToString();
+
+    public Brush KindBrush => ItemVisualTheme.GetItemKindBrush(Item.ItemKind);
+
+    public Brush RarityBrush => ItemVisualTheme.GetRarityBrush(Item.ItemRarity);
 
     public string Subtitle
     {

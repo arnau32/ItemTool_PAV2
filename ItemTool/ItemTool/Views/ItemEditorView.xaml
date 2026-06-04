@@ -19,7 +19,10 @@
                     Subtitle="{Binding HeaderSubtitle}"
                     TechnicalInfo="{Binding HeaderTechnicalInfo}"
                     BadgeText="{Binding HeaderBadgeText}"
-                    PreviewText="{Binding HeaderPreviewText}" />
+                    PreviewText="{Binding HeaderPreviewText}"
+                    AccentBrush="{Binding HeaderKindBrush}"
+                    BadgeBackground="{Binding HeaderKindBrush}"
+                    PreviewBackground="{Binding HeaderRarityBrush}" />
 
                 <!-- Validation -->
                 <shared:ToolValidationBox

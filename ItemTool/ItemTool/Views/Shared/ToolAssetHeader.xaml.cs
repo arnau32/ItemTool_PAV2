@@ -1,5 +1,6 @@
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 
 namespace ItemTool.App.Views.Shared;
 
@@ -40,6 +41,27 @@ public partial class ToolAssetHeader : UserControl
             typeof(ToolAssetHeader),
             new PropertyMetadata("?"));
 
+    public static readonly DependencyProperty AccentBrushProperty =
+        DependencyProperty.Register(
+            nameof(AccentBrush),
+            typeof(Brush),
+            typeof(ToolAssetHeader),
+            new PropertyMetadata(Brushes.DimGray));
+
+    public static readonly DependencyProperty BadgeBackgroundProperty =
+        DependencyProperty.Register(
+            nameof(BadgeBackground),
+            typeof(Brush),
+            typeof(ToolAssetHeader),
+            new PropertyMetadata(Brushes.DimGray));
+
+    public static readonly DependencyProperty PreviewBackgroundProperty =
+        DependencyProperty.Register(
+            nameof(PreviewBackground),
+            typeof(Brush),
+            typeof(ToolAssetHeader),
+            new PropertyMetadata(Brushes.DimGray));
+
     public ToolAssetHeader()
     {
         InitializeComponent();
@@ -73,5 +95,23 @@ public partial class ToolAssetHeader : UserControl
     {
         get => (string)GetValue(PreviewTextProperty);
         set => SetValue(PreviewTextProperty, value);
+    }
+
+    public Brush AccentBrush
+    {
+        get => (Brush)GetValue(AccentBrushProperty);
+        set => SetValue(AccentBrushProperty, value);
+    }
+
+    public Brush BadgeBackground
+    {
+        get => (Brush)GetValue(BadgeBackgroundProperty);
+        set => SetValue(BadgeBackgroundProperty, value);
+    }
+
+    public Brush PreviewBackground
+    {
+        get => (Brush)GetValue(PreviewBackgroundProperty);
+        set => SetValue(PreviewBackgroundProperty, value);
     }
 }

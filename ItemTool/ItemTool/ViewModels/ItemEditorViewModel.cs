@@ -2,6 +2,8 @@
 using CommunityToolkit.Mvvm.Input;
 using ItemTool.Application.DTOs;
 using ItemTool.Domain.Enums;
+using System.Windows.Media;
+using ItemTool.App.Visuals;
 
 namespace ItemTool.App.ViewModels;
 
@@ -96,6 +98,10 @@ public sealed partial class ItemEditorViewModel : ViewModelBase
             };
         }
     }
+    
+    public Brush HeaderKindBrush => ItemVisualTheme.GetItemKindBrush(SelectedItem?.ItemKind);
+
+    public Brush HeaderRarityBrush => ItemVisualTheme.GetRarityBrush(SelectedItem?.ItemRarity);
 
     public string ItemKindText => SelectedItem?.ItemKind.ToString() ?? string.Empty;
 
@@ -196,6 +202,8 @@ public sealed partial class ItemEditorViewModel : ViewModelBase
         OnPropertyChanged(nameof(HeaderTechnicalInfo));
         OnPropertyChanged(nameof(HeaderBadgeText));
         OnPropertyChanged(nameof(HeaderPreviewText));
+        OnPropertyChanged(nameof(HeaderKindBrush));
+        OnPropertyChanged(nameof(HeaderRarityBrush));
     }
 
     private void NotifyTypeInfoChanged()

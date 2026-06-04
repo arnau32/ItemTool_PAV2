@@ -51,11 +51,19 @@
                     <DataTemplate>
                         <Grid Margin="2">
                             <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
                                 <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
                                 <ColumnDefinition Width="Auto" />
                             </Grid.ColumnDefinitions>
 
-                            <StackPanel>
+                            <Border
+                                Grid.Column="0"
+                                Width="4"
+                                Margin="0,0,8,0"
+                                Background="{Binding KindBrush}" />
+
+                            <StackPanel Grid.Column="1">
                                 <TextBlock FontWeight="Bold" Text="{Binding Name}" />
                                 <TextBlock
                                     FontSize="11"
@@ -63,8 +71,22 @@
                                     Text="{Binding Subtitle}" />
                             </StackPanel>
 
+                            <Border
+                                Grid.Column="2"
+                                Margin="8,0,0,0"
+                                Padding="6,2"
+                                VerticalAlignment="Center"
+                                Background="{Binding RarityBrush}"
+                                CornerRadius="3">
+                                <TextBlock
+                                    Margin="0"
+                                    FontSize="10"
+                                    FontWeight="Bold"
+                                    Text="{Binding RarityText}" />
+                            </Border>
+
                             <TextBlock
-                                Grid.Column="1"
+                                Grid.Column="3"
                                 Margin="8,0,0,0"
                                 VerticalAlignment="Center"
                                 Text="{Binding Severity}" />
