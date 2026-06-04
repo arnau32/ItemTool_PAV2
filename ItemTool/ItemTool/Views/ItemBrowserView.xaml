@@ -84,6 +84,7 @@
                         <Grid Margin="2">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="34" />
                                 <ColumnDefinition Width="*" />
                                 <ColumnDefinition Width="Auto" />
                                 <ColumnDefinition Width="26" />
@@ -96,8 +97,58 @@
                                 Margin="0,0,8,0"
                                 Background="{Binding KindBrush}" />
 
+                            <!-- Icon preview -->
+                            <Border
+                                Grid.Column="1"
+                                Width="26"
+                                Height="26"
+                                Margin="0,0,8,0"
+                                VerticalAlignment="Center"
+                                Background="#1E1E1E"
+                                BorderBrush="#555555"
+                                BorderThickness="1">
+
+                                <Grid>
+                                    <Image
+                                        Stretch="UniformToFill"
+                                        Source="{Binding IconSource}">
+                                        <Image.Style>
+                                            <Style TargetType="Image">
+                                                <Setter Property="Visibility" Value="Visible" />
+
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding IconSource}" Value="{x:Null}">
+                                                        <Setter Property="Visibility" Value="Collapsed" />
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Image.Style>
+                                    </Image>
+
+                                    <TextBlock
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        FontSize="13"
+                                        FontWeight="Bold"
+                                        Opacity="0.85"
+                                        Text="{Binding IconFallbackText}">
+                                        <TextBlock.Style>
+                                            <Style TargetType="TextBlock" BasedOn="{StaticResource {x:Type TextBlock}}">
+                                                <Setter Property="Visibility" Value="Collapsed" />
+
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding IconSource}" Value="{x:Null}">
+                                                        <Setter Property="Visibility" Value="Visible" />
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </TextBlock.Style>
+                                    </TextBlock>
+                                </Grid>
+                            </Border>
+
                             <!-- Main info -->
-                            <StackPanel Grid.Column="1">
+                            <StackPanel Grid.Column="2">
                                 <TextBlock FontWeight="Bold" Text="{Binding Name}" />
                                 <TextBlock
                                     FontSize="11"
@@ -107,7 +158,7 @@
 
                             <!-- Rarity badge: before severity -->
                             <Border
-                                Grid.Column="2"
+                                Grid.Column="3"
                                 Margin="8,0,6,0"
                                 Padding="6,2"
                                 VerticalAlignment="Center"
@@ -123,7 +174,7 @@
 
                             <!-- Severity badge: always right slot -->
                             <Border
-                                Grid.Column="3"
+                                Grid.Column="4"
                                 Width="18"
                                 Height="18"
                                 HorizontalAlignment="Right"
@@ -136,14 +187,16 @@
                                         <Setter Property="Background" Value="#666666" />
 
                                         <Style.Triggers>
-                                            <DataTrigger Binding="{Binding Severity}"
-                                                         Value="{x:Static validation:ValidationSeverity.Warning}">
+                                            <DataTrigger
+                                                Binding="{Binding Severity}"
+                                                Value="{x:Static validation:ValidationSeverity.Warning}">
                                                 <Setter Property="Visibility" Value="Visible" />
                                                 <Setter Property="Background" Value="#D6A700" />
                                             </DataTrigger>
 
-                                            <DataTrigger Binding="{Binding Severity}"
-                                                         Value="{x:Static validation:ValidationSeverity.Error}">
+                                            <DataTrigger
+                                                Binding="{Binding Severity}"
+                                                Value="{x:Static validation:ValidationSeverity.Error}">
                                                 <Setter Property="Visibility" Value="Visible" />
                                                 <Setter Property="Background" Value="#C0392B" />
                                             </DataTrigger>

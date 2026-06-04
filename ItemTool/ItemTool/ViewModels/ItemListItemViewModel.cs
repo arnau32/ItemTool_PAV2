@@ -1,6 +1,7 @@
 ﻿using System.Windows.Media;
 using ItemTool.App.Visuals;
 using ItemTool.Application.DTOs;
+using ItemTool.Domain.Enums;
 using ItemTool.Domain.Validation;
 
 namespace ItemTool.App.ViewModels;
@@ -31,12 +32,18 @@ public sealed class ItemListItemViewModel : ViewModelBase
                 OnPropertyChanged(nameof(Type));
                 OnPropertyChanged(nameof(Subtitle));
                 OnPropertyChanged(nameof(KindBrush));
+                OnPropertyChanged(nameof(IconFallbackText));
             }
 
             if (e.PropertyName == nameof(ItemDto.ItemRarity))
             {
                 OnPropertyChanged(nameof(RarityText));
                 OnPropertyChanged(nameof(RarityBrush));
+            }
+
+            if (e.PropertyName == nameof(ItemDto.IconPath))
+            {
+                OnPropertyChanged(nameof(IconSource));
             }
         };
     }
@@ -62,11 +69,29 @@ public sealed class ItemListItemViewModel : ViewModelBase
 
     public string Type => Item.ItemKind.ToString();
 
+    public string IconFallbackText
+    {
+        get
+        {
+            return Item.ItemKind switch
+            {
+                ItemKind.Equipment => "E",
+                ItemKind.Weapon => "W",
+                ItemKind.Consumable => "C",
+                ItemKind.Crafting => "M",
+                ItemKind.Collectable => "Q",
+                _ => "?"
+            };
+        }
+    }
+
     public string RarityText => Item.ItemRarity.ToString();
 
     public Brush KindBrush => ItemVisualTheme.GetItemKindBrush(Item.ItemKind);
 
     public Brush RarityBrush => ItemVisualTheme.GetRarityBrush(Item.ItemRarity);
+
+    public ImageSource? IconSource => ItemIconSourceLoader.Load(Item.IconPath);
 
     public string Subtitle
     {
