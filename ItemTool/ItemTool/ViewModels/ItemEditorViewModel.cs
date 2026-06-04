@@ -1,10 +1,10 @@
 ﻿using System.ComponentModel;
+using System.Windows.Media;
 using CommunityToolkit.Mvvm.Input;
+using ItemTool.App.Services;
+using ItemTool.App.Visuals;
 using ItemTool.Application.DTOs;
 using ItemTool.Domain.Enums;
-using System.Windows.Media;
-using ItemTool.App.Visuals;
-using ItemTool.App.Services;
 
 namespace ItemTool.App.ViewModels;
 
@@ -280,7 +280,7 @@ public sealed partial class ItemEditorViewModel : ViewModelBase
         SelectedItem.Consumable.Buffs.Clear();
         ItemChanged?.Invoke();
     }
-    
+
     [RelayCommand]
     public void BrowseIconPath()
     {
@@ -292,7 +292,7 @@ public sealed partial class ItemEditorViewModel : ViewModelBase
         if (string.IsNullOrWhiteSpace(selectedPath))
             return;
 
-        SelectedItem.IconPath = selectedPath;
+        SelectedItem.IconPath = UnityAssetPathUtility.ToUnityAssetPathIfPossible(selectedPath);
         ItemChanged?.Invoke();
     }
 }
