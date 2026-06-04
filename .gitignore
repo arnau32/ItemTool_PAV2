@@ -347,3 +347,7 @@ env/
 # - *.sln       Visual Studio solution files
 # - Packages/manifest.json and packages-lock.json for Unity
 # ============================================================
+
+.idea/
+**/.idea/
+*.sln.DotSettings.user
