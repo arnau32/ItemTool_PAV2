@@ -168,9 +168,10 @@ public sealed partial class MainToolViewModel : ViewModelBase
         if (!result.Succeeded || result.ImportedDatabase == null)
             return;
 
-        result.ImportedDatabase.ProjectSettings.UnityProjectRootPath = UnityProjectRootPath;
+        ContentDatabaseDto mergedDatabase = await MergeImportedDatabaseAsync(
+            result.ImportedDatabase);
 
-        await _repository.SaveAsync(result.ImportedDatabase);
+        await _repository.SaveAsync(mergedDatabase);
 
         await Items.LoadAsync();
         await LootTables.LoadAsync();
@@ -273,6 +274,22 @@ public sealed partial class MainToolViewModel : ViewModelBase
         }
 
         return database;
+    }
+
+    private async Task<ContentDatabaseDto> MergeImportedDatabaseAsync(
+        ContentDatabaseDto importedDatabase)
+    {
+        ContentDatabaseDto currentDatabase = await _repository.LoadAsync();
+
+        currentDatabase.ProjectSettings.UnityProjectRootPath = UnityProjectRootPath;
+
+        if (importedDatabase.Items.Count > 0)
+            currentDatabase.Items = importedDatabase.Items;
+
+        if (importedDatabase.LootTables.Count > 0)
+            currentDatabase.LootTables = importedDatabase.LootTables;
+
+        return currentDatabase;
     }
 
     private void RefreshSelectedItemUsages()
