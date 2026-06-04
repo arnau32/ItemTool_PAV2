@@ -55,7 +55,7 @@
             </DockPanel>
         </DockPanel>
 
-        <!-- Loot toolbar placeholder -->
+        <!-- Loot toolbar -->
         <DockPanel
             Grid.Row="1"
             Margin="0,0,0,8"
@@ -63,13 +63,13 @@
 
             <DockPanel DataContext="{Binding LootTables}">
                 <StackPanel DockPanel.Dock="Left" Orientation="Horizontal">
-                    <Button Content="Load" IsEnabled="False" />
-                    <Button Content="Save" IsEnabled="False" />
-                    <Button Content="Validate" IsEnabled="False" />
+                    <Button Command="{Binding LoadCommand}" Content="Load" />
+                    <Button Command="{Binding SaveCommand}" Content="Save" />
+                    <Button Command="{Binding RefreshValidationCommand}" Content="Validate" />
                 </StackPanel>
 
                 <StackPanel DockPanel.Dock="Right" HorizontalAlignment="Right" Orientation="Horizontal">
-                    <Button Content="+ Loot Table" IsEnabled="False" />
+                    <Button Command="{Binding NewLootTableCommand}" Content="+ Loot Table" />
                 </StackPanel>
             </DockPanel>
         </DockPanel>

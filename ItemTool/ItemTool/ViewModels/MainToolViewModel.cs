@@ -19,8 +19,7 @@ public sealed partial class MainToolViewModel : ViewModelBase
             itemValidator,
             itemFactory);
 
-        LootTables = new LootBrowserViewModel();
-    }
+        LootTables = new LootBrowserViewModel(repository);    }
 
     public ItemBrowserViewModel Items { get; }
 
