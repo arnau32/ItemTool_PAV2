@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
@@ -38,7 +37,6 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
             {
                 Editor.SelectedItem = value?.Item;
                 RefreshValidation();
-                RefreshDimensionPreview();
             }
         }
     }
@@ -48,13 +46,6 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
     {
         get => _validationSummary;
         set => SetProperty(ref _validationSummary, value);
-    }
-
-    private string _dimensionPreviewText = "No item selected";
-    public string DimensionPreviewText
-    {
-        get => _dimensionPreviewText;
-        set => SetProperty(ref _dimensionPreviewText, value);
     }
 
     public string ActiveFilterText => _activeItemKindFilter?.ToString() ?? "All";
@@ -89,7 +80,6 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
     private void OnEditorItemChanged()
     {
         RefreshValidation();
-        RefreshDimensionPreview();
     }
 
     [RelayCommand]
@@ -114,7 +104,6 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
         if (SelectedListItem == null)
         {
             RefreshValidation();
-            RefreshDimensionPreview();
         }
     }
 
@@ -240,7 +229,6 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
         SelectedListItem = vm;
 
         RefreshValidation();
-        RefreshDimensionPreview();
     }
 
     private void SetItemKindFilter(ItemKind? kind)
@@ -274,7 +262,6 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
         if (SelectedListItem == null)
         {
             RefreshValidation();
-            RefreshDimensionPreview();
         }
     }
 
@@ -302,25 +289,5 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
         item.Id = candidate;
         item.ItemNameId = candidate;
     }
-
-    private void RefreshDimensionPreview()
-    {
-        if (SelectedListItem?.Item?.SlotDimension == null)
-        {
-            DimensionPreviewText = "No item selected";
-            return;
-        }
-
-        int width = Math.Max(1, SelectedListItem.Item.SlotDimension.Width);
-        int height = Math.Max(1, SelectedListItem.Item.SlotDimension.Height);
-
-        List<string> rows = new();
-
-        for (int y = 0; y < height; y++)
-        {
-            rows.Add(string.Join(" ", Enumerable.Repeat("■", width)));
-        }
-
-        DimensionPreviewText = $"{width}x{height}{Environment.NewLine}{Environment.NewLine}{string.Join(Environment.NewLine, rows)}";
-    }
+    
 }

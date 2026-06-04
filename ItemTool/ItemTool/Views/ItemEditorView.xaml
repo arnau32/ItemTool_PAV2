@@ -29,13 +29,9 @@
 
                 <!-- Preview -->
                 <shared:ToolSection SectionTitle="Dimensions Preview">
-                    <TextBox
-                        Height="110"
-                        AcceptsReturn="True"
-                        FontFamily="Consolas"
-                        IsReadOnly="True"
-                        Text="{Binding DataContext.DimensionPreviewText, RelativeSource={RelativeSource AncestorType=Window}}"
-                        TextWrapping="NoWrap" />
+                    <shared:ToolDimensionPreview
+                        CellColumns="{Binding SelectedItem.SlotDimension.Width}"
+                        CellRows="{Binding SelectedItem.SlotDimension.Height}" />
                 </shared:ToolSection>
 
                 <!-- General -->
