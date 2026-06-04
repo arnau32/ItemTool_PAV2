@@ -132,6 +132,11 @@ public sealed partial class ItemEditorViewModel : ViewModelBase
 
     public event Action? ItemChanged;
 
+    public void NotifyHeaderPreviewChanged()
+    {
+        OnPropertyChanged(nameof(HeaderPreviewImageSource));
+    }
+
     private void SubscribeToSelectedItem()
     {
         if (_selectedItem == null)

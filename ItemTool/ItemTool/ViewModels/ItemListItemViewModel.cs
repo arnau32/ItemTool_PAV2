@@ -53,6 +53,11 @@ public sealed class ItemListItemViewModel : ViewModelBase
         SourceId = Item.Id;
     }
 
+    public void NotifyIconSourceChanged()
+    {
+        OnPropertyChanged(nameof(IconSource));
+    }
+
     public string Name
     {
         get

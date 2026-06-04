@@ -1,8 +1,8 @@
+using System.Collections.ObjectModel;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using ItemTool.Application.Abstractions;
 using ItemTool.Application.DTOs;
-using System.Collections.ObjectModel;
 
 namespace ItemTool.Infrastructure.Persistence;
 
@@ -43,6 +43,7 @@ public sealed class JsonContentDatabaseRepository : IContentDatabaseRepository
             database = new ContentDatabaseDto
             {
                 SchemaVersion = 1,
+                ProjectSettings = new ProjectSettingsDto(),
                 Items = legacyItems ?? new List<ItemDto>(),
                 LootTables = new List<LootTableDto>()
             };
@@ -77,6 +78,9 @@ public sealed class JsonContentDatabaseRepository : IContentDatabaseRepository
     private static void Normalize(ContentDatabaseDto database)
     {
         database.SchemaVersion = database.SchemaVersion <= 0 ? 1 : database.SchemaVersion;
+
+        database.ProjectSettings ??= new ProjectSettingsDto();
+        database.ProjectSettings.UnityProjectRootPath ??= string.Empty;
 
         database.Items ??= new List<ItemDto>();
         database.LootTables ??= new List<LootTableDto>();

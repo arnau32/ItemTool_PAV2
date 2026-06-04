@@ -10,10 +10,12 @@
     Height="850"
     Background="#2B2B2B"
     Foreground="#DADADA"
+    Loaded="Window_Loaded"
     mc:Ignorable="d">
 
     <Grid Margin="8">
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
@@ -41,9 +43,58 @@
                 Content="Loot Tables" />
         </Grid>
 
+        <!-- Unity project settings -->
+        <Border
+            Grid.Row="1"
+            Margin="0,0,0,8"
+            Padding="8"
+            Background="#252525"
+            BorderBrush="#444444"
+            BorderThickness="1">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock
+                    Grid.Column="0"
+                    Margin="0,0,8,0"
+                    VerticalAlignment="Center"
+                    FontWeight="Bold"
+                    Text="Unity Project" />
+
+                <StackPanel Grid.Column="1">
+                    <TextBox
+                        Margin="0,0,8,2"
+                        Text="{Binding UnityProjectRootPath, UpdateSourceTrigger=PropertyChanged}" />
+
+                    <TextBlock
+                        FontSize="11"
+                        Opacity="0.7"
+                        Text="{Binding ProjectSettingsStatusText}" />
+                </StackPanel>
+
+                <Button
+                    Grid.Column="2"
+                    VerticalAlignment="Top"
+                    Command="{Binding BrowseUnityProjectRootCommand}"
+                    Content="Browse..." />
+
+                <Button
+                    Grid.Column="3"
+                    VerticalAlignment="Top"
+                    Command="{Binding SaveProjectSettingsCommand}"
+                    Content="Save Config" />
+            </Grid>
+        </Border>
+
         <!-- Items toolbar -->
         <DockPanel
-            Grid.Row="1"
+            Grid.Row="2"
             Margin="0,0,0,8"
             Visibility="{Binding IsItemsWorkspaceActive, Converter={StaticResource BoolToVisibilityConverter}}">
 
@@ -53,7 +104,6 @@
                     <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
 
-                <!-- Create buttons LEFT -->
                 <StackPanel Grid.Column="0" Orientation="Horizontal">
                     <Button Command="{Binding NewEquipmentItemCommand}" Content="+ Equipment" />
                     <Button Command="{Binding NewWeaponItemCommand}" Content="+ Weapon" />
@@ -62,7 +112,6 @@
                     <Button Command="{Binding NewCollectableItemCommand}" Content="+ Collectable" />
                 </StackPanel>
 
-                <!-- Project actions RIGHT -->
                 <StackPanel
                     Grid.Column="1"
                     HorizontalAlignment="Right"
@@ -76,7 +125,7 @@
 
         <!-- Loot toolbar -->
         <DockPanel
-            Grid.Row="1"
+            Grid.Row="2"
             Margin="0,0,0,8"
             Visibility="{Binding IsLootTablesWorkspaceActive, Converter={StaticResource BoolToVisibilityConverter}}">
 
@@ -86,12 +135,10 @@
                     <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
 
-                <!-- Create buttons LEFT -->
                 <StackPanel Grid.Column="0" Orientation="Horizontal">
                     <Button Command="{Binding NewLootTableCommand}" Content="+ Loot Table" />
                 </StackPanel>
 
-                <!-- Project actions RIGHT -->
                 <StackPanel
                     Grid.Column="1"
                     HorizontalAlignment="Right"
@@ -105,7 +152,7 @@
 
         <!-- Items workspace -->
         <Grid
-            Grid.Row="2"
+            Grid.Row="3"
             Visibility="{Binding IsItemsWorkspaceActive, Converter={StaticResource BoolToVisibilityConverter}}">
 
             <Grid DataContext="{Binding Items}">
@@ -129,7 +176,7 @@
 
         <!-- Loot workspace -->
         <Grid
-            Grid.Row="2"
+            Grid.Row="3"
             Visibility="{Binding IsLootTablesWorkspaceActive, Converter={StaticResource BoolToVisibilityConverter}}">
 
             <views:LootBrowserView DataContext="{Binding LootTables}" />

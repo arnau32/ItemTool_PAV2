@@ -26,4 +26,10 @@ public partial class MainWindow : Window
             new ItemFactory(),
             new WindowsFilePickerService());
     }
+
+    private async void Window_Loaded(object sender, RoutedEventArgs e)
+    {
+        if (DataContext is MainToolViewModel viewModel)
+            await viewModel.LoadProjectSettingsAsync();
+    }
 }

@@ -1,8 +1,11 @@
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.Input;
 using ItemTool.App.Services;
+using ItemTool.App.Visuals;
 using ItemTool.Application.Abstractions;
+using ItemTool.Application.DTOs;
 using ItemTool.Application.Services;
 using ItemTool.Application.Validation;
 
@@ -10,7 +13,12 @@ namespace ItemTool.App.ViewModels;
 
 public sealed partial class MainToolViewModel : ViewModelBase
 {
+    private readonly IContentDatabaseRepository _repository;
+    private readonly IFilePickerService _filePickerService;
+
     private ToolWorkspace _activeWorkspace = ToolWorkspace.Items;
+    private string _unityProjectRootPath = string.Empty;
+    private string _projectSettingsStatusText = "No Unity project selected.";
 
     public MainToolViewModel(
         IContentDatabaseRepository repository,
@@ -19,6 +27,9 @@ public sealed partial class MainToolViewModel : ViewModelBase
         ItemFactory itemFactory,
         IFilePickerService filePickerService)
     {
+        _repository = repository;
+        _filePickerService = filePickerService;
+
         Items = new ItemBrowserViewModel(
             repository,
             itemValidator,
@@ -37,6 +48,28 @@ public sealed partial class MainToolViewModel : ViewModelBase
     public LootBrowserViewModel LootTables { get; }
 
     public ObservableCollection<ItemLootUsageViewModel> SelectedItemLootUsages { get; } = new();
+
+    public string UnityProjectRootPath
+    {
+        get => _unityProjectRootPath;
+        set
+        {
+            if (SetProperty(ref _unityProjectRootPath, value))
+            {
+                ItemIconSourceLoader.UnityProjectRootPath = value;
+                ProjectSettingsStatusText = CreateProjectSettingsStatusText(value);
+
+                Items.Editor.NotifyHeaderPreviewChanged();
+                RefreshAllItemIconSources();
+            }
+        }
+    }
+
+    public string ProjectSettingsStatusText
+    {
+        get => _projectSettingsStatusText;
+        private set => SetProperty(ref _projectSettingsStatusText, value);
+    }
 
     public string SelectedItemUsageSummary
     {
@@ -71,6 +104,41 @@ public sealed partial class MainToolViewModel : ViewModelBase
     public bool IsItemsWorkspaceActive => ActiveWorkspace == ToolWorkspace.Items;
 
     public bool IsLootTablesWorkspaceActive => ActiveWorkspace == ToolWorkspace.LootTables;
+
+    [RelayCommand]
+    public async Task LoadProjectSettingsAsync()
+    {
+        ContentDatabaseDto database = await _repository.LoadAsync();
+
+        UnityProjectRootPath = database.ProjectSettings.UnityProjectRootPath;
+    }
+
+    [RelayCommand]
+    public async Task BrowseUnityProjectRootAsync()
+    {
+        string? selectedFolder = _filePickerService.PickFolder(
+            UnityProjectRootPath,
+            "Select Unity project root folder");
+
+        if (string.IsNullOrWhiteSpace(selectedFolder))
+            return;
+
+        UnityProjectRootPath = selectedFolder;
+
+        await SaveProjectSettingsAsync();
+    }
+
+    [RelayCommand]
+    public async Task SaveProjectSettingsAsync()
+    {
+        ContentDatabaseDto database = await _repository.LoadAsync();
+
+        database.ProjectSettings.UnityProjectRootPath = UnityProjectRootPath;
+
+        await _repository.SaveAsync(database);
+
+        ProjectSettingsStatusText = CreateProjectSettingsStatusText(UnityProjectRootPath);
+    }
 
     [RelayCommand]
     public void ShowItemsWorkspace()
@@ -144,5 +212,31 @@ public sealed partial class MainToolViewModel : ViewModelBase
         }
 
         OnPropertyChanged(nameof(SelectedItemUsageSummary));
+    }
+
+    private void RefreshAllItemIconSources()
+    {
+        foreach (ItemListItemViewModel item in Items.Items)
+            item.NotifyIconSourceChanged();
+    }
+
+    private static string CreateProjectSettingsStatusText(string unityProjectRootPath)
+    {
+        if (string.IsNullOrWhiteSpace(unityProjectRootPath))
+            return "No Unity project selected.";
+
+        if (!Directory.Exists(unityProjectRootPath))
+            return "Selected Unity project folder does not exist.";
+
+        bool hasAssetsFolder = Directory.Exists(Path.Combine(unityProjectRootPath, "Assets"));
+        bool hasProjectSettingsFolder = Directory.Exists(Path.Combine(unityProjectRootPath, "ProjectSettings"));
+
+        if (hasAssetsFolder && hasProjectSettingsFolder)
+            return "Unity project detected.";
+
+        if (hasAssetsFolder)
+            return "Assets folder found, but ProjectSettings is missing.";
+
+        return "Selected folder does not look like a Unity project.";
     }
 }

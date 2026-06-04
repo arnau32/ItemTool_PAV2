@@ -15,6 +15,8 @@ public static class ItemIconSourceLoader
         ".gif"
     };
 
+    public static string? UnityProjectRootPath { get; set; }
+
     public static ImageSource? Load(string? iconPath)
     {
         if (string.IsNullOrWhiteSpace(iconPath))
@@ -114,10 +116,21 @@ public static class ItemIconSourceLoader
     {
         HashSet<string> paths = new(StringComparer.OrdinalIgnoreCase);
 
+        if (!string.IsNullOrWhiteSpace(UnityProjectRootPath))
+            AddPathIfDirectoryExists(paths, UnityProjectRootPath);
+
         AddPathWithParents(paths, AppContext.BaseDirectory);
         AddPathWithParents(paths, Directory.GetCurrentDirectory());
 
         return paths;
+    }
+
+    private static void AddPathIfDirectoryExists(HashSet<string> paths, string path)
+    {
+        if (!Directory.Exists(path))
+            return;
+
+        paths.Add(Path.GetFullPath(path));
     }
 
     private static void AddPathWithParents(HashSet<string> paths, string startPath)

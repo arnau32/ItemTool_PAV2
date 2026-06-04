@@ -1,6 +1,7 @@
 using System.IO;
 using Microsoft.Win32;
 using OpenFileDialog = Microsoft.Win32.OpenFileDialog;
+using OpenFolderDialog = Microsoft.Win32.OpenFolderDialog;
 
 namespace ItemTool.App.Services;
 
@@ -28,6 +29,24 @@ public sealed class WindowsFilePickerService : IFilePickerService
 
         return result == true
             ? dialog.FileName
+            : null;
+    }
+
+    public string? PickFolder(string? initialPath = null, string title = "Select folder")
+    {
+        OpenFolderDialog dialog = new()
+        {
+            Title = title,
+            Multiselect = false
+        };
+
+        if (!string.IsNullOrWhiteSpace(initialPath) && Directory.Exists(initialPath))
+            dialog.InitialDirectory = initialPath;
+
+        bool? result = dialog.ShowDialog();
+
+        return result == true
+            ? dialog.FolderName
             : null;
     }
 }
