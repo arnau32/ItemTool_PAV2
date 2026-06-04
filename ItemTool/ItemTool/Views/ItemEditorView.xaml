@@ -10,267 +10,124 @@
         Background="#303030"
         BorderBrush="#555555"
         BorderThickness="1">
-        
-                <ScrollViewer VerticalScrollBarVisibility="Auto">
-                    <StackPanel DataContext="{Binding Editor}">
 
-                        <TextBlock
-                            Margin="0,0,0,12"
-                            FontSize="22"
-                            FontWeight="Bold"
-                            Text="Item Editor" />
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel DataContext="{Binding Editor}">
 
-                        <!-- Validation -->
-                        <shared:ToolValidationBox
-                            Title="Validation Summary"
-                            BoxHeight="75"
-                            Text="{Binding DataContext.ValidationSummary, RelativeSource={RelativeSource AncestorType=Window}}" />
+                <TextBlock
+                    Margin="0,0,0,12"
+                    FontSize="22"
+                    FontWeight="Bold"
+                    Text="Item Editor" />
 
-                        <!-- Preview -->
-                        <shared:ToolSection SectionTitle="Dimensions Preview">
-                            <TextBox
-                                Height="110"
-                                AcceptsReturn="True"
-                                FontFamily="Consolas"
-                                IsReadOnly="True"
-                                Text="{Binding DataContext.DimensionPreviewText, RelativeSource={RelativeSource AncestorType=Window}}"
-                                TextWrapping="NoWrap" />
-                        </shared:ToolSection>
+                <!-- Validation -->
+                <shared:ToolValidationBox
+                    Title="Validation Summary"
+                    BoxHeight="75"
+                    Text="{Binding DataContext.ValidationSummary, RelativeSource={RelativeSource AncestorType=Window}}" />
 
-                        <!-- General -->
-                        <itemEditor:GeneralItemSection />
-                        
-                        <!-- Dimensions -->
-                        <itemEditor:SlotDimensionSection />
-                        
-                        <!-- Equipable -->
-                        <shared:ToolSection
-                            SectionTitle="Equipable"
-                            Visibility="{Binding ShowsEquipableSection, Converter={StaticResource BoolToVisibilityConverter}}">
-                            <StackPanel>
-                                <TextBlock
-                                    Margin="0,0,0,8"
-                                    Opacity="0.75"
-                                    Text="FixedRarityFixedStats usa stats base. FixedRarityRandomStats aplica rarity fija y stats aleatorios. RandomRarityRandomStats aleatoriza rarity y stats." />
+                <!-- Preview -->
+                <shared:ToolSection SectionTitle="Dimensions Preview">
+                    <TextBox
+                        Height="110"
+                        AcceptsReturn="True"
+                        FontFamily="Consolas"
+                        IsReadOnly="True"
+                        Text="{Binding DataContext.DimensionPreviewText, RelativeSource={RelativeSource AncestorType=Window}}"
+                        TextWrapping="NoWrap" />
+                </shared:ToolSection>
 
-                                <Grid>
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="160" />
-                                        <ColumnDefinition Width="*" />
-                                    </Grid.ColumnDefinitions>
+                <!-- General -->
+                <itemEditor:GeneralItemSection />
 
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="Auto" />
-                                        <RowDefinition Height="Auto" />
-                                        <RowDefinition Height="Auto" />
-                                        <RowDefinition Height="Auto" />
-                                    </Grid.RowDefinitions>
+                <!-- Dimensions -->
+                <itemEditor:SlotDimensionSection />
 
-                                    <TextBlock Grid.Row="0" Grid.Column="0" Text="Roll Mode" />
-                                    <ComboBox
-                                        Grid.Row="0"
-                                        Grid.Column="1"
-                                        Margin="0,0,0,8"
-                                        ItemsSource="{Binding DataContext.EquipableRollModes, RelativeSource={RelativeSource AncestorType=Window}}"
-                                        SelectedItem="{Binding SelectedItem.Equipable.RollMode, UpdateSourceTrigger=PropertyChanged}" />
+                <!-- Equipable -->
+                <itemEditor:EquipableSection />
 
-                                    <TextBlock Grid.Row="1" Grid.Column="0" Text="Equip Slot" />
-                                    <ComboBox
-                                        Grid.Row="1"
-                                        Grid.Column="1"
-                                        Margin="0,0,0,8"
-                                        ItemsSource="{Binding DataContext.EquipSlots, RelativeSource={RelativeSource AncestorType=Window}}"
-                                        SelectedItem="{Binding SelectedItem.Equipable.EquipSlot, UpdateSourceTrigger=PropertyChanged}" />
+                <!-- Weapon -->
+                <itemEditor:WeaponSection />
 
-                                    <TextBlock Grid.Row="2" Grid.Column="0" Text="Tier" />
-                                    <TextBox
-                                        Grid.Row="2"
-                                        Grid.Column="1"
-                                        Margin="0,0,0,8"
-                                        Text="{Binding SelectedItem.Equipable.Tier, UpdateSourceTrigger=PropertyChanged}" />
+                <!-- Consumable -->
+                <shared:ToolSection
+                    SectionTitle="Consumable"
+                    Visibility="{Binding ShowsConsumableSection, Converter={StaticResource BoolToVisibilityConverter}}">
+                    <StackPanel>
+                        <StackPanel Margin="0,0,0,6" Orientation="Horizontal">
+                            <Button Command="{Binding AddBuffCommand}" Content="+ Add Buff" />
+                            <Button Command="{Binding ClearBuffsCommand}" Content="Clear" />
+                        </StackPanel>
 
-                                    <TextBlock Grid.Row="3" Grid.Column="0" Text="Prefab Path" />
-                                    <TextBox
-                                        Grid.Row="3"
-                                        Grid.Column="1"
-                                        Margin="0,0,0,8"
-                                        Text="{Binding SelectedItem.Equipable.PrefabPath, UpdateSourceTrigger=PropertyChanged}" />
-                                </Grid>
+                        <ItemsControl ItemsSource="{Binding SelectedItem.Consumable.Buffs}">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Margin="0,0,0,4">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="120" />
+                                            <ColumnDefinition Width="120" />
+                                        </Grid.ColumnDefinitions>
 
-                                <StackPanel Margin="0,8,0,6" Orientation="Horizontal">
-                                    <Button Command="{Binding AddStatModifierCommand}" Content="+ Add Modifier" />
-                                    <Button Command="{Binding ClearStatModifiersCommand}" Content="Clear" />
-                                </StackPanel>
+                                        <ComboBox
+                                            Grid.Column="0"
+                                            Margin="0,0,8,0"
+                                            ItemsSource="{Binding DataContext.BuffApplicationModes, RelativeSource={RelativeSource AncestorType=Window}}"
+                                            SelectedItem="{Binding ApplicationMode, UpdateSourceTrigger=PropertyChanged}" />
 
-                                <ItemsControl ItemsSource="{Binding SelectedItem.Equipable.Modifiers}">
-                                    <ItemsControl.ItemTemplate>
-                                        <DataTemplate>
-                                            <Grid Margin="0,0,0,4">
-                                                <Grid.ColumnDefinitions>
-                                                    <ColumnDefinition Width="*" />
-                                                    <ColumnDefinition Width="120" />
-                                                </Grid.ColumnDefinitions>
+                                        <ComboBox
+                                            Grid.Column="1"
+                                            Margin="0,0,8,0"
+                                            ItemsSource="{Binding DataContext.StatTypes, RelativeSource={RelativeSource AncestorType=Window}}"
+                                            SelectedItem="{Binding StatType, UpdateSourceTrigger=PropertyChanged}" />
 
-                                                <ComboBox
-                                                    Grid.Column="0"
-                                                    Margin="0,0,8,0"
-                                                    ItemsSource="{Binding DataContext.StatTypes, RelativeSource={RelativeSource AncestorType=Window}}"
-                                                    SelectedItem="{Binding StatType, UpdateSourceTrigger=PropertyChanged}" />
+                                        <TextBox
+                                            Grid.Column="2"
+                                            Margin="0,0,8,0"
+                                            Text="{Binding Value, UpdateSourceTrigger=PropertyChanged}" />
 
-                                                <TextBox
-                                                    Grid.Column="1"
-                                                    Text="{Binding Value, UpdateSourceTrigger=PropertyChanged}" />
-                                            </Grid>
-                                        </DataTemplate>
-                                    </ItemsControl.ItemTemplate>
-                                </ItemsControl>
-                            </StackPanel>
-                        </shared:ToolSection>
-                        
-                        <!-- Weapon -->
-                        <shared:ToolSection
-                            SectionTitle="Weapon"
-                            Visibility="{Binding ShowsWeaponSection, Converter={StaticResource BoolToVisibilityConverter}}">
-                            <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="160" />
-                                    <ColumnDefinition Width="*" />
-                                </Grid.ColumnDefinitions>
-
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                </Grid.RowDefinitions>
-
-                                <TextBlock Grid.Row="0" Grid.Column="0" Text="Hand Type" />
-                                <ComboBox
-                                    Grid.Row="0"
-                                    Grid.Column="1"
-                                    Margin="0,0,0,8"
-                                    ItemsSource="{Binding DataContext.WeaponHandTypes, RelativeSource={RelativeSource AncestorType=Window}}"
-                                    SelectedItem="{Binding SelectedItem.Weapon.HandType, UpdateSourceTrigger=PropertyChanged}" />
-
-                                <TextBlock Grid.Row="1" Grid.Column="0" Text="Weapon Family" />
-                                <ComboBox
-                                    Grid.Row="1"
-                                    Grid.Column="1"
-                                    Margin="0,0,0,8"
-                                    ItemsSource="{Binding DataContext.WeaponFamilies, RelativeSource={RelativeSource AncestorType=Window}}"
-                                    SelectedItem="{Binding SelectedItem.Weapon.FamilyType, UpdateSourceTrigger=PropertyChanged}" />
-
-                                <TextBlock Grid.Row="2" Grid.Column="0" Text="Weapon Tier" />
-                                <TextBox
-                                    Grid.Row="2"
-                                    Grid.Column="1"
-                                    Margin="0,0,0,8"
-                                    Text="{Binding SelectedItem.Weapon.WeaponTier, UpdateSourceTrigger=PropertyChanged}" />
-
-                                <TextBlock Grid.Row="3" Grid.Column="0" Text="Enemy Damage Multiplier" />
-                                <TextBox
-                                    Grid.Row="3"
-                                    Grid.Column="1"
-                                    Margin="0,0,0,8"
-                                    Text="{Binding SelectedItem.Weapon.EnemyDamageMultiplier, UpdateSourceTrigger=PropertyChanged}" />
-
-                                <TextBlock Grid.Row="4" Grid.Column="0" Text="Skill Score Needed" />
-                                <TextBox
-                                    Grid.Row="4"
-                                    Grid.Column="1"
-                                    Margin="0,0,0,8"
-                                    Text="{Binding SelectedItem.Weapon.SkillScoreNeeded, UpdateSourceTrigger=PropertyChanged}" />
-
-                                <TextBlock Grid.Row="5" Grid.Column="0" Text="Prefab Variant Path" />
-                                <TextBox
-                                    Grid.Row="5"
-                                    Grid.Column="1"
-                                    Margin="0,0,0,8"
-                                    Text="{Binding SelectedItem.Weapon.PrefabVariantPath, UpdateSourceTrigger=PropertyChanged}" />
-                            </Grid>
-                        </shared:ToolSection>
-                        
-                        <!-- Consumable -->
-                        <shared:ToolSection
-                            SectionTitle="Consumable"
-                            Visibility="{Binding ShowsConsumableSection, Converter={StaticResource BoolToVisibilityConverter}}">
-                            <StackPanel>
-                                <StackPanel Margin="0,0,0,6" Orientation="Horizontal">
-                                    <Button Command="{Binding AddBuffCommand}" Content="+ Add Buff" />
-                                    <Button Command="{Binding ClearBuffsCommand}" Content="Clear" />
-                                </StackPanel>
-
-                                <ItemsControl ItemsSource="{Binding SelectedItem.Consumable.Buffs}">
-                                    <ItemsControl.ItemTemplate>
-                                        <DataTemplate>
-                                            <Grid Margin="0,0,0,4">
-                                                <Grid.ColumnDefinitions>
-                                                    <ColumnDefinition Width="*" />
-                                                    <ColumnDefinition Width="*" />
-                                                    <ColumnDefinition Width="120" />
-                                                    <ColumnDefinition Width="120" />
-                                                </Grid.ColumnDefinitions>
-
-                                                <ComboBox
-                                                    Grid.Column="0"
-                                                    Margin="0,0,8,0"
-                                                    ItemsSource="{Binding DataContext.BuffApplicationModes, RelativeSource={RelativeSource AncestorType=Window}}"
-                                                    SelectedItem="{Binding ApplicationMode, UpdateSourceTrigger=PropertyChanged}" />
-
-                                                <ComboBox
-                                                    Grid.Column="1"
-                                                    Margin="0,0,8,0"
-                                                    ItemsSource="{Binding DataContext.StatTypes, RelativeSource={RelativeSource AncestorType=Window}}"
-                                                    SelectedItem="{Binding StatType, UpdateSourceTrigger=PropertyChanged}" />
-
-                                                <TextBox
-                                                    Grid.Column="2"
-                                                    Margin="0,0,8,0"
-                                                    Text="{Binding Value, UpdateSourceTrigger=PropertyChanged}" />
-
-                                                <TextBox
-                                                    Grid.Column="3"
-                                                    Text="{Binding Duration, UpdateSourceTrigger=PropertyChanged}" />
-                                            </Grid>
-                                        </DataTemplate>
-                                    </ItemsControl.ItemTemplate>
-                                </ItemsControl>
-                            </StackPanel>
-                            </shared:ToolSection>
-                            
-                        <!-- Collectable -->
-                        <shared:ToolSection
-                            SectionTitle="Collectable"
-                            Visibility="{Binding ShowsCollectableSection, Converter={StaticResource BoolToVisibilityConverter}}">
-                            <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="160" />
-                                    <ColumnDefinition Width="*" />
-                                </Grid.ColumnDefinitions>
-
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                </Grid.RowDefinitions>
-
-                                <TextBlock Grid.Row="0" Grid.Column="0" Text="Collection ID" />
-                                <TextBox
-                                    Grid.Row="0"
-                                    Grid.Column="1"
-                                    Margin="0,0,0,8"
-                                    Text="{Binding SelectedItem.Collectable.CollectionId, UpdateSourceTrigger=PropertyChanged}" />
-
-                                <TextBlock Grid.Row="1" Grid.Column="0" Text="Is Aurora Dust" />
-                                <CheckBox
-                                    Grid.Row="1"
-                                    Grid.Column="1"
-                                    Foreground="#DADADA"
-                                    IsChecked="{Binding SelectedItem.Collectable.IsAuroraDust, UpdateSourceTrigger=PropertyChanged}" />
-                            </Grid>
-                        </shared:ToolSection>
+                                        <TextBox
+                                            Grid.Column="3"
+                                            Text="{Binding Duration, UpdateSourceTrigger=PropertyChanged}" />
+                                    </Grid>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
                     </StackPanel>
-             </ScrollViewer>
+                </shared:ToolSection>
+
+                <!-- Collectable -->
+                <shared:ToolSection
+                    SectionTitle="Collectable"
+                    Visibility="{Binding ShowsCollectableSection, Converter={StaticResource BoolToVisibilityConverter}}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="160" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <TextBlock Grid.Row="0" Grid.Column="0" Text="Collection ID" />
+                        <TextBox
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            Margin="0,0,0,8"
+                            Text="{Binding SelectedItem.Collectable.CollectionId, UpdateSourceTrigger=PropertyChanged}" />
+
+                        <TextBlock Grid.Row="1" Grid.Column="0" Text="Is Aurora Dust" />
+                        <CheckBox
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            Foreground="#DADADA"
+                            IsChecked="{Binding SelectedItem.Collectable.IsAuroraDust, UpdateSourceTrigger=PropertyChanged}" />
+                    </Grid>
+                </shared:ToolSection>
+            </StackPanel>
+        </ScrollViewer>
     </Border>
 </UserControl>

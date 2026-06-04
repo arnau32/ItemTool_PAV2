@@ -1,0 +1,90 @@
+<UserControl
+    x:Class="ItemTool.App.Views.ItemEditor.EquipableSection"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:shared="clr-namespace:ItemTool.App.Views.Shared">
+
+    <shared:ToolSection
+        SectionTitle="Equipable"
+        Visibility="{Binding ShowsEquipableSection, Converter={StaticResource BoolToVisibilityConverter}}">
+
+        <StackPanel>
+            <TextBlock
+                Margin="0,0,0,8"
+                Opacity="0.75"
+                Text="FixedRarityFixedStats usa stats base. FixedRarityRandomStats aplica rarity fija y stats aleatorios. RandomRarityRandomStats aleatoriza rarity y stats." />
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="160" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="Roll Mode" />
+                <ComboBox
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Margin="0,0,0,8"
+                    ItemsSource="{Binding DataContext.EquipableRollModes, RelativeSource={RelativeSource AncestorType=Window}}"
+                    SelectedItem="{Binding SelectedItem.Equipable.RollMode, UpdateSourceTrigger=PropertyChanged}" />
+
+                <TextBlock Grid.Row="1" Grid.Column="0" Text="Equip Slot" />
+                <ComboBox
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Margin="0,0,0,8"
+                    ItemsSource="{Binding DataContext.EquipSlots, RelativeSource={RelativeSource AncestorType=Window}}"
+                    SelectedItem="{Binding SelectedItem.Equipable.EquipSlot, UpdateSourceTrigger=PropertyChanged}" />
+
+                <TextBlock Grid.Row="2" Grid.Column="0" Text="Tier" />
+                <TextBox
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Margin="0,0,0,8"
+                    Text="{Binding SelectedItem.Equipable.Tier, UpdateSourceTrigger=PropertyChanged}" />
+
+                <TextBlock Grid.Row="3" Grid.Column="0" Text="Prefab Path" />
+                <TextBox
+                    Grid.Row="3"
+                    Grid.Column="1"
+                    Margin="0,0,0,8"
+                    Text="{Binding SelectedItem.Equipable.PrefabPath, UpdateSourceTrigger=PropertyChanged}" />
+            </Grid>
+
+            <StackPanel Margin="0,8,0,6" Orientation="Horizontal">
+                <Button Command="{Binding AddStatModifierCommand}" Content="+ Add Modifier" />
+                <Button Command="{Binding ClearStatModifiersCommand}" Content="Clear" />
+            </StackPanel>
+
+            <ItemsControl ItemsSource="{Binding SelectedItem.Equipable.Modifiers}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Margin="0,0,0,4">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="120" />
+                            </Grid.ColumnDefinitions>
+
+                            <ComboBox
+                                Grid.Column="0"
+                                Margin="0,0,8,0"
+                                ItemsSource="{Binding DataContext.StatTypes, RelativeSource={RelativeSource AncestorType=Window}}"
+                                SelectedItem="{Binding StatType, UpdateSourceTrigger=PropertyChanged}" />
+
+                            <TextBox
+                                Grid.Column="1"
+                                Text="{Binding Value, UpdateSourceTrigger=PropertyChanged}" />
+                        </Grid>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </StackPanel>
+    </shared:ToolSection>
+</UserControl>
