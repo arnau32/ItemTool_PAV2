@@ -101,13 +101,13 @@
                     Grid.Column="4"
                     VerticalAlignment="Top"
                     Command="{Binding ImportUnityContentCommand}"
-                    Content="Import" />
+                    Content="Import Unity" />
 
                 <Button
                     Grid.Column="5"
                     VerticalAlignment="Top"
                     Command="{Binding ExportUnityContentCommand}"
-                    Content="Export" />
+                    Content="Export Unity" />
             </Grid>
         </Border>
 
@@ -123,6 +123,7 @@
                     <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
 
+                <!-- Create buttons LEFT -->
                 <StackPanel Grid.Column="0" Orientation="Horizontal">
                     <Button Command="{Binding NewEquipmentItemCommand}" Content="+ Equipment" />
                     <Button Command="{Binding NewWeaponItemCommand}" Content="+ Weapon" />
@@ -131,13 +132,13 @@
                     <Button Command="{Binding NewCollectableItemCommand}" Content="+ Collectable" />
                 </StackPanel>
 
+                <!-- Local project actions RIGHT -->
                 <StackPanel
                     Grid.Column="1"
                     HorizontalAlignment="Right"
                     Orientation="Horizontal">
-                    <Button Command="{Binding LoadCommand}" Content="Load" />
-                    <Button Command="{Binding SaveCommand}" Content="Save All" />
-                    <Button Command="{Binding RefreshValidationCommand}" Content="Validate" />
+                    <Button Command="{Binding LoadCommand}" Content="Load All from Local JSON" />
+                    <Button Command="{Binding SaveCommand}" Content="Save All to Local JSON" />
                 </StackPanel>
             </Grid>
         </DockPanel>
@@ -154,17 +155,18 @@
                     <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
 
+                <!-- Create buttons LEFT -->
                 <StackPanel Grid.Column="0" Orientation="Horizontal">
                     <Button Command="{Binding NewLootTableCommand}" Content="+ Loot Table" />
                 </StackPanel>
 
+                <!-- Local project actions RIGHT -->
                 <StackPanel
                     Grid.Column="1"
                     HorizontalAlignment="Right"
                     Orientation="Horizontal">
-                    <Button Command="{Binding LoadCommand}" Content="Load" />
-                    <Button Command="{Binding SaveCommand}" Content="Save All" />
-                    <Button Command="{Binding RefreshValidationCommand}" Content="Validate" />
+                    <Button Command="{Binding LoadCommand}" Content="Load All from Local JSON" />
+                    <Button Command="{Binding SaveCommand}" Content="Save All to Local JSON" />
                 </StackPanel>
             </Grid>
         </DockPanel>
