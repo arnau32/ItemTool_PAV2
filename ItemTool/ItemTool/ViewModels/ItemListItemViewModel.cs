@@ -13,16 +13,49 @@ public sealed class ItemListItemViewModel : ViewModelBase
 
         Item.PropertyChanged += (_, e) =>
         {
-            if (e.PropertyName == nameof(ItemDto.ItemName))
+            if (e.PropertyName == nameof(ItemDto.DisplayName) ||
+                e.PropertyName == nameof(ItemDto.ItemNameId))
+            {
                 OnPropertyChanged(nameof(Name));
+                OnPropertyChanged(nameof(Subtitle));
+            }
 
-            if (e.PropertyName == nameof(ItemDto.ItemType))
+            if (e.PropertyName == nameof(ItemDto.ItemKind) ||
+                e.PropertyName == nameof(ItemDto.ItemType))
+            {
                 OnPropertyChanged(nameof(Type));
+                OnPropertyChanged(nameof(Subtitle));
+            }
         };
     }
 
-    public string Name => string.IsNullOrWhiteSpace(Item.ItemName) ? "<Unnamed>" : Item.ItemName;
-    public string Type => Item.ItemType.ToString();
+    public string Name
+    {
+        get
+        {
+            if (!string.IsNullOrWhiteSpace(Item.DisplayName))
+                return Item.DisplayName;
+
+            if (!string.IsNullOrWhiteSpace(Item.ItemNameId))
+                return Item.ItemNameId;
+
+            return "<Unnamed>";
+        }
+    }
+
+    public string Type => Item.ItemKind.ToString();
+
+    public string Subtitle
+    {
+        get
+        {
+            string id = string.IsNullOrWhiteSpace(Item.ItemNameId)
+                ? "No ID"
+                : Item.ItemNameId;
+
+            return $"{Item.ItemKind} · {id}";
+        }
+    }
 
     private ValidationSeverity _severity;
     public ValidationSeverity Severity

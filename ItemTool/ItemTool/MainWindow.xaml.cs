@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using System.Windows;
 using ItemTool.App.ViewModels;
+using ItemTool.Application.Services;
 using ItemTool.Application.Validation;
 using ItemTool.Infrastructure.Persistence;
 
@@ -19,6 +20,7 @@ public partial class MainWindow : Window
 
         DataContext = new ItemBrowserViewModel(
             new JsonContentDatabaseRepository(filePath),
-            new ItemValidator());
+            new ItemValidator(),
+            new ItemFactory());
     }
 }

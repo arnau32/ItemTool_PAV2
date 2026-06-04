@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.Input;
 using ItemTool.Application.Abstractions;
 using ItemTool.Application.DTOs;
+using ItemTool.Application.Services;
 using ItemTool.Application.Validation;
 using ItemTool.Domain.Enums;
 using ItemTool.Domain.Validation;
@@ -16,6 +17,7 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
 {
     private readonly IContentDatabaseRepository _repository;
     private readonly ItemValidator _validator;
+    private readonly ItemFactory _itemFactory;
 
     private ContentDatabaseDto _database = new();
 
@@ -52,13 +54,18 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
 
     public ItemEditorViewModel Editor { get; } = new();
 
+    public Array ItemKinds => Enum.GetValues(typeof(ItemKind));
     public Array ItemTypes => Enum.GetValues(typeof(ItemType));
     public Array ItemRarities => Enum.GetValues(typeof(ItemRarity));
 
-    public ItemBrowserViewModel(IContentDatabaseRepository repository, ItemValidator validator)
+    public ItemBrowserViewModel(
+        IContentDatabaseRepository repository,
+        ItemValidator validator,
+        ItemFactory itemFactory)
     {
         _repository = repository;
         _validator = validator;
+        _itemFactory = itemFactory;
 
         Editor.ItemChanged += OnEditorItemChanged;
     }
@@ -103,30 +110,37 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
     [RelayCommand]
     public void NewItem()
     {
-        ItemDto newItem = new()
-        {
-            Id = Guid.NewGuid().ToString("N"),
-            ItemKind = ItemKind.Equipment,
-            ItemNameId = "new_equipment_item",
-            DisplayName = "New Equipment Item",
-            Description = string.Empty,
-            ItemRarity = ItemRarity.Common,
-            MaxStack = 1,
-            SlotDimension = new DimensionsDto
-            {
-                Width = 1,
-                Height = 1
-            }
-        };
+        CreateItem(ItemKind.Equipment);
+    }
 
-        newItem.EnsureDetailsForCurrentKind();
+    [RelayCommand]
+    public void NewEquipmentItem()
+    {
+        CreateItem(ItemKind.Equipment);
+    }
 
-        ItemListItemViewModel vm = new(newItem);
-        Items.Add(vm);
-        SelectedListItem = vm;
+    [RelayCommand]
+    public void NewWeaponItem()
+    {
+        CreateItem(ItemKind.Weapon);
+    }
 
-        RefreshValidation();
-        RefreshDimensionPreview();
+    [RelayCommand]
+    public void NewConsumableItem()
+    {
+        CreateItem(ItemKind.Consumable);
+    }
+
+    [RelayCommand]
+    public void NewCraftingItem()
+    {
+        CreateItem(ItemKind.Crafting);
+    }
+
+    [RelayCommand]
+    public void NewCollectableItem()
+    {
+        CreateItem(ItemKind.Collectable);
     }
 
     [RelayCommand]
@@ -152,6 +166,45 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
         ValidationSummary = selectedIssues.Count == 0
             ? "Sin errores ni warnings."
             : string.Join(Environment.NewLine, selectedIssues.Select(x => $"- [{x.Severity}] {x.Message}"));
+    }
+
+    private void CreateItem(ItemKind kind)
+    {
+        ItemDto newItem = _itemFactory.Create(kind);
+
+        MakeItemIdUnique(newItem);
+
+        ItemListItemViewModel vm = new(newItem);
+        Items.Add(vm);
+        SelectedListItem = vm;
+
+        RefreshValidation();
+        RefreshDimensionPreview();
+    }
+
+    private void MakeItemIdUnique(ItemDto item)
+    {
+        string baseId = string.IsNullOrWhiteSpace(item.Id)
+            ? "new_item"
+            : item.Id.Trim();
+
+        string candidate = baseId;
+        int index = 1;
+
+        HashSet<string> existingIds = Items
+            .Select(x => x.Item.Id)
+            .Where(x => !string.IsNullOrWhiteSpace(x))
+            .Select(x => x.Trim())
+            .ToHashSet(StringComparer.OrdinalIgnoreCase);
+
+        while (existingIds.Contains(candidate))
+        {
+            candidate = $"{baseId}_{index}";
+            index++;
+        }
+
+        item.Id = candidate;
+        item.ItemNameId = candidate;
     }
 
     private void RefreshDimensionPreview()
