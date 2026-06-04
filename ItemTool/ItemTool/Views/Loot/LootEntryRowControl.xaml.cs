@@ -71,6 +71,20 @@ public partial class LootEntryRowControl : UserControl
             typeof(LootEntryRowControl),
             new PropertyMetadata(null));
 
+    public static readonly DependencyProperty NavigateToItemCommandProperty =
+        DependencyProperty.Register(
+            nameof(NavigateToItemCommand),
+            typeof(ICommand),
+            typeof(LootEntryRowControl),
+            new PropertyMetadata(null));
+
+    public static readonly DependencyProperty NavigateToLootTableCommandProperty =
+        DependencyProperty.Register(
+            nameof(NavigateToLootTableCommand),
+            typeof(ICommand),
+            typeof(LootEntryRowControl),
+            new PropertyMetadata(null));
+
     public LootEntryRowControl()
     {
         InitializeComponent();
@@ -129,6 +143,18 @@ public partial class LootEntryRowControl : UserControl
     {
         get => (ICommand?)GetValue(RemoveCommandProperty);
         set => SetValue(RemoveCommandProperty, value);
+    }
+
+    public ICommand? NavigateToItemCommand
+    {
+        get => (ICommand?)GetValue(NavigateToItemCommandProperty);
+        set => SetValue(NavigateToItemCommandProperty, value);
+    }
+
+    public ICommand? NavigateToLootTableCommand
+    {
+        get => (ICommand?)GetValue(NavigateToLootTableCommandProperty);
+        set => SetValue(NavigateToLootTableCommandProperty, value);
     }
 
     private static void OnShowWeightChanged(

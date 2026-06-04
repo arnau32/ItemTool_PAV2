@@ -31,7 +31,13 @@
                 SelectedItem="{Binding EntryType, UpdateSourceTrigger=PropertyChanged}" />
 
             <Grid Grid.Column="1" Margin="0,0,6,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
                 <ComboBox
+                    Grid.Column="0"
                     IsEditable="True"
                     ItemsSource="{Binding AvailableItemIds, ElementName=Root}"
                     SelectedItem="{Binding ItemId, UpdateSourceTrigger=PropertyChanged}"
@@ -39,8 +45,10 @@
                     <ComboBox.Style>
                         <Style TargetType="ComboBox">
                             <Setter Property="Visibility" Value="Collapsed" />
+
                             <Style.Triggers>
-                                <DataTrigger Binding="{Binding EntryType}" Value="{x:Static lootEnums:LootEntryType.Item}">
+                                <DataTrigger Binding="{Binding EntryType}"
+                                             Value="{x:Static lootEnums:LootEntryType.Item}">
                                     <Setter Property="Visibility" Value="Visible" />
                                 </DataTrigger>
                             </Style.Triggers>
@@ -49,6 +57,7 @@
                 </ComboBox>
 
                 <ComboBox
+                    Grid.Column="0"
                     IsEditable="True"
                     ItemsSource="{Binding AvailableLootTableIds, ElementName=Root}"
                     SelectedItem="{Binding NestedLootTableId, UpdateSourceTrigger=PropertyChanged}"
@@ -56,14 +65,58 @@
                     <ComboBox.Style>
                         <Style TargetType="ComboBox">
                             <Setter Property="Visibility" Value="Collapsed" />
+
                             <Style.Triggers>
-                                <DataTrigger Binding="{Binding EntryType}" Value="{x:Static lootEnums:LootEntryType.LootTable}">
+                                <DataTrigger Binding="{Binding EntryType}"
+                                             Value="{x:Static lootEnums:LootEntryType.LootTable}">
                                     <Setter Property="Visibility" Value="Visible" />
                                 </DataTrigger>
                             </Style.Triggers>
                         </Style>
                     </ComboBox.Style>
                 </ComboBox>
+
+                <Button
+                    Grid.Column="1"
+                    MinWidth="32"
+                    Margin="4,0,0,0"
+                    Command="{Binding NavigateToItemCommand, ElementName=Root}"
+                    CommandParameter="{Binding ItemId}"
+                    Content="↗">
+                    <Button.Style>
+                        <Style TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+                            <Setter Property="Visibility" Value="Collapsed" />
+
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding EntryType}"
+                                             Value="{x:Static lootEnums:LootEntryType.Item}">
+                                    <Setter Property="Visibility" Value="Visible" />
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+                <Button
+                    Grid.Column="1"
+                    MinWidth="32"
+                    Margin="4,0,0,0"
+                    Command="{Binding NavigateToLootTableCommand, ElementName=Root}"
+                    CommandParameter="{Binding NestedLootTableId}"
+                    Content="↗">
+                    <Button.Style>
+                        <Style TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+                            <Setter Property="Visibility" Value="Collapsed" />
+
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding EntryType}"
+                                             Value="{x:Static lootEnums:LootEntryType.LootTable}">
+                                    <Setter Property="Visibility" Value="Visible" />
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
             </Grid>
 
             <TextBox

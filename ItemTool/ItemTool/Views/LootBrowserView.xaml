@@ -227,7 +227,9 @@
                                             AvailableLootTableIds="{Binding DataContext.AvailableLootTableIds, RelativeSource={RelativeSource AncestorType=UserControl}}"
                                             EquipableOverrideModes="{Binding DataContext.EquipableOverrideModes, RelativeSource={RelativeSource AncestorType=UserControl}}"
                                             ItemRarities="{Binding DataContext.ItemRarities, RelativeSource={RelativeSource AncestorType=UserControl}}"
-                                            RemoveCommand="{Binding DataContext.RemoveGuaranteedEntryCommand, RelativeSource={RelativeSource AncestorType=UserControl}}" />
+                                            RemoveCommand="{Binding DataContext.RemoveGuaranteedEntryCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                            NavigateToItemCommand="{Binding DataContext.NavigateToItemCommand, RelativeSource={RelativeSource AncestorType=Window}}"
+                                            NavigateToLootTableCommand="{Binding DataContext.NavigateToLootTableCommand, RelativeSource={RelativeSource AncestorType=Window}}" />
                                     </DataTemplate>
                                 </ItemsControl.ItemTemplate>
                             </ItemsControl>
@@ -263,7 +265,9 @@
                                             AvailableLootTableIds="{Binding DataContext.AvailableLootTableIds, RelativeSource={RelativeSource AncestorType=UserControl}}"
                                             EquipableOverrideModes="{Binding DataContext.EquipableOverrideModes, RelativeSource={RelativeSource AncestorType=UserControl}}"
                                             ItemRarities="{Binding DataContext.ItemRarities, RelativeSource={RelativeSource AncestorType=UserControl}}"
-                                            RemoveCommand="{Binding DataContext.RemoveWeightedEntryCommand, RelativeSource={RelativeSource AncestorType=UserControl}}" />
+                                            RemoveCommand="{Binding DataContext.RemoveWeightedEntryCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                            NavigateToItemCommand="{Binding DataContext.NavigateToItemCommand, RelativeSource={RelativeSource AncestorType=Window}}"
+                                            NavigateToLootTableCommand="{Binding DataContext.NavigateToLootTableCommand, RelativeSource={RelativeSource AncestorType=Window}}" />
                                     </DataTemplate>
                                 </ItemsControl.ItemTemplate>
                             </ItemsControl>

@@ -177,6 +177,22 @@ public sealed partial class LootBrowserViewModel : ViewModelBase
         RefreshValidation();
     }
 
+    public bool SelectLootTableById(string? lootTableId)
+    {
+        if (string.IsNullOrWhiteSpace(lootTableId))
+            return false;
+
+        LootTableListItemViewModel? lootTableVm = LootTables.FirstOrDefault(x =>
+            !string.IsNullOrWhiteSpace(x.LootTable.Id) &&
+            string.Equals(x.LootTable.Id.Trim(), lootTableId.Trim(), StringComparison.OrdinalIgnoreCase));
+
+        if (lootTableVm == null)
+            return false;
+
+        SelectedListItem = lootTableVm;
+        return true;
+    }
+
     [RelayCommand]
     public void NewLootTable()
     {
@@ -559,7 +575,7 @@ public sealed partial class LootBrowserViewModel : ViewModelBase
             Message = message
         };
     }
-    
+
     private static void UpsertLootTable(
         List<LootTableDto> lootTables,
         string? sourceId,

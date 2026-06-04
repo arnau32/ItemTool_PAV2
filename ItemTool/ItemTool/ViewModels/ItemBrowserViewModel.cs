@@ -269,6 +269,27 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
             ? "Sin errores ni warnings."
             : string.Join(Environment.NewLine, selectedIssues.Select(x => $"- [{x.Severity}] {x.Message}"));
     }
+    
+    public bool SelectItemById(string? itemId)
+    {
+        if (string.IsNullOrWhiteSpace(itemId))
+            return false;
+
+        ItemListItemViewModel? itemVm = Items.FirstOrDefault(x =>
+            !string.IsNullOrWhiteSpace(x.Item.Id) &&
+            string.Equals(x.Item.Id.Trim(), itemId.Trim(), StringComparison.OrdinalIgnoreCase));
+
+        if (itemVm == null)
+            return false;
+
+        if (_activeItemKindFilter != itemVm.Item.ItemKind)
+            SetItemKindFilter(itemVm.Item.ItemKind);
+        else
+            FilteredItems.Refresh();
+
+        SelectedListItem = itemVm;
+        return true;
+    }
 
     private void CreateItem(ItemKind kind)
     {

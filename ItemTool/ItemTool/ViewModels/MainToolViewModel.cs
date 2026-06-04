@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.Input;
 using ItemTool.Application.Abstractions;
 using ItemTool.Application.Services;
@@ -19,7 +20,8 @@ public sealed partial class MainToolViewModel : ViewModelBase
             itemValidator,
             itemFactory);
 
-        LootTables = new LootBrowserViewModel(repository);    }
+        LootTables = new LootBrowserViewModel(repository);
+    }
 
     public ItemBrowserViewModel Items { get; }
 
@@ -52,5 +54,35 @@ public sealed partial class MainToolViewModel : ViewModelBase
     public void ShowLootTablesWorkspace()
     {
         ActiveWorkspace = ToolWorkspace.LootTables;
+    }
+
+    [RelayCommand]
+    public async Task NavigateToItemAsync(string? itemId)
+    {
+        if (string.IsNullOrWhiteSpace(itemId))
+            return;
+
+        if (Items.Items.Count == 0)
+            await Items.LoadAsync();
+
+        bool selected = Items.SelectItemById(itemId);
+
+        if (selected)
+            ActiveWorkspace = ToolWorkspace.Items;
+    }
+
+    [RelayCommand]
+    public async Task NavigateToLootTableAsync(string? lootTableId)
+    {
+        if (string.IsNullOrWhiteSpace(lootTableId))
+            return;
+
+        if (LootTables.LootTables.Count == 0)
+            await LootTables.LoadAsync();
+
+        bool selected = LootTables.SelectLootTableById(lootTableId);
+
+        if (selected)
+            ActiveWorkspace = ToolWorkspace.LootTables;
     }
 }
