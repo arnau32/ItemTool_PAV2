@@ -28,7 +28,7 @@
                 <shared:ToolValidationBox
                     Title="Validation Summary"
                     BoxHeight="75"
-                    Text="{Binding DataContext.ValidationSummary, RelativeSource={RelativeSource AncestorType=Window}}" />
+                    Text="{Binding DataContext.Items.ValidationSummary, RelativeSource={RelativeSource AncestorType=Window}}" />
 
                 <!-- Preview -->
                 <shared:ToolSection SectionTitle="Dimensions Preview">

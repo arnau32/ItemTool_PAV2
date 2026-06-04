@@ -28,7 +28,7 @@
                 Grid.Row="0"
                 Grid.Column="1"
                 Margin="0,0,0,8"
-                ItemsSource="{Binding DataContext.WeaponHandTypes, RelativeSource={RelativeSource AncestorType=Window}}"
+                ItemsSource="{Binding DataContext.Items.WeaponHandTypes, RelativeSource={RelativeSource AncestorType=Window}}"
                 SelectedItem="{Binding SelectedItem.Weapon.HandType, UpdateSourceTrigger=PropertyChanged}" />
 
             <TextBlock Grid.Row="1" Grid.Column="0" Text="Weapon Family" />
@@ -36,7 +36,7 @@
                 Grid.Row="1"
                 Grid.Column="1"
                 Margin="0,0,0,8"
-                ItemsSource="{Binding DataContext.WeaponFamilies, RelativeSource={RelativeSource AncestorType=Window}}"
+                ItemsSource="{Binding DataContext.Items.WeaponFamilies, RelativeSource={RelativeSource AncestorType=Window}}"
                 SelectedItem="{Binding SelectedItem.Weapon.FamilyType, UpdateSourceTrigger=PropertyChanged}" />
 
             <TextBlock Grid.Row="2" Grid.Column="0" Text="Weapon Tier" />

@@ -28,13 +28,13 @@
                             <ComboBox
                                 Grid.Column="0"
                                 Margin="0,0,8,0"
-                                ItemsSource="{Binding DataContext.BuffApplicationModes, RelativeSource={RelativeSource AncestorType=Window}}"
+                                ItemsSource="{Binding DataContext.Items.BuffApplicationModes, RelativeSource={RelativeSource AncestorType=Window}}"
                                 SelectedItem="{Binding ApplicationMode, UpdateSourceTrigger=PropertyChanged}" />
 
                             <ComboBox
                                 Grid.Column="1"
                                 Margin="0,0,8,0"
-                                ItemsSource="{Binding DataContext.StatTypes, RelativeSource={RelativeSource AncestorType=Window}}"
+                                ItemsSource="{Binding DataContext.Items.StatTypes, RelativeSource={RelativeSource AncestorType=Window}}"
                                 SelectedItem="{Binding StatType, UpdateSourceTrigger=PropertyChanged}" />
 
                             <TextBox

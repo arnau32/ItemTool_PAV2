@@ -32,7 +32,7 @@
                     Grid.Row="0"
                     Grid.Column="1"
                     Margin="0,0,0,8"
-                    ItemsSource="{Binding DataContext.EquipableRollModes, RelativeSource={RelativeSource AncestorType=Window}}"
+                    ItemsSource="{Binding DataContext.Items.EquipableRollModes, RelativeSource={RelativeSource AncestorType=Window}}"
                     SelectedItem="{Binding SelectedItem.Equipable.RollMode, UpdateSourceTrigger=PropertyChanged}" />
 
                 <TextBlock Grid.Row="1" Grid.Column="0" Text="Equip Slot" />
@@ -40,7 +40,7 @@
                     Grid.Row="1"
                     Grid.Column="1"
                     Margin="0,0,0,8"
-                    ItemsSource="{Binding DataContext.EquipSlots, RelativeSource={RelativeSource AncestorType=Window}}"
+                    ItemsSource="{Binding DataContext.Items.EquipSlots, RelativeSource={RelativeSource AncestorType=Window}}"
                     SelectedItem="{Binding SelectedItem.Equipable.EquipSlot, UpdateSourceTrigger=PropertyChanged}" />
 
                 <TextBlock Grid.Row="2" Grid.Column="0" Text="Tier" />
@@ -75,7 +75,7 @@
                             <ComboBox
                                 Grid.Column="0"
                                 Margin="0,0,8,0"
-                                ItemsSource="{Binding DataContext.StatTypes, RelativeSource={RelativeSource AncestorType=Window}}"
+                                ItemsSource="{Binding DataContext.Items.StatTypes, RelativeSource={RelativeSource AncestorType=Window}}"
                                 SelectedItem="{Binding StatType, UpdateSourceTrigger=PropertyChanged}" />
 
                             <TextBox
