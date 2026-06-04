@@ -104,8 +104,8 @@
                                 Height="26"
                                 Margin="0,0,8,0"
                                 VerticalAlignment="Center"
-                                Background="#1E1E1E"
-                                BorderBrush="#555555"
+                                Background="{Binding IconBackgroundBrush}"
+                                BorderBrush="#777777"
                                 BorderThickness="1">
 
                                 <Grid>
@@ -130,7 +130,8 @@
                                         VerticalAlignment="Center"
                                         FontSize="13"
                                         FontWeight="Bold"
-                                        Opacity="0.85"
+                                        Foreground="White"
+                                        Opacity="0.95"
                                         Text="{Binding IconFallbackText}">
                                         <TextBlock.Style>
                                             <Style TargetType="TextBlock" BasedOn="{StaticResource {x:Type TextBlock}}">

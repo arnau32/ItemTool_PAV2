@@ -23,7 +23,7 @@
                     PreviewImageSource="{Binding HeaderPreviewImageSource}"
                     AccentBrush="{Binding HeaderKindBrush}"
                     BadgeBackground="{Binding HeaderKindBrush}"
-                    PreviewBackground="{Binding HeaderRarityBrush}"
+                    PreviewBackground="{Binding HeaderRarityPreviewBrush}"
                     SaveButtonText="Save Item"
                     SaveButtonVisibility="Visible"
                     SaveCommand="{Binding DataContext.Items.SaveSelectedItemCommand, RelativeSource={RelativeSource AncestorType=Window}}" />

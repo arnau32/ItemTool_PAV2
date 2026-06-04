@@ -23,7 +23,6 @@ public sealed class ItemListItemViewModel : ViewModelBase
                 e.PropertyName == nameof(ItemDto.ItemNameId))
             {
                 OnPropertyChanged(nameof(Name));
-                OnPropertyChanged(nameof(Subtitle));
             }
 
             if (e.PropertyName == nameof(ItemDto.ItemKind) ||
@@ -39,6 +38,7 @@ public sealed class ItemListItemViewModel : ViewModelBase
             {
                 OnPropertyChanged(nameof(RarityText));
                 OnPropertyChanged(nameof(RarityBrush));
+                OnPropertyChanged(nameof(IconBackgroundBrush));
             }
 
             if (e.PropertyName == nameof(ItemDto.IconPath))
@@ -96,19 +96,11 @@ public sealed class ItemListItemViewModel : ViewModelBase
 
     public Brush RarityBrush => ItemVisualTheme.GetRarityBrush(Item.ItemRarity);
 
+    public Brush IconBackgroundBrush => ItemVisualTheme.GetRarityPreviewBrush(Item.ItemRarity);
+
     public ImageSource? IconSource => ItemIconSourceLoader.Load(Item.IconPath);
 
-    public string Subtitle
-    {
-        get
-        {
-            string id = string.IsNullOrWhiteSpace(Item.ItemNameId)
-                ? "No ID"
-                : Item.ItemNameId;
-
-            return $"{Item.ItemKind} · {id}";
-        }
-    }
+    public string Subtitle => Item.ItemKind.ToString();
 
     private ValidationSeverity _severity;
 

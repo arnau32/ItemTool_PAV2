@@ -6,6 +6,7 @@ namespace ItemTool.App.Visuals;
 public static class ItemVisualTheme
 {
     private static readonly Brush NeutralBrush = CreateBrush(90, 90, 90);
+    private static readonly Brush NeutralPreviewBrush = CreateBrush(120, 120, 120);
 
     private static readonly Brush EquipmentBrush = CreateBrush(210, 155, 70);
     private static readonly Brush WeaponBrush = CreateBrush(190, 70, 70);
@@ -17,6 +18,11 @@ public static class ItemVisualTheme
     private static readonly Brush RareBrush = CreateBrush(70, 135, 210);
     private static readonly Brush EpicBrush = CreateBrush(165, 95, 220);
     private static readonly Brush LegendaryBrush = CreateBrush(230, 165, 65);
+
+    private static readonly Brush CommonPreviewBrush = CreateBrush(165, 165, 165);
+    private static readonly Brush RarePreviewBrush = CreateBrush(105, 165, 235);
+    private static readonly Brush EpicPreviewBrush = CreateBrush(190, 125, 240);
+    private static readonly Brush LegendaryPreviewBrush = CreateBrush(245, 190, 95);
 
     public static Brush GetItemKindBrush(ItemKind? itemKind)
     {
@@ -40,6 +46,18 @@ public static class ItemVisualTheme
             ItemRarity.Epic => EpicBrush,
             ItemRarity.Legendary => LegendaryBrush,
             _ => NeutralBrush
+        };
+    }
+
+    public static Brush GetRarityPreviewBrush(ItemRarity? rarity)
+    {
+        return rarity switch
+        {
+            ItemRarity.Common => CommonPreviewBrush,
+            ItemRarity.Rare => RarePreviewBrush,
+            ItemRarity.Epic => EpicPreviewBrush,
+            ItemRarity.Legendary => LegendaryPreviewBrush,
+            _ => NeutralPreviewBrush
         };
     }
 

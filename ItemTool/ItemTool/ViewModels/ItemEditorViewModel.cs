@@ -114,6 +114,8 @@ public sealed partial class ItemEditorViewModel : ViewModelBase
 
     public Brush HeaderRarityBrush => ItemVisualTheme.GetRarityBrush(SelectedItem?.ItemRarity);
 
+    public Brush HeaderRarityPreviewBrush => ItemVisualTheme.GetRarityPreviewBrush(SelectedItem?.ItemRarity);
+
     public string ItemKindText => SelectedItem?.ItemKind.ToString() ?? string.Empty;
 
     public string ItemTypeText => SelectedItem?.ItemType.ToString() ?? string.Empty;
@@ -222,6 +224,7 @@ public sealed partial class ItemEditorViewModel : ViewModelBase
         OnPropertyChanged(nameof(HeaderPreviewImageSource));
         OnPropertyChanged(nameof(HeaderKindBrush));
         OnPropertyChanged(nameof(HeaderRarityBrush));
+        OnPropertyChanged(nameof(HeaderRarityPreviewBrush));
     }
 
     private void NotifyTypeInfoChanged()
