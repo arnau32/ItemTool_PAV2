@@ -1,10 +1,11 @@
 ﻿using System.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using ItemTool.Application.DTOs;
 using ItemTool.Domain.Enums;
 
 namespace ItemTool.App.ViewModels;
 
-public sealed class ItemEditorViewModel : ViewModelBase
+public sealed partial class ItemEditorViewModel : ViewModelBase
 {
     private ItemDto? _selectedItem;
 
@@ -101,6 +102,58 @@ public sealed class ItemEditorViewModel : ViewModelBase
 
     private void OnSelectedItemDimensionsChanged(object? sender, PropertyChangedEventArgs e)
     {
+        ItemChanged?.Invoke();
+    }
+    
+    [RelayCommand]
+    public void AddStatModifier()
+    {
+        if (SelectedItem?.Equipable == null)
+            return;
+
+        SelectedItem.Equipable.Modifiers.Add(new StatModifierDto
+        {
+            StatType = StatType.Attack,
+            Value = 0
+        });
+
+        ItemChanged?.Invoke();
+    }
+
+    [RelayCommand]
+    public void ClearStatModifiers()
+    {
+        if (SelectedItem?.Equipable == null)
+            return;
+
+        SelectedItem.Equipable.Modifiers.Clear();
+        ItemChanged?.Invoke();
+    }
+
+    [RelayCommand]
+    public void AddBuff()
+    {
+        if (SelectedItem?.Consumable == null)
+            return;
+
+        SelectedItem.Consumable.Buffs.Add(new BuffEffectDto
+        {
+            ApplicationMode = BuffApplicationMode.InstantHeal,
+            StatType = StatType.Health,
+            Value = 0,
+            Duration = 0
+        });
+
+        ItemChanged?.Invoke();
+    }
+
+    [RelayCommand]
+    public void ClearBuffs()
+    {
+        if (SelectedItem?.Consumable == null)
+            return;
+
+        SelectedItem.Consumable.Buffs.Clear();
         ItemChanged?.Invoke();
     }
 }

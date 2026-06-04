@@ -58,6 +58,13 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
     public Array ItemTypes => Enum.GetValues(typeof(ItemType));
     public Array ItemRarities => Enum.GetValues(typeof(ItemRarity));
 
+    public Array EquipSlots => Enum.GetValues(typeof(EquipSlot));
+    public Array EquipableRollModes => Enum.GetValues(typeof(EquipableRollMode));
+    public Array WeaponHandTypes => Enum.GetValues(typeof(WeaponHandType));
+    public Array WeaponFamilies => Enum.GetValues(typeof(WeaponFamily));
+    public Array StatTypes => Enum.GetValues(typeof(StatType));
+    public Array BuffApplicationModes => Enum.GetValues(typeof(BuffApplicationMode));
+
     public ItemBrowserViewModel(
         IContentDatabaseRepository repository,
         ItemValidator validator,
