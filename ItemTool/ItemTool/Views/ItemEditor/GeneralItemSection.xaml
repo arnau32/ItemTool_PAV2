@@ -1,0 +1,102 @@
+<UserControl
+    x:Class="ItemTool.App.Views.ItemEditor.GeneralItemSection"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:shared="clr-namespace:ItemTool.App.Views.Shared">
+
+    <shared:ToolSection SectionTitle="General Information">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="160" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <shared:ToolReadOnlyField
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Label="Item Kind"
+                Value="{Binding ItemKindText}" />
+
+            <shared:ToolReadOnlyField
+                Grid.Row="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Label="Unity Item Type"
+                Value="{Binding ItemTypeText}" />
+
+            <TextBlock Grid.Row="2" Grid.Column="0" Text="Id" />
+            <TextBox
+                Grid.Row="2"
+                Grid.Column="1"
+                Margin="0,0,0,8"
+                Text="{Binding SelectedItem.Id, UpdateSourceTrigger=PropertyChanged}" />
+
+            <TextBlock Grid.Row="3" Grid.Column="0" Text="Item Name ID" />
+            <TextBox
+                Grid.Row="3"
+                Grid.Column="1"
+                Margin="0,0,0,8"
+                Text="{Binding SelectedItem.ItemNameId, UpdateSourceTrigger=PropertyChanged}" />
+
+            <TextBlock Grid.Row="4" Grid.Column="0" Text="Display Name" />
+            <TextBox
+                Grid.Row="4"
+                Grid.Column="1"
+                Margin="0,0,0,8"
+                Text="{Binding SelectedItem.DisplayName, UpdateSourceTrigger=PropertyChanged}" />
+
+            <TextBlock Grid.Row="5" Grid.Column="0" Text="Description" />
+            <TextBox
+                Grid.Row="5"
+                Grid.Column="1"
+                Height="80"
+                Margin="0,0,0,8"
+                AcceptsReturn="True"
+                Text="{Binding SelectedItem.Description, UpdateSourceTrigger=PropertyChanged}"
+                TextWrapping="Wrap" />
+
+            <TextBlock Grid.Row="6" Grid.Column="0" Text="Icon Path" />
+            <TextBox
+                Grid.Row="6"
+                Grid.Column="1"
+                Margin="0,0,0,8"
+                Text="{Binding SelectedItem.IconPath, UpdateSourceTrigger=PropertyChanged}" />
+
+            <TextBlock Grid.Row="7" Grid.Column="0" Text="Rarity" />
+            <ComboBox
+                Grid.Row="7"
+                Grid.Column="1"
+                Margin="0,0,0,8"
+                ItemsSource="{Binding DataContext.ItemRarities, RelativeSource={RelativeSource AncestorType=Window}}"
+                SelectedItem="{Binding SelectedItem.ItemRarity, UpdateSourceTrigger=PropertyChanged}" />
+
+            <TextBlock Grid.Row="8" Grid.Column="0" Text="Value" />
+            <TextBox
+                Grid.Row="8"
+                Grid.Column="1"
+                Margin="0,0,0,8"
+                Text="{Binding SelectedItem.Value, UpdateSourceTrigger=PropertyChanged}" />
+
+            <TextBlock Grid.Row="9" Grid.Column="0" Text="Weight" />
+            <TextBox
+                Grid.Row="9"
+                Grid.Column="1"
+                Margin="0,0,0,8"
+                Text="{Binding SelectedItem.Weight, UpdateSourceTrigger=PropertyChanged}" />
+        </Grid>
+    </shared:ToolSection>
+</UserControl>

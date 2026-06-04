@@ -1,0 +1,42 @@
+<UserControl
+    x:Class="ItemTool.App.Views.ItemEditor.SlotDimensionSection"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:shared="clr-namespace:ItemTool.App.Views.Shared">
+
+    <shared:ToolSection SectionTitle="Slot Dimension">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="160" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="Max Stack" />
+            <TextBox
+                Grid.Row="0"
+                Grid.Column="1"
+                Margin="0,0,0,8"
+                Text="{Binding SelectedItem.MaxStack, UpdateSourceTrigger=PropertyChanged}" />
+
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="Width" />
+            <TextBox
+                Grid.Row="1"
+                Grid.Column="1"
+                Margin="0,0,0,8"
+                Text="{Binding SelectedItem.SlotDimension.Width, UpdateSourceTrigger=PropertyChanged}" />
+
+            <TextBlock Grid.Row="2" Grid.Column="0" Text="Height" />
+            <TextBox
+                Grid.Row="2"
+                Grid.Column="1"
+                Margin="0,0,0,8"
+                Text="{Binding SelectedItem.SlotDimension.Height, UpdateSourceTrigger=PropertyChanged}" />
+        </Grid>
+    </shared:ToolSection>
+</UserControl>
