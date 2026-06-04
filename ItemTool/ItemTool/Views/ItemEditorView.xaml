@@ -26,7 +26,7 @@
                             Text="{Binding DataContext.ValidationSummary, RelativeSource={RelativeSource AncestorType=Window}}" />
 
                         <!-- Preview -->
-                        <GroupBox Header="Dimensions Preview">
+                        <shared:ToolSection SectionTitle="Dimensions Preview">
                             <TextBox
                                 Height="110"
                                 AcceptsReturn="True"
@@ -34,10 +34,10 @@
                                 IsReadOnly="True"
                                 Text="{Binding DataContext.DimensionPreviewText, RelativeSource={RelativeSource AncestorType=Window}}"
                                 TextWrapping="NoWrap" />
-                        </GroupBox>
+                        </shared:ToolSection>
 
                         <!-- General -->
-                        <GroupBox Header="General Information">
+                        <shared:ToolSection SectionTitle="General Information">
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="160" />
@@ -131,10 +131,10 @@
                                     Margin="0,0,0,8"
                                     Text="{Binding SelectedItem.Weight, UpdateSourceTrigger=PropertyChanged}" />
                             </Grid>
-                        </GroupBox>
-
+                        </shared:ToolSection>
+                        
                         <!-- Dimensions -->
-                        <GroupBox Header="Slot Dimension">
+                        <shared:ToolSection SectionTitle="Slot Dimension">
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="160" />
@@ -168,11 +168,10 @@
                                     Margin="0,0,0,8"
                                     Text="{Binding SelectedItem.SlotDimension.Height, UpdateSourceTrigger=PropertyChanged}" />
                             </Grid>
-                        </GroupBox>
-
+                        </shared:ToolSection>
                         <!-- Equipable -->
-                        <GroupBox
-                            Header="Equipable"
+                        <shared:ToolSection
+                            SectionTitle="Equipable"
                             Visibility="{Binding ShowsEquipableSection, Converter={StaticResource BoolToVisibilityConverter}}">
                             <StackPanel>
                                 <TextBlock
@@ -252,11 +251,11 @@
                                     </ItemsControl.ItemTemplate>
                                 </ItemsControl>
                             </StackPanel>
-                        </GroupBox>
-
+                        </shared:ToolSection>
+                        
                         <!-- Weapon -->
-                        <GroupBox
-                            Header="Weapon"
+                        <shared:ToolSection
+                            SectionTitle="Weapon"
                             Visibility="{Binding ShowsWeaponSection, Converter={StaticResource BoolToVisibilityConverter}}">
                             <Grid>
                                 <Grid.ColumnDefinitions>
@@ -317,11 +316,11 @@
                                     Margin="0,0,0,8"
                                     Text="{Binding SelectedItem.Weapon.PrefabVariantPath, UpdateSourceTrigger=PropertyChanged}" />
                             </Grid>
-                        </GroupBox>
-
+                        </shared:ToolSection>
+                        
                         <!-- Consumable -->
-                        <GroupBox
-                            Header="Consumable"
+                        <shared:ToolSection
+                            SectionTitle="Consumable"
                             Visibility="{Binding ShowsConsumableSection, Converter={StaticResource BoolToVisibilityConverter}}">
                             <StackPanel>
                                 <StackPanel Margin="0,0,0,6" Orientation="Horizontal">
@@ -365,11 +364,11 @@
                                     </ItemsControl.ItemTemplate>
                                 </ItemsControl>
                             </StackPanel>
-                        </GroupBox>
-
+                            </shared:ToolSection>
+                            
                         <!-- Collectable -->
-                        <GroupBox
-                            Header="Collectable"
+                        <shared:ToolSection
+                            SectionTitle="Collectable"
                             Visibility="{Binding ShowsCollectableSection, Converter={StaticResource BoolToVisibilityConverter}}">
                             <Grid>
                                 <Grid.ColumnDefinitions>
@@ -396,8 +395,7 @@
                                     Foreground="#DADADA"
                                     IsChecked="{Binding SelectedItem.Collectable.IsAuroraDust, UpdateSourceTrigger=PropertyChanged}" />
                             </Grid>
-                        </GroupBox>
-
+                        </shared:ToolSection>
                     </StackPanel>
              </ScrollViewer>
     </Border>
