@@ -1,7 +1,8 @@
 <UserControl
     x:Class="ItemTool.App.Views.ItemEditorView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:shared="clr-namespace:ItemTool.App.Views.Shared">
 
     <Border
         Padding="12"
@@ -19,14 +20,10 @@
                             Text="Item Editor" />
 
                         <!-- Validation -->
-                        <GroupBox Header="Validation Summary">
-                            <TextBox
-                                Height="75"
-                                AcceptsReturn="True"
-                                IsReadOnly="True"
-                                Text="{Binding DataContext.ValidationSummary, RelativeSource={RelativeSource AncestorType=Window}}"
-                                TextWrapping="Wrap" />
-                        </GroupBox>
+                        <shared:ToolValidationBox
+                            Title="Validation Summary"
+                            BoxHeight="75"
+                            Text="{Binding DataContext.ValidationSummary, RelativeSource={RelativeSource AncestorType=Window}}" />
 
                         <!-- Preview -->
                         <GroupBox Header="Dimensions Preview">
@@ -60,35 +57,19 @@
                                     <RowDefinition Height="Auto" />
                                 </Grid.RowDefinitions>
 
-                                <TextBlock Grid.Row="0" Grid.Column="0" Text="Item Kind" />
-                                <Border
+                                <shared:ToolReadOnlyField
                                     Grid.Row="0"
-                                    Grid.Column="1"
-                                    Margin="0,0,0,8"
-                                    Padding="4,2"
-                                    Background="#1E1E1E"
-                                    BorderBrush="#555555"
-                                    BorderThickness="1">
-                                    <TextBlock
-                                        Margin="0"
-                                        VerticalAlignment="Center"
-                                        Text="{Binding ItemKindText}" />
-                                </Border>
+                                    Grid.Column="0"
+                                    Grid.ColumnSpan="2"
+                                    Label="Item Kind"
+                                    Value="{Binding ItemKindText}" />
 
-                                <TextBlock Grid.Row="1" Grid.Column="0" Text="Unity Item Type" />
-                                <Border
+                                <shared:ToolReadOnlyField
                                     Grid.Row="1"
-                                    Grid.Column="1"
-                                    Margin="0,0,0,8"
-                                    Padding="4,2"
-                                    Background="#1E1E1E"
-                                    BorderBrush="#555555"
-                                    BorderThickness="1">
-                                    <TextBlock
-                                        Margin="0"
-                                        VerticalAlignment="Center"
-                                        Text="{Binding ItemTypeText}" />
-                                </Border>
+                                    Grid.Column="0"
+                                    Grid.ColumnSpan="2"
+                                    Label="Unity Item Type"
+                                    Value="{Binding ItemTypeText}" />
 
                                 <TextBlock Grid.Row="2" Grid.Column="0" Text="Id" />
                                 <TextBox

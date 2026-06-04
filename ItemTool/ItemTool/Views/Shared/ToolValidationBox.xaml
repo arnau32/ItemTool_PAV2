@@ -1,0 +1,16 @@
+<UserControl
+    x:Class="ItemTool.App.Views.Shared.ToolValidationBox"
+    x:Name="Root"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <GroupBox Header="{Binding Title, ElementName=Root}">
+        <TextBox
+            Height="{Binding BoxHeight, ElementName=Root}"
+            AcceptsReturn="True"
+            FontFamily="Consolas"
+            IsReadOnly="True"
+            Text="{Binding Text, ElementName=Root}"
+            TextWrapping="Wrap" />
+    </GroupBox>
+</UserControl>
