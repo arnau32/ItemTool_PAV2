@@ -5,7 +5,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:views="clr-namespace:ItemTool.App.Views"
-    Title="Item Browser"
+    Title="Item Tool"
     Width="1400"
     Height="850"
     Background="#2B2B2B"
@@ -15,41 +15,95 @@
     <Grid Margin="8">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
+        <!-- Workspace tabs -->
         <DockPanel Margin="0,0,0,8">
             <StackPanel DockPanel.Dock="Left" Orientation="Horizontal">
-                <Button Command="{Binding LoadCommand}" Content="Load" />
-                <Button Command="{Binding SaveCommand}" Content="Save" />
-                <Button Command="{Binding RefreshValidationCommand}" Content="Validate" />
-            </StackPanel>
+                <Button
+                    Command="{Binding ShowItemsWorkspaceCommand}"
+                    Content="Items" />
 
-            <StackPanel DockPanel.Dock="Right" HorizontalAlignment="Right" Orientation="Horizontal">
-                <Button Command="{Binding NewEquipmentItemCommand}" Content="+ Equipment" />
-                <Button Command="{Binding NewWeaponItemCommand}" Content="+ Weapon" />
-                <Button Command="{Binding NewConsumableItemCommand}" Content="+ Consumable" />
-                <Button Command="{Binding NewCraftingItemCommand}" Content="+ Crafting" />
-                <Button Command="{Binding NewCollectableItemCommand}" Content="+ Collectable" />
+                <Button
+                    Command="{Binding ShowLootTablesWorkspaceCommand}"
+                    Content="Loot Tables" />
             </StackPanel>
         </DockPanel>
 
-        <Grid Grid.Row="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="350" />
-                <ColumnDefinition Width="10" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
+        <!-- Items toolbar -->
+        <DockPanel
+            Grid.Row="1"
+            Margin="0,0,0,8"
+            Visibility="{Binding IsItemsWorkspaceActive, Converter={StaticResource BoolToVisibilityConverter}}">
 
-            <views:ItemBrowserView Grid.Column="0" />
+            <DockPanel DataContext="{Binding Items}">
+                <StackPanel DockPanel.Dock="Left" Orientation="Horizontal">
+                    <Button Command="{Binding LoadCommand}" Content="Load" />
+                    <Button Command="{Binding SaveCommand}" Content="Save" />
+                    <Button Command="{Binding RefreshValidationCommand}" Content="Validate" />
+                </StackPanel>
 
-            <GridSplitter
-                Grid.Column="1"
-                Width="10"
-                HorizontalAlignment="Stretch"
-                Background="#222222" />
+                <StackPanel DockPanel.Dock="Right" HorizontalAlignment="Right" Orientation="Horizontal">
+                    <Button Command="{Binding NewEquipmentItemCommand}" Content="+ Equipment" />
+                    <Button Command="{Binding NewWeaponItemCommand}" Content="+ Weapon" />
+                    <Button Command="{Binding NewConsumableItemCommand}" Content="+ Consumable" />
+                    <Button Command="{Binding NewCraftingItemCommand}" Content="+ Crafting" />
+                    <Button Command="{Binding NewCollectableItemCommand}" Content="+ Collectable" />
+                </StackPanel>
+            </DockPanel>
+        </DockPanel>
 
-            <views:ItemEditorView Grid.Column="2" />
+        <!-- Loot toolbar placeholder -->
+        <DockPanel
+            Grid.Row="1"
+            Margin="0,0,0,8"
+            Visibility="{Binding IsLootTablesWorkspaceActive, Converter={StaticResource BoolToVisibilityConverter}}">
+
+            <DockPanel DataContext="{Binding LootTables}">
+                <StackPanel DockPanel.Dock="Left" Orientation="Horizontal">
+                    <Button Content="Load" IsEnabled="False" />
+                    <Button Content="Save" IsEnabled="False" />
+                    <Button Content="Validate" IsEnabled="False" />
+                </StackPanel>
+
+                <StackPanel DockPanel.Dock="Right" HorizontalAlignment="Right" Orientation="Horizontal">
+                    <Button Content="+ Loot Table" IsEnabled="False" />
+                </StackPanel>
+            </DockPanel>
+        </DockPanel>
+
+        <!-- Items workspace -->
+        <Grid
+            Grid.Row="2"
+            Visibility="{Binding IsItemsWorkspaceActive, Converter={StaticResource BoolToVisibilityConverter}}">
+
+            <Grid DataContext="{Binding Items}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="350" />
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <views:ItemBrowserView Grid.Column="0" />
+
+                <GridSplitter
+                    Grid.Column="1"
+                    Width="10"
+                    HorizontalAlignment="Stretch"
+                    Background="#222222" />
+
+                <views:ItemEditorView Grid.Column="2" />
+            </Grid>
+        </Grid>
+
+        <!-- Loot workspace -->
+        <Grid
+            Grid.Row="2"
+            Visibility="{Binding IsLootTablesWorkspaceActive, Converter={StaticResource BoolToVisibilityConverter}}">
+
+            <views:LootBrowserView DataContext="{Binding LootTables}" />
         </Grid>
     </Grid>
 </Window>

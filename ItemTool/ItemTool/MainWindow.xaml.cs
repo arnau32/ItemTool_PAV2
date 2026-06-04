@@ -18,7 +18,7 @@ public partial class MainWindow : Window
             "ItemTool",
             "itemtool_project.json");
 
-        DataContext = new ItemBrowserViewModel(
+        DataContext = new MainToolViewModel(
             new JsonContentDatabaseRepository(filePath),
             new ItemValidator(),
             new ItemFactory());
