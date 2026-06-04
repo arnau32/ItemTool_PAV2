@@ -1,0 +1,54 @@
+<UserControl
+    x:Class="ItemTool.App.Views.ItemEditor.ConsumableSection"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:shared="clr-namespace:ItemTool.App.Views.Shared">
+
+    <shared:ToolSection
+        SectionTitle="Consumable"
+        Visibility="{Binding ShowsConsumableSection, Converter={StaticResource BoolToVisibilityConverter}}">
+
+        <StackPanel>
+            <StackPanel Margin="0,0,0,6" Orientation="Horizontal">
+                <Button Command="{Binding AddBuffCommand}" Content="+ Add Buff" />
+                <Button Command="{Binding ClearBuffsCommand}" Content="Clear" />
+            </StackPanel>
+
+            <ItemsControl ItemsSource="{Binding SelectedItem.Consumable.Buffs}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Margin="0,0,0,4">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="120" />
+                                <ColumnDefinition Width="120" />
+                            </Grid.ColumnDefinitions>
+
+                            <ComboBox
+                                Grid.Column="0"
+                                Margin="0,0,8,0"
+                                ItemsSource="{Binding DataContext.BuffApplicationModes, RelativeSource={RelativeSource AncestorType=Window}}"
+                                SelectedItem="{Binding ApplicationMode, UpdateSourceTrigger=PropertyChanged}" />
+
+                            <ComboBox
+                                Grid.Column="1"
+                                Margin="0,0,8,0"
+                                ItemsSource="{Binding DataContext.StatTypes, RelativeSource={RelativeSource AncestorType=Window}}"
+                                SelectedItem="{Binding StatType, UpdateSourceTrigger=PropertyChanged}" />
+
+                            <TextBox
+                                Grid.Column="2"
+                                Margin="0,0,8,0"
+                                Text="{Binding Value, UpdateSourceTrigger=PropertyChanged}" />
+
+                            <TextBox
+                                Grid.Column="3"
+                                Text="{Binding Duration, UpdateSourceTrigger=PropertyChanged}" />
+                        </Grid>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </StackPanel>
+    </shared:ToolSection>
+</UserControl>

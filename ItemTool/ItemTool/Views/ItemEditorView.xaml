@@ -50,83 +50,11 @@
                 <itemEditor:WeaponSection />
 
                 <!-- Consumable -->
-                <shared:ToolSection
-                    SectionTitle="Consumable"
-                    Visibility="{Binding ShowsConsumableSection, Converter={StaticResource BoolToVisibilityConverter}}">
-                    <StackPanel>
-                        <StackPanel Margin="0,0,0,6" Orientation="Horizontal">
-                            <Button Command="{Binding AddBuffCommand}" Content="+ Add Buff" />
-                            <Button Command="{Binding ClearBuffsCommand}" Content="Clear" />
-                        </StackPanel>
-
-                        <ItemsControl ItemsSource="{Binding SelectedItem.Consumable.Buffs}">
-                            <ItemsControl.ItemTemplate>
-                                <DataTemplate>
-                                    <Grid Margin="0,0,0,4">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="*" />
-                                            <ColumnDefinition Width="*" />
-                                            <ColumnDefinition Width="120" />
-                                            <ColumnDefinition Width="120" />
-                                        </Grid.ColumnDefinitions>
-
-                                        <ComboBox
-                                            Grid.Column="0"
-                                            Margin="0,0,8,0"
-                                            ItemsSource="{Binding DataContext.BuffApplicationModes, RelativeSource={RelativeSource AncestorType=Window}}"
-                                            SelectedItem="{Binding ApplicationMode, UpdateSourceTrigger=PropertyChanged}" />
-
-                                        <ComboBox
-                                            Grid.Column="1"
-                                            Margin="0,0,8,0"
-                                            ItemsSource="{Binding DataContext.StatTypes, RelativeSource={RelativeSource AncestorType=Window}}"
-                                            SelectedItem="{Binding StatType, UpdateSourceTrigger=PropertyChanged}" />
-
-                                        <TextBox
-                                            Grid.Column="2"
-                                            Margin="0,0,8,0"
-                                            Text="{Binding Value, UpdateSourceTrigger=PropertyChanged}" />
-
-                                        <TextBox
-                                            Grid.Column="3"
-                                            Text="{Binding Duration, UpdateSourceTrigger=PropertyChanged}" />
-                                    </Grid>
-                                </DataTemplate>
-                            </ItemsControl.ItemTemplate>
-                        </ItemsControl>
-                    </StackPanel>
-                </shared:ToolSection>
+                <itemEditor:ConsumableSection />
 
                 <!-- Collectable -->
-                <shared:ToolSection
-                    SectionTitle="Collectable"
-                    Visibility="{Binding ShowsCollectableSection, Converter={StaticResource BoolToVisibilityConverter}}">
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="160" />
-                            <ColumnDefinition Width="*" />
-                        </Grid.ColumnDefinitions>
-
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                        </Grid.RowDefinitions>
-
-                        <TextBlock Grid.Row="0" Grid.Column="0" Text="Collection ID" />
-                        <TextBox
-                            Grid.Row="0"
-                            Grid.Column="1"
-                            Margin="0,0,0,8"
-                            Text="{Binding SelectedItem.Collectable.CollectionId, UpdateSourceTrigger=PropertyChanged}" />
-
-                        <TextBlock Grid.Row="1" Grid.Column="0" Text="Is Aurora Dust" />
-                        <CheckBox
-                            Grid.Row="1"
-                            Grid.Column="1"
-                            Foreground="#DADADA"
-                            IsChecked="{Binding SelectedItem.Collectable.IsAuroraDust, UpdateSourceTrigger=PropertyChanged}" />
-                    </Grid>
-                </shared:ToolSection>
+                <itemEditor:CollectableSection />
+                
             </StackPanel>
         </ScrollViewer>
     </Border>
