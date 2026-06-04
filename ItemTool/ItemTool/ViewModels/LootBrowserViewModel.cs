@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.Input;
 using ItemTool.Application.Abstractions;
 using ItemTool.Application.DTOs;
+using ItemTool.Domain.Validation;
 
 namespace ItemTool.App.ViewModels;
 
@@ -137,6 +138,19 @@ public sealed partial class LootBrowserViewModel : ViewModelBase
     [RelayCommand]
     public void RefreshValidation()
     {
+        List<LootTableDto> allLootTables = LootTables
+            .Select(x => x.LootTable)
+            .ToList();
+
+        foreach (LootTableListItemViewModel lootTableVm in LootTables)
+        {
+            IReadOnlyList<ValidationIssue> issues = ValidateLootTable(lootTableVm.LootTable, allLootTables);
+
+            lootTableVm.Severity = issues.Count == 0
+                ? ValidationSeverity.None
+                : issues.MaxBy(x => x.Severity)?.Severity ?? ValidationSeverity.None;
+        }
+
         if (SelectedLootTable == null)
         {
             ValidationSummary = string.Empty;
@@ -144,28 +158,75 @@ public sealed partial class LootBrowserViewModel : ViewModelBase
             return;
         }
 
-        List<string> issues = new();
+        IReadOnlyList<ValidationIssue> selectedIssues = ValidateLootTable(SelectedLootTable, allLootTables);
 
-        if (string.IsNullOrWhiteSpace(SelectedLootTable.Id))
-            issues.Add("- [Error] Loot table Id is required.");
-
-        if (string.IsNullOrWhiteSpace(SelectedLootTable.Name))
-            issues.Add("- [Warning] Loot table Name is empty.");
-
-        if (SelectedLootTable.MinRandomPicks < 0)
-            issues.Add("- [Error] Min Random Picks cannot be negative.");
-
-        if (SelectedLootTable.MaxRandomPicks < 0)
-            issues.Add("- [Error] Max Random Picks cannot be negative.");
-
-        if (SelectedLootTable.MaxRandomPicks < SelectedLootTable.MinRandomPicks)
-            issues.Add("- [Error] Max Random Picks cannot be lower than Min Random Picks.");
-
-        ValidationSummary = issues.Count == 0
+        ValidationSummary = selectedIssues.Count == 0
             ? "Sin errores ni warnings."
-            : string.Join(Environment.NewLine, issues);
+            : string.Join(Environment.NewLine, selectedIssues.Select(x => $"- [{x.Severity}] {x.Message}"));
 
         OnPropertyChanged(nameof(ValidationSummary));
+    }
+    
+    private static IReadOnlyList<ValidationIssue> ValidateLootTable(
+        LootTableDto lootTable,
+        IReadOnlyList<LootTableDto> allLootTables)
+    {
+        List<ValidationIssue> issues = new();
+
+        if (string.IsNullOrWhiteSpace(lootTable.Id))
+        {
+            issues.Add(Error("Loot table Id is required."));
+        }
+        else
+        {
+            int duplicatedIds = allLootTables.Count(x =>
+                !ReferenceEquals(x, lootTable) &&
+                !string.IsNullOrWhiteSpace(x.Id) &&
+                string.Equals(x.Id.Trim(), lootTable.Id.Trim(), StringComparison.OrdinalIgnoreCase));
+
+            if (duplicatedIds > 0)
+                issues.Add(Error($"Duplicated loot table Id: \"{lootTable.Id}\"."));
+        }
+
+        if (string.IsNullOrWhiteSpace(lootTable.Name))
+        {
+            issues.Add(Warning("Loot table Name is empty."));
+        }
+
+        if (lootTable.MinRandomPicks < 0)
+        {
+            issues.Add(Error("Min Random Picks cannot be negative."));
+        }
+
+        if (lootTable.MaxRandomPicks < 0)
+        {
+            issues.Add(Error("Max Random Picks cannot be negative."));
+        }
+
+        if (lootTable.MaxRandomPicks < lootTable.MinRandomPicks)
+        {
+            issues.Add(Error("Max Random Picks cannot be lower than Min Random Picks."));
+        }
+
+        return issues;
+    }
+
+    private static ValidationIssue Error(string message)
+    {
+        return new ValidationIssue
+        {
+            Severity = ValidationSeverity.Error,
+            Message = message
+        };
+    }
+
+    private static ValidationIssue Warning(string message)
+    {
+        return new ValidationIssue
+        {
+            Severity = ValidationSeverity.Warning,
+            Message = message
+        };
     }
 
     private string GenerateUniqueId(string baseId)

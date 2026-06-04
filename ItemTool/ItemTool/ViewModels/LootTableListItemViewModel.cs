@@ -1,4 +1,5 @@
 using ItemTool.Application.DTOs;
+using ItemTool.Domain.Validation;
 
 namespace ItemTool.App.ViewModels;
 
@@ -43,4 +44,11 @@ public sealed class LootTableListItemViewModel : ViewModelBase
 
     public string Subtitle =>
         $"{LootTable.Id} · Picks {LootTable.MinRandomPicks}-{LootTable.MaxRandomPicks}";
+
+    private ValidationSeverity _severity;
+    public ValidationSeverity Severity
+    {
+        get => _severity;
+        set => SetProperty(ref _severity, value);
+    }
 }
