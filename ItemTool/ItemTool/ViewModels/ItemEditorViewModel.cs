@@ -21,6 +21,11 @@ public sealed partial class ItemEditorViewModel : ViewModelBase
                 SubscribeToSelectedItem();
 
                 OnPropertyChanged(nameof(HasSelectedItem));
+                OnPropertyChanged(nameof(HeaderTitle));
+                OnPropertyChanged(nameof(HeaderSubtitle));
+                OnPropertyChanged(nameof(HeaderTechnicalInfo));
+                OnPropertyChanged(nameof(HeaderBadgeText));
+                OnPropertyChanged(nameof(HeaderPreviewText));
                 OnPropertyChanged(nameof(ItemKindText));
                 OnPropertyChanged(nameof(ItemTypeText));
                 OnPropertyChanged(nameof(ShowsEquipableSection));
@@ -34,6 +39,74 @@ public sealed partial class ItemEditorViewModel : ViewModelBase
     }
 
     public bool HasSelectedItem => SelectedItem != null;
+    
+    public string HeaderTitle
+    {
+        get
+        {
+            if (SelectedItem == null)
+                return "No item selected";
+
+            if (!string.IsNullOrWhiteSpace(SelectedItem.DisplayName))
+                return SelectedItem.DisplayName;
+
+            if (!string.IsNullOrWhiteSpace(SelectedItem.ItemNameId))
+                return SelectedItem.ItemNameId;
+
+            return "<Unnamed Item>";
+        }
+    }
+
+    public string HeaderSubtitle
+    {
+        get
+        {
+            if (SelectedItem == null)
+                return "Select or create an item to start editing.";
+
+            string id = string.IsNullOrWhiteSpace(SelectedItem.ItemNameId)
+                ? "No ItemNameId"
+                : SelectedItem.ItemNameId;
+
+            return $"{SelectedItem.ItemKind} · {id}";
+        }
+    }
+
+    public string HeaderTechnicalInfo
+    {
+        get
+        {
+            if (SelectedItem == null)
+                return string.Empty;
+
+            string id = string.IsNullOrWhiteSpace(SelectedItem.Id)
+                ? "No Id"
+                : SelectedItem.Id;
+
+            return $"Unity Type: {SelectedItem.ItemType} · Rarity: {SelectedItem.ItemRarity} · Id: {id}";
+        }
+    }
+
+    public string HeaderBadgeText => SelectedItem?.ItemKind.ToString() ?? "None";
+
+    public string HeaderPreviewText
+    {
+        get
+        {
+            if (SelectedItem == null)
+                return "?";
+
+            return SelectedItem.ItemKind switch
+            {
+                ItemKind.Equipment => "E",
+                ItemKind.Weapon => "W",
+                ItemKind.Consumable => "C",
+                ItemKind.Crafting => "M",
+                ItemKind.Collectable => "Q",
+                _ => "?"
+            };
+        }
+    }
 
     public string ItemKindText => SelectedItem?.ItemKind.ToString() ?? string.Empty;
 
@@ -86,15 +159,18 @@ public sealed partial class ItemEditorViewModel : ViewModelBase
             }
         }
 
-        if (e.PropertyName == nameof(ItemDto.ItemKind) ||
-            e.PropertyName == nameof(ItemDto.ItemType))
+        if (e.PropertyName == nameof(ItemDto.DisplayName) ||
+            e.PropertyName == nameof(ItemDto.ItemNameId) ||
+            e.PropertyName == nameof(ItemDto.Id) ||
+            e.PropertyName == nameof(ItemDto.ItemKind) ||
+            e.PropertyName == nameof(ItemDto.ItemType) ||
+            e.PropertyName == nameof(ItemDto.ItemRarity))
         {
-            OnPropertyChanged(nameof(ItemKindText));
-            OnPropertyChanged(nameof(ItemTypeText));
-            OnPropertyChanged(nameof(ShowsEquipableSection));
-            OnPropertyChanged(nameof(ShowsWeaponSection));
-            OnPropertyChanged(nameof(ShowsConsumableSection));
-            OnPropertyChanged(nameof(ShowsCollectableSection));
+            OnPropertyChanged(nameof(HeaderTitle));
+            OnPropertyChanged(nameof(HeaderSubtitle));
+            OnPropertyChanged(nameof(HeaderTechnicalInfo));
+            OnPropertyChanged(nameof(HeaderBadgeText));
+            OnPropertyChanged(nameof(HeaderPreviewText));
         }
 
         ItemChanged?.Invoke();
