@@ -52,12 +52,15 @@ internal static class UnityItemAssetImporter
 
         item.EnsureDetailsForCurrentKind();
 
-        ApplyTypeSpecificFields(item, lines);
+        ApplyTypeSpecificFields(item, lines, guidToAssetPath);
 
         return item;
     }
 
-    private static void ApplyTypeSpecificFields(ItemDto item, IReadOnlyList<string> lines)
+    private static void ApplyTypeSpecificFields(
+        ItemDto item,
+        IReadOnlyList<string> lines,
+        IReadOnlyDictionary<string, string> guidToAssetPath)
     {
         if (item.Equipable != null)
         {
@@ -74,6 +77,11 @@ internal static class UnityItemAssetImporter
                 lines,
                 "rollMode",
                 EquipableRollMode.RandomRarityRandomStats);
+
+            item.Equipable.PrefabPath = ResolveUnityObjectPath(
+                lines,
+                "prefab",
+                guidToAssetPath);
 
             ImportStatModifiers(item.Equipable, lines);
         }
@@ -104,6 +112,11 @@ internal static class UnityItemAssetImporter
                 lines,
                 "enemyDamageMultiplier",
                 defaultValue: 1f);
+
+            item.Weapon.PrefabVariantPath = ResolveUnityObjectPath(
+                lines,
+                "prefabVariant",
+                guidToAssetPath);
         }
 
         if (item.Consumable != null)
@@ -123,6 +136,21 @@ internal static class UnityItemAssetImporter
                 "isAuroraDust",
                 defaultValue: false);
         }
+    }
+
+    private static string ResolveUnityObjectPath(
+        IReadOnlyList<string> lines,
+        string fieldName,
+        IReadOnlyDictionary<string, string> guidToAssetPath)
+    {
+        string? guid = UnityYamlReader.ReadObjectGuid(lines, fieldName);
+
+        if (string.IsNullOrWhiteSpace(guid))
+            return string.Empty;
+
+        return guidToAssetPath.TryGetValue(guid, out string unityPath)
+            ? unityPath
+            : string.Empty;
     }
 
     private static void ImportStatModifiers(

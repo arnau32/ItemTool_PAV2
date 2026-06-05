@@ -9,11 +9,6 @@
         Visibility="{Binding ShowsEquipableSection, Converter={StaticResource BoolToVisibilityConverter}}">
 
         <StackPanel>
-            <TextBlock
-                Margin="0,0,0,8"
-                Opacity="0.75"
-                Text="FixedRarityFixedStats usa stats base. FixedRarityRandomStats aplica rarity fija y stats aleatorios. RandomRarityRandomStats aleatoriza rarity y stats." />
-
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="160" />
