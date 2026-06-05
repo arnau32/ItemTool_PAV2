@@ -136,10 +136,7 @@ public sealed class UnityContentExporter : IUnityContentExporter
         foreach (string warning in warnings)
             operationResult.Warnings.Add(warning);
 
-        operationResult.Warnings.Add("[MINOR] Export creates new Unity .asset files for local assets without SourceAssetPath.");
-        operationResult.Warnings.Add("[MINOR] Icon refs are exported when IconPath points to a valid Unity asset.");
         operationResult.Warnings.Add("[MINOR] Prefab refs are intentionally not exported because Unity prefab fileIDs can be object-specific.");
-        operationResult.Warnings.Add("[MINOR] WPF does not delete Unity assets. Removed local items may leave Unity assets orphaned.");
         operationResult.Warnings.Add("[MINOR] A timestamped .bak file is created before each modified existing .asset is overwritten.");
 
         return operationResult;
