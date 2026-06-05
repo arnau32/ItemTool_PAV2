@@ -39,6 +39,22 @@ public sealed class UnityContentExporter : IUnityContentExporter
 
         List<string> warnings = new();
 
+        Dictionary<string, string> itemGuidById = BuildUnityGuidByIdMap(
+            database.Items,
+            unityProjectRootPath,
+            x => x.Id,
+            x => x.SourceAssetPath,
+            "Item",
+            warnings);
+
+        Dictionary<string, string> lootTableGuidById = BuildUnityGuidByIdMap(
+            database.LootTables,
+            unityProjectRootPath,
+            x => x.Id,
+            x => x.SourceAssetPath,
+            "Loot table",
+            warnings);
+
         foreach (ItemDto item in database.Items)
         {
             cancellationToken.ThrowIfCancellationRequested();
@@ -72,6 +88,9 @@ public sealed class UnityContentExporter : IUnityContentExporter
             ExportAssetResult result = await ExportLootTableAsync(
                 lootTable,
                 unityProjectRootPath,
+                itemGuidById,
+                lootTableGuidById,
+                warnings,
                 cancellationToken);
 
             switch (result.Status)
@@ -103,8 +122,8 @@ public sealed class UnityContentExporter : IUnityContentExporter
         foreach (string warning in warnings)
             operationResult.Warnings.Add(warning);
 
-        operationResult.Warnings.Add("Export phase 2 writes safe scalar fields, stat modifiers and buff effects.");
-        operationResult.Warnings.Add("Icon refs, prefab refs and loot entries are not exported yet.");
+        operationResult.Warnings.Add("Export phase 3 writes scalar fields, stat modifiers, buff effects and loot table entries.");
+        operationResult.Warnings.Add("Icon refs and prefab refs are still not exported.");
         operationResult.Warnings.Add("A timestamped .bak file is created before each modified .asset is overwritten.");
 
         return operationResult;
@@ -192,6 +211,9 @@ public sealed class UnityContentExporter : IUnityContentExporter
     private static async Task<ExportAssetResult> ExportLootTableAsync(
         LootTableDto lootTable,
         string unityProjectRootPath,
+        IReadOnlyDictionary<string, string> itemGuidById,
+        IReadOnlyDictionary<string, string> lootTableGuidById,
+        List<string> warnings,
         CancellationToken cancellationToken)
     {
         if (string.IsNullOrWhiteSpace(lootTable.SourceAssetPath))
@@ -214,6 +236,30 @@ public sealed class UnityContentExporter : IUnityContentExporter
         changed |= SetScalar(lines, "lootTableID", lootTable.Id);
         changed |= SetScalar(lines, "minRandomPicks", FormatInt(lootTable.MinRandomPicks));
         changed |= SetScalar(lines, "maxRandomPicks", FormatInt(lootTable.MaxRandomPicks));
+
+        changed |= SetYamlListBlocks(
+            lines,
+            "guaranteedEntries",
+            lootTable.GuaranteedEntries
+                .Select(entry => BuildLootEntryBlock(
+                    lootTable,
+                    entry,
+                    itemGuidById,
+                    lootTableGuidById,
+                    warnings))
+                .ToList());
+
+        changed |= SetYamlListBlocks(
+            lines,
+            "weightedEntries",
+            lootTable.WeightedEntries
+                .Select(entry => BuildLootEntryBlock(
+                    lootTable,
+                    entry,
+                    itemGuidById,
+                    lootTableGuidById,
+                    warnings))
+                .ToList());
 
         if (!changed)
             return ExportAssetResult.Unchanged();
@@ -250,6 +296,85 @@ public sealed class UnityContentExporter : IUnityContentExporter
         await File.WriteAllTextAsync(outputPath, json, cancellationToken);
 
         return outputPath;
+    }
+
+    private static Dictionary<string, string> BuildUnityGuidByIdMap<T>(
+        IEnumerable<T> assets,
+        string unityProjectRootPath,
+        Func<T, string> idSelector,
+        Func<T, string> sourceAssetPathSelector,
+        string assetLabel,
+        List<string> warnings)
+    {
+        Dictionary<string, string> result = new(StringComparer.OrdinalIgnoreCase);
+
+        foreach (T asset in assets)
+        {
+            string id = idSelector(asset);
+            string sourceAssetPath = sourceAssetPathSelector(asset);
+
+            if (string.IsNullOrWhiteSpace(id))
+                continue;
+
+            if (result.ContainsKey(id))
+            {
+                AddWarning(warnings, $"{assetLabel} \"{id}\" has a duplicated id. Only the first GUID will be used for loot references.");
+                continue;
+            }
+
+            if (string.IsNullOrWhiteSpace(sourceAssetPath))
+            {
+                AddWarning(warnings, $"{assetLabel} \"{id}\" has no SourceAssetPath. It cannot be referenced from exported loot tables.");
+                continue;
+            }
+
+            string? absoluteAssetPath = ResolveUnityAssetPath(
+                unityProjectRootPath,
+                sourceAssetPath);
+
+            if (string.IsNullOrWhiteSpace(absoluteAssetPath) || !File.Exists(absoluteAssetPath))
+            {
+                AddWarning(warnings, $"{assetLabel} \"{id}\" source asset not found. It cannot be referenced from exported loot tables.");
+                continue;
+            }
+
+            string? guid = TryReadGuidFromMeta(absoluteAssetPath + ".meta");
+
+            if (string.IsNullOrWhiteSpace(guid))
+            {
+                AddWarning(warnings, $"{assetLabel} \"{id}\" has no readable .meta GUID. It cannot be referenced from exported loot tables.");
+                continue;
+            }
+
+            result[id] = guid;
+        }
+
+        return result;
+    }
+
+    private static string? TryReadGuidFromMeta(string metaPath)
+    {
+        if (!File.Exists(metaPath))
+            return null;
+
+        try
+        {
+            foreach (string line in File.ReadLines(metaPath))
+            {
+                string trimmed = line.Trim();
+
+                if (!trimmed.StartsWith("guid:", StringComparison.Ordinal))
+                    continue;
+
+                return trimmed["guid:".Length..].Trim();
+            }
+        }
+        catch
+        {
+            return null;
+        }
+
+        return null;
     }
 
     private static bool SetScalar(
@@ -356,6 +481,14 @@ public sealed class UnityContentExporter : IUnityContentExporter
         if (listIndex < 0)
             return false;
 
+        string listIndentation = new(' ', listIndent);
+        string newHeaderLine = blocks.Count == 0
+            ? $"{listIndentation}{listFieldName}: []"
+            : $"{listIndentation}{listFieldName}:";
+
+        bool headerChanged = !string.Equals(lines[listIndex], newHeaderLine, StringComparison.Ordinal);
+        lines[listIndex] = newHeaderLine;
+
         int removeStart = listIndex + 1;
         int removeEndExclusive = removeStart;
 
@@ -383,7 +516,6 @@ public sealed class UnityContentExporter : IUnityContentExporter
 
         List<string> newLines = new();
 
-        string listIndentation = new(' ', listIndent);
         string childIndentation = new(' ', listIndent + 2);
 
         foreach (IReadOnlyList<string> block in blocks)
@@ -404,7 +536,7 @@ public sealed class UnityContentExporter : IUnityContentExporter
 
         bool same = oldLines.SequenceEqual(newLines);
 
-        if (same)
+        if (same && !headerChanged)
             return false;
 
         lines.RemoveRange(
@@ -443,6 +575,63 @@ public sealed class UnityContentExporter : IUnityContentExporter
             $"baseValue: {FormatFloat(buff.Value)}",
             $"duration: {FormatFloat(buff.Duration)}"
         };
+    }
+
+    private static IReadOnlyList<string> BuildLootEntryBlock(
+        LootTableDto owner,
+        LootEntryDto entry,
+        IReadOnlyDictionary<string, string> itemGuidById,
+        IReadOnlyDictionary<string, string> lootTableGuidById,
+        List<string> warnings)
+    {
+        string itemReference = "{fileID: 0}";
+        string nestedTableReference = "{fileID: 0}";
+
+        if (entry.EntryType == LootEntryType.Item)
+        {
+            string itemId = entry.ItemId ?? string.Empty;
+
+            if (!string.IsNullOrWhiteSpace(itemId) &&
+                itemGuidById.TryGetValue(itemId, out string itemGuid))
+            {
+                itemReference = ToUnityScriptableObjectReference(itemGuid);
+            }
+            else
+            {
+                AddWarning(warnings, $"Loot table \"{owner.Id}\" has an item entry with unresolved ItemId \"{itemId}\".");
+            }
+        }
+        else if (entry.EntryType == LootEntryType.LootTable)
+        {
+            string nestedLootTableId = entry.NestedLootTableId ?? string.Empty;
+
+            if (!string.IsNullOrWhiteSpace(nestedLootTableId) &&
+                lootTableGuidById.TryGetValue(nestedLootTableId, out string lootTableGuid))
+            {
+                nestedTableReference = ToUnityScriptableObjectReference(lootTableGuid);
+            }
+            else
+            {
+                AddWarning(warnings, $"Loot table \"{owner.Id}\" has a nested table entry with unresolved NestedLootTableId \"{nestedLootTableId}\".");
+            }
+        }
+
+        return new[]
+        {
+            $"entryType: {FormatEnum(entry.EntryType)}",
+            $"item: {itemReference}",
+            $"nestedTable: {nestedTableReference}",
+            $"minQuantity: {FormatInt(entry.MinQuantity)}",
+            $"maxQuantity: {FormatInt(entry.MaxQuantity)}",
+            $"weight: {FormatInt(entry.Weight)}",
+            $"equipableOverrideMode: {FormatEnum(entry.EquipableOverrideMode)}",
+            $"overrideFixedRarity: {FormatEnum(entry.OverrideFixedRarity)}"
+        };
+    }
+
+    private static string ToUnityScriptableObjectReference(string guid)
+    {
+        return $"{{fileID: 11400000, guid: {guid}, type: 2}}";
     }
 
     private static string? ResolveUnityAssetPath(
