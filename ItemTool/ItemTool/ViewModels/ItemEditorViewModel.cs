@@ -82,7 +82,11 @@ public sealed partial class ItemEditorViewModel : ViewModelBase
                 ? "No Id"
                 : SelectedItem.Id;
 
-            return $"Unity Type: {SelectedItem.ItemType} · Rarity: {SelectedItem.ItemRarity} · Id: {id}";
+            string source = string.IsNullOrWhiteSpace(SelectedItem.SourceAssetPath)
+                ? "No Source Asset"
+                : SelectedItem.SourceAssetPath;
+
+            return $"Unity Type: {SelectedItem.ItemType} · Rarity: {SelectedItem.ItemRarity} · Id: {id} · Source: {source}";
         }
     }
 
@@ -185,6 +189,7 @@ public sealed partial class ItemEditorViewModel : ViewModelBase
         if (e.PropertyName == nameof(ItemDto.DisplayName) ||
             e.PropertyName == nameof(ItemDto.ItemNameId) ||
             e.PropertyName == nameof(ItemDto.Id) ||
+            e.PropertyName == nameof(ItemDto.SourceAssetPath) ||
             e.PropertyName == nameof(ItemDto.IconPath) ||
             e.PropertyName == nameof(ItemDto.ItemKind) ||
             e.PropertyName == nameof(ItemDto.ItemType) ||
@@ -253,6 +258,16 @@ public sealed partial class ItemEditorViewModel : ViewModelBase
     }
 
     [RelayCommand]
+    public void RemoveStatModifier(StatModifierDto? modifier)
+    {
+        if (SelectedItem?.Equipable == null || modifier == null)
+            return;
+
+        SelectedItem.Equipable.Modifiers.Remove(modifier);
+        ItemChanged?.Invoke();
+    }
+
+    [RelayCommand]
     public void ClearStatModifiers()
     {
         if (SelectedItem?.Equipable == null)
@@ -276,6 +291,16 @@ public sealed partial class ItemEditorViewModel : ViewModelBase
             Duration = 0
         });
 
+        ItemChanged?.Invoke();
+    }
+
+    [RelayCommand]
+    public void RemoveBuff(BuffEffectDto? buff)
+    {
+        if (SelectedItem?.Consumable == null || buff == null)
+            return;
+
+        SelectedItem.Consumable.Buffs.Remove(buff);
         ItemChanged?.Invoke();
     }
 

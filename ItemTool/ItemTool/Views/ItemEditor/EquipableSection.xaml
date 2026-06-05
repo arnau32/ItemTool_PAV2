@@ -73,6 +73,7 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="140" />
+                    <ColumnDefinition Width="34" />
                 </Grid.ColumnDefinitions>
 
                 <TextBlock
@@ -99,6 +100,7 @@
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*" />
                                 <ColumnDefinition Width="140" />
+                                <ColumnDefinition Width="34" />
                             </Grid.ColumnDefinitions>
 
                             <ComboBox
@@ -109,8 +111,16 @@
 
                             <TextBox
                                 Grid.Column="1"
+                                Margin="0,0,8,0"
                                 Text="{Binding Value, UpdateSourceTrigger=PropertyChanged}"
                                 TextAlignment="Center" />
+
+                            <Button
+                                Grid.Column="2"
+                                Padding="0"
+                                Command="{Binding DataContext.RemoveStatModifierCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                CommandParameter="{Binding}"
+                                Content="×" />
                         </Grid>
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
