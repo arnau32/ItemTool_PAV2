@@ -9,10 +9,62 @@
         Visibility="{Binding ShowsConsumableSection, Converter={StaticResource BoolToVisibilityConverter}}">
 
         <StackPanel>
-            <StackPanel Margin="0,0,0,6" Orientation="Horizontal">
-                <Button Command="{Binding AddBuffCommand}" Content="+ Add Buff" />
-                <Button Command="{Binding ClearBuffsCommand}" Content="Clear" />
-            </StackPanel>
+            <DockPanel Margin="0,0,0,6">
+                <TextBlock
+                    DockPanel.Dock="Left"
+                    VerticalAlignment="Center"
+                    FontWeight="Bold"
+                    Text="Buff Effects" />
+
+                <StackPanel
+                    DockPanel.Dock="Right"
+                    HorizontalAlignment="Right"
+                    Orientation="Horizontal">
+                    <Button Command="{Binding AddBuffCommand}" Content="+ Add Buff" />
+                    <Button Command="{Binding ClearBuffsCommand}" Content="Clear" />
+                </StackPanel>
+            </DockPanel>
+
+            <Grid Margin="0,0,0,4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="120" />
+                    <ColumnDefinition Width="120" />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock
+                    Grid.Column="0"
+                    HorizontalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold"
+                    Opacity="0.75"
+                    Text="Application Mode" />
+
+                <TextBlock
+                    Grid.Column="1"
+                    HorizontalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold"
+                    Opacity="0.75"
+                    Text="Stat Type" />
+
+                <TextBlock
+                    Grid.Column="2"
+                    HorizontalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold"
+                    Opacity="0.75"
+                    Text="Value" />
+
+                <TextBlock
+                    Grid.Column="3"
+                    HorizontalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold"
+                    Opacity="0.75"
+                    Text="Duration" />
+            </Grid>
 
             <ItemsControl ItemsSource="{Binding SelectedItem.Consumable.Buffs}">
                 <ItemsControl.ItemTemplate>
@@ -40,11 +92,13 @@
                             <TextBox
                                 Grid.Column="2"
                                 Margin="0,0,8,0"
-                                Text="{Binding Value, UpdateSourceTrigger=PropertyChanged}" />
+                                Text="{Binding Value, UpdateSourceTrigger=PropertyChanged}"
+                                TextAlignment="Center" />
 
                             <TextBox
                                 Grid.Column="3"
-                                Text="{Binding Duration, UpdateSourceTrigger=PropertyChanged}" />
+                                Text="{Binding Duration, UpdateSourceTrigger=PropertyChanged}"
+                                TextAlignment="Center" />
                         </Grid>
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>

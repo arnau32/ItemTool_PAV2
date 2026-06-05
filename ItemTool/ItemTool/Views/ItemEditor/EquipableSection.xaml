@@ -53,10 +53,44 @@
                     Text="{Binding SelectedItem.Equipable.PrefabPath, UpdateSourceTrigger=PropertyChanged}" />
             </Grid>
 
-            <StackPanel Margin="0,8,0,6" Orientation="Horizontal">
-                <Button Command="{Binding AddStatModifierCommand}" Content="+ Add Modifier" />
-                <Button Command="{Binding ClearStatModifiersCommand}" Content="Clear" />
-            </StackPanel>
+            <DockPanel Margin="0,10,0,6">
+                <TextBlock
+                    DockPanel.Dock="Left"
+                    VerticalAlignment="Center"
+                    FontWeight="Bold"
+                    Text="Stat Modifiers" />
+
+                <StackPanel
+                    DockPanel.Dock="Right"
+                    HorizontalAlignment="Right"
+                    Orientation="Horizontal">
+                    <Button Command="{Binding AddStatModifierCommand}" Content="+ Add Modifier" />
+                    <Button Command="{Binding ClearStatModifiersCommand}" Content="Clear" />
+                </StackPanel>
+            </DockPanel>
+
+            <Grid Margin="0,0,0,4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="140" />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock
+                    Grid.Column="0"
+                    HorizontalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold"
+                    Opacity="0.75"
+                    Text="Stat Type" />
+
+                <TextBlock
+                    Grid.Column="1"
+                    HorizontalAlignment="Center"
+                    FontSize="11"
+                    FontWeight="Bold"
+                    Opacity="0.75"
+                    Text="Value" />
+            </Grid>
 
             <ItemsControl ItemsSource="{Binding SelectedItem.Equipable.Modifiers}">
                 <ItemsControl.ItemTemplate>
@@ -64,7 +98,7 @@
                         <Grid Margin="0,0,0,4">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*" />
-                                <ColumnDefinition Width="120" />
+                                <ColumnDefinition Width="140" />
                             </Grid.ColumnDefinitions>
 
                             <ComboBox
@@ -75,7 +109,8 @@
 
                             <TextBox
                                 Grid.Column="1"
-                                Text="{Binding Value, UpdateSourceTrigger=PropertyChanged}" />
+                                Text="{Binding Value, UpdateSourceTrigger=PropertyChanged}"
+                                TextAlignment="Center" />
                         </Grid>
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
