@@ -101,9 +101,6 @@ public sealed class UnityContentImporter : IUnityContentImporter
             importedDatabase: importedDatabase);
 
         result.Warnings.Add("LocalizedString values are not resolved yet. DisplayName falls back to itemNameID or asset name.");
-        result.Warnings.Add("Stat modifiers and buff effects are imported, but complex Unity object references are not imported yet.");
-        result.Warnings.Add("Some Unity assets have empty m_EditorClassIdentifier, so the importer resolves their type using m_Script guid.");
-        result.Warnings.Add("Loot table references are resolved by GUID. Missing or broken references become empty IDs and will be reported by validation.");
 
         return Task.FromResult(result);
     }
