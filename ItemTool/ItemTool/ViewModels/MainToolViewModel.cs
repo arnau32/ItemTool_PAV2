@@ -95,7 +95,7 @@ public sealed partial class MainToolViewModel : ViewModelBase
                 return "Load loot tables or press Refresh to search references.";
 
             if (SelectedItemLootUsages.Count == 0)
-                return "No direct loot table references found.";
+                return "No direct loot table reference(s) found.";
 
             return $"{SelectedItemLootUsages.Count} direct loot table reference(s) found.";
         }
@@ -349,14 +349,22 @@ public sealed partial class MainToolViewModel : ViewModelBase
             ? "Success"
             : "Failed";
 
-        string message = $"[{status}] {result.Message}";
+        List<string> lines = new()
+        {
+            $"[{status}] {result.Message}"
+        };
 
         if (!string.IsNullOrWhiteSpace(result.OutputPath))
-            message += $" Output: {result.OutputPath}";
+            lines.Add($"Output: {result.OutputPath}");
 
         if (result.Warnings.Count > 0)
-            message += $" Warnings: {string.Join(" | ", result.Warnings)}";
+        {
+            lines.Add("Observations:");
 
-        return message;
+            foreach (string warning in result.Warnings)
+                lines.Add($"- {warning}");
+        }
+
+        return string.Join(Environment.NewLine, lines);
     }
 }

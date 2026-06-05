@@ -79,10 +79,22 @@
                         Opacity="0.7"
                         Text="{Binding ProjectSettingsStatusText}" />
 
-                    <TextBlock
-                        FontSize="11"
-                        Opacity="0.7"
-                        Text="{Binding UnityContentOperationStatusText}" />
+                    <Border
+                        Margin="0,4,8,0"
+                        Padding="6"
+                        Background="#1E1E1E"
+                        BorderBrush="#3A3A3A"
+                        BorderThickness="1"
+                        MaxHeight="95">
+
+                        <ScrollViewer VerticalScrollBarVisibility="Auto">
+                            <TextBlock
+                                FontSize="11"
+                                Opacity="0.8"
+                                Text="{Binding UnityContentOperationStatusText}"
+                                TextWrapping="Wrap" />
+                        </ScrollViewer>
+                    </Border>
                 </StackPanel>
 
                 <Button

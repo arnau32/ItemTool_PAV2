@@ -74,6 +74,7 @@ public sealed class UnityContentExporter : IUnityContentExporter
             ExportAssetResult result = await ExportItemAsync(
                 item,
                 unityProjectRootPath,
+                warnings,
                 cancellationToken);
 
             switch (result.Status)
@@ -134,9 +135,11 @@ public sealed class UnityContentExporter : IUnityContentExporter
         foreach (string warning in warnings)
             operationResult.Warnings.Add(warning);
 
-        operationResult.Warnings.Add("Export now creates new Unity .asset files for local assets without SourceAssetPath.");
-        operationResult.Warnings.Add("Icon refs and prefab refs are still not exported.");
-        operationResult.Warnings.Add("A timestamped .bak file is created before each modified existing .asset is overwritten.");
+        operationResult.Warnings.Add("[MINOR] Export creates new Unity .asset files for local assets without SourceAssetPath.");
+        operationResult.Warnings.Add("[MINOR] Icon refs are exported when IconPath points to a valid Unity asset.");
+        operationResult.Warnings.Add("[MINOR] Prefab refs are intentionally not exported because Unity prefab fileIDs can be object-specific.");
+        operationResult.Warnings.Add("[MINOR] WPF does not delete Unity assets. Removed local items may leave Unity assets orphaned.");
+        operationResult.Warnings.Add("[MINOR] A timestamped .bak file is created before each modified existing .asset is overwritten.");
 
         return operationResult;
     }
@@ -161,7 +164,7 @@ public sealed class UnityContentExporter : IUnityContentExporter
 
             if (string.IsNullOrWhiteSpace(scriptGuid))
             {
-                AddWarning(warnings, $"Cannot create Unity asset for item \"{item.Id}\" because script \"{className}.cs.meta\" was not found.");
+                AddWarning(warnings, $"[MAJOR] Cannot create Unity asset for item \"{item.Id}\" because script \"{className}.cs.meta\" was not found.");
                 continue;
             }
 
@@ -221,7 +224,7 @@ public sealed class UnityContentExporter : IUnityContentExporter
 
             if (string.IsNullOrWhiteSpace(scriptGuid))
             {
-                AddWarning(warnings, $"Cannot create Unity asset for loot table \"{lootTable.Id}\" because script \"{className}.cs.meta\" was not found.");
+                AddWarning(warnings, $"[MAJOR] Cannot create Unity asset for loot table \"{lootTable.Id}\" because script \"{className}.cs.meta\" was not found.");
                 continue;
             }
 
@@ -263,17 +266,18 @@ public sealed class UnityContentExporter : IUnityContentExporter
     private static async Task<ExportAssetResult> ExportItemAsync(
         ItemDto item,
         string unityProjectRootPath,
+        List<string> warnings,
         CancellationToken cancellationToken)
     {
         if (string.IsNullOrWhiteSpace(item.SourceAssetPath))
-            return ExportAssetResult.Skipped($"Item \"{item.Id}\" has no SourceAssetPath.");
+            return ExportAssetResult.Skipped($"[MAJOR] Item \"{item.Id}\" has no SourceAssetPath.");
 
         string? absoluteAssetPath = ResolveUnityAssetPath(
             unityProjectRootPath,
             item.SourceAssetPath);
 
         if (string.IsNullOrWhiteSpace(absoluteAssetPath) || !File.Exists(absoluteAssetPath))
-            return ExportAssetResult.Skipped($"Item \"{item.Id}\" source asset not found: {item.SourceAssetPath}");
+            return ExportAssetResult.Skipped($"[MAJOR] Item \"{item.Id}\" source asset not found: {item.SourceAssetPath}");
 
         List<string> lines = (await File.ReadAllLinesAsync(
                 absoluteAssetPath,
@@ -285,6 +289,15 @@ public sealed class UnityContentExporter : IUnityContentExporter
         changed |= SetScalar(lines, "<uniqueID>k__BackingField", item.Id);
         changed |= SetScalar(lines, "itemType", FormatInt(GetUnityItemType(item)));
         changed |= SetScalar(lines, "itemNameID", item.ItemNameId);
+
+        string? iconReference = TryBuildIconReference(
+            item,
+            unityProjectRootPath,
+            warnings);
+
+        if (iconReference != null)
+            changed |= SetScalar(lines, "icon", iconReference);
+
         changed |= SetScalar(lines, "itemRarity", FormatEnum(item.ItemRarity));
         changed |= SetScalar(lines, "value", FormatFloat(item.Value));
         changed |= SetScalar(lines, "weight", FormatFloat(item.Weight));
@@ -294,6 +307,11 @@ public sealed class UnityContentExporter : IUnityContentExporter
 
         if (item.Equipable != null)
         {
+            ValidatePrefabPath(
+                item,
+                unityProjectRootPath,
+                warnings);
+
             changed |= SetScalar(lines, "equipSlot", FormatEnum(item.Equipable.EquipSlot));
             changed |= SetScalar(lines, "tier", FormatInt(item.Equipable.Tier));
             changed |= SetScalar(lines, "rollMode", FormatEnum(item.Equipable.RollMode));
@@ -348,14 +366,14 @@ public sealed class UnityContentExporter : IUnityContentExporter
         CancellationToken cancellationToken)
     {
         if (string.IsNullOrWhiteSpace(lootTable.SourceAssetPath))
-            return ExportAssetResult.Skipped($"Loot table \"{lootTable.Id}\" has no SourceAssetPath.");
+            return ExportAssetResult.Skipped($"[MAJOR] Loot table \"{lootTable.Id}\" has no SourceAssetPath.");
 
         string? absoluteAssetPath = ResolveUnityAssetPath(
             unityProjectRootPath,
             lootTable.SourceAssetPath);
 
         if (string.IsNullOrWhiteSpace(absoluteAssetPath) || !File.Exists(absoluteAssetPath))
-            return ExportAssetResult.Skipped($"Loot table \"{lootTable.Id}\" source asset not found: {lootTable.SourceAssetPath}");
+            return ExportAssetResult.Skipped($"[MAJOR] Loot table \"{lootTable.Id}\" source asset not found: {lootTable.SourceAssetPath}");
 
         List<string> lines = (await File.ReadAllLinesAsync(
                 absoluteAssetPath,
@@ -449,13 +467,13 @@ public sealed class UnityContentExporter : IUnityContentExporter
 
             if (result.ContainsKey(id))
             {
-                AddWarning(warnings, $"{assetLabel} \"{id}\" has a duplicated id. Only the first GUID will be used for loot references.");
+                AddWarning(warnings, $"[MAJOR] {assetLabel} \"{id}\" has a duplicated id. Only the first GUID will be used for loot references.");
                 continue;
             }
 
             if (string.IsNullOrWhiteSpace(sourceAssetPath))
             {
-                AddWarning(warnings, $"{assetLabel} \"{id}\" has no SourceAssetPath. It cannot be referenced from exported loot tables.");
+                AddWarning(warnings, $"[MAJOR] {assetLabel} \"{id}\" has no SourceAssetPath. It cannot be referenced from exported loot tables.");
                 continue;
             }
 
@@ -465,7 +483,7 @@ public sealed class UnityContentExporter : IUnityContentExporter
 
             if (string.IsNullOrWhiteSpace(absoluteAssetPath) || !File.Exists(absoluteAssetPath))
             {
-                AddWarning(warnings, $"{assetLabel} \"{id}\" source asset not found. It cannot be referenced from exported loot tables.");
+                AddWarning(warnings, $"[MAJOR] {assetLabel} \"{id}\" source asset not found. It cannot be referenced from exported loot tables.");
                 continue;
             }
 
@@ -473,7 +491,7 @@ public sealed class UnityContentExporter : IUnityContentExporter
 
             if (string.IsNullOrWhiteSpace(guid))
             {
-                AddWarning(warnings, $"{assetLabel} \"{id}\" has no readable .meta GUID. It cannot be referenced from exported loot tables.");
+                AddWarning(warnings, $"[MAJOR] {assetLabel} \"{id}\" has no readable .meta GUID. It cannot be referenced from exported loot tables.");
                 continue;
             }
 
@@ -500,7 +518,17 @@ public sealed class UnityContentExporter : IUnityContentExporter
         lines.Add("  icon: {fileID: 0}");
         lines.Add($"  itemType: {FormatInt(GetUnityItemType(item))}");
         lines.Add($"  itemNameID: {SafeYamlValue(item.ItemNameId)}");
+        lines.Add("  localizedDisplayName:");
+        lines.Add("    m_TableReference:");
+        lines.Add("      m_TableCollectionName: ");
+        lines.Add("    m_TableEntryReference:");
+        lines.Add("      m_KeyId: 0");
+        lines.Add("      m_Key: ");
+        lines.Add("    m_FallbackState: 0");
+        lines.Add("    m_WaitForCompletion: 0");
+        lines.Add("    m_LocalVariables: []");
         lines.Add($"  description: {SafeYamlValue(item.Description)}");
+        lines.Add("  descriptionBlocks: []");
         lines.Add($"  itemRarity: {FormatEnum(item.ItemRarity)}");
         lines.Add($"  value: {FormatFloat(item.Value)}");
         lines.Add($"  weight: {FormatFloat(item.Weight)}");
@@ -511,22 +539,22 @@ public sealed class UnityContentExporter : IUnityContentExporter
 
         if (item.Equipable != null)
         {
+            lines.Add($"  equipSlot: {FormatEnum(item.Equipable.EquipSlot)}");
             lines.Add("  modifiers: []");
             lines.Add("  prefab: {fileID: 0}");
-            lines.Add($"  equipSlot: {FormatEnum(item.Equipable.EquipSlot)}");
             lines.Add($"  tier: {FormatInt(item.Equipable.Tier)}");
             lines.Add($"  rollMode: {FormatEnum(item.Equipable.RollMode)}");
         }
 
         if (item.Weapon != null)
         {
-            lines.Add("  prefabVariant: {fileID: 0}");
-            lines.Add($"  handType: {FormatEnum(item.Weapon.HandType)}");
             lines.Add("  animatorOverride: {fileID: 0}");
+            lines.Add($"  handType: {FormatEnum(item.Weapon.HandType)}");
+            lines.Add($"  familyType: {FormatEnum(item.Weapon.FamilyType)}");
+            lines.Add("  prefabVariant: {fileID: 0}");
+            lines.Add("  combos: []");
             lines.Add("  dodgeSet: {fileID: 0}");
             lines.Add("  parry: {fileID: 0}");
-            lines.Add("  combos: []");
-            lines.Add($"  familyType: {FormatEnum(item.Weapon.FamilyType)}");
             lines.Add("  weaponSkill: {fileID: 0}");
             lines.Add($"  skillScoreNeeded: {FormatFloat(item.Weapon.SkillScoreNeeded)}");
             lines.Add($"  weaponTier: {FormatInt(item.Weapon.WeaponTier)}");
@@ -541,6 +569,10 @@ public sealed class UnityContentExporter : IUnityContentExporter
             lines.Add($"  collectionID: {FormatInt(item.Collectable.CollectionId)}");
             lines.Add($"  isAuroraDust: {FormatBool(item.Collectable.IsAuroraDust)}");
         }
+
+        lines.Add("  references:");
+        lines.Add("    version: 2");
+        lines.Add("    RefIds: []");
 
         return lines;
     }
@@ -601,6 +633,74 @@ public sealed class UnityContentExporter : IUnityContentExporter
             "  assetBundleName: ",
             "  assetBundleVariant: "
         };
+    }
+
+    private static string? TryBuildIconReference(
+        ItemDto item,
+        string unityProjectRootPath,
+        List<string> warnings)
+    {
+        if (string.IsNullOrWhiteSpace(item.IconPath))
+            return "{fileID: 0}";
+
+        string? absoluteIconPath = ResolveUnityAssetPath(
+            unityProjectRootPath,
+            item.IconPath);
+
+        if (string.IsNullOrWhiteSpace(absoluteIconPath) || !File.Exists(absoluteIconPath))
+        {
+            AddWarning(
+                warnings,
+                $"[MINOR] Item \"{item.Id}\" has an IconPath that does not exist in the Unity project: {item.IconPath}");
+
+            return null;
+        }
+
+        string? guid = TryReadGuidFromMeta(absoluteIconPath + ".meta");
+
+        if (string.IsNullOrWhiteSpace(guid))
+        {
+            AddWarning(
+                warnings,
+                $"[MINOR] Item \"{item.Id}\" icon asset has no readable .meta GUID: {item.IconPath}");
+
+            return null;
+        }
+
+        return $"{{fileID: 21300000, guid: {guid}, type: 3}}";
+    }
+
+    private static void ValidatePrefabPath(
+        ItemDto item,
+        string unityProjectRootPath,
+        List<string> warnings)
+    {
+        string? prefabPath = item.Equipable?.PrefabPath;
+
+        if (string.IsNullOrWhiteSpace(prefabPath))
+            return;
+
+        string? absolutePrefabPath = ResolveUnityAssetPath(
+            unityProjectRootPath,
+            prefabPath);
+
+        if (string.IsNullOrWhiteSpace(absolutePrefabPath) || !File.Exists(absolutePrefabPath))
+        {
+            AddWarning(
+                warnings,
+                $"[MINOR] Item \"{item.Id}\" has a PrefabPath that does not exist in the Unity project: {prefabPath}");
+
+            return;
+        }
+
+        string? guid = TryReadGuidFromMeta(absolutePrefabPath + ".meta");
+
+        if (string.IsNullOrWhiteSpace(guid))
+        {
+            AddWarning(
+                warnings,
+                $"[MINOR] Item \"{item.Id}\" prefab asset has no readable .meta GUID: {prefabPath}");
+        }
     }
 
     private static string? FindScriptGuid(
@@ -798,7 +898,6 @@ public sealed class UnityContentExporter : IUnityContentExporter
         }
 
         List<string> newLines = new();
-
         string childIndentation = new(' ', listIndent + 2);
 
         foreach (IReadOnlyList<string> block in blocks)
@@ -881,7 +980,7 @@ public sealed class UnityContentExporter : IUnityContentExporter
             }
             else
             {
-                AddWarning(warnings, $"Loot table \"{owner.Id}\" has an item entry with unresolved ItemId \"{itemId}\".");
+                AddWarning(warnings, $"[MAJOR] Loot table \"{owner.Id}\" has an item entry with unresolved ItemId \"{itemId}\".");
             }
         }
         else if (entry.EntryType == LootEntryType.LootTable)
@@ -895,7 +994,7 @@ public sealed class UnityContentExporter : IUnityContentExporter
             }
             else
             {
-                AddWarning(warnings, $"Loot table \"{owner.Id}\" has a nested table entry with unresolved NestedLootTableId \"{nestedLootTableId}\".");
+                AddWarning(warnings, $"[MAJOR] Loot table \"{owner.Id}\" has a nested table entry with unresolved NestedLootTableId \"{nestedLootTableId}\".");
             }
         }
 
@@ -1111,7 +1210,10 @@ public sealed class UnityContentExporter : IUnityContentExporter
         if (string.IsNullOrWhiteSpace(warning))
             return;
 
-        const int maxWarnings = 20;
+        if (warnings.Contains(warning))
+            return;
+
+        const int maxWarnings = 30;
 
         if (warnings.Count < maxWarnings)
         {
@@ -1119,8 +1221,10 @@ public sealed class UnityContentExporter : IUnityContentExporter
             return;
         }
 
-        if (warnings.Count == maxWarnings)
-            warnings.Add("Additional export warnings were omitted.");
+        const string omittedWarning = "[MINOR] Additional export warnings were omitted.";
+
+        if (!warnings.Contains(omittedWarning))
+            warnings.Add(omittedWarning);
     }
 
     private static bool IsValidUnityProjectRoot(
