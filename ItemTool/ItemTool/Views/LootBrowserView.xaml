@@ -273,13 +273,6 @@
                             </ItemsControl>
                         </StackPanel>
                     </shared:ToolSection>
-
-                    <shared:ToolSection SectionTitle="Simulation">
-                        <TextBlock
-                            Opacity="0.75"
-                            Text="Loot simulation will be implemented after entries are editable." />
-                    </shared:ToolSection>
-
                 </StackPanel>
             </ScrollViewer>
         </Border>
