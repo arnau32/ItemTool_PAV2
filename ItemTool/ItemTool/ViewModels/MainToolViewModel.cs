@@ -192,6 +192,15 @@ public sealed partial class MainToolViewModel : ViewModelBase
             database,
             UnityProjectRootPath);
 
+        if (result.Succeeded)
+        {
+            await _repository.SaveAsync(database);
+
+            Items.Editor.NotifyHeaderPreviewChanged();
+            RefreshAllItemIconSources();
+            RefreshSelectedItemUsages();
+        }
+
         UnityContentOperationStatusText = FormatOperationResult(result);
     }
 

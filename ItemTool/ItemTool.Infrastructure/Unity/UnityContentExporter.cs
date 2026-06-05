@@ -31,13 +31,19 @@ public sealed class UnityContentExporter : IUnityContentExporter
         if (!IsValidUnityProjectRoot(unityProjectRootPath, out string validationMessage))
             return UnityContentOperationResultDto.Failure(validationMessage);
 
-        int updatedItems = 0;
-        int updatedLootTables = 0;
-        int skippedItems = 0;
-        int skippedLootTables = 0;
-        int unchangedAssets = 0;
-
         List<string> warnings = new();
+
+        int createdItemAssets = await EnsureNewItemAssetsAsync(
+            database.Items,
+            unityProjectRootPath,
+            warnings,
+            cancellationToken);
+
+        int createdLootTableAssets = await EnsureNewLootTableAssetsAsync(
+            database.LootTables,
+            unityProjectRootPath,
+            warnings,
+            cancellationToken);
 
         Dictionary<string, string> itemGuidById = BuildUnityGuidByIdMap(
             database.Items,
@@ -54,6 +60,12 @@ public sealed class UnityContentExporter : IUnityContentExporter
             x => x.SourceAssetPath,
             "Loot table",
             warnings);
+
+        int updatedItems = 0;
+        int updatedLootTables = 0;
+        int skippedItems = 0;
+        int skippedLootTables = 0;
+        int unchangedAssets = 0;
 
         foreach (ItemDto item in database.Items)
         {
@@ -116,17 +128,136 @@ public sealed class UnityContentExporter : IUnityContentExporter
             cancellationToken);
 
         UnityContentOperationResultDto operationResult = UnityContentOperationResultDto.Success(
-            $"Unity export completed. Updated {updatedItems} item asset(s) and {updatedLootTables} loot table asset(s). Skipped {skippedItems} item(s), {skippedLootTables} loot table(s), {unchangedAssets} unchanged asset(s).",
+            $"Unity export completed. Created {createdItemAssets} item asset(s) and {createdLootTableAssets} loot table asset(s). Updated {updatedItems} item asset(s) and {updatedLootTables} loot table asset(s). Skipped {skippedItems} item(s), {skippedLootTables} loot table(s), {unchangedAssets} unchanged asset(s).",
             previewPath);
 
         foreach (string warning in warnings)
             operationResult.Warnings.Add(warning);
 
-        operationResult.Warnings.Add("Export phase 3 writes scalar fields, stat modifiers, buff effects and loot table entries.");
+        operationResult.Warnings.Add("Export now creates new Unity .asset files for local assets without SourceAssetPath.");
         operationResult.Warnings.Add("Icon refs and prefab refs are still not exported.");
-        operationResult.Warnings.Add("A timestamped .bak file is created before each modified .asset is overwritten.");
+        operationResult.Warnings.Add("A timestamped .bak file is created before each modified existing .asset is overwritten.");
 
         return operationResult;
+    }
+
+    private static async Task<int> EnsureNewItemAssetsAsync(
+        IEnumerable<ItemDto> items,
+        string unityProjectRootPath,
+        List<string> warnings,
+        CancellationToken cancellationToken)
+    {
+        int createdCount = 0;
+
+        foreach (ItemDto item in items)
+        {
+            cancellationToken.ThrowIfCancellationRequested();
+
+            if (!string.IsNullOrWhiteSpace(item.SourceAssetPath))
+                continue;
+
+            string className = GetUnityItemClassName(item);
+            string? scriptGuid = FindScriptGuid(unityProjectRootPath, className);
+
+            if (string.IsNullOrWhiteSpace(scriptGuid))
+            {
+                AddWarning(warnings, $"Cannot create Unity asset for item \"{item.Id}\" because script \"{className}.cs.meta\" was not found.");
+                continue;
+            }
+
+            string folderUnityPath = GetDefaultUnityItemFolder(item);
+            string folderAbsolutePath = Path.Combine(
+                unityProjectRootPath,
+                folderUnityPath.Replace('/', Path.DirectorySeparatorChar));
+
+            Directory.CreateDirectory(folderAbsolutePath);
+
+            string assetName = CreateAssetName(item.Id, item.ItemNameId, item.DisplayName, item.ItemKind.ToString());
+            string absoluteAssetPath = CreateUniqueAssetPath(folderAbsolutePath, assetName);
+
+            item.SourceAssetPath = ToUnityAssetPath(
+                unityProjectRootPath,
+                absoluteAssetPath);
+
+            List<string> assetLines = BuildNewItemAssetLines(
+                item,
+                Path.GetFileNameWithoutExtension(absoluteAssetPath),
+                className,
+                scriptGuid);
+
+            await File.WriteAllLinesAsync(
+                absoluteAssetPath,
+                assetLines,
+                cancellationToken);
+
+            await File.WriteAllLinesAsync(
+                absoluteAssetPath + ".meta",
+                BuildNewAssetMetaLines(),
+                cancellationToken);
+
+            createdCount++;
+        }
+
+        return createdCount;
+    }
+
+    private static async Task<int> EnsureNewLootTableAssetsAsync(
+        IEnumerable<LootTableDto> lootTables,
+        string unityProjectRootPath,
+        List<string> warnings,
+        CancellationToken cancellationToken)
+    {
+        int createdCount = 0;
+
+        foreach (LootTableDto lootTable in lootTables)
+        {
+            cancellationToken.ThrowIfCancellationRequested();
+
+            if (!string.IsNullOrWhiteSpace(lootTable.SourceAssetPath))
+                continue;
+
+            const string className = "LootTable";
+            string? scriptGuid = FindScriptGuid(unityProjectRootPath, className);
+
+            if (string.IsNullOrWhiteSpace(scriptGuid))
+            {
+                AddWarning(warnings, $"Cannot create Unity asset for loot table \"{lootTable.Id}\" because script \"{className}.cs.meta\" was not found.");
+                continue;
+            }
+
+            const string folderUnityPath = "Assets/Scriptable Objects/Items/LootTables";
+            string folderAbsolutePath = Path.Combine(
+                unityProjectRootPath,
+                folderUnityPath.Replace('/', Path.DirectorySeparatorChar));
+
+            Directory.CreateDirectory(folderAbsolutePath);
+
+            string assetName = CreateAssetName(lootTable.Id, lootTable.Name, "LootTable", "LootTable");
+            string absoluteAssetPath = CreateUniqueAssetPath(folderAbsolutePath, assetName);
+
+            lootTable.SourceAssetPath = ToUnityAssetPath(
+                unityProjectRootPath,
+                absoluteAssetPath);
+
+            List<string> assetLines = BuildNewLootTableAssetLines(
+                lootTable,
+                Path.GetFileNameWithoutExtension(absoluteAssetPath),
+                scriptGuid);
+
+            await File.WriteAllLinesAsync(
+                absoluteAssetPath,
+                assetLines,
+                cancellationToken);
+
+            await File.WriteAllLinesAsync(
+                absoluteAssetPath + ".meta",
+                BuildNewAssetMetaLines(),
+                cancellationToken);
+
+            createdCount++;
+        }
+
+        return createdCount;
     }
 
     private static async Task<ExportAssetResult> ExportItemAsync(
@@ -350,6 +481,158 @@ public sealed class UnityContentExporter : IUnityContentExporter
         }
 
         return result;
+    }
+
+    private static List<string> BuildNewItemAssetLines(
+        ItemDto item,
+        string assetName,
+        string className,
+        string scriptGuid)
+    {
+        item.EnsureDetailsForCurrentKind();
+
+        List<string> lines = BuildUnityAssetHeader(
+            assetName,
+            className,
+            scriptGuid);
+
+        lines.Add($"  <uniqueID>k__BackingField: {SafeYamlValue(item.Id)}");
+        lines.Add("  icon: {fileID: 0}");
+        lines.Add($"  itemType: {FormatInt(GetUnityItemType(item))}");
+        lines.Add($"  itemNameID: {SafeYamlValue(item.ItemNameId)}");
+        lines.Add($"  description: {SafeYamlValue(item.Description)}");
+        lines.Add($"  itemRarity: {FormatEnum(item.ItemRarity)}");
+        lines.Add($"  value: {FormatFloat(item.Value)}");
+        lines.Add($"  weight: {FormatFloat(item.Weight)}");
+        lines.Add($"  maxStack: {FormatInt(item.MaxStack)}");
+        lines.Add("  SlotDimension:");
+        lines.Add($"    Height: {FormatInt(item.SlotDimension.Height)}");
+        lines.Add($"    Width: {FormatInt(item.SlotDimension.Width)}");
+
+        if (item.Equipable != null)
+        {
+            lines.Add("  modifiers: []");
+            lines.Add("  prefab: {fileID: 0}");
+            lines.Add($"  equipSlot: {FormatEnum(item.Equipable.EquipSlot)}");
+            lines.Add($"  tier: {FormatInt(item.Equipable.Tier)}");
+            lines.Add($"  rollMode: {FormatEnum(item.Equipable.RollMode)}");
+        }
+
+        if (item.Weapon != null)
+        {
+            lines.Add("  prefabVariant: {fileID: 0}");
+            lines.Add($"  handType: {FormatEnum(item.Weapon.HandType)}");
+            lines.Add("  animatorOverride: {fileID: 0}");
+            lines.Add("  dodgeSet: {fileID: 0}");
+            lines.Add("  parry: {fileID: 0}");
+            lines.Add("  combos: []");
+            lines.Add($"  familyType: {FormatEnum(item.Weapon.FamilyType)}");
+            lines.Add("  weaponSkill: {fileID: 0}");
+            lines.Add($"  skillScoreNeeded: {FormatFloat(item.Weapon.SkillScoreNeeded)}");
+            lines.Add($"  weaponTier: {FormatInt(item.Weapon.WeaponTier)}");
+            lines.Add($"  enemyDamageMultiplier: {FormatFloat(item.Weapon.EnemyDamageMultiplier)}");
+        }
+
+        if (item.Consumable != null)
+            lines.Add("  buffs: []");
+
+        if (item.Collectable != null)
+        {
+            lines.Add($"  collectionID: {FormatInt(item.Collectable.CollectionId)}");
+            lines.Add($"  isAuroraDust: {FormatBool(item.Collectable.IsAuroraDust)}");
+        }
+
+        return lines;
+    }
+
+    private static List<string> BuildNewLootTableAssetLines(
+        LootTableDto lootTable,
+        string assetName,
+        string scriptGuid)
+    {
+        List<string> lines = BuildUnityAssetHeader(
+            assetName,
+            "LootTable",
+            scriptGuid);
+
+        lines.Add($"  lootTableID: {SafeYamlValue(lootTable.Id)}");
+        lines.Add("  guaranteedEntries: []");
+        lines.Add("  weightedEntries: []");
+        lines.Add($"  minRandomPicks: {FormatInt(lootTable.MinRandomPicks)}");
+        lines.Add($"  maxRandomPicks: {FormatInt(lootTable.MaxRandomPicks)}");
+
+        return lines;
+    }
+
+    private static List<string> BuildUnityAssetHeader(
+        string assetName,
+        string className,
+        string scriptGuid)
+    {
+        return new List<string>
+        {
+            "%YAML 1.1",
+            "%TAG !u! tag:unity3d.com,2011:",
+            "--- !u!114 &11400000",
+            "MonoBehaviour:",
+            "  m_ObjectHideFlags: 0",
+            "  m_CorrespondingSourceObject: {fileID: 0}",
+            "  m_PrefabInstance: {fileID: 0}",
+            "  m_PrefabAsset: {fileID: 0}",
+            "  m_GameObject: {fileID: 0}",
+            "  m_Enabled: 1",
+            "  m_EditorHideFlags: 0",
+            $"  m_Script: {{fileID: 11500000, guid: {scriptGuid}, type: 3}}",
+            $"  m_Name: {SafeYamlValue(assetName)}",
+            $"  m_EditorClassIdentifier: Assembly-CSharp::{className}"
+        };
+    }
+
+    private static IReadOnlyList<string> BuildNewAssetMetaLines()
+    {
+        return new[]
+        {
+            "fileFormatVersion: 2",
+            $"guid: {Guid.NewGuid():N}",
+            "NativeFormatImporter:",
+            "  externalObjects: {}",
+            "  mainObjectFileID: 11400000",
+            "  userData: ",
+            "  assetBundleName: ",
+            "  assetBundleVariant: "
+        };
+    }
+
+    private static string? FindScriptGuid(
+        string unityProjectRootPath,
+        string className)
+    {
+        string assetsPath = Path.Combine(unityProjectRootPath, "Assets");
+
+        if (!Directory.Exists(assetsPath))
+            return null;
+
+        try
+        {
+            string expectedMetaFileName = $"{className}.cs.meta";
+
+            foreach (string metaPath in Directory.EnumerateFiles(
+                         assetsPath,
+                         expectedMetaFileName,
+                         SearchOption.AllDirectories))
+            {
+                string? guid = TryReadGuidFromMeta(metaPath);
+
+                if (!string.IsNullOrWhiteSpace(guid))
+                    return guid;
+            }
+        }
+        catch
+        {
+            return null;
+        }
+
+        return null;
     }
 
     private static string? TryReadGuidFromMeta(string metaPath)
@@ -659,6 +942,98 @@ public sealed class UnityContentExporter : IUnityContentExporter
             : null;
     }
 
+    private static string ToUnityAssetPath(
+        string unityProjectRootPath,
+        string absoluteAssetPath)
+    {
+        string relativePath = Path.GetRelativePath(
+            unityProjectRootPath,
+            absoluteAssetPath);
+
+        return relativePath.Replace('\\', '/');
+    }
+
+    private static string CreateAssetName(
+        params string?[] candidates)
+    {
+        foreach (string? candidate in candidates)
+        {
+            if (string.IsNullOrWhiteSpace(candidate))
+                continue;
+
+            string sanitized = SanitizeFileName(candidate);
+
+            if (!string.IsNullOrWhiteSpace(sanitized))
+                return sanitized;
+        }
+
+        return "NewAsset";
+    }
+
+    private static string SanitizeFileName(string value)
+    {
+        char[] invalidCharacters = Path.GetInvalidFileNameChars();
+
+        string sanitized = new(
+            value
+                .Select(character =>
+                    invalidCharacters.Contains(character) ||
+                    char.IsWhiteSpace(character)
+                        ? '_'
+                        : character)
+                .ToArray());
+
+        return sanitized.Trim('_');
+    }
+
+    private static string CreateUniqueAssetPath(
+        string folderAbsolutePath,
+        string assetName)
+    {
+        string basePath = Path.Combine(folderAbsolutePath, $"{assetName}.asset");
+
+        if (!File.Exists(basePath))
+            return basePath;
+
+        int index = 1;
+
+        while (true)
+        {
+            string candidate = Path.Combine(folderAbsolutePath, $"{assetName}_{index}.asset");
+
+            if (!File.Exists(candidate))
+                return candidate;
+
+            index++;
+        }
+    }
+
+    private static string GetDefaultUnityItemFolder(ItemDto item)
+    {
+        return item.ItemKind switch
+        {
+            ItemKind.Equipment => "Assets/Scriptable Objects/Items/Equipment",
+            ItemKind.Weapon => "Assets/Scriptable Objects/Items/Weapons",
+            ItemKind.Consumable => "Assets/Scriptable Objects/Items/Consumables",
+            ItemKind.Crafting => "Assets/Scriptable Objects/Items/Crafting",
+            ItemKind.Collectable => "Assets/Scriptable Objects/Items/Collectables",
+            _ => "Assets/Scriptable Objects/Items"
+        };
+    }
+
+    private static string GetUnityItemClassName(ItemDto item)
+    {
+        return item.ItemKind switch
+        {
+            ItemKind.Equipment => "EquipableItemData",
+            ItemKind.Weapon => "WeaponData",
+            ItemKind.Consumable => "ConsumableItemData",
+            ItemKind.Crafting => "CraftingItemData",
+            ItemKind.Collectable => "CollectableItemData",
+            _ => "ItemData"
+        };
+    }
+
     private static void CreateBackup(string assetPath)
     {
         string timestamp = DateTime.Now.ToString(
@@ -707,6 +1082,11 @@ public sealed class UnityContentExporter : IUnityContentExporter
         return Convert
             .ToInt32(value, CultureInfo.InvariantCulture)
             .ToString(CultureInfo.InvariantCulture);
+    }
+
+    private static string SafeYamlValue(string? value)
+    {
+        return value ?? string.Empty;
     }
 
     private static int CountLeadingSpaces(string line)
