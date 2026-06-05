@@ -103,8 +103,8 @@ public sealed class UnityContentExporter : IUnityContentExporter
         foreach (string warning in warnings)
             operationResult.Warnings.Add(warning);
 
-        operationResult.Warnings.Add("Export phase 1 only writes safe scalar fields.");
-        operationResult.Warnings.Add("References, modifiers, buffs and loot entries are not exported yet.");
+        operationResult.Warnings.Add("Export phase 2 writes safe scalar fields, stat modifiers and buff effects.");
+        operationResult.Warnings.Add("Icon refs, prefab refs and loot entries are not exported yet.");
         operationResult.Warnings.Add("A timestamped .bak file is created before each modified .asset is overwritten.");
 
         return operationResult;
@@ -147,6 +147,10 @@ public sealed class UnityContentExporter : IUnityContentExporter
             changed |= SetScalar(lines, "equipSlot", FormatEnum(item.Equipable.EquipSlot));
             changed |= SetScalar(lines, "tier", FormatInt(item.Equipable.Tier));
             changed |= SetScalar(lines, "rollMode", FormatEnum(item.Equipable.RollMode));
+            changed |= SetYamlListBlocks(
+                lines,
+                "modifiers",
+                item.Equipable.Modifiers.Select(BuildStatModifierBlock).ToList());
         }
 
         if (item.Weapon != null)
@@ -156,6 +160,14 @@ public sealed class UnityContentExporter : IUnityContentExporter
             changed |= SetScalar(lines, "skillScoreNeeded", FormatFloat(item.Weapon.SkillScoreNeeded));
             changed |= SetScalar(lines, "weaponTier", FormatInt(item.Weapon.WeaponTier));
             changed |= SetScalar(lines, "enemyDamageMultiplier", FormatFloat(item.Weapon.EnemyDamageMultiplier));
+        }
+
+        if (item.Consumable != null)
+        {
+            changed |= SetYamlListBlocks(
+                lines,
+                "buffs",
+                item.Consumable.Buffs.Select(BuildBuffEffectBlock).ToList());
         }
 
         if (item.Collectable != null)
@@ -317,6 +329,120 @@ public sealed class UnityContentExporter : IUnityContentExporter
         }
 
         return false;
+    }
+
+    private static bool SetYamlListBlocks(
+        List<string> lines,
+        string listFieldName,
+        IReadOnlyList<IReadOnlyList<string>> blocks)
+    {
+        string listPrefix = $"{listFieldName}:";
+
+        int listIndex = -1;
+        int listIndent = -1;
+
+        for (int i = 0; i < lines.Count; i++)
+        {
+            string trimmed = lines[i].TrimStart();
+
+            if (!trimmed.StartsWith(listPrefix, StringComparison.Ordinal))
+                continue;
+
+            listIndex = i;
+            listIndent = CountLeadingSpaces(lines[i]);
+            break;
+        }
+
+        if (listIndex < 0)
+            return false;
+
+        int removeStart = listIndex + 1;
+        int removeEndExclusive = removeStart;
+
+        while (removeEndExclusive < lines.Count)
+        {
+            string line = lines[removeEndExclusive];
+
+            if (string.IsNullOrWhiteSpace(line))
+            {
+                removeEndExclusive++;
+                continue;
+            }
+
+            int currentIndent = CountLeadingSpaces(line);
+            string trimmed = line.TrimStart();
+
+            if (currentIndent < listIndent)
+                break;
+
+            if (currentIndent == listIndent && !trimmed.StartsWith("- ", StringComparison.Ordinal))
+                break;
+
+            removeEndExclusive++;
+        }
+
+        List<string> newLines = new();
+
+        string listIndentation = new(' ', listIndent);
+        string childIndentation = new(' ', listIndent + 2);
+
+        foreach (IReadOnlyList<string> block in blocks)
+        {
+            if (block.Count == 0)
+                continue;
+
+            newLines.Add($"{listIndentation}- {block[0]}");
+
+            for (int i = 1; i < block.Count; i++)
+                newLines.Add($"{childIndentation}{block[i]}");
+        }
+
+        List<string> oldLines = lines
+            .Skip(removeStart)
+            .Take(removeEndExclusive - removeStart)
+            .ToList();
+
+        bool same = oldLines.SequenceEqual(newLines);
+
+        if (same)
+            return false;
+
+        lines.RemoveRange(
+            removeStart,
+            removeEndExclusive - removeStart);
+
+        lines.InsertRange(
+            removeStart,
+            newLines);
+
+        return true;
+    }
+
+    private static IReadOnlyList<string> BuildStatModifierBlock(
+        StatModifierDto modifier,
+        int index)
+    {
+        return new[]
+        {
+            $"statTypeAffected: {FormatEnum(modifier.StatType)}",
+            "type: 100",
+            $"value: {FormatFloat(modifier.Value)}",
+            $"order: {FormatInt(index)}"
+        };
+    }
+
+    private static IReadOnlyList<string> BuildBuffEffectBlock(
+        BuffEffectDto buff,
+        int index)
+    {
+        return new[]
+        {
+            $"applicationMode: {FormatEnum(buff.ApplicationMode)}",
+            $"statType: {FormatEnum(buff.StatType)}",
+            "modifierType: 100",
+            $"baseValue: {FormatFloat(buff.Value)}",
+            $"duration: {FormatFloat(buff.Duration)}"
+        };
     }
 
     private static string? ResolveUnityAssetPath(

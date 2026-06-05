@@ -99,9 +99,7 @@ public sealed class UnityContentImporter : IUnityContentImporter
         UnityContentOperationResultDto result = UnityContentOperationResultDto.Success(
             $"Imported {importedItems.Count} item(s) and {importedLootTables.Count} loot table(s) from Unity. Scanned {scannedAssetCount} .asset file(s), ignored {ignoredAssetCount}.",
             importedDatabase: importedDatabase);
-
-        result.Warnings.Add("LocalizedString values are not resolved yet. DisplayName falls back to itemNameID or asset name.");
-
+        
         return Task.FromResult(result);
     }
 
