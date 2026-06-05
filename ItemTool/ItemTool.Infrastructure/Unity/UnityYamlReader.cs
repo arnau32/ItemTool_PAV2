@@ -84,7 +84,10 @@ internal static class UnityYamlReader
 
             int currentIndent = CountLeadingSpaces(line);
 
-            if (currentIndent <= listIndent)
+            if (currentIndent < listIndent)
+                break;
+
+            if (currentIndent == listIndent && !trimmed.StartsWith("- ", StringComparison.Ordinal))
                 break;
 
             if (trimmed.StartsWith("- ", StringComparison.Ordinal))
@@ -92,10 +95,12 @@ internal static class UnityYamlReader
                 if (currentBlock != null && currentBlock.Count > 0)
                     blocks.Add(currentBlock);
 
-                currentBlock = new List<string>
-                {
-                    trimmed[2..]
-                };
+                currentBlock = new List<string>();
+
+                string firstLine = trimmed[2..].Trim();
+
+                if (!string.IsNullOrWhiteSpace(firstLine))
+                    currentBlock.Add(firstLine);
 
                 continue;
             }
@@ -268,7 +273,9 @@ internal static class UnityYamlReader
             if (string.IsNullOrWhiteSpace(line))
                 continue;
 
-            if (CountLeadingSpaces(line) <= parentIndent)
+            int currentIndent = CountLeadingSpaces(line);
+
+            if (currentIndent <= parentIndent)
                 break;
 
             if (!trimmed.StartsWith(childPrefix, StringComparison.Ordinal))
