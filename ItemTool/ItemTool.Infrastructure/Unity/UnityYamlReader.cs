@@ -62,6 +62,7 @@ internal static class UnityYamlReader
 
         string listPrefix = $"{listFieldName}:";
         bool insideList = false;
+        int listIndent = -1;
         List<string>? currentBlock = null;
 
         foreach (string line in lines)
@@ -70,20 +71,21 @@ internal static class UnityYamlReader
 
             if (!insideList)
             {
-                if (trimmed.StartsWith(listPrefix, StringComparison.Ordinal))
-                    insideList = true;
+                if (!trimmed.StartsWith(listPrefix, StringComparison.Ordinal))
+                    continue;
 
+                insideList = true;
+                listIndent = CountLeadingSpaces(line);
                 continue;
-            }
-
-            if (!line.StartsWith(" ", StringComparison.Ordinal) &&
-                !string.IsNullOrWhiteSpace(line))
-            {
-                break;
             }
 
             if (string.IsNullOrWhiteSpace(line))
                 continue;
+
+            int currentIndent = CountLeadingSpaces(line);
+
+            if (currentIndent <= listIndent)
+                break;
 
             if (trimmed.StartsWith("- ", StringComparison.Ordinal))
             {
@@ -221,6 +223,22 @@ internal static class UnityYamlReader
             : defaultValue;
     }
 
+    public static float ReadFloatFromBlock(
+        IReadOnlyList<string> block,
+        string fieldName,
+        float defaultValue)
+    {
+        string? raw = ReadScalarFromBlock(block, fieldName);
+
+        return float.TryParse(
+            raw,
+            NumberStyles.Float,
+            CultureInfo.InvariantCulture,
+            out float value)
+            ? value
+            : defaultValue;
+    }
+
     public static int ReadNestedInt(
         IReadOnlyList<string> lines,
         string parentFieldName,
@@ -231,6 +249,7 @@ internal static class UnityYamlReader
         string childPrefix = $"{childFieldName}:";
 
         bool insideParent = false;
+        int parentIndent = -1;
 
         foreach (string line in lines)
         {
@@ -239,13 +258,17 @@ internal static class UnityYamlReader
             if (trimmed.StartsWith(parentPrefix, StringComparison.Ordinal))
             {
                 insideParent = true;
+                parentIndent = CountLeadingSpaces(line);
                 continue;
             }
 
             if (!insideParent)
                 continue;
 
-            if (!line.StartsWith(" ", StringComparison.Ordinal))
+            if (string.IsNullOrWhiteSpace(line))
+                continue;
+
+            if (CountLeadingSpaces(line) <= parentIndent)
                 break;
 
             if (!trimmed.StartsWith(childPrefix, StringComparison.Ordinal))
@@ -297,5 +320,20 @@ internal static class UnityYamlReader
             return (TEnum)Enum.ToObject(typeof(TEnum), rawValue);
 
         return defaultValue;
+    }
+
+    private static int CountLeadingSpaces(string line)
+    {
+        int count = 0;
+
+        foreach (char character in line)
+        {
+            if (character != ' ')
+                break;
+
+            count++;
+        }
+
+        return count;
     }
 }

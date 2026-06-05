@@ -74,6 +74,8 @@ internal static class UnityItemAssetImporter
                 lines,
                 "rollMode",
                 EquipableRollMode.RandomRarityRandomStats);
+
+            ImportStatModifiers(item.Equipable, lines);
         }
 
         if (item.Weapon != null)
@@ -104,6 +106,11 @@ internal static class UnityItemAssetImporter
                 defaultValue: 1f);
         }
 
+        if (item.Consumable != null)
+        {
+            ImportBuffEffects(item.Consumable, lines);
+        }
+
         if (item.Collectable != null)
         {
             item.Collectable.CollectionId = UnityYamlReader.ReadInt(
@@ -115,6 +122,74 @@ internal static class UnityItemAssetImporter
                 lines,
                 "isAuroraDust",
                 defaultValue: false);
+        }
+    }
+
+    private static void ImportStatModifiers(
+        EquipableItemDetailsDto equipable,
+        IReadOnlyList<string> lines)
+    {
+        List<List<string>> modifierBlocks = UnityYamlReader.ReadYamlListBlocks(
+            lines,
+            "modifiers");
+
+        equipable.Modifiers.Clear();
+
+        foreach (List<string> modifierBlock in modifierBlocks)
+        {
+            StatModifierDto modifier = new()
+            {
+                StatType = UnityYamlReader.ReadEnumIntFromBlock(
+                    modifierBlock,
+                    "statTypeAffected",
+                    StatType.Attack),
+
+                Value = UnityYamlReader.ReadFloatFromBlock(
+                    modifierBlock,
+                    "value",
+                    defaultValue: 0f)
+            };
+
+            equipable.Modifiers.Add(modifier);
+        }
+    }
+
+    private static void ImportBuffEffects(
+        ConsumableItemDetailsDto consumable,
+        IReadOnlyList<string> lines)
+    {
+        List<List<string>> buffBlocks = UnityYamlReader.ReadYamlListBlocks(
+            lines,
+            "buffs");
+
+        consumable.Buffs.Clear();
+
+        foreach (List<string> buffBlock in buffBlocks)
+        {
+            BuffEffectDto buff = new()
+            {
+                ApplicationMode = UnityYamlReader.ReadEnumIntFromBlock(
+                    buffBlock,
+                    "applicationMode",
+                    BuffApplicationMode.InstantHeal),
+
+                StatType = UnityYamlReader.ReadEnumIntFromBlock(
+                    buffBlock,
+                    "statType",
+                    StatType.Health),
+
+                Value = UnityYamlReader.ReadFloatFromBlock(
+                    buffBlock,
+                    "baseValue",
+                    defaultValue: 0f),
+
+                Duration = UnityYamlReader.ReadFloatFromBlock(
+                    buffBlock,
+                    "duration",
+                    defaultValue: 0f)
+            };
+
+            consumable.Buffs.Add(buff);
         }
     }
 }
