@@ -10,6 +10,17 @@ public sealed class LootTableValidator
         LootTableDto lootTable,
         IEnumerable<LootTableDto> allLootTables)
     {
+        return Validate(
+            lootTable,
+            allLootTables,
+            Enumerable.Empty<string>());
+    }
+
+    public IReadOnlyList<ValidationIssue> Validate(
+        LootTableDto lootTable,
+        IEnumerable<LootTableDto> allLootTables,
+        IEnumerable<string> availableItemIds)
+    {
         List<ValidationIssue> issues = new();
 
         if (lootTable == null)
@@ -20,11 +31,18 @@ public sealed class LootTableValidator
 
         List<LootTableDto> allLootTablesList = allLootTables.ToList();
 
+        HashSet<string> availableItemIdSet = availableItemIds
+            .Where(x => !string.IsNullOrWhiteSpace(x))
+            .Select(x => x.Trim())
+            .ToHashSet(StringComparer.OrdinalIgnoreCase);
+
         ValidateIdentity(lootTable, allLootTablesList, issues);
         ValidatePicks(lootTable, issues);
+
         ValidateEntries(
             lootTable,
             allLootTablesList,
+            availableItemIdSet,
             lootTable.GuaranteedEntries,
             "Guaranteed",
             requiresWeight: false,
@@ -33,6 +51,7 @@ public sealed class LootTableValidator
         ValidateEntries(
             lootTable,
             allLootTablesList,
+            availableItemIdSet,
             lootTable.WeightedEntries,
             "Weighted",
             requiresWeight: true,
@@ -84,6 +103,7 @@ public sealed class LootTableValidator
     private static void ValidateEntries(
         LootTableDto owner,
         IReadOnlyList<LootTableDto> allLootTables,
+        IReadOnlySet<string> availableItemIds,
         IEnumerable<LootEntryDto> entries,
         string groupName,
         bool requiresWeight,
@@ -96,6 +116,7 @@ public sealed class LootTableValidator
             ValidateEntry(
                 owner,
                 allLootTables,
+                availableItemIds,
                 entry,
                 $"{groupName} entry #{index}",
                 requiresWeight,
@@ -108,6 +129,7 @@ public sealed class LootTableValidator
     private static void ValidateEntry(
         LootTableDto owner,
         IReadOnlyList<LootTableDto> allLootTables,
+        IReadOnlySet<string> availableItemIds,
         LootEntryDto entry,
         string prefix,
         bool requiresWeight,
@@ -128,7 +150,7 @@ public sealed class LootTableValidator
         switch (entry.EntryType)
         {
             case LootEntryType.Item:
-                ValidateItemEntry(entry, prefix, issues);
+                ValidateItemEntry(entry, availableItemIds, prefix, issues);
                 break;
 
             case LootEntryType.LootTable:
@@ -143,11 +165,24 @@ public sealed class LootTableValidator
 
     private static void ValidateItemEntry(
         LootEntryDto entry,
+        IReadOnlySet<string> availableItemIds,
         string prefix,
         List<ValidationIssue> issues)
     {
         if (string.IsNullOrWhiteSpace(entry.ItemId))
+        {
             issues.Add(Error($"{prefix}: Item Id is required."));
+            return;
+        }
+
+        if (availableItemIds.Count == 0)
+        {
+            issues.Add(Warning($"{prefix}: Item Id \"{entry.ItemId}\" cannot be checked because no item id list is available."));
+            return;
+        }
+
+        if (!availableItemIds.Contains(entry.ItemId.Trim()))
+            issues.Add(Error($"{prefix}: Item Id \"{entry.ItemId}\" does not exist."));
     }
 
     private static void ValidateNestedLootTableEntry(

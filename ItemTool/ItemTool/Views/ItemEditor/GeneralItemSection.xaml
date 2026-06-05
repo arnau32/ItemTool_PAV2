@@ -52,12 +52,17 @@
                 Margin="0,0,0,8"
                 Text="{Binding SelectedItem.ItemNameId, UpdateSourceTrigger=PropertyChanged}" />
 
-            <TextBlock Grid.Row="4" Grid.Column="0" Text="Display Name" />
-            <TextBox
-                Grid.Row="4"
-                Grid.Column="1"
-                Margin="0,0,0,8"
-                Text="{Binding SelectedItem.DisplayName, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBlock Grid.Row="4" Grid.Column="0" Text="Tool Display Name" />
+            <StackPanel Grid.Row="4" Grid.Column="1" Margin="0,0,0,8">
+                <TextBox
+                    Text="{Binding SelectedItem.DisplayName, UpdateSourceTrigger=PropertyChanged}" />
+
+                <TextBlock
+                    Margin="0,3,0,0"
+                    FontSize="10"
+                    Opacity="0.6"
+                    Text="Local editor label. It is not exported to Unity localization tables." />
+            </StackPanel>
 
             <TextBlock Grid.Row="5" Grid.Column="0" Text="Description" />
             <TextBox

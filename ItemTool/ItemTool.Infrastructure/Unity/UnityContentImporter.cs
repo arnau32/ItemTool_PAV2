@@ -99,7 +99,12 @@ public sealed class UnityContentImporter : IUnityContentImporter
         UnityContentOperationResultDto result = UnityContentOperationResultDto.Success(
             $"Imported {importedItems.Count} item(s) and {importedLootTables.Count} loot table(s) from Unity. Scanned {scannedAssetCount} .asset file(s), ignored {ignoredAssetCount}.",
             importedDatabase: importedDatabase);
-        
+
+        result.Warnings.Add("[MINOR] Import replaces local Items and Loot Tables with the current Unity content.");
+        result.Warnings.Add("[MINOR] Prefab refs are imported as paths for inspection, but they are intentionally not exported.");
+        result.Warnings.Add("[MINOR] LocalizedString values are not resolved. Tool Display Name remains an editor-only label.");
+        result.Warnings.Add("[MINOR] WPF does not delete Unity assets.");
+
         return Task.FromResult(result);
     }
 

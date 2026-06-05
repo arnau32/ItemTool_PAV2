@@ -98,8 +98,12 @@ public sealed partial class LootBrowserViewModel : ViewModelBase
             int guaranteedCount = SelectedLootTable.GuaranteedEntries?.Count ?? 0;
             int weightedCount = SelectedLootTable.WeightedEntries?.Count ?? 0;
 
+            string source = string.IsNullOrWhiteSpace(SelectedLootTable.SourceAssetPath)
+                ? "No Source Asset"
+                : SelectedLootTable.SourceAssetPath;
+
             return
-                $"Guaranteed: {guaranteedCount} · Weighted: {weightedCount} · Picks: {SelectedLootTable.MinRandomPicks}-{SelectedLootTable.MaxRandomPicks}";
+                $"Guaranteed: {guaranteedCount} · Weighted: {weightedCount} · Picks: {SelectedLootTable.MinRandomPicks}-{SelectedLootTable.MaxRandomPicks} · Source: {source}";
         }
     }
 
@@ -112,15 +116,13 @@ public sealed partial class LootBrowserViewModel : ViewModelBase
     {
         ContentDatabaseDto database = await _repository.LoadAsync();
 
-        AvailableItemIds.Clear();
-        foreach (string itemId in database.Items
-                     .Select(x => x.Id)
-                     .Where(x => !string.IsNullOrWhiteSpace(x))
-                     .Distinct(StringComparer.OrdinalIgnoreCase)
-                     .OrderBy(x => x))
-        {
-            AvailableItemIds.Add(itemId);
-        }
+        SetAvailableItemIds(
+            database.Items
+                .Select(x => x.Id)
+                .Where(x => !string.IsNullOrWhiteSpace(x))
+                .Select(x => x.Trim())
+                .Distinct(StringComparer.OrdinalIgnoreCase)
+                .OrderBy(x => x));
 
         LootTables.Clear();
 
@@ -163,7 +165,8 @@ public sealed partial class LootBrowserViewModel : ViewModelBase
 
         IReadOnlyList<ValidationIssue> selectedIssues = _validator.Validate(
             SelectedLootTable,
-            allLootTables);
+            allLootTables,
+            AvailableItemIds);
 
         if (selectedIssues.Any(x => x.Severity == ValidationSeverity.Error))
             return;
@@ -179,6 +182,30 @@ public sealed partial class LootBrowserViewModel : ViewModelBase
 
         SelectedListItem.MarkAsSaved();
         RefreshAvailableLootTableIds();
+        RefreshValidation();
+    }
+
+    public void SetAvailableItemIds(IEnumerable<string> itemIds)
+    {
+        List<string> cleanIds = itemIds
+            .Where(x => !string.IsNullOrWhiteSpace(x))
+            .Select(x => x.Trim())
+            .Distinct(StringComparer.OrdinalIgnoreCase)
+            .OrderBy(x => x)
+            .ToList();
+
+        bool same =
+            AvailableItemIds.Count == cleanIds.Count &&
+            AvailableItemIds.SequenceEqual(cleanIds, StringComparer.OrdinalIgnoreCase);
+
+        if (same)
+            return;
+
+        AvailableItemIds.Clear();
+
+        foreach (string itemId in cleanIds)
+            AvailableItemIds.Add(itemId);
+
         RefreshValidation();
     }
 
@@ -371,7 +398,8 @@ public sealed partial class LootBrowserViewModel : ViewModelBase
         {
             IReadOnlyList<ValidationIssue> issues = _validator.Validate(
                 lootTableVm.LootTable,
-                allLootTables);
+                allLootTables,
+                AvailableItemIds);
 
             lootTableVm.Severity = issues.Count == 0
                 ? ValidationSeverity.None
@@ -387,7 +415,8 @@ public sealed partial class LootBrowserViewModel : ViewModelBase
 
         IReadOnlyList<ValidationIssue> selectedIssues = _validator.Validate(
             SelectedLootTable,
-            allLootTables);
+            allLootTables,
+            AvailableItemIds);
 
         ValidationSummary = selectedIssues.Count == 0
             ? "Sin errores ni warnings."
@@ -468,6 +497,7 @@ public sealed partial class LootBrowserViewModel : ViewModelBase
 
             if (e.PropertyName == nameof(LootTableDto.Name) ||
                 e.PropertyName == nameof(LootTableDto.Id) ||
+                e.PropertyName == nameof(LootTableDto.SourceAssetPath) ||
                 e.PropertyName == nameof(LootTableDto.MinRandomPicks) ||
                 e.PropertyName == nameof(LootTableDto.MaxRandomPicks))
             {

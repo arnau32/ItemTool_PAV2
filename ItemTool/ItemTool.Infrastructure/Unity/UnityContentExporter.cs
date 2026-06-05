@@ -1,4 +1,5 @@
 using System.Globalization;
+using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using ItemTool.Application.Abstractions;
@@ -286,9 +287,10 @@ public sealed class UnityContentExporter : IUnityContentExporter
 
         bool changed = false;
 
-        changed |= SetScalar(lines, "<uniqueID>k__BackingField", item.Id);
+        changed |= SetScalar(lines, "<uniqueID>k__BackingField", SafeYamlValue(item.Id));
         changed |= SetScalar(lines, "itemType", FormatInt(GetUnityItemType(item)));
-        changed |= SetScalar(lines, "itemNameID", item.ItemNameId);
+        changed |= SetScalar(lines, "itemNameID", SafeYamlValue(item.ItemNameId));
+        changed |= SetScalar(lines, "description", SafeYamlValue(item.Description));
 
         string? iconReference = TryBuildIconReference(
             item,
@@ -382,7 +384,7 @@ public sealed class UnityContentExporter : IUnityContentExporter
 
         bool changed = false;
 
-        changed |= SetScalar(lines, "lootTableID", lootTable.Id);
+        changed |= SetScalar(lines, "lootTableID", SafeYamlValue(lootTable.Id));
         changed |= SetScalar(lines, "minRandomPicks", FormatInt(lootTable.MinRandomPicks));
         changed |= SetScalar(lines, "maxRandomPicks", FormatInt(lootTable.MaxRandomPicks));
 
@@ -1032,9 +1034,14 @@ public sealed class UnityContentExporter : IUnityContentExporter
             ? Path.GetFullPath(normalizedSource)
             : Path.GetFullPath(Path.Combine(normalizedRoot, normalizedSource));
 
-        bool isInsideUnityProject = absolutePath.StartsWith(
+        string relativePath = Path.GetRelativePath(
             normalizedRoot,
-            StringComparison.OrdinalIgnoreCase);
+            absolutePath);
+
+        bool isInsideUnityProject =
+            relativePath == "." ||
+            (!relativePath.StartsWith("..", StringComparison.Ordinal) &&
+             !Path.IsPathRooted(relativePath));
 
         return isInsideUnityProject
             ? absolutePath
@@ -1136,15 +1143,39 @@ public sealed class UnityContentExporter : IUnityContentExporter
     private static void CreateBackup(string assetPath)
     {
         string timestamp = DateTime.Now.ToString(
-            "yyyyMMdd_HHmmss",
+            "yyyyMMdd_HHmmss_fff",
             CultureInfo.InvariantCulture);
 
         string backupPath = $"{assetPath}.{timestamp}.bak";
 
-        File.Copy(
-            assetPath,
-            backupPath,
-            overwrite: false);
+        if (!File.Exists(backupPath))
+        {
+            File.Copy(
+                assetPath,
+                backupPath,
+                overwrite: false);
+
+            return;
+        }
+
+        int index = 1;
+
+        while (true)
+        {
+            string candidate = $"{assetPath}.{timestamp}_{index}.bak";
+
+            if (!File.Exists(candidate))
+            {
+                File.Copy(
+                    assetPath,
+                    candidate,
+                    overwrite: false);
+
+                return;
+            }
+
+            index++;
+        }
     }
 
     private static int GetUnityItemType(ItemDto item)
@@ -1185,7 +1216,67 @@ public sealed class UnityContentExporter : IUnityContentExporter
 
     private static string SafeYamlValue(string? value)
     {
-        return value ?? string.Empty;
+        if (string.IsNullOrEmpty(value))
+            return string.Empty;
+
+        bool needsQuotes =
+            value.Any(char.IsControl) ||
+            value.StartsWith(' ') ||
+            value.EndsWith(' ') ||
+            value.Contains(':') ||
+            value.Contains('#') ||
+            value.Contains('{') ||
+            value.Contains('}') ||
+            value.Contains('[') ||
+            value.Contains(']') ||
+            value.Contains(',') ||
+            value.Contains('"') ||
+            value.Contains('\'') ||
+            value.Contains('\n') ||
+            value.Contains('\r') ||
+            string.Equals(value, "null", StringComparison.OrdinalIgnoreCase) ||
+            string.Equals(value, "true", StringComparison.OrdinalIgnoreCase) ||
+            string.Equals(value, "false", StringComparison.OrdinalIgnoreCase);
+
+        if (!needsQuotes)
+            return value;
+
+        StringBuilder builder = new();
+        builder.Append('"');
+
+        foreach (char character in value)
+        {
+            switch (character)
+            {
+                case '\\':
+                    builder.Append("\\\\");
+                    break;
+
+                case '"':
+                    builder.Append("\\\"");
+                    break;
+
+                case '\n':
+                    builder.Append("\\n");
+                    break;
+
+                case '\r':
+                    builder.Append("\\r");
+                    break;
+
+                case '\t':
+                    builder.Append("\\t");
+                    break;
+
+                default:
+                    builder.Append(character);
+                    break;
+            }
+        }
+
+        builder.Append('"');
+
+        return builder.ToString();
     }
 
     private static int CountLeadingSpaces(string line)
@@ -1239,7 +1330,7 @@ public sealed class UnityContentExporter : IUnityContentExporter
 
         if (!Directory.Exists(unityProjectRootPath))
         {
-            validationMessage = "Unity project root folder does not exist.";
+            validationMessage = "Unity project folder does not exist.";
             return false;
         }
 

@@ -1,19 +1,20 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Data;
+using System.Windows.Media;
 using CommunityToolkit.Mvvm.Input;
+using ItemTool.App.Services;
+using ItemTool.App.Visuals;
 using ItemTool.Application.Abstractions;
 using ItemTool.Application.DTOs;
 using ItemTool.Application.Services;
 using ItemTool.Application.Validation;
 using ItemTool.Domain.Enums;
 using ItemTool.Domain.Validation;
-using System.Windows.Media;
-using ItemTool.App.Visuals;
-using ItemTool.App.Services;
 
 namespace ItemTool.App.ViewModels;
 
@@ -25,14 +26,34 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
 
     private ContentDatabaseDto _database = new();
     private ItemKind? _activeItemKindFilter;
+    private ItemListItemViewModel? _selectedListItem;
+    private string _validationSummary = string.Empty;
+
+    public ItemBrowserViewModel(
+        IContentDatabaseRepository repository,
+        ItemValidator validator,
+        ItemFactory itemFactory,
+        IFilePickerService filePickerService)
+    {
+        _repository = repository;
+        _validator = validator;
+        _itemFactory = itemFactory;
+
+        Editor = new ItemEditorViewModel(filePickerService);
+
+        FilteredItems = CollectionViewSource.GetDefaultView(Items);
+        FilteredItems.Filter = FilterItem;
+
+        Editor.ItemChanged += OnEditorItemChanged;
+    }
 
     public ObservableCollection<ItemListItemViewModel> Items { get; } = new();
 
     public ICollectionView FilteredItems { get; }
 
-    private ItemListItemViewModel? _selectedListItem;
-
     public event Action? SelectedItemChanged;
+
+    public event Action? ItemsChanged;
 
     public string? SelectedItemId => SelectedListItem?.Item.Id;
 
@@ -50,8 +71,6 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
             }
         }
     }
-
-    private string _validationSummary = string.Empty;
 
     public string ValidationSummary
     {
@@ -88,36 +107,28 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
     public ItemEditorViewModel Editor { get; }
 
     public Array ItemKinds => Enum.GetValues(typeof(ItemKind));
+
     public Array ItemRarities => Enum.GetValues(typeof(ItemRarity));
 
     public Array EquipSlots => Enum.GetValues(typeof(EquipSlot));
+
     public Array EquipableRollModes => Enum.GetValues(typeof(EquipableRollMode));
+
     public Array WeaponHandTypes => Enum.GetValues(typeof(WeaponHandType));
+
     public Array WeaponFamilies => Enum.GetValues(typeof(WeaponFamily));
+
     public Array StatTypes => Enum.GetValues(typeof(StatType));
+
     public Array BuffApplicationModes => Enum.GetValues(typeof(BuffApplicationMode));
-
-    public ItemBrowserViewModel(
-        IContentDatabaseRepository repository,
-        ItemValidator validator,
-        ItemFactory itemFactory,
-        IFilePickerService filePickerService)
-    {
-        _repository = repository;
-        _validator = validator;
-        _itemFactory = itemFactory;
-
-        Editor = new ItemEditorViewModel(filePickerService);
-
-        FilteredItems = CollectionViewSource.GetDefaultView(Items);
-        FilteredItems.Filter = FilterItem;
-
-        Editor.ItemChanged += OnEditorItemChanged;
-    }
 
     private void OnEditorItemChanged()
     {
         RefreshValidation();
+        FilteredItems.Refresh();
+
+        OnPropertyChanged(nameof(SelectedItemId));
+        ItemsChanged?.Invoke();
     }
 
     [RelayCommand]
@@ -140,9 +151,9 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
             .FirstOrDefault();
 
         if (SelectedListItem == null)
-        {
             RefreshValidation();
-        }
+
+        ItemsChanged?.Invoke();
     }
 
     [RelayCommand]
@@ -154,6 +165,8 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
 
         foreach (ItemListItemViewModel itemVm in Items)
             itemVm.MarkAsSaved();
+
+        ItemsChanged?.Invoke();
     }
 
     [RelayCommand]
@@ -165,7 +178,10 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
         RefreshValidation();
 
         List<ItemDto> allItems = Items.Select(x => x.Item).ToList();
-        IReadOnlyList<ValidationIssue> selectedIssues = _validator.Validate(SelectedListItem.Item, allItems);
+
+        IReadOnlyList<ValidationIssue> selectedIssues = _validator.Validate(
+            SelectedListItem.Item,
+            allItems);
 
         if (selectedIssues.Any(x => x.Severity == ValidationSeverity.Error))
             return;
@@ -181,6 +197,8 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
 
         SelectedListItem.MarkAsSaved();
         RefreshValidation();
+
+        ItemsChanged?.Invoke();
     }
 
     [RelayCommand]
@@ -262,7 +280,10 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
 
         foreach (ItemListItemViewModel itemVm in Items)
         {
-            IReadOnlyList<ValidationIssue> issues = _validator.Validate(itemVm.Item, allItems);
+            IReadOnlyList<ValidationIssue> issues = _validator.Validate(
+                itemVm.Item,
+                allItems);
+
             itemVm.Severity = issues.Count == 0
                 ? ValidationSeverity.None
                 : issues.MaxBy(x => x.Severity)?.Severity ?? ValidationSeverity.None;
@@ -274,7 +295,10 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
             return;
         }
 
-        IReadOnlyList<ValidationIssue> selectedIssues = _validator.Validate(SelectedListItem.Item, allItems);
+        IReadOnlyList<ValidationIssue> selectedIssues = _validator.Validate(
+            SelectedListItem.Item,
+            allItems);
+
         ValidationSummary = selectedIssues.Count == 0
             ? "Sin errores ni warnings."
             : string.Join(Environment.NewLine, selectedIssues.Select(x => $"- [{x.Severity}] {x.Message}"));
@@ -318,6 +342,7 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
         SelectedListItem = vm;
 
         RefreshValidation();
+        ItemsChanged?.Invoke();
     }
 
     private void NotifyFilterStateChanged()
@@ -361,9 +386,7 @@ public sealed partial class ItemBrowserViewModel : ViewModelBase
             .FirstOrDefault();
 
         if (SelectedListItem == null)
-        {
             RefreshValidation();
-        }
     }
 
     private void MakeItemIdUnique(ItemDto item)

@@ -1,4 +1,6 @@
-﻿using System.ComponentModel;
+﻿using System.Collections;
+using System.Collections.Specialized;
+using System.ComponentModel;
 using System.Windows.Media;
 using CommunityToolkit.Mvvm.Input;
 using ItemTool.App.Services;
@@ -11,6 +13,9 @@ namespace ItemTool.App.ViewModels;
 public sealed partial class ItemEditorViewModel : ViewModelBase
 {
     private readonly IFilePickerService _filePickerService;
+    private readonly List<INotifyPropertyChanged> _subscribedDetailObjects = new();
+    private readonly List<INotifyCollectionChanged> _subscribedCollections = new();
+    private readonly List<INotifyPropertyChanged> _subscribedCollectionItems = new();
 
     private ItemDto? _selectedItem;
     private DimensionsDto? _subscribedSlotDimension;
@@ -25,6 +30,9 @@ public sealed partial class ItemEditorViewModel : ViewModelBase
         get => _selectedItem;
         set
         {
+            if (ReferenceEquals(_selectedItem, value))
+                return;
+
             UnsubscribeFromSelectedItem();
 
             if (SetProperty(ref _selectedItem, value))
@@ -150,6 +158,7 @@ public sealed partial class ItemEditorViewModel : ViewModelBase
 
         _selectedItem.PropertyChanged += OnSelectedItemPropertyChanged;
         SubscribeToSlotDimension(_selectedItem.SlotDimension);
+        RefreshDetailSubscriptions();
     }
 
     private void UnsubscribeFromSelectedItem()
@@ -158,6 +167,7 @@ public sealed partial class ItemEditorViewModel : ViewModelBase
             _selectedItem.PropertyChanged -= OnSelectedItemPropertyChanged;
 
         UnsubscribeFromSlotDimension();
+        UnsubscribeFromDetailsAndCollections();
     }
 
     private void SubscribeToSlotDimension(DimensionsDto? slotDimension)
@@ -178,12 +188,87 @@ public sealed partial class ItemEditorViewModel : ViewModelBase
         _subscribedSlotDimension = null;
     }
 
+    private void RefreshDetailSubscriptions()
+    {
+        UnsubscribeFromDetailsAndCollections();
+
+        if (_selectedItem == null)
+            return;
+
+        SubscribeToDetailObject(_selectedItem.Equipable);
+        SubscribeToDetailObject(_selectedItem.Weapon);
+        SubscribeToDetailObject(_selectedItem.Consumable);
+        SubscribeToDetailObject(_selectedItem.Collectable);
+
+        SubscribeToCollection(_selectedItem.Equipable?.Modifiers);
+        SubscribeToCollection(_selectedItem.Consumable?.Buffs);
+    }
+
+    private void SubscribeToDetailObject(INotifyPropertyChanged? detailObject)
+    {
+        if (detailObject == null)
+            return;
+
+        detailObject.PropertyChanged += OnNestedItemPropertyChanged;
+        _subscribedDetailObjects.Add(detailObject);
+    }
+
+    private void SubscribeToCollection(IEnumerable? collection)
+    {
+        if (collection is INotifyCollectionChanged notifyCollectionChanged)
+        {
+            notifyCollectionChanged.CollectionChanged += OnNestedCollectionChanged;
+            _subscribedCollections.Add(notifyCollectionChanged);
+        }
+
+        if (collection == null)
+            return;
+
+        foreach (object? item in collection)
+            SubscribeToCollectionItem(item);
+    }
+
+    private void SubscribeToCollectionItem(object? item)
+    {
+        if (item is not INotifyPropertyChanged notifyPropertyChanged)
+            return;
+
+        notifyPropertyChanged.PropertyChanged += OnNestedItemPropertyChanged;
+        _subscribedCollectionItems.Add(notifyPropertyChanged);
+    }
+
+    private void UnsubscribeFromDetailsAndCollections()
+    {
+        foreach (INotifyPropertyChanged detailObject in _subscribedDetailObjects)
+            detailObject.PropertyChanged -= OnNestedItemPropertyChanged;
+
+        foreach (INotifyCollectionChanged collection in _subscribedCollections)
+            collection.CollectionChanged -= OnNestedCollectionChanged;
+
+        foreach (INotifyPropertyChanged item in _subscribedCollectionItems)
+            item.PropertyChanged -= OnNestedItemPropertyChanged;
+
+        _subscribedDetailObjects.Clear();
+        _subscribedCollections.Clear();
+        _subscribedCollectionItems.Clear();
+    }
+
     private void OnSelectedItemPropertyChanged(object? sender, PropertyChangedEventArgs e)
     {
         if (e.PropertyName == nameof(ItemDto.SlotDimension) &&
             sender is ItemDto item)
         {
             SubscribeToSlotDimension(item.SlotDimension);
+        }
+
+        if (e.PropertyName == nameof(ItemDto.ItemKind) ||
+            e.PropertyName == nameof(ItemDto.ItemType) ||
+            e.PropertyName == nameof(ItemDto.Equipable) ||
+            e.PropertyName == nameof(ItemDto.Weapon) ||
+            e.PropertyName == nameof(ItemDto.Consumable) ||
+            e.PropertyName == nameof(ItemDto.Collectable))
+        {
+            RefreshDetailSubscriptions();
         }
 
         if (e.PropertyName == nameof(ItemDto.DisplayName) ||
@@ -209,6 +294,34 @@ public sealed partial class ItemEditorViewModel : ViewModelBase
 
     private void OnSelectedItemDimensionsChanged(object? sender, PropertyChangedEventArgs e)
     {
+        ItemChanged?.Invoke();
+    }
+
+    private void OnNestedItemPropertyChanged(object? sender, PropertyChangedEventArgs e)
+    {
+        ItemChanged?.Invoke();
+    }
+
+    private void OnNestedCollectionChanged(object? sender, NotifyCollectionChangedEventArgs e)
+    {
+        if (e.OldItems != null)
+        {
+            foreach (object? oldItem in e.OldItems)
+            {
+                if (oldItem is INotifyPropertyChanged notifyPropertyChanged)
+                {
+                    notifyPropertyChanged.PropertyChanged -= OnNestedItemPropertyChanged;
+                    _subscribedCollectionItems.Remove(notifyPropertyChanged);
+                }
+            }
+        }
+
+        if (e.NewItems != null)
+        {
+            foreach (object? newItem in e.NewItems)
+                SubscribeToCollectionItem(newItem);
+        }
+
         ItemChanged?.Invoke();
     }
 

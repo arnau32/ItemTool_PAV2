@@ -48,6 +48,7 @@ public sealed partial class MainToolViewModel : ViewModelBase
             lootTableValidator);
 
         Items.SelectedItemChanged += RefreshSelectedItemUsages;
+        Items.ItemsChanged += OnItemsChanged;
     }
 
     public ItemBrowserViewModel Items { get; }
@@ -121,9 +122,15 @@ public sealed partial class MainToolViewModel : ViewModelBase
     [RelayCommand]
     public async Task LoadProjectSettingsAsync()
     {
-        ContentDatabaseDto database = await _repository.LoadAsync();
-
-        UnityProjectRootPath = database.ProjectSettings.UnityProjectRootPath;
+        try
+        {
+            ContentDatabaseDto database = await _repository.LoadAsync();
+            UnityProjectRootPath = database.ProjectSettings.UnityProjectRootPath;
+        }
+        catch (Exception exception)
+        {
+            UnityContentOperationStatusText = FormatException("Failed to load project settings.", exception);
+        }
     }
 
     [RelayCommand]
@@ -144,13 +151,20 @@ public sealed partial class MainToolViewModel : ViewModelBase
     [RelayCommand]
     public async Task SaveProjectSettingsAsync()
     {
-        ContentDatabaseDto database = await _repository.LoadAsync();
+        try
+        {
+            ContentDatabaseDto database = await _repository.LoadAsync();
 
-        database.ProjectSettings.UnityProjectRootPath = UnityProjectRootPath;
+            database.ProjectSettings.UnityProjectRootPath = UnityProjectRootPath;
 
-        await _repository.SaveAsync(database);
+            await _repository.SaveAsync(database);
 
-        ProjectSettingsStatusText = CreateProjectSettingsStatusText(UnityProjectRootPath);
+            ProjectSettingsStatusText = CreateProjectSettingsStatusText(UnityProjectRootPath);
+        }
+        catch (Exception exception)
+        {
+            UnityContentOperationStatusText = FormatException("Failed to save project settings.", exception);
+        }
     }
 
     [RelayCommand]
@@ -158,25 +172,33 @@ public sealed partial class MainToolViewModel : ViewModelBase
     {
         UnityContentOperationStatusText = "Importing Unity content...";
 
-        await SaveProjectSettingsAsync();
+        try
+        {
+            await SaveProjectSettingsAsync();
 
-        UnityContentOperationResultDto result = await _unityContentImporter.ImportAsync(
-            UnityProjectRootPath);
+            UnityContentOperationResultDto result = await _unityContentImporter.ImportAsync(
+                UnityProjectRootPath);
 
-        UnityContentOperationStatusText = FormatOperationResult(result);
+            UnityContentOperationStatusText = FormatOperationResult(result);
 
-        if (!result.Succeeded || result.ImportedDatabase == null)
-            return;
+            if (!result.Succeeded || result.ImportedDatabase == null)
+                return;
 
-        ContentDatabaseDto mergedDatabase = await MergeImportedDatabaseAsync(
-            result.ImportedDatabase);
+            ContentDatabaseDto mergedDatabase = await MergeImportedDatabaseAsync(
+                result.ImportedDatabase);
 
-        await _repository.SaveAsync(mergedDatabase);
+            await _repository.SaveAsync(mergedDatabase);
 
-        await Items.LoadAsync();
-        await LootTables.LoadAsync();
+            await Items.LoadAsync();
+            await LootTables.LoadAsync();
 
-        RefreshSelectedItemUsages();
+            SyncLootAvailableItemIds();
+            RefreshSelectedItemUsages();
+        }
+        catch (Exception exception)
+        {
+            UnityContentOperationStatusText = FormatException("Import Unity failed.", exception);
+        }
     }
 
     [RelayCommand]
@@ -184,24 +206,32 @@ public sealed partial class MainToolViewModel : ViewModelBase
     {
         UnityContentOperationStatusText = "Exporting Unity content...";
 
-        await SaveProjectSettingsAsync();
-
-        ContentDatabaseDto database = await CreateDatabaseSnapshotAsync();
-
-        UnityContentOperationResultDto result = await _unityContentExporter.ExportAsync(
-            database,
-            UnityProjectRootPath);
-
-        if (result.Succeeded)
+        try
         {
-            await _repository.SaveAsync(database);
+            await SaveProjectSettingsAsync();
 
-            Items.Editor.NotifyHeaderPreviewChanged();
-            RefreshAllItemIconSources();
-            RefreshSelectedItemUsages();
+            ContentDatabaseDto database = await CreateDatabaseSnapshotAsync();
+
+            UnityContentOperationResultDto result = await _unityContentExporter.ExportAsync(
+                database,
+                UnityProjectRootPath);
+
+            if (result.Succeeded)
+            {
+                await _repository.SaveAsync(database);
+
+                Items.Editor.NotifyHeaderPreviewChanged();
+                RefreshAllItemIconSources();
+                SyncLootAvailableItemIds();
+                RefreshSelectedItemUsages();
+            }
+
+            UnityContentOperationStatusText = FormatOperationResult(result);
         }
-
-        UnityContentOperationStatusText = FormatOperationResult(result);
+        catch (Exception exception)
+        {
+            UnityContentOperationStatusText = FormatException("Export Unity failed.", exception);
+        }
     }
 
     [RelayCommand]
@@ -214,6 +244,7 @@ public sealed partial class MainToolViewModel : ViewModelBase
     public void ShowLootTablesWorkspace()
     {
         ActiveWorkspace = ToolWorkspace.LootTables;
+        SyncLootAvailableItemIds();
     }
 
     [RelayCommand]
@@ -259,6 +290,7 @@ public sealed partial class MainToolViewModel : ViewModelBase
         if (LootTables.LootTables.Count == 0)
             await LootTables.LoadAsync();
 
+        SyncLootAvailableItemIds();
         RefreshSelectedItemUsages();
     }
 
@@ -299,6 +331,23 @@ public sealed partial class MainToolViewModel : ViewModelBase
             currentDatabase.LootTables = importedDatabase.LootTables;
 
         return currentDatabase;
+    }
+
+    private void OnItemsChanged()
+    {
+        SyncLootAvailableItemIds();
+        RefreshSelectedItemUsages();
+    }
+
+    private void SyncLootAvailableItemIds()
+    {
+        LootTables.SetAvailableItemIds(
+            Items.Items
+                .Select(x => x.Item.Id)
+                .Where(x => !string.IsNullOrWhiteSpace(x))
+                .Select(x => x.Trim())
+                .Distinct(StringComparer.OrdinalIgnoreCase)
+                .OrderBy(x => x));
     }
 
     private void RefreshSelectedItemUsages()
@@ -366,5 +415,16 @@ public sealed partial class MainToolViewModel : ViewModelBase
         }
 
         return string.Join(Environment.NewLine, lines);
+    }
+
+    private static string FormatException(
+        string title,
+        Exception exception)
+    {
+        return string.Join(
+            Environment.NewLine,
+            $"[Failed] {title}",
+            $"Exception: {exception.GetType().Name}",
+            $"Message: {exception.Message}");
     }
 }
