@@ -53,6 +53,7 @@ public sealed class UnityContentImporter : IUnityContentImporter
             if (UnityClassResolver.IsSupportedItemClass(className))
             {
                 ItemDto? item = UnityItemAssetImporter.TryImport(
+                    unityProjectRootPath,
                     assetPath,
                     lines,
                     className,

@@ -21,6 +21,7 @@ internal static class UnityLootTableAssetImporter
         LootTableDto lootTable = new()
         {
             Id = lootTableId,
+            SourceAssetPath = UnityAssetScanner.ToUnityAssetPath(unityProjectRootPath, assetPath),
             Name = assetName,
             MinRandomPicks = UnityYamlReader.ReadInt(lines, "minRandomPicks", defaultValue: 0),
             MaxRandomPicks = UnityYamlReader.ReadInt(lines, "maxRandomPicks", defaultValue: 0)

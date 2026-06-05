@@ -88,6 +88,7 @@ public sealed class JsonContentDatabaseRepository : IContentDatabaseRepository
         foreach (ItemDto item in database.Items)
         {
             item.Id ??= string.Empty;
+            item.SourceAssetPath ??= string.Empty;
             item.ItemNameId ??= string.Empty;
             item.DisplayName ??= string.Empty;
             item.Description ??= string.Empty;
@@ -102,6 +103,7 @@ public sealed class JsonContentDatabaseRepository : IContentDatabaseRepository
         foreach (LootTableDto lootTable in database.LootTables)
         {
             lootTable.Id ??= string.Empty;
+            lootTable.SourceAssetPath ??= string.Empty;
             lootTable.Name ??= string.Empty;
             lootTable.GuaranteedEntries ??= new ObservableCollection<LootEntryDto>();
             lootTable.WeightedEntries ??= new ObservableCollection<LootEntryDto>();

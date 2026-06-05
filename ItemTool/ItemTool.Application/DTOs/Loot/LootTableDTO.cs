@@ -9,6 +9,9 @@ public partial class LootTableDto : ObservableObject
     private string id = string.Empty;
 
     [ObservableProperty]
+    private string sourceAssetPath = string.Empty;
+
+    [ObservableProperty]
     private string name = string.Empty;
 
     [ObservableProperty]

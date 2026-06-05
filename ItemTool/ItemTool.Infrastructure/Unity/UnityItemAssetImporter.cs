@@ -6,6 +6,7 @@ namespace ItemTool.Infrastructure.Unity;
 internal static class UnityItemAssetImporter
 {
     public static ItemDto? TryImport(
+        string unityProjectRootPath,
         string assetPath,
         IReadOnlyList<string> lines,
         string className,
@@ -28,6 +29,7 @@ internal static class UnityItemAssetImporter
         ItemDto item = new()
         {
             Id = uniqueId,
+            SourceAssetPath = UnityAssetScanner.ToUnityAssetPath(unityProjectRootPath, assetPath),
             ItemNameId = itemNameId,
             DisplayName = itemNameId,
             Description = UnityYamlReader.ReadScalar(lines, "description") ?? string.Empty,

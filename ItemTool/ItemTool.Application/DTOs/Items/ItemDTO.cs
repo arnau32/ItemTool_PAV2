@@ -10,6 +10,9 @@ public partial class ItemDto : ObservableObject
     private string id = string.Empty;
 
     [ObservableProperty]
+    private string sourceAssetPath = string.Empty;
+
+    [ObservableProperty]
     private ItemKind itemKind = ItemKind.Equipment;
 
     [ObservableProperty]
